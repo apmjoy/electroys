@@ -10,7 +10,7 @@
     "fit": "Learners who want a programmable robot with room to progress beyond first-step coding.",
     "why": "Makeblock combines a physical aluminum robot, multiple sensors and a learning path from blocks to Python.",
     "consider": "A higher-cost choice. Check device compatibility and current bundle contents before ordering.",
-    "url": "https://www.makeblock.com/?ref=electroys",
+    "url": "https://www.makeblock.com/products/buy-mbot2?ref=electroys&utm_medium=null&utm_source=influencer",
     "source": "Official Makeblock product page",
     "image": "https://www.makeblock.com/cdn/shop/files/P1010132_mBot2.webp?v=1766999460&width=800",
     "store": "Makeblock",
@@ -202,7 +202,7 @@
   "mbot-ranger": {
     "t": "Makeblock mBot Ranger",
     "store": "Makeblock",
-    "url": "https://www.makeblock.com/?ref=electroys",
+    "url": "https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys&utm_medium=null&utm_source=influencer",
     "cat": "Robotics",
     "why": "Build a tracked robot, a balancing robot or a racing car from one kit.",
     "learn": "Mechanical assembly, sensors and programming with Scratch or Arduino C.",
@@ -227,7 +227,7 @@
   "mbot-ultimate": {
     "t": "Makeblock mBot Ultimate",
     "store": "Makeblock",
-    "url": "https://www.makeblock.com/?ref=electroys",
+    "url": "https://www.makeblock.com/products/buy-mbot-ultimate?ref=electroys&utm_medium=null&utm_source=influencer",
     "cat": "Robotics",
     "why": "A versatile 10-in-1 robot construction kit for larger building challenges.",
     "learn": "Mechanisms, motors, robot control and coding through multiple builds.",
