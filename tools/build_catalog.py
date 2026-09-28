@@ -19,7 +19,7 @@ for key,p in products.items():
       <p class="product-copy">{esc(p['why'])}</p>
       <div class="product-facts"><span><b>Age / audience:</b> {esc(p['age'])}</span><span><b>Level:</b> {esc(p['level'])}</span></div>
       <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">{esc(p['learn'])}</p><p class="small text-secondary">{esc(p['consider'])}</p></details>
-      <div class="catalog-card-action"><p class="product-price">{esc(p['price'])}</p><a class="btn btn-primary btn-sm" href="{esc(p['url'])}" target="_blank" rel="noopener noreferrer" aria-label="View {esc(p['t'])} at {esc(p['store'])}">View at {esc(p['store'])} <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+      <div class="catalog-card-action"><p class="product-price">{esc(p['price'])}</p><a class="btn btn-primary btn-sm" href="{esc(p['url'])}" target="_blank" rel="{'sponsored nofollow noopener noreferrer' if p['store']=='Makeblock' else 'noopener noreferrer'}" aria-label="View {esc(p['t'])} at {esc(p['store'])}">View at {esc(p['store'])} <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
     </div>
   </article>
 </div>''')
