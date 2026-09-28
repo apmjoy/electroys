@@ -1,4 +1,4 @@
-/* Add entries to products.json and matching static cards to products.html.
+/* Edit products.json and run tools/build_catalog.py to update static cards.
    Filter options and counts are derived from the catalog, not hard-coded. */
 (async function () {
   document.querySelectorAll('.product-img-wrap img').forEach(img => {
@@ -31,6 +31,8 @@
     options(category, entries.flatMap(({product}) => product.categories));
     options(brand, entries.map(({product}) => product.store));
     options(level, entries.flatMap(({product}) => product.levels));
+    const requestedStore = new URLSearchParams(window.location.search).get('store');
+    if ([...brand.options].some(option => option.value === requestedStore)) brand.value = requestedStore;
     function filter() {
       const terms = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
       let visible = 0;
@@ -49,7 +51,11 @@
     form.addEventListener('submit', event => event.preventDefault());
     form.addEventListener('input', filter);
     form.addEventListener('change', filter);
-    form.addEventListener('reset', () => setTimeout(filter, 0));
+    form.addEventListener('reset', () => setTimeout(() => {
+      search.value = ''; category.value = ''; brand.value = ''; level.value = '';
+      history.replaceState(null, '', location.pathname);
+      filter();
+    }, 0));
     filter();
     form.hidden = false;
   } catch (error) {

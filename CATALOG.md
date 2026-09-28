@@ -1,11 +1,12 @@
 # Electroys product catalog
 
-The homepage's Explore All Products link opens `products.html`. This static GitHub Pages page retains the site's branding and existing subscription form and handler.
+The catalog contains 44 products, including at least three from each of the homepage's 14 Brands & Stores. The two additional featured brands remain available. Homepage store buttons open the corresponding catalog filter.
 
-To add a product:
+To add or update products:
 
-1. Add a uniquely keyed entry in `products.json`, following an existing entry. Include `categories` and `levels` arrays. Use a verified product URL and image; keep price-check dates explicit.
-2. Add its card to `products.html` inside `productGrid`, with a matching `data-product-id`. Include the name, image with descriptive alt text, age, level, price, expandable learning details, and original product link. This static card keeps the catalog usable without JavaScript.
-3. Category, brand, and level options and result counts update automatically from the listed cards and JSON entries. Search and filters combine; Clear filters resets them all.
+1. Edit `products.json` with a unique key, verified destination, store, categories, levels, learning details, and review date. Leave image empty if no suitable product image is available; a branded text placeholder will appear. Do not invent prices or availability.
+2. Run `python tools/build_catalog.py` to regenerate the static cards in `products.html`. These remain usable without JavaScript.
+3. Update the introductory total if the number changes. Filters and result counts derive automatically from the data.
+4. Check search, combined filters, empty/reset states, mobile layout, and destination links before publishing.
 
-Check the new card, filters, mobile layout, and product link before publishing. Keep the subscription form action, field names, hidden iframe target, consent, and confirmation behavior intact. The catalog uses only the eight current featured products; the homepage's unused draft product data is not published as additional listings.
+Preserve the subscription form action, field names, hidden iframe, consent, and confirmation behavior. Privacy information is in `privacy.html`, with contact myelectroys@gmail.com. Provider policies and product availability can change; review periodically.

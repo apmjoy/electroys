@@ -5,7 +5,7 @@
     "age": "8+ / school-age learners",
     "level": "Beginner → Intermediate",
     "focus": "Robotics + coding",
-    "price": "$149.99 checked Sep 2026",
+    "price": "Check current price & availability",
     "learn": "Robotics, sensors, movement, problem solving, block-based coding and a path toward Python.",
     "fit": "Learners who want a programmable robot with room to progress beyond first-step coding.",
     "why": "Makeblock combines a physical aluminum robot, multiple sensors and a learning path from blocks to Python.",
@@ -14,7 +14,7 @@
     "source": "Official Makeblock product page",
     "image": "https://www.makeblock.com/cdn/shop/files/P1010132_mBot2.webp?v=1766999460&width=800",
     "store": "Makeblock",
-    "dealbadge": "16% OFF",
+    "dealbadge": "",
     "categories": [
       "Robotics",
       "Coding"
@@ -22,7 +22,8 @@
     "levels": [
       "Beginner",
       "Intermediate"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "elegoo": {
     "t": "ELEGOO UNO R3 Super Starter Kit",
@@ -30,7 +31,7 @@
     "age": "12+",
     "level": "Beginner",
     "focus": "Electronics + Arduino IDE",
-    "price": "$42.99 checked Sep 2026",
+    "price": "Check current price & availability",
     "learn": "Breadboarding, LEDs, sensors, modules, wiring and introductory microcontroller programming.",
     "fit": "Teens and adults who want hands-on electronics rather than a finished toy.",
     "why": "A substantial component set and structured tutorial path at an accessible entry price.",
@@ -45,7 +46,8 @@
     ],
     "levels": [
       "Beginner"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "botley": {
     "t": "Botley 2.0 Coding Robot",
@@ -53,7 +55,7 @@
     "age": "5+",
     "level": "Beginner",
     "focus": "Screen-free coding",
-    "price": "$79.99 checked Sep 2026",
+    "price": "Check current price & availability",
     "learn": "Sequencing, logic, spatial reasoning, problem solving and early programming concepts.",
     "fit": "Young learners and families who want coding play without a phone, tablet or app.",
     "why": "Botley makes early coding tangible and screen-free while allowing increasingly long command sequences.",
@@ -69,12 +71,13 @@
     ],
     "levels": [
       "Beginner"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "buildbox": {
     "t": "CrunchLabs Build Box",
     "cat": "STEM & Science",
-    "age": "8–12+",
+    "age": "8–13",
     "level": "Beginner → Intermediate",
     "focus": "Engineering + physics",
     "price": "Check current subscription",
@@ -86,14 +89,15 @@
     "source": "Official CrunchLabs Build Box page",
     "image": "https://www.crunchlabs.com/cdn/shop/products/DISC-build-all_2.jpg?v=1767390167&width=1000",
     "store": "CrunchLabs",
-    "dealbadge": "SAVE $66/YR",
+    "dealbadge": "",
     "categories": [
       "STEM & Science"
     ],
     "levels": [
       "Beginner",
       "Intermediate"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "edison": {
     "t": "Edison V3 Robot",
@@ -101,7 +105,7 @@
     "age": "EdBlocks ideal for 7–12",
     "level": "Beginner → Advanced",
     "focus": "Coding + robotics",
-    "price": "Check current price",
+    "price": "Check current price & availability",
     "learn": "Sequencing, loops, functions, sensors, graphical coding and progression toward text-based programming.",
     "fit": "Learners who want several coding approaches in one compact educational robot.",
     "why": "Edison supports screen-free barcode/card coding, EdBlocks, EdScratch and EdPy.",
@@ -119,7 +123,8 @@
       "Beginner",
       "Intermediate",
       "Advanced"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "hackpack": {
     "t": "CrunchLabs Hack Pack",
@@ -136,14 +141,15 @@
     "source": "Official CrunchLabs Hack Pack page",
     "image": "https://www.crunchlabs.com/cdn/shop/files/Reeder_250925_00240_Easy-Resize.com.jpg?v=1767390479&width=1000",
     "store": "CrunchLabs",
-    "dealbadge": "SAVE $79.75/YR",
+    "dealbadge": "",
     "categories": [
       "Makers & Adults",
       "Coding"
     ],
     "levels": [
       "Intermediate"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "arduino": {
     "t": "Arduino Student Kit",
@@ -151,7 +157,7 @@
     "age": "11–14",
     "level": "Beginner",
     "focus": "Electronics + programming",
-    "price": "$76.20 U.S. store checked Sep 2026",
+    "price": "Check current price & availability",
     "learn": "Current, voltage, resistance, digital logic, circuits, programming and open-ended experimentation.",
     "fit": "Middle-school learners, homeschoolers and self-learners who want a structured Arduino introduction.",
     "why": "Arduino combines the UNO R3, breadboard, multimeter, sensors/actuators and guided online learning.",
@@ -166,7 +172,8 @@
     ],
     "levels": [
       "Beginner"
-    ]
+    ],
+    "reviewed": "2026-09-27"
   },
   "snap": {
     "t": "Snap Circuits Classic SC-300",
@@ -174,13 +181,13 @@
     "age": "8+",
     "level": "Beginner",
     "focus": "Circuits + electronics",
-    "price": "Check current price",
+    "price": "Check current price & availability",
     "learn": "Working electrical circuits through projects such as radios, alarms, doorbells and electronic games.",
     "fit": "Beginners who want hands-on electronics without soldering or breadboard wiring.",
     "why": "Snap-together modules make circuit building approachable while demonstrating real electrical relationships.",
-    "consider": "Requires 4 AA batteries, not included. Verify current package contents and safety guidance.",
-    "url": "https://elenco.com/sc300-manuals/",
-    "source": "Official Elenco / Snap Circuits",
+    "consider": "Check the current kit contents, battery requirements and manufacturer age guidance.",
+    "url": "https://shop.elenco.com/consumers/snap-circuits-classic.html",
+    "source": "https://elenco.com/",
     "image": "https://elenco.com/wp-content/uploads/2026/09/SC-300_Box_2026-500x389.png",
     "store": "Snap Circuits",
     "dealbadge": "",
@@ -189,6 +196,854 @@
     ],
     "levels": [
       "Beginner"
-    ]
+    ],
+    "reviewed": "2026-09-27"
+  },
+  "mbot-ranger": {
+    "t": "Makeblock mBot Ranger",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-mbot-ranger",
+    "cat": "Robotics",
+    "why": "Build a tracked robot, a balancing robot or a racing car from one kit.",
+    "learn": "Mechanical assembly, sensors and programming with Scratch or Arduino C.",
+    "consider": "Check batteries and device compatibility before ordering.",
+    "age": "8+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://www.makeblock.com/cdn/shop/files/3XRoboticsAdventures_1200x1200.jpg?v=1765011896",
+    "source": "https://www.makeblock.com/products/buy-mbot-ranger",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "mbot-ultimate": {
+    "t": "Makeblock mBot Ultimate",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-mbot-ultimate",
+    "cat": "Robotics",
+    "why": "A versatile 10-in-1 robot construction kit for larger building challenges.",
+    "learn": "Mechanisms, motors, robot control and coding through multiple builds.",
+    "consider": "Allow time for assembly and check the software and power requirements.",
+    "age": "12+",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://www.makeblock.com/cdn/shop/files/Programmable_DIY_Robot_Kits_1200x1200.jpg?v=1766999419",
+    "source": "https://www.makeblock.com/products/buy-mbot-ultimate",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "elegoo-car": {
+    "t": "ELEGOO Smart Robot Car Kit V4.0",
+    "store": "ELEGOO",
+    "url": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
+    "cat": "Robotics",
+    "why": "Assemble an Arduino-based robot car with a camera and sensor modules.",
+    "learn": "Robot assembly, line tracking, obstacle detection and introductory programming.",
+    "consider": "The listing includes age guidance that varies by section; review it with an adult. Check stock and device requirements.",
+    "age": "See maker guidance",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://us.elegoo.com/cdn/shop/files/elegoo-uno-r3-project-smart-robot-car-kit-v-40-with-camera-arduino-stem-kits-elegoo-shop-715337.jpg?v=1787636880",
+    "source": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "elegoo-mega": {
+    "t": "ELEGOO Mega 2560 Complete Starter Kit",
+    "store": "ELEGOO",
+    "url": "https://us.elegoo.com/products/elegoo-mega-2560-the-most-complete-starter-kit",
+    "cat": "Electronics",
+    "why": "A Mega 2560 board and broad component set for guided electronics experiments.",
+    "learn": "Breadboarding, sensors, displays and microcontroller programming using the Arduino IDE.",
+    "consider": "A compatible computer is needed; check included parts and tutorials.",
+    "age": "12+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://us.elegoo.com/cdn/shop/files/elegoo-mega-2560-the-most-complete-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-371228.jpg?v=1787636933",
+    "source": "https://us.elegoo.com/products/elegoo-mega-2560-the-most-complete-starter-kit",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "creative-kit": {
+    "t": "CrunchLabs Creative Kit",
+    "store": "CrunchLabs",
+    "url": "https://www.crunchlabs.com/products/creative-kit-subscription",
+    "cat": "Young Explorers",
+    "why": "Recurring hands-on projects designed around creative building and play.",
+    "learn": "Construction, experimentation and creative problem solving.",
+    "consider": "This is a subscription. Check renewal, shipping and cancellation terms.",
+    "age": "6–10",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Young Explorers"
+    ],
+    "focus": "Young Explorers",
+    "price": "Check current subscription",
+    "image": "https://www.crunchlabs.com/cdn/shop/files/preview_images/8aa6035721ef4726895321f97074a86f.thumbnail.0000000000.jpg?v=1770231036",
+    "source": "https://www.crunchlabs.com/products/creative-kit-subscription",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "kiwi-walking": {
+    "t": "KiwiCo Walking Robot",
+    "store": "KiwiCo",
+    "url": "https://www.kiwico.com/us/store/dp/walking-robot-project-kit/6338",
+    "cat": "Robotics",
+    "why": "Build a walking robot and explore how a motor can create movement.",
+    "learn": "Mechanical assembly and the connection between motors and motion.",
+    "consider": "Check the current kit contents and recommended age on KiwiCo.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://images.kiwico.com/products/1986/6543.png",
+    "source": "https://www.kiwico.com/us/store/dp/walking-robot-project-kit/6338",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "kiwi-coder": {
+    "t": "KiwiCo Robot Coder Starter Kit",
+    "store": "KiwiCo",
+    "url": "https://www.kiwico.com/us/store/dp/robot-coder-starter-kit/5555",
+    "cat": "Coding",
+    "why": "A hands-on starting point for exploring robot coding.",
+    "learn": "Sequencing commands, testing ideas and solving movement challenges.",
+    "consider": "Review the current age guidance, included accessories and availability.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Coding"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "https://images.kiwico.com/products/5555/SRBT_07_23_PDP_Category_1x1_RU.png",
+    "source": "https://www.kiwico.com/us/store/dp/robot-coder-starter-kit/5555",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "kiwi-lights": {
+    "t": "KiwiCo Light-It-Up Electronics Set",
+    "store": "KiwiCo",
+    "url": "https://www.kiwico.com/us/store/dp/light-it-up-electronics-set-project-kit/4499",
+    "cat": "Electronics",
+    "why": "Experiment with light through a guided electronics project set.",
+    "learn": "Electrical connections, circuits and cause-and-effect reasoning.",
+    "consider": "Review the kit contents, power requirements and age guidance before purchase.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://images.kiwico.com/products/4499/SLUK_cover_R_V2.png",
+    "source": "https://www.kiwico.com/us/store/dp/light-it-up-electronics-set-project-kit/4499",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "amazon-hand": {
+    "t": "Thames & Kosmos Mega Cyborg Hand",
+    "store": "Amazon",
+    "url": "https://www.amazon.com/dp/B085LRW4VR",
+    "cat": "Build & Make",
+    "why": "Assemble a wearable mechanical hand powered by water-filled pistons.",
+    "learn": "Hydraulics, linkages and how pressure can move mechanical fingers.",
+    "consider": "Adult help may be needed during assembly. Confirm seller, contents and delivery at Amazon.",
+    "age": "7+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "https://thamesandkosmos.com/cdn/shop/files/620501_megacyborghand-Front_1200x1200.jpg?v=1774553461",
+    "source": "https://thamesandkosmos.com/products/mega-cyborg-hand",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "amazon-maze": {
+    "t": "ThinkFun Circuit Maze",
+    "store": "Amazon",
+    "url": "https://www.amazon.com/dp/B01BX4G6FY",
+    "cat": "Electronics",
+    "why": "Solve logic puzzles by connecting real circuits that light LED beacons.",
+    "learn": "Circuit paths, sequential reasoning and systematic problem solving.",
+    "consider": "Batteries are required. Confirm the seller and exact edition at Amazon.",
+    "age": "8+",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://ravensburger.cloud/images/produktseiten/520x445/44001008.webp",
+    "source": "https://www.thinkfun.com/en-US/pdp/44001008",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "amazon-mini": {
+    "t": "Sphero Mini (Blue)",
+    "store": "Amazon",
+    "url": "https://www.amazon.com/dp/B072B6QVVW",
+    "cat": "Coding",
+    "why": "A compact programmable robot ball for driving games and coding activities.",
+    "learn": "Draw, block and text-based coding through Sphero's learning apps.",
+    "consider": "Requires a compatible Bluetooth device and app. Confirm the color, seller and current listing.",
+    "age": "8+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Coding"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "https://cdn.shopify.com/s/files/1/0306/6419/6141/products/Mini-Blue.png?v=1741829941",
+    "source": "https://sphero.com/products/sphero-mini",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "stem-kubo": {
+    "t": "KUBO Coding Starter Kit",
+    "store": "STEMfinity",
+    "url": "https://stemfinity.com/collections/robotic-kits/products/kubo-coding-starter-kit",
+    "cat": "Coding",
+    "why": "Introduce programming through a robot and physical coding tiles.",
+    "learn": "Sequences, routes and coding concepts through hands-on activities.",
+    "consider": "Check the selected pack size and included robot, tiles and learning resources.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Coding"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "https://stemfinity.com/cdn/shop/products/1030_KUBO_Starter-set-spine-web.jpg?v=1680694175",
+    "source": "https://stemfinity.com/collections/robotic-kits/products/kubo-coding-starter-kit",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "stem-jd": {
+    "t": "EZ-Robot Revolution JD",
+    "store": "STEMfinity",
+    "url": "https://stemfinity.com/collections/robotic-kits/products/ez-robot-revolution-jd",
+    "cat": "Robotics",
+    "why": "A humanoid robot platform for exploring movement and robot programming.",
+    "learn": "Servo movement, robot behavior and programming experiments.",
+    "consider": "Check computer compatibility, assembly and charging requirements.",
+    "age": "See maker guidance",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://stemfinity.com/cdn/shop/products/SWLR2923.jpg?v=1672163668",
+    "source": "https://stemfinity.com/collections/robotic-kits/products/ez-robot-revolution-jd",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "stem-solar": {
+    "t": "Brown Dog Gadgets Solar Science Station",
+    "store": "STEMfinity",
+    "url": "https://stemfinity.com/collections/electronic-project-kits/products/solar-science-station",
+    "cat": "STEM & Science",
+    "why": "Build a reusable solar station with a panel and digital voltmeter.",
+    "learn": "Solar energy, voltage measurement and comparing observations.",
+    "consider": "A screwdriver is needed for assembly; check included parts.",
+    "age": "Grade 4+",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "STEM & Science"
+    ],
+    "focus": "STEM & Science",
+    "price": "Check current price & availability",
+    "image": "https://stemfinity.com/cdn/shop/products/solar-science-station-988563.jpg?v=1680691145",
+    "source": "https://stemfinity.com/collections/electronic-project-kits/products/solar-science-station",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "arduino-opla": {
+    "t": "Arduino Oplà IoT Kit",
+    "store": "Arduino",
+    "url": "https://store-usa.arduino.cc/products/arduino-opla-iot-kit",
+    "cat": "Makers & Adults",
+    "why": "Create connected projects with sensors and remote control through the Arduino Cloud.",
+    "learn": "Internet-connected devices, sensor inputs and interactive electronics.",
+    "consider": "Check compatible computer, network, account and current cloud-plan requirements.",
+    "age": "See maker guidance",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Makers & Adults"
+    ],
+    "focus": "Makers & Adults",
+    "price": "Check current price & availability",
+    "image": "https://store-usa.arduino.cc/cdn/shop/files/AKX00026_02.unbox_1200x900.jpg?v=1727104409",
+    "source": "https://store-usa.arduino.cc/products/arduino-opla-iot-kit",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "arduino-iot": {
+    "t": "Arduino Explore IoT Kit Rev2",
+    "store": "Arduino",
+    "url": "https://store-usa.arduino.cc/products/explore-iot-kit-rev2",
+    "cat": "Electronics",
+    "why": "An education kit for building connected devices and exploring sustainability projects.",
+    "learn": "Sensors, Internet of Things concepts and design thinking.",
+    "consider": "Some learning content and cloud features require a paid School plan; review what is included.",
+    "age": "Advanced high school / college",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://store-usa.arduino.cc/cdn/shop/files/AKX00044_02.unbox_1200x900.jpg?v=1727105949",
+    "source": "https://store-usa.arduino.cc/products/explore-iot-kit-rev2",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "snap-junior": {
+    "t": "Snap Circuits Junior SC-100",
+    "store": "Snap Circuits",
+    "url": "https://shop.elenco.com/consumers/snap-circuits-jr-100-experiments.html",
+    "cat": "Electronics",
+    "why": "A snap-together circuit set for learning with switches, lights and sound.",
+    "learn": "Following circuit diagrams and understanding electrical connections.",
+    "consider": "Check the current kit contents, battery requirements and manufacturer age guidance.",
+    "age": "8+",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://elenco.com/wp-content/uploads/2021/11/SC_100_Box_1-scaled.jpg",
+    "source": "https://elenco.com/",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "snap-pro": {
+    "t": "Snap Circuits Pro SC-500",
+    "store": "Snap Circuits",
+    "url": "https://shop.elenco.com/consumers/brands/snap-circuits/snap-circuits-pro-12.html",
+    "cat": "Electronics",
+    "why": "Extend circuit exploration with the Pro series and a wider range of experiments.",
+    "learn": "Circuit diagrams, component functions and more complex electronic projects.",
+    "consider": "Check the current kit contents, battery requirements and manufacturer age guidance.",
+    "age": "8+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://elenco.com/",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "walmart-skyline": {
+    "t": "LEGO Technic Nissan Skyline GT-R (R34)",
+    "store": "Walmart",
+    "url": "https://www.walmart.com/ip/13978102449",
+    "cat": "Build & Make",
+    "why": "Build a detailed Technic car model with mechanical functions.",
+    "learn": "Gearing, suspension, steering and following a complex assembly sequence.",
+    "consider": "Check the model number 42210, seller and recommended age.",
+    "age": "18+",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.walmart.com/ip/13978102449",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "walmart-bugatti": {
+    "t": "LEGO Technic Bugatti Chiron Pur Sport",
+    "store": "Walmart",
+    "url": "https://www.walmart.com/ip/17091658928",
+    "cat": "Build & Make",
+    "why": "A Technic hypercar build with steering and engine details.",
+    "learn": "Mechanical construction, steering linkages and engine movement.",
+    "consider": "Check the model number 42222 and current seller before ordering.",
+    "age": "9+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.walmart.com/ip/17091658928",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "walmart-natgeo": {
+    "t": "National Geographic Epic Circuit Science Kit",
+    "store": "Walmart",
+    "url": "https://www.walmart.com/ip/17736909154",
+    "cat": "Electronics",
+    "why": "Explore electricity through hands-on circuit-building activities.",
+    "learn": "Circuit connections, electrical components and experimentation.",
+    "consider": "Check the package contents, batteries and seller's instructions.",
+    "age": "8+",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.walmart.com/ip/17736909154",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "bestbuy-rover": {
+    "t": "4M Green Science Rover Robot",
+    "store": "Best Buy",
+    "url": "https://www.bestbuy.com/product/4m-4m-green-science-rover-robot-diy-robotics-kit-solar-battery-power-stem/CGJTYXSXT7/sku/10782796",
+    "cat": "Robotics",
+    "why": "Build a rover that explores solar and battery-powered movement.",
+    "learn": "Energy sources, motors and mechanical assembly.",
+    "consider": "Check batteries, current seller and sunlight requirements for solar operation.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.bestbuy.com/product/4m-4m-green-science-rover-robot-diy-robotics-kit-solar-battery-power-stem/CGJTYXSXT7/sku/10782796",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "bestbuy-arm": {
+    "t": "4M KidzLabs Mega Hydraulic Arm",
+    "store": "Best Buy",
+    "url": "https://www.bestbuy.com/product/4m-4m-kidzlabs-mega-hydraulic-arm-diy-water-powered-robotic-kit-18-arm/CGJTYXSXZV/sku/10782366",
+    "cat": "Build & Make",
+    "why": "Construct a water-powered mechanical arm and experiment with its movement.",
+    "learn": "Hydraulic pressure, linkages and controlled movement.",
+    "consider": "Review the assembly instructions and recommended age; adult help may be needed.",
+    "age": "See maker guidance",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.bestbuy.com/product/4m-4m-kidzlabs-mega-hydraulic-arm-diy-water-powered-robotic-kit-18-arm/CGJTYXSXZV/sku/10782366",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "bestbuy-maglev": {
+    "t": "4M KidzLabs Anti-Gravity Maglev",
+    "store": "Best Buy",
+    "url": "https://www.bestbuy.com/product/4m-4m-kidzlabs-anti-gravity-maglev-7-physics-projects-magnetic-levitation-stem/CGJTYXSCK5",
+    "cat": "STEM & Science",
+    "why": "Explore magnetic levitation through seven hands-on physics projects.",
+    "learn": "Magnetism, attraction, repulsion and balancing forces.",
+    "consider": "Includes magnets and small parts. Check availability and follow the supplied safety instructions.",
+    "age": "8+",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "STEM & Science"
+    ],
+    "focus": "STEM & Science",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.bestbuy.com/product/4m-4m-kidzlabs-anti-gravity-maglev-7-physics-projects-magnetic-levitation-stem/CGJTYXSCK5",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "etsy-motorcycle": {
+    "t": "HappyPuzzlesGifts Wooden Motorcycle Kit",
+    "store": "Etsy",
+    "url": "https://www.etsy.com/listing/4473354361/3d-wooden-motorcycle-puzzle-kit-diy",
+    "cat": "Build & Make",
+    "why": "Build a wooden motorcycle model with moving mechanical elements.",
+    "learn": "Spatial reasoning, model construction and mechanical assembly.",
+    "consider": "Seller describes this as a DIY kit; glue may not be included. Confirm the selected model and materials.",
+    "age": "14+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.etsy.com/listing/4473354361/3d-wooden-motorcycle-puzzle-kit-diy",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "spark-arduino": {
+    "t": "SparkFun Inventor's Kit v4.1.2",
+    "store": "SparkFun",
+    "url": "https://www.sparkfun.com/sparkfun-inventor-s-kit-v4-1-2.html",
+    "cat": "Electronics",
+    "why": "Work through guided circuits and projects with a RedBoard and component set.",
+    "learn": "Breadboarding, Arduino programming, sensors and motors.",
+    "consider": "Requires a computer; check the included board and current guide edition.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/5/15267-SparkFun_Inventor_s_Kit_-_v4.1-01a_1.jpg",
+    "source": "https://www.sparkfun.com/sparkfun-inventor-s-kit-v4-1-2.html",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "spark-python": {
+    "t": "SparkFun Inventor's Kit for MicroPython",
+    "store": "SparkFun",
+    "url": "https://www.sparkfun.com/sparkfun-inventors-kit-for-micropython.html",
+    "cat": "Coding",
+    "why": "Learn electronics using MicroPython and an RP2350-based development board.",
+    "learn": "Python-style programming, circuit building and interacting with sensors.",
+    "consider": "Review computer setup and the digital experiment guide before starting.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Coding"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/2/9/29326-sik-box-feature.jpg",
+    "source": "https://www.sparkfun.com/sparkfun-inventors-kit-for-micropython.html",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "spark-microbit": {
+    "t": "SparkFun Inventor's Kit for micro:bit v2",
+    "store": "SparkFun",
+    "url": "https://www.sparkfun.com/sparkfun-inventor-s-kit-for-micro-bit-v2.html",
+    "cat": "Coding",
+    "why": "A micro:bit v2 and components for experimenting with electronic circuits.",
+    "learn": "Reading sensors, moving a servo and coding physical interactions.",
+    "consider": "Check battery requirements and included parts; use the matching v2 guide.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Coding"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/5/15228-SparkFun_Inventor_s_Kit_for_micro-bit-01.jpg",
+    "source": "https://www.sparkfun.com/sparkfun-inventor-s-kit-for-micro-bit-v2.html",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "df-boson": {
+    "t": "DFRobot BOSON Starter Kit for micro:bit",
+    "store": "DFRobot",
+    "url": "https://www.dfrobot.com/product-1638.html",
+    "cat": "Electronics",
+    "why": "Connect modular sensors and outputs for light, sound and motion projects.",
+    "learn": "Inputs, outputs and micro:bit programming with modular electronics.",
+    "consider": "Confirm whether a micro:bit is included in the selected option and check power requirements.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "https://dfimg.dfrobot.com/enshop/TOY0086/TOY0086_Main_01.jpg",
+    "source": "https://www.dfrobot.com/product-1638.html",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "df-maqueen": {
+    "t": "DFRobot Maqueen Lite V5",
+    "store": "DFRobot",
+    "url": "https://www.dfrobot.com/product-2937.html",
+    "cat": "Robotics",
+    "why": "A micro:bit-compatible robot for line-following and obstacle-avoidance projects.",
+    "learn": "Robot navigation, sensor readings and programmable behavior.",
+    "consider": "Check micro:bit inclusion and the required AA batteries.",
+    "age": "See maker guidance",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://dfimg.dfrobot.com/enshop/image/data/MBT0046/MBT0046_Main_08.jpg",
+    "source": "https://www.dfrobot.com/product-2937.html",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "df-huskylens": {
+    "t": "DFRobot Gravity HuskyLens K210",
+    "store": "DFRobot",
+    "url": "https://www.dfrobot.com/product-1922.html",
+    "cat": "Makers & Adults",
+    "why": "Add vision sensing to projects with a camera that learns objects and colors.",
+    "learn": "Image recognition, tracking and connecting a sensor to a controller.",
+    "consider": "This is a sensor, not a complete robot. Check controller, wiring and power needs.",
+    "age": "Grades 6–10 / makers",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Makers & Adults"
+    ],
+    "focus": "Makers & Adults",
+    "price": "Check current price & availability",
+    "image": "https://dfimg.dfrobot.com/enshop/SEN0305/SEN0305_Main_01.jpg",
+    "source": "https://www.dfrobot.com/product-1922.html",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "oz-cubroid": {
+    "t": "Cubroid Coding Blocks Premium Kit",
+    "store": "OZ Robotics",
+    "url": "https://ozrobotics.com/shop/coding-blocks-wireless-modular-robotics-kit-for-kids-and-schools/",
+    "cat": "Robotics",
+    "why": "Wireless modular blocks for building and programming interactive creations.",
+    "learn": "Sequencing, robot behavior and combining sensors with movement.",
+    "consider": "Review compatible apps, included modules and shipping origin.",
+    "age": "See maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "focus": "Robotics",
+    "price": "Check current price & availability",
+    "image": "https://ozrobotics.com/wp-content/uploads/2025/08/cubroid-cubroid_full_package-1.png",
+    "source": "https://ozrobotics.com/shop/coding-blocks-wireless-modular-robotics-kit-for-kids-and-schools/",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "oz-picoder": {
+    "t": "SB Components PiCoder Learning Kit",
+    "store": "OZ Robotics",
+    "url": "https://ozrobotics.com/shop/picoder-compact-diy-raspberry-pi-pico-learning-kit-easy-to-learn-raspberry-pico-kit/",
+    "cat": "Coding",
+    "why": "A Raspberry Pi Pico learning platform for hands-on programming experiments.",
+    "learn": "Microcontroller programming and controlling electronic inputs and outputs.",
+    "consider": "Check the included Pico board, accessories and software setup.",
+    "age": "See maker guidance",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Coding"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "https://ozrobotics.com/wp-content/uploads/2023/11/PiCoder-750x750.jpg",
+    "source": "https://ozrobotics.com/shop/picoder-compact-diy-raspberry-pi-pico-learning-kit-easy-to-learn-raspberry-pico-kit/",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "oz-arcade": {
+    "t": "TinyCircuits Tiny Arcade DIY Kit",
+    "store": "OZ Robotics",
+    "url": "https://ozrobotics.com/shop/tiny-arcade-diy-kit/",
+    "cat": "Makers & Adults",
+    "why": "Assemble a miniature arcade cabinet around a compact electronic game system.",
+    "learn": "Small-scale assembly and how controls, a display and electronics work together.",
+    "consider": "Check the selected enclosure, assembly steps and included components.",
+    "age": "See maker guidance",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Makers & Adults"
+    ],
+    "focus": "Makers & Adults",
+    "price": "Check current price & availability",
+    "image": "https://ozrobotics.com/wp-content/uploads/2016/09/TinyArcade6.jpg",
+    "source": "https://ozrobotics.com/shop/tiny-arcade-diy-kit/",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "etsy-owl": {
+    "t": "GiftsHeritage Wooden Owl Clock Kit",
+    "store": "Etsy",
+    "url": "https://www.etsy.com/listing/4307045663/3d-wooden-owl-clock-puzzle-diy",
+    "cat": "Build & Make",
+    "why": "Assemble an owl-shaped wooden clock model from a detailed puzzle kit.",
+    "learn": "Spatial reasoning, following plans and fitting mechanical components.",
+    "consider": "Check whether the selected version is a working clock and confirm tools, glue and age suitability with the seller.",
+    "age": "Ask seller",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.etsy.com/listing/4307045663/3d-wooden-owl-clock-puzzle-diy",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
+  },
+  "etsy-train": {
+    "t": "Special10you Wooden Train Puzzle Kit",
+    "store": "Etsy",
+    "url": "https://www.etsy.com/listing/1822307148/3d-wooden-train-puzzle-kit-diy",
+    "cat": "Build & Make",
+    "why": "Build a detailed wooden locomotive model from pre-cut components.",
+    "learn": "Model construction, spatial reasoning and mechanical assembly.",
+    "consider": "Confirm the selected model, required tools and seller instructions. Contains small parts.",
+    "age": "14+",
+    "level": "Intermediate",
+    "levels": [
+      "Intermediate"
+    ],
+    "categories": [
+      "Build & Make"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.etsy.com/listing/1822307148/3d-wooden-train-puzzle-kit-diy",
+    "reviewed": "2026-09-27",
+    "dealbadge": ""
   }
 }
