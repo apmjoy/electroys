@@ -1,0 +1,194 @@
+{
+  "mbot2": {
+    "t": "Makeblock mBot2",
+    "cat": "Robotics",
+    "age": "8+ / school-age learners",
+    "level": "Beginner → Intermediate",
+    "focus": "Robotics + coding",
+    "price": "$149.99 checked Sep 2026",
+    "learn": "Robotics, sensors, movement, problem solving, block-based coding and a path toward Python.",
+    "fit": "Learners who want a programmable robot with room to progress beyond first-step coding.",
+    "why": "Makeblock combines a physical aluminum robot, multiple sensors and a learning path from blocks to Python.",
+    "consider": "A higher-cost choice. Check device compatibility and current bundle contents before ordering.",
+    "url": "https://www.makeblock.com/products/buy-mbot2",
+    "source": "Official Makeblock product page",
+    "image": "https://www.makeblock.com/cdn/shop/files/P1010132_mBot2.webp?v=1766999460&width=800",
+    "store": "Makeblock",
+    "dealbadge": "16% OFF",
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ]
+  },
+  "elegoo": {
+    "t": "ELEGOO UNO R3 Super Starter Kit",
+    "cat": "Electronics",
+    "age": "12+",
+    "level": "Beginner",
+    "focus": "Electronics + Arduino IDE",
+    "price": "$42.99 checked Sep 2026",
+    "learn": "Breadboarding, LEDs, sensors, modules, wiring and introductory microcontroller programming.",
+    "fit": "Teens and adults who want hands-on electronics rather than a finished toy.",
+    "why": "A substantial component set and structured tutorial path at an accessible entry price.",
+    "consider": "The official U.S. page was showing sold out when checked; availability can change.",
+    "url": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit",
+    "source": "Official ELEGOO U.S. product page",
+    "image": "https://us.elegoo.com/cdn/shop/files/elegoo-uno-r3-super-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-427270.jpg?v=1787632171&width=800",
+    "store": "ELEGOO",
+    "dealbadge": "",
+    "categories": [
+      "Electronics"
+    ],
+    "levels": [
+      "Beginner"
+    ]
+  },
+  "botley": {
+    "t": "Botley 2.0 Coding Robot",
+    "cat": "Young Explorers",
+    "age": "5+",
+    "level": "Beginner",
+    "focus": "Screen-free coding",
+    "price": "$79.99 checked Sep 2026",
+    "learn": "Sequencing, logic, spatial reasoning, problem solving and early programming concepts.",
+    "fit": "Young learners and families who want coding play without a phone, tablet or app.",
+    "why": "Botley makes early coding tangible and screen-free while allowing increasingly long command sequences.",
+    "consider": "Requires 5 AAA batteries, not included. Contains small parts; follow manufacturer safety guidance.",
+    "url": "https://www.learningresources.com/item-botleyr-the-coding-robot-2",
+    "source": "Official Learning Resources product page",
+    "image": "https://www.learningresources.com/media/catalog/product/3/0/302590fe6d64cd2d8188c8c23e37593666bc2487_314.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=500&width=700&canvas=700:500&dpr=2",
+    "store": "Learning Resources",
+    "dealbadge": "",
+    "categories": [
+      "Young Explorers",
+      "Coding"
+    ],
+    "levels": [
+      "Beginner"
+    ]
+  },
+  "buildbox": {
+    "t": "CrunchLabs Build Box",
+    "cat": "STEM & Science",
+    "age": "8–12+",
+    "level": "Beginner → Intermediate",
+    "focus": "Engineering + physics",
+    "price": "Check current subscription",
+    "learn": "Mechanisms, physics, iterative building, experimentation and engineering thinking.",
+    "fit": "Kids who enjoy guided hands-on engineering projects and recurring builds.",
+    "why": "The subscription format turns engineering into an ongoing activity rather than a single project.",
+    "consider": "Review current plan, renewal, shipping and cancellation terms before subscribing.",
+    "url": "https://www.crunchlabs.com/products/build-box-subscription",
+    "source": "Official CrunchLabs Build Box page",
+    "image": "https://www.crunchlabs.com/cdn/shop/products/DISC-build-all_2.jpg?v=1767390167&width=1000",
+    "store": "CrunchLabs",
+    "dealbadge": "SAVE $66/YR",
+    "categories": [
+      "STEM & Science"
+    ],
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ]
+  },
+  "edison": {
+    "t": "Edison V3 Robot",
+    "cat": "Robotics",
+    "age": "EdBlocks ideal for 7–12",
+    "level": "Beginner → Advanced",
+    "focus": "Coding + robotics",
+    "price": "Check current price",
+    "learn": "Sequencing, loops, functions, sensors, graphical coding and progression toward text-based programming.",
+    "fit": "Learners who want several coding approaches in one compact educational robot.",
+    "why": "Edison supports screen-free barcode/card coding, EdBlocks, EdScratch and EdPy.",
+    "consider": "USB programming support varies by device/browser; iPad uses screen flashing for supported environments.",
+    "url": "https://meetedison.com/",
+    "source": "Official Meet Edison website",
+    "image": "https://meetedison.com/wp-content/uploads/2023/12/Hero-Edison-510px.jpg",
+    "store": "Edison",
+    "dealbadge": "",
+    "categories": [
+      "Robotics",
+      "Coding"
+    ],
+    "levels": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ]
+  },
+  "hackpack": {
+    "t": "CrunchLabs Hack Pack",
+    "cat": "Makers & Adults",
+    "age": "14+",
+    "level": "Intermediate",
+    "focus": "Robotics + coding",
+    "price": "Check current subscription",
+    "learn": "Robotics, coding, mechanisms, experimentation and creative hardware hacking.",
+    "fit": "Teens and adults who want more sophisticated recurring robotics builds.",
+    "why": "It extends Electroys beyond children's products into hands-on projects for older learners and adults.",
+    "consider": "Review current subscription and device requirements before joining.",
+    "url": "https://www.crunchlabs.com/products/hack-pack-subscription",
+    "source": "Official CrunchLabs Hack Pack page",
+    "image": "https://www.crunchlabs.com/cdn/shop/files/Reeder_250925_00240_Easy-Resize.com.jpg?v=1767390479&width=1000",
+    "store": "CrunchLabs",
+    "dealbadge": "SAVE $79.75/YR",
+    "categories": [
+      "Makers & Adults",
+      "Coding"
+    ],
+    "levels": [
+      "Intermediate"
+    ]
+  },
+  "arduino": {
+    "t": "Arduino Student Kit",
+    "cat": "Electronics",
+    "age": "11–14",
+    "level": "Beginner",
+    "focus": "Electronics + programming",
+    "price": "$76.20 U.S. store checked Sep 2026",
+    "learn": "Current, voltage, resistance, digital logic, circuits, programming and open-ended experimentation.",
+    "fit": "Middle-school learners, homeschoolers and self-learners who want a structured Arduino introduction.",
+    "why": "Arduino combines the UNO R3, breadboard, multimeter, sensors/actuators and guided online learning.",
+    "consider": "Requires compatible computer/USB setup and Arduino IDE. Online content requires kit activation.",
+    "url": "https://store-usa.arduino.cc/products/arduino-student-kit",
+    "source": "Official Arduino U.S. Store",
+    "image": "https://store-usa.arduino.cc/cdn/shop/files/student-kit_02.unbox_934x700.jpg?v=1727104160",
+    "store": "Arduino",
+    "dealbadge": "",
+    "categories": [
+      "Electronics"
+    ],
+    "levels": [
+      "Beginner"
+    ]
+  },
+  "snap": {
+    "t": "Snap Circuits Classic SC-300",
+    "cat": "Electronics",
+    "age": "8+",
+    "level": "Beginner",
+    "focus": "Circuits + electronics",
+    "price": "Check current price",
+    "learn": "Working electrical circuits through projects such as radios, alarms, doorbells and electronic games.",
+    "fit": "Beginners who want hands-on electronics without soldering or breadboard wiring.",
+    "why": "Snap-together modules make circuit building approachable while demonstrating real electrical relationships.",
+    "consider": "Requires 4 AA batteries, not included. Verify current package contents and safety guidance.",
+    "url": "https://elenco.com/sc300-manuals/",
+    "source": "Official Elenco / Snap Circuits",
+    "image": "https://elenco.com/wp-content/uploads/2026/09/SC-300_Box_2026-500x389.png",
+    "store": "Snap Circuits",
+    "dealbadge": "",
+    "categories": [
+      "Electronics"
+    ],
+    "levels": [
+      "Beginner"
+    ]
+  }
+}
