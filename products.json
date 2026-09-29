@@ -1142,5 +1142,29 @@
     "image": "",
     "reviewed": "2026-09-28",
     "dealbadge": ""
+  },
+  "amazon-rc-robot-car": {
+    "t": "LEPANDA RC Robot Car Kit",
+    "age": "8+",
+    "cat": "Robotics",
+    "why": "Build a wooden robot car with Mecanum wheels, then steer it in several directions with the remote.",
+    "learn": "Assembly, wheel motion, basic mechanics and how a remote-controlled vehicle moves.",
+    "consider": "Check current seller, battery requirements and availability; Amazon showed no featured offer when reviewed. Small parts require age-appropriate supervision.",
+    "url": "https://www.amazon.com/dp/B0DZHS8YNJ?tag=myelectroys-20",
+    "source": "https://www.amazon.com/Robot-Science-Projects-Engineering-Building/dp/B0DZHS8YNJ",
+    "categories": [
+      "Robotics",
+      "Build & Make"
+    ],
+    "store": "Amazon",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "focus": "RC vehicle + mechanical engineering",
+    "price": "Check current price & availability",
+    "image": "",
+    "reviewed": "2026-09-28",
+    "dealbadge": ""
   }
 }

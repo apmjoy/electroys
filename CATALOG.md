@@ -1,6 +1,6 @@
 # Electroys product catalog
 
-The catalog contains 48 products, including at least three from each of the homepage's 14 Brands & Stores. The two additional featured brands remain available. Homepage store buttons open the corresponding catalog filter.
+The catalog contains 49 products, including at least three from each of the homepage's 14 Brands & Stores. The two additional featured brands remain available. Homepage store buttons open the corresponding catalog filter.
 
 To add or update products:
 
