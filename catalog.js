@@ -20,8 +20,18 @@
   const count = document.getElementById('catalogCount');
   const empty = document.getElementById('catalogEmpty');
   const cards = [...document.querySelectorAll('[data-product-id]')];
+  const requestedStore = new URLSearchParams(window.location.search).get('store');
+  // Store labels are embedded in the static cards, so deep links work even
+  // when the richer catalog data cannot be fetched.
+  if (requestedStore && cards.some(card => card.dataset.brand === requestedStore)) {
+    cards.forEach(card => { card.hidden = card.dataset.brand !== requestedStore; });
+    brand.add(new Option(requestedStore, requestedStore));
+    brand.value = requestedStore;
+    count.textContent = `Showing ${cards.filter(card => !card.hidden).length} of ${cards.length} products`;
+    form.hidden = false;
+  }
   try {
-    const response = await fetch('products.json');
+    const response = await fetch('products.json', {cache: 'no-store'});
     if (!response.ok) throw new Error('Catalog unavailable');
     const data = await response.json();
     const entries = cards.map(card => ({card, product: data[card.dataset.productId]}));
@@ -30,7 +40,7 @@
       [...new Set(values)].sort().forEach(value => select.add(new Option(value, value)));
     }
     options(category, entries.flatMap(({product}) => product.categories));
-    options(brand, entries.map(({product}) => product.store));
+    options(brand, entries.map(({product}) => product.store).filter(store => store !== requestedStore));
     options(level, entries.flatMap(({product}) => product.levels));
     const ageBand = guidance => {
       const value = guidance.toLowerCase();
@@ -48,7 +58,6 @@
     ['3–5', '6–7', '8–10', '11–13', '14–17', '18+', 'Check maker guidance']
       .filter(band => entries.some(({product}) => ageBand(product.age) === band))
       .forEach(band => age.add(new Option(band, band)));
-    const requestedStore = new URLSearchParams(window.location.search).get('store');
     if ([...brand.options].some(option => option.value === requestedStore)) brand.value = requestedStore;
     function filter() {
       const terms = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
@@ -57,7 +66,7 @@
         const haystack = [p.t, p.store, p.cat, p.age, p.focus, p.learn, p.fit, p.why].join(' ').toLowerCase();
         const match = terms.every(term => haystack.includes(term)) &&
           (!category.value || p.categories.includes(category.value)) &&
-          (!brand.value || p.store === brand.value) &&
+          (!brand.value || card.dataset.brand === brand.value) &&
           (!age.value || ageBand(p.age) === age.value) &&
           (!level.value || p.levels.includes(level.value));
         card.hidden = !match;
