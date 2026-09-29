@@ -393,7 +393,7 @@
   "amazon-hand": {
     "t": "Thames & Kosmos Mega Cyborg Hand",
     "store": "Amazon",
-    "url": "https://www.amazon.com/dp/B085LRW4VR",
+    "url": "https://www.amazon.com/dp/B085LRW4VR?tag=myelectroys-20",
     "cat": "Build & Make",
     "why": "Assemble a wearable mechanical hand powered by water-filled pistons.",
     "learn": "Hydraulics, linkages and how pressure can move mechanical fingers.",
@@ -417,7 +417,7 @@
   "amazon-maze": {
     "t": "ThinkFun Circuit Maze",
     "store": "Amazon",
-    "url": "https://www.amazon.com/dp/B01BX4G6FY",
+    "url": "https://www.amazon.com/dp/B01BX4G6FY?tag=myelectroys-20",
     "cat": "Electronics",
     "why": "Solve logic puzzles by connecting real circuits that light LED beacons.",
     "learn": "Circuit paths, sequential reasoning and systematic problem solving.",
@@ -440,7 +440,7 @@
   "amazon-mini": {
     "t": "Sphero Mini (Blue)",
     "store": "Amazon",
-    "url": "https://www.amazon.com/dp/B072B6QVVW",
+    "url": "https://www.amazon.com/dp/B072B6QVVW?tag=myelectroys-20",
     "cat": "Coding",
     "why": "A compact programmable robot ball for driving games and coding activities.",
     "learn": "Draw, block and text-based coding through Sphero's learning apps.",
@@ -1044,6 +1044,103 @@
     "image": "",
     "source": "https://www.etsy.com/listing/1822307148/3d-wooden-train-puzzle-kit-diy",
     "reviewed": "2026-09-27",
+    "dealbadge": ""
+  }
+,
+  "amazon-robot-engineer": {
+    "t": "Thames & Kosmos Kids First Robot Engineer",
+    "age": "3+",
+    "cat": "Build & Make",
+    "why": "Build simple moving robot models alongside a picture-book story.",
+    "learn": "Gears, wheels, simple mechanisms and early engineering design.",
+    "consider": "Designed for adult-guided preschool building. Verify the exact edition and seller before ordering.",
+    "url": "https://www.amazon.com/dp/B01CNSPHL8?tag=myelectroys-20",
+    "source": "https://thamesandkosmos.com/products/robot-engineer-box-version",
+    "categories": [
+      "Build & Make",
+      "Young Explorers"
+    ],
+    "store": "Amazon",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "focus": "Build & Make",
+    "price": "Check current price & availability",
+    "image": "",
+    "reviewed": "2026-09-28",
+    "dealbadge": ""
+  },
+  "amazon-kids-coding": {
+    "t": "Thames & Kosmos Kids First Coding & Robotics",
+    "age": "4+",
+    "cat": "Coding",
+    "why": "Program a buildable robot with physical code cards and story-led activities.",
+    "learn": "Sequencing, patterns, loops and debugging through screen-free robotics.",
+    "consider": "Adult help may be needed for assembly. Check package contents and current seller.",
+    "url": "https://www.amazon.com/dp/B07B7SWPZJ?tag=myelectroys-20",
+    "source": "https://thamesandkosmos.com/products/coding-and-robotics",
+    "categories": [
+      "Coding",
+      "Young Explorers"
+    ],
+    "store": "Amazon",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "",
+    "reviewed": "2026-09-28",
+    "dealbadge": ""
+  },
+  "amazon-code-mouse": {
+    "t": "Learning Resources Code & Go Robot Mouse Activity Set",
+    "age": "5+",
+    "cat": "Coding",
+    "why": "Build mazes and plan a path for a programmable robot mouse.",
+    "learn": "Sequencing, spatial reasoning, debugging and early coding concepts.",
+    "consider": "Confirm battery requirements and whether the listing is the full activity set rather than the standalone mouse.",
+    "url": "https://www.amazon.com/dp/B01A5YMCH4?tag=myelectroys-20",
+    "source": "https://www.learningresources.com/item-code-gor-robot-mouse-activity-set",
+    "categories": [
+      "Coding",
+      "Young Explorers"
+    ],
+    "store": "Amazon",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "focus": "Coding",
+    "price": "Check current price & availability",
+    "image": "",
+    "reviewed": "2026-09-28",
+    "dealbadge": ""
+  },
+  "amazon-snap-beginner": {
+    "t": "Snap Circuits Beginner SCB-20",
+    "age": "5+",
+    "cat": "Electronics",
+    "why": "Explore lights, sounds and simple circuits with snap-together parts.",
+    "learn": "Connections, switches, electricity and cause-and-effect experiments.",
+    "consider": "Check included parts, battery requirements and the SCB-20 model number at the seller.",
+    "url": "https://www.amazon.com/dp/B011M0XXXM?tag=myelectroys-20",
+    "source": "https://elenco.com/faqs/",
+    "categories": [
+      "Electronics",
+      "Young Explorers"
+    ],
+    "store": "Amazon",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "focus": "Electronics",
+    "price": "Check current price & availability",
+    "image": "",
+    "reviewed": "2026-09-28",
     "dealbadge": ""
   }
 }

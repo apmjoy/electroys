@@ -9,6 +9,9 @@ cards=[]
 for key,p in products.items():
     fallback=f'<span class="image-fallback"><i class="bi bi-{icons.get(p["cat"],"box")} mb-2" aria-hidden="true"></i><span>{esc(p["t"])}</span><small>Product photo at the store</small></span>'
     picture=f'<img src="{esc(p["image"])}" alt="{esc(p["t"])}" loading="lazy" decoding="async">' if p.get('image') else fallback
+    paid=p['store']=='Amazon' and 'tag=' in p['url']
+    relation='sponsored nofollow noopener noreferrer' if paid or p['store']=='Makeblock' else 'noopener noreferrer'
+    disclosure='<small class="d-block mt-2">Amazon paid link</small>' if paid else ''
     cards.append(f'''<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="{esc(key)}" data-brand="{esc(p['store'])}" data-cat="{esc(p['cat'])}">
   <article class="product-card h-100" aria-labelledby="title-{esc(key)}">
     <div class="product-img-wrap">{picture}</div>
@@ -19,13 +22,15 @@ for key,p in products.items():
       <p class="product-copy">{esc(p['why'])}</p>
       <div class="product-facts"><span><b>Age / audience:</b> {esc(p['age'])}</span><span><b>Level:</b> {esc(p['level'])}</span></div>
       <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">{esc(p['learn'])}</p><p class="small text-secondary">{esc(p['consider'])}</p></details>
-      <div class="catalog-card-action"><p class="product-price">{esc(p['price'])}</p><a class="btn btn-primary btn-sm" href="{esc(p['url'])}" target="_blank" rel="{'sponsored nofollow noopener noreferrer' if p['store']=='Makeblock' else 'noopener noreferrer'}" aria-label="View {esc(p['t'])} at {esc(p['store'])}">View at {esc(p['store'])} <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+      <div class="catalog-card-action"><p class="product-price">{esc(p['price'])}</p><a class="btn btn-primary btn-sm" href="{esc(p['url'])}" target="_blank" rel="{relation}" aria-label="View {esc(p['t'])} at {esc(p['store'])}">View at {esc(p['store'])} <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>{disclosure}</div>
     </div>
   </article>
 </div>''')
-page=(root/'products.html').read_text(encoding='utf-8')
+page=(root/'products.html').read_bytes().decode('utf-8')
 grid='<!-- CATALOG-GRID-START -->\n<div class="row g-4" id="productGrid">\n'+'\n'.join(cards)+'\n</div>\n        <!-- CATALOG-GRID-END -->'
+newline='\r\n' if '\r\n' in page else '\n'
+grid=grid.replace('\n',newline)
 page,n=re.subn(r'<!-- CATALOG-GRID-START -->.*?<!-- CATALOG-GRID-END -->',lambda _:grid,page,flags=re.S)
 assert n==1
-(root/'products.html').write_text(page,encoding='utf-8')
+(root/'products.html').write_bytes(page.encode('utf-8'))
 print(f'Rendered {len(cards)} product cards.')
