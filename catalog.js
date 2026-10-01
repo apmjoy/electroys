@@ -12,6 +12,11 @@
     if (img.complete && !img.naturalWidth) fallback();
   });
   const form = document.getElementById('catalogFilters');
+  const toggle = document.getElementById('catalogFiltersToggle');
+  toggle.addEventListener('click', () => {
+    form.hidden = !form.hidden;
+    toggle.setAttribute('aria-expanded', String(!form.hidden));
+  });
   const search = document.getElementById('catalogSearch');
   const category = document.getElementById('categoryFilter');
   const brand = document.getElementById('brandFilter');
@@ -28,7 +33,7 @@
     brand.add(new Option(requestedStore, requestedStore));
     brand.value = requestedStore;
     count.textContent = `Showing ${cards.filter(card => !card.hidden).length} of ${cards.length} products`;
-    form.hidden = false;
+    toggle.hidden = false;
   }
   try {
     const response = await fetch('products.json', {cache: 'no-store'});
@@ -84,7 +89,7 @@
       filter();
     }, 0));
     filter();
-    form.hidden = false;
+    toggle.hidden = false;
   } catch (error) {
     // Static cards and product links remain available if catalog data cannot load.
     console.warn('Catalog filters could not load.', error);

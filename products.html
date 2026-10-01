@@ -839,27 +839,25 @@ a[role="button"]{
     <section class="section pt-5" aria-labelledby="catalog-title">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
-          <div><h2 id="catalog-title">All Products</h2><p class="text-secondary mb-0">49 products across 16 brands and stores. Find a project that fits your interests.</p></div>
+          <div><h2 id="catalog-title">All Products</h2></div>
           <a class="btn btn-outline-primary" href="index.html#ask">Help me choose</a>
         </div>
+        <button id="catalogFiltersToggle" class="btn btn-outline-primary mb-3" type="button" aria-expanded="false" aria-controls="catalogFilters" hidden><i class="bi bi-sliders me-2" aria-hidden="true"></i>Filters</button>
         <form id="catalogFilters" class="catalog-filters mb-4" hidden role="search">
           <label class="form-label" for="catalogSearch">Search products</label>
           <input class="form-control" id="catalogSearch" type="search" placeholder="Try robotics, circuits or screen-free">
-          <details open class="mt-3">
-            <summary>Filter the collection</summary>
             <div class="row g-3 mt-1">
               <div class="col-md-3"><label for="categoryFilter" class="form-label">Category</label><select id="categoryFilter" class="form-select"><option value="">All categories</option></select></div>
               <div class="col-md-3"><label for="brandFilter" class="form-label">Brand or store</label><select id="brandFilter" class="form-select"><option value="">All brands &amp; stores</option></select></div>
               <div class="col-md-3"><label for="levelFilter" class="form-label">Experience level</label><select id="levelFilter" class="form-select"><option value="">All levels</option></select></div>
               <div class="col-md-3"><label for="ageFilter" class="form-label">Starting age</label><select id="ageFilter" class="form-select"><option value="">All ages</option></select></div>
             </div>
-          </details>
           <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
             <p id="catalogCount" class="mb-0 small" role="status" aria-live="polite"></p>
             <button class="btn btn-outline-secondary btn-sm" type="reset">Clear filters</button>
           </div>
+          <p class="small text-secondary">Age filters group products by their listed starting age. Check each maker’s guidance before choosing.</p>
         </form>
-        <p class="small text-secondary">Age filters group products by their listed starting age. Check each maker’s guidance before choosing.</p>
         <p class="small"><strong>As an Amazon Associate I earn from qualifying purchases.</strong></p>
         <noscript><p>Browse all products below. Enable JavaScript to search and filter the collection.</p></noscript>
         <div id="catalogEmpty" class="bg-light border p-4 mb-4" hidden><h3 class="h5">No products match these filters.</h3><p class="mb-0">Try another search or use Clear filters to see the full collection.</p></div>
@@ -1707,6 +1705,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=2"></script>
+<script src="catalog.js?v=3"></script>
 </body>
 </html>
