@@ -19,3 +19,10 @@
 .guides-page main.container{padding-top:20px}
 .guides-page .content>.notice:first-child{margin-top:0}
 @media(max-width:800px){.guides-page .hero-inner{padding-top:24px;padding-bottom:24px}}
+
+/* Match the main site's navigation typography and link spacing. */
+.guides-page .nav{gap:0;font-size:16px;font-weight:400;line-height:1.2;letter-spacing:.15px}
+.guides-page .nav a{display:block;padding:.72rem 1rem;color:#252525}
+.guides-page .nav a:hover,.guides-page .nav a[aria-current]{color:var(--brand)}
+.guides-page .nav a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media(max-width:800px){.guides-page .nav{gap:0}.guides-page .nav a{padding:.72rem .75rem}}
