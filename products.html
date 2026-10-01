@@ -480,11 +480,7 @@ a[role="button"]{
   font-size:30px;
   font-weight:700;
 }
-.brand-arduino .brand-logo-fallback{
-  color:#0f8b8d;
-  font-size:33px;
-  font-weight:700;
-}
+
 .brand-snapcircuits .brand-logo-fallback{
   color:#dd2424;
   font-size:31px;
@@ -793,7 +789,7 @@ a[role="button"]{
 }
 
 </style>
-<link rel="stylesheet" href="catalog.css">
+<link rel="stylesheet" href="catalog.css?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260928">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=20260928">
 <link rel="shortcut icon" href="/favicon.ico?v=20260928">
@@ -831,18 +827,18 @@ a[role="button"]{
   <main id="catalog">
     <section class="catalog-intro section-light">
       <div class="container">
-        <p class="product-kicker mt-4">Explore. Build. Learn. Play.</p>
+        <p class="product-kicker">Explore. Build. Learn. Play.</p>
         <h1>Find your next spark.</h1>
         <p class="text-secondary mb-0">Explore robotics, electronics, coding and hands-on builds for curious minds.<br>Discover what each kit teaches and find the right place to start.</p>
       </div>
     </section>
-    <section class="section pt-5" aria-labelledby="catalog-title">
+    <section class="section pt-4" aria-labelledby="catalog-title">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
           <div><h2 id="catalog-title">All Products</h2></div>
-          <a class="btn btn-outline-primary" href="index.html#ask">Help me choose</a>
+          <div class="d-flex align-items-center gap-2"><button id="catalogFiltersToggle" class="btn btn-outline-primary" type="button" aria-expanded="false" aria-controls="catalogFilters" hidden><i class="bi bi-sliders me-2" aria-hidden="true"></i>Filters</button>
+          <a class="btn btn-outline-primary" href="index.html#ask">Help me choose</a></div>
         </div>
-        <button id="catalogFiltersToggle" class="btn btn-outline-primary mb-3" type="button" aria-expanded="false" aria-controls="catalogFilters" hidden><i class="bi bi-sliders me-2" aria-hidden="true"></i>Filters</button>
         <form id="catalogFilters" class="catalog-filters mb-4" hidden role="search">
           <label class="form-label" for="catalogSearch">Search products</label>
           <input class="form-control" id="catalogSearch" type="search" placeholder="Try robotics, circuits or screen-free">
@@ -874,20 +870,6 @@ a[role="button"]{
       <div class="product-facts"><span><b>Age / audience:</b> 8+ / school-age learners</span><span><b>Level:</b> Beginner → Intermediate</span></div>
       <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Robotics, sensors, movement, problem solving, block-based coding and a path toward Python.</p><p class="small text-secondary">A higher-cost choice. Check device compatibility and current bundle contents before ordering.</p></details>
       <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.makeblock.com/products/buy-mbot2?ref=electroys&amp;utm_medium=null&amp;utm_source=influencer" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Makeblock mBot2 at Makeblock">View at Makeblock <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="elegoo" data-brand="ELEGOO" data-cat="Electronics">
-  <article class="product-card h-100" aria-labelledby="title-elegoo">
-    <div class="product-img-wrap"><img src="https://us.elegoo.com/cdn/shop/files/elegoo-uno-r3-super-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-427270.jpg?v=1787632171&amp;width=800" alt="ELEGOO UNO R3 Super Starter Kit" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Electronics</span>
-      <h3 id="title-elegoo">ELEGOO UNO R3 Super Starter Kit</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> ELEGOO</p>
-      <p class="product-copy">A substantial component set and structured tutorial path at an accessible entry price.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> 12+</span><span><b>Level:</b> Beginner</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Breadboarding, LEDs, sensors, modules, wiring and introductory microcontroller programming.</p><p class="small text-secondary">The official U.S. page was showing sold out when checked; availability can change.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit" target="_blank" rel="noopener noreferrer" aria-label="View ELEGOO UNO R3 Super Starter Kit at ELEGOO">View at ELEGOO <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
     </div>
   </article>
 </div>
@@ -947,20 +929,6 @@ a[role="button"]{
     </div>
   </article>
 </div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino" data-brand="Arduino" data-cat="Electronics">
-  <article class="product-card h-100" aria-labelledby="title-arduino">
-    <div class="product-img-wrap"><img src="https://store-usa.arduino.cc/cdn/shop/files/student-kit_02.unbox_934x700.jpg?v=1727104160" alt="Arduino Student Kit" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Electronics</span>
-      <h3 id="title-arduino">Arduino Student Kit</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Arduino</p>
-      <p class="product-copy">Arduino combines the UNO R3, breadboard, multimeter, sensors/actuators and guided online learning.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> 11–14</span><span><b>Level:</b> Beginner</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Current, voltage, resistance, digital logic, circuits, programming and open-ended experimentation.</p><p class="small text-secondary">Requires compatible computer/USB setup and Arduino IDE. Online content requires kit activation.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://store-usa.arduino.cc/products/arduino-student-kit" target="_blank" rel="noopener noreferrer" aria-label="View Arduino Student Kit at Arduino">View at Arduino <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="snap" data-brand="Snap Circuits" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-snap">
     <div class="product-img-wrap"><img src="https://elenco.com/wp-content/uploads/2026/09/SC-300_Box_2026-500x389.png" alt="Snap Circuits Classic SC-300" loading="lazy" decoding="async"></div>
@@ -975,20 +943,6 @@ a[role="button"]{
     </div>
   </article>
 </div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="mbot-ranger" data-brand="Makeblock" data-cat="Robotics">
-  <article class="product-card h-100" aria-labelledby="title-mbot-ranger">
-    <div class="product-img-wrap"><img src="https://www.makeblock.com/cdn/shop/files/3XRoboticsAdventures_1200x1200.jpg?v=1765011896" alt="Makeblock mBot Ranger" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Robotics</span>
-      <h3 id="title-mbot-ranger">Makeblock mBot Ranger</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Makeblock</p>
-      <p class="product-copy">Build a tracked robot, a balancing robot or a racing car from one kit.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> 8+</span><span><b>Level:</b> Beginner → Intermediate</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Mechanical assembly, sensors and programming with Scratch or Arduino C.</p><p class="small text-secondary">Check batteries and device compatibility before ordering.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys&amp;utm_medium=null&amp;utm_source=influencer" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Makeblock mBot Ranger at Makeblock">View at Makeblock <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="mbot-ultimate" data-brand="Makeblock" data-cat="Robotics">
   <article class="product-card h-100" aria-labelledby="title-mbot-ultimate">
     <div class="product-img-wrap"><img src="https://www.makeblock.com/cdn/shop/files/Programmable_DIY_Robot_Kits_1200x1200.jpg?v=1766999419" alt="Makeblock mBot Ultimate" loading="lazy" decoding="async"></div>
@@ -1000,34 +954,6 @@ a[role="button"]{
       <div class="product-facts"><span><b>Age / audience:</b> 12+</span><span><b>Level:</b> Intermediate</span></div>
       <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Mechanisms, motors, robot control and coding through multiple builds.</p><p class="small text-secondary">Allow time for assembly and check the software and power requirements.</p></details>
       <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.makeblock.com/products/buy-mbot-ultimate?ref=electroys&amp;utm_medium=null&amp;utm_source=influencer" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Makeblock mBot Ultimate at Makeblock">View at Makeblock <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="elegoo-car" data-brand="ELEGOO" data-cat="Robotics">
-  <article class="product-card h-100" aria-labelledby="title-elegoo-car">
-    <div class="product-img-wrap"><img src="https://us.elegoo.com/cdn/shop/files/elegoo-uno-r3-project-smart-robot-car-kit-v-40-with-camera-arduino-stem-kits-elegoo-shop-715337.jpg?v=1787636880" alt="ELEGOO Smart Robot Car Kit V4.0" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Robotics</span>
-      <h3 id="title-elegoo-car">ELEGOO Smart Robot Car Kit V4.0</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> ELEGOO</p>
-      <p class="product-copy">Assemble an Arduino-based robot car with a camera and sensor modules.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> See maker guidance</span><span><b>Level:</b> Beginner → Intermediate</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Robot assembly, line tracking, obstacle detection and introductory programming.</p><p class="small text-secondary">The listing includes age guidance that varies by section; review it with an adult. Check stock and device requirements.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0" target="_blank" rel="noopener noreferrer" aria-label="View ELEGOO Smart Robot Car Kit V4.0 at ELEGOO">View at ELEGOO <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="elegoo-mega" data-brand="ELEGOO" data-cat="Electronics">
-  <article class="product-card h-100" aria-labelledby="title-elegoo-mega">
-    <div class="product-img-wrap"><img src="https://us.elegoo.com/cdn/shop/files/elegoo-mega-2560-the-most-complete-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-371228.jpg?v=1787636933" alt="ELEGOO Mega 2560 Complete Starter Kit" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Electronics</span>
-      <h3 id="title-elegoo-mega">ELEGOO Mega 2560 Complete Starter Kit</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> ELEGOO</p>
-      <p class="product-copy">A Mega 2560 board and broad component set for guided electronics experiments.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> 12+</span><span><b>Level:</b> Beginner → Intermediate</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Breadboarding, sensors, displays and microcontroller programming using the Arduino IDE.</p><p class="small text-secondary">A compatible computer is needed; check included parts and tutorials.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://us.elegoo.com/products/elegoo-mega-2560-the-most-complete-starter-kit" target="_blank" rel="noopener noreferrer" aria-label="View ELEGOO Mega 2560 Complete Starter Kit at ELEGOO">View at ELEGOO <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
     </div>
   </article>
 </div>
@@ -1171,34 +1097,6 @@ a[role="button"]{
     </div>
   </article>
 </div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-opla" data-brand="Arduino" data-cat="Makers &amp; Adults">
-  <article class="product-card h-100" aria-labelledby="title-arduino-opla">
-    <div class="product-img-wrap"><img src="https://store-usa.arduino.cc/cdn/shop/files/AKX00026_02.unbox_1200x900.jpg?v=1727104409" alt="Arduino Oplà IoT Kit" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Makers &amp; Adults</span>
-      <h3 id="title-arduino-opla">Arduino Oplà IoT Kit</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Arduino</p>
-      <p class="product-copy">Create connected projects with sensors and remote control through the Arduino Cloud.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> See maker guidance</span><span><b>Level:</b> Intermediate</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Internet-connected devices, sensor inputs and interactive electronics.</p><p class="small text-secondary">Check compatible computer, network, account and current cloud-plan requirements.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://store-usa.arduino.cc/products/arduino-opla-iot-kit" target="_blank" rel="noopener noreferrer" aria-label="View Arduino Oplà IoT Kit at Arduino">View at Arduino <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-iot" data-brand="Arduino" data-cat="Electronics">
-  <article class="product-card h-100" aria-labelledby="title-arduino-iot">
-    <div class="product-img-wrap"><img src="https://store-usa.arduino.cc/cdn/shop/files/AKX00044_02.unbox_1200x900.jpg?v=1727105949" alt="Arduino Explore IoT Kit Rev2" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Electronics</span>
-      <h3 id="title-arduino-iot">Arduino Explore IoT Kit Rev2</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Arduino</p>
-      <p class="product-copy">An education kit for building connected devices and exploring sustainability projects.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> Advanced high school / college</span><span><b>Level:</b> Intermediate</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Sensors, Internet of Things concepts and design thinking.</p><p class="small text-secondary">Some learning content and cloud features require a paid School plan; review what is included.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://store-usa.arduino.cc/products/explore-iot-kit-rev2" target="_blank" rel="noopener noreferrer" aria-label="View Arduino Explore IoT Kit Rev2 at Arduino">View at Arduino <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="snap-junior" data-brand="Snap Circuits" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-snap-junior">
     <div class="product-img-wrap"><img src="https://elenco.com/wp-content/uploads/2021/11/SC_100_Box_1-scaled.jpg" alt="Snap Circuits Junior SC-100" loading="lazy" decoding="async"></div>
@@ -1322,20 +1220,6 @@ a[role="button"]{
       <div class="product-facts"><span><b>Age / audience:</b> 14+</span><span><b>Level:</b> Beginner → Intermediate</span></div>
       <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Spatial reasoning, model construction and mechanical assembly.</p><p class="small text-secondary">Seller describes this as a DIY kit; glue may not be included. Confirm the selected model and materials.</p></details>
       <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.etsy.com/listing/4473354361/3d-wooden-motorcycle-puzzle-kit-diy" target="_blank" rel="noopener noreferrer" aria-label="View HappyPuzzlesGifts Wooden Motorcycle Kit at Etsy">View at Etsy <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
-    </div>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="spark-arduino" data-brand="SparkFun" data-cat="Electronics">
-  <article class="product-card h-100" aria-labelledby="title-spark-arduino">
-    <div class="product-img-wrap"><img src="https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/5/15267-SparkFun_Inventor_s_Kit_-_v4.1-01a_1.jpg" alt="SparkFun Inventor&#x27;s Kit v4.1.2" loading="lazy" decoding="async"></div>
-    <div class="p-4 catalog-card-body">
-      <span class="product-kicker">Electronics</span>
-      <h3 id="title-spark-arduino">SparkFun Inventor&#x27;s Kit v4.1.2</h3>
-      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> SparkFun</p>
-      <p class="product-copy">Work through guided circuits and projects with a RedBoard and component set.</p>
-      <div class="product-facts"><span><b>Age / audience:</b> See maker guidance</span><span><b>Level:</b> Beginner</span></div>
-      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Breadboarding, Arduino programming, sensors and motors.</p><p class="small text-secondary">Requires a computer; check the included board and current guide edition.</p></details>
-      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.sparkfun.com/sparkfun-inventor-s-kit-v4-1-2.html" target="_blank" rel="noopener noreferrer" aria-label="View SparkFun Inventor&#x27;s Kit v4.1.2 at SparkFun">View at SparkFun <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
     </div>
   </article>
 </div>

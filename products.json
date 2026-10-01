@@ -25,30 +25,6 @@
     ],
     "reviewed": "2026-09-27"
   },
-  "elegoo": {
-    "t": "ELEGOO UNO R3 Super Starter Kit",
-    "cat": "Electronics",
-    "age": "12+",
-    "level": "Beginner",
-    "focus": "Electronics + Arduino IDE",
-    "price": "Check current price & availability",
-    "learn": "Breadboarding, LEDs, sensors, modules, wiring and introductory microcontroller programming.",
-    "fit": "Teens and adults who want hands-on electronics rather than a finished toy.",
-    "why": "A substantial component set and structured tutorial path at an accessible entry price.",
-    "consider": "The official U.S. page was showing sold out when checked; availability can change.",
-    "url": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit",
-    "source": "Official ELEGOO U.S. product page",
-    "image": "https://us.elegoo.com/cdn/shop/files/elegoo-uno-r3-super-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-427270.jpg?v=1787632171&width=800",
-    "store": "ELEGOO",
-    "dealbadge": "",
-    "categories": [
-      "Electronics"
-    ],
-    "levels": [
-      "Beginner"
-    ],
-    "reviewed": "2026-09-27"
-  },
   "botley": {
     "t": "Botley 2.0 Coding Robot",
     "cat": "Young Explorers",
@@ -151,30 +127,6 @@
     ],
     "reviewed": "2026-09-27"
   },
-  "arduino": {
-    "t": "Arduino Student Kit",
-    "cat": "Electronics",
-    "age": "11–14",
-    "level": "Beginner",
-    "focus": "Electronics + programming",
-    "price": "Check current price & availability",
-    "learn": "Current, voltage, resistance, digital logic, circuits, programming and open-ended experimentation.",
-    "fit": "Middle-school learners, homeschoolers and self-learners who want a structured Arduino introduction.",
-    "why": "Arduino combines the UNO R3, breadboard, multimeter, sensors/actuators and guided online learning.",
-    "consider": "Requires compatible computer/USB setup and Arduino IDE. Online content requires kit activation.",
-    "url": "https://store-usa.arduino.cc/products/arduino-student-kit",
-    "source": "Official Arduino U.S. Store",
-    "image": "https://store-usa.arduino.cc/cdn/shop/files/student-kit_02.unbox_934x700.jpg?v=1727104160",
-    "store": "Arduino",
-    "dealbadge": "",
-    "categories": [
-      "Electronics"
-    ],
-    "levels": [
-      "Beginner"
-    ],
-    "reviewed": "2026-09-27"
-  },
   "snap": {
     "t": "Snap Circuits Classic SC-300",
     "cat": "Electronics",
@@ -199,31 +151,6 @@
     ],
     "reviewed": "2026-09-27"
   },
-  "mbot-ranger": {
-    "t": "Makeblock mBot Ranger",
-    "store": "Makeblock",
-    "url": "https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys&utm_medium=null&utm_source=influencer",
-    "cat": "Robotics",
-    "why": "Build a tracked robot, a balancing robot or a racing car from one kit.",
-    "learn": "Mechanical assembly, sensors and programming with Scratch or Arduino C.",
-    "consider": "Check batteries and device compatibility before ordering.",
-    "age": "8+",
-    "level": "Beginner → Intermediate",
-    "levels": [
-      "Beginner",
-      "Intermediate"
-    ],
-    "categories": [
-      "Robotics",
-      "Coding"
-    ],
-    "focus": "Robotics",
-    "price": "Check current price & availability",
-    "image": "https://www.makeblock.com/cdn/shop/files/3XRoboticsAdventures_1200x1200.jpg?v=1765011896",
-    "source": "https://www.makeblock.com/products/buy-mbot-ranger",
-    "reviewed": "2026-09-27",
-    "dealbadge": ""
-  },
   "mbot-ultimate": {
     "t": "Makeblock mBot Ultimate",
     "store": "Makeblock",
@@ -245,55 +172,6 @@
     "price": "Check current price & availability",
     "image": "https://www.makeblock.com/cdn/shop/files/Programmable_DIY_Robot_Kits_1200x1200.jpg?v=1766999419",
     "source": "https://www.makeblock.com/products/buy-mbot-ultimate",
-    "reviewed": "2026-09-27",
-    "dealbadge": ""
-  },
-  "elegoo-car": {
-    "t": "ELEGOO Smart Robot Car Kit V4.0",
-    "store": "ELEGOO",
-    "url": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
-    "cat": "Robotics",
-    "why": "Assemble an Arduino-based robot car with a camera and sensor modules.",
-    "learn": "Robot assembly, line tracking, obstacle detection and introductory programming.",
-    "consider": "The listing includes age guidance that varies by section; review it with an adult. Check stock and device requirements.",
-    "age": "See maker guidance",
-    "level": "Beginner → Intermediate",
-    "levels": [
-      "Beginner",
-      "Intermediate"
-    ],
-    "categories": [
-      "Robotics",
-      "Coding"
-    ],
-    "focus": "Robotics",
-    "price": "Check current price & availability",
-    "image": "https://us.elegoo.com/cdn/shop/files/elegoo-uno-r3-project-smart-robot-car-kit-v-40-with-camera-arduino-stem-kits-elegoo-shop-715337.jpg?v=1787636880",
-    "source": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
-    "reviewed": "2026-09-27",
-    "dealbadge": ""
-  },
-  "elegoo-mega": {
-    "t": "ELEGOO Mega 2560 Complete Starter Kit",
-    "store": "ELEGOO",
-    "url": "https://us.elegoo.com/products/elegoo-mega-2560-the-most-complete-starter-kit",
-    "cat": "Electronics",
-    "why": "A Mega 2560 board and broad component set for guided electronics experiments.",
-    "learn": "Breadboarding, sensors, displays and microcontroller programming using the Arduino IDE.",
-    "consider": "A compatible computer is needed; check included parts and tutorials.",
-    "age": "12+",
-    "level": "Beginner → Intermediate",
-    "levels": [
-      "Beginner",
-      "Intermediate"
-    ],
-    "categories": [
-      "Electronics"
-    ],
-    "focus": "Electronics",
-    "price": "Check current price & availability",
-    "image": "https://us.elegoo.com/cdn/shop/files/elegoo-mega-2560-the-most-complete-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-371228.jpg?v=1787636933",
-    "source": "https://us.elegoo.com/products/elegoo-mega-2560-the-most-complete-starter-kit",
     "reviewed": "2026-09-27",
     "dealbadge": ""
   },
@@ -531,52 +409,6 @@
     "reviewed": "2026-09-27",
     "dealbadge": ""
   },
-  "arduino-opla": {
-    "t": "Arduino Oplà IoT Kit",
-    "store": "Arduino",
-    "url": "https://store-usa.arduino.cc/products/arduino-opla-iot-kit",
-    "cat": "Makers & Adults",
-    "why": "Create connected projects with sensors and remote control through the Arduino Cloud.",
-    "learn": "Internet-connected devices, sensor inputs and interactive electronics.",
-    "consider": "Check compatible computer, network, account and current cloud-plan requirements.",
-    "age": "See maker guidance",
-    "level": "Intermediate",
-    "levels": [
-      "Intermediate"
-    ],
-    "categories": [
-      "Makers & Adults"
-    ],
-    "focus": "Makers & Adults",
-    "price": "Check current price & availability",
-    "image": "https://store-usa.arduino.cc/cdn/shop/files/AKX00026_02.unbox_1200x900.jpg?v=1727104409",
-    "source": "https://store-usa.arduino.cc/products/arduino-opla-iot-kit",
-    "reviewed": "2026-09-27",
-    "dealbadge": ""
-  },
-  "arduino-iot": {
-    "t": "Arduino Explore IoT Kit Rev2",
-    "store": "Arduino",
-    "url": "https://store-usa.arduino.cc/products/explore-iot-kit-rev2",
-    "cat": "Electronics",
-    "why": "An education kit for building connected devices and exploring sustainability projects.",
-    "learn": "Sensors, Internet of Things concepts and design thinking.",
-    "consider": "Some learning content and cloud features require a paid School plan; review what is included.",
-    "age": "Advanced high school / college",
-    "level": "Intermediate",
-    "levels": [
-      "Intermediate"
-    ],
-    "categories": [
-      "Electronics"
-    ],
-    "focus": "Electronics",
-    "price": "Check current price & availability",
-    "image": "https://store-usa.arduino.cc/cdn/shop/files/AKX00044_02.unbox_1200x900.jpg?v=1727105949",
-    "source": "https://store-usa.arduino.cc/products/explore-iot-kit-rev2",
-    "reviewed": "2026-09-27",
-    "dealbadge": ""
-  },
   "snap-junior": {
     "t": "Snap Circuits Junior SC-100",
     "store": "Snap Circuits",
@@ -786,29 +618,6 @@
     "price": "Check current price & availability",
     "image": "",
     "source": "https://www.etsy.com/listing/4473354361/3d-wooden-motorcycle-puzzle-kit-diy",
-    "reviewed": "2026-09-27",
-    "dealbadge": ""
-  },
-  "spark-arduino": {
-    "t": "SparkFun Inventor's Kit v4.1.2",
-    "store": "SparkFun",
-    "url": "https://www.sparkfun.com/sparkfun-inventor-s-kit-v4-1-2.html",
-    "cat": "Electronics",
-    "why": "Work through guided circuits and projects with a RedBoard and component set.",
-    "learn": "Breadboarding, Arduino programming, sensors and motors.",
-    "consider": "Requires a computer; check the included board and current guide edition.",
-    "age": "See maker guidance",
-    "level": "Beginner",
-    "levels": [
-      "Beginner"
-    ],
-    "categories": [
-      "Electronics"
-    ],
-    "focus": "Electronics",
-    "price": "Check current price & availability",
-    "image": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/5/15267-SparkFun_Inventor_s_Kit_-_v4.1-01a_1.jpg",
-    "source": "https://www.sparkfun.com/sparkfun-inventor-s-kit-v4-1-2.html",
     "reviewed": "2026-09-27",
     "dealbadge": ""
   },
@@ -1045,8 +854,7 @@
     "source": "https://www.etsy.com/listing/1822307148/3d-wooden-train-puzzle-kit-diy",
     "reviewed": "2026-09-27",
     "dealbadge": ""
-  }
-,
+  },
   "amazon-robot-engineer": {
     "t": "Thames & Kosmos Kids First Robot Engineer",
     "age": "3+",
@@ -1142,7 +950,7 @@
     "image": "",
     "reviewed": "2026-09-28",
     "dealbadge": ""
-  },
+  },
   "amazon-rc-robot-car": {
     "t": "LEPANDA RC Robot Car Kit",
     "age": "8+",

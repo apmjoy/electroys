@@ -13,3 +13,9 @@
 @media(max-width:800px){
   .brand{width:210px!important;height:58px!important}
 }
+
+/* Compact spacing for reviews and guides. */
+.guides-page .hero-inner{padding-top:28px;padding-bottom:28px}
+.guides-page main.container{padding-top:20px}
+.guides-page .content>.notice:first-child{margin-top:0}
+@media(max-width:800px){.guides-page .hero-inner{padding-top:24px;padding-bottom:24px}}
