@@ -799,6 +799,22 @@ a[role="button"]{
 <meta name="robots" content="index,follow">
 <meta property="og:site_name" content="Electroys">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Electroys", "url": "https://electroys.com/", "description": "Curated robotics, coding, electronics and STEM products, learning ideas and deals."}</script>
+
+<style>
+.discovery-banner{padding:28px 0;background:#fff}
+.discovery-banner__card{position:relative;display:grid;grid-template-columns:190px minmax(0,1fr);gap:30px;align-items:center;padding:30px 36px 64px;background:linear-gradient(115deg,#f0f8ff,#fff8f1);border:1px solid #e1e7ed;border-left:4px solid var(--brand);border-radius:12px;overflow:hidden}
+.discovery-banner__logo{width:100%;max-width:190px;height:auto}
+.discovery-banner__slide{min-height:155px}
+.discovery-banner__slide[hidden]{display:none!important}
+.discovery-banner h2{font-size:clamp(1.45rem,2.7vw,2rem);font-weight:700;line-height:1.2;margin:0 0 10px;color:#25313c}
+.discovery-banner p{max-width:720px;font-size:1rem;line-height:1.6;margin:0 0 16px;color:#515c66}
+.discovery-banner__controls{position:absolute;bottom:14px;right:26px;display:flex;align-items:center;gap:8px}
+.discovery-banner__controls button{border:1px solid #c6ced5;background:#fff;color:#25313c;border-radius:6px;min-height:36px;min-width:36px;padding:4px 10px;font-size:14px}
+.discovery-banner__controls button:hover{border-color:var(--brand);color:var(--brand)}
+.discovery-banner a:focus-visible,.discovery-banner button:focus-visible{outline:3px solid #006bad;outline-offset:3px}
+.discovery-banner__count{font-size:13px;color:#515c66;margin-right:6px}
+@media(max-width:767px){.discovery-banner__card{grid-template-columns:1fr;gap:18px;padding:24px 22px 68px}.discovery-banner__logo{max-width:160px}.discovery-banner__slide{min-height:235px}.discovery-banner__controls{right:22px}.discovery-banner{padding:20px 0}}
+</style>
 </head>
 <body>
   <div class="topbar">
@@ -878,6 +894,37 @@ a[role="button"]{
 
 
 
+
+    <section class="discovery-banner" aria-label="Explore Electroys" aria-roledescription="carousel">
+      <div class="container">
+        <div class="discovery-banner__card">
+          <img class="discovery-banner__logo" src="assets/electroys-logo-header.png" alt="Electroys" loading="lazy">
+          <div class="discovery-banner__slides" aria-live="off">
+            <div class="discovery-banner__slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+              <h2>Big ideas start with hands-on discovery.</h2>
+              <p>Explore robotics, coding kits, electronics, and STEM projects for curious kids, teens, and adult makers.</p>
+              <a class="btn btn-primary" href="products.html">Explore Products</a>
+            </div>
+            <div class="discovery-banner__slide" role="group" aria-roledescription="slide" aria-label="2 of 3" hidden>
+              <h2>Turn curiosity into a project.</h2>
+              <p>Discover hands-on STEM ideas by school grade. Build, experiment, and connect learning with the real world.</p>
+              <a class="btn btn-primary" href="#stem-projects">Explore STEM Projects</a>
+            </div>
+            <div class="discovery-banner__slide" role="group" aria-roledescription="slide" aria-label="3 of 3" hidden>
+              <h2>Find a kit that fits your next idea.</h2>
+              <p>Browse our guides for help choosing robotics, electronics, and STEM kits by age, interests, and experience.</p>
+              <a class="btn btn-primary" href="reviews/">Browse Guides</a>
+            </div>
+          </div>
+          <div class="discovery-banner__controls" hidden>
+            <span class="discovery-banner__count" aria-hidden="true">1 / 3</span>
+            <button type="button" data-banner-prev aria-label="Previous banner">&#8592;</button>
+            <button type="button" data-banner-pause>Pause</button>
+            <button type="button" data-banner-next aria-label="Next banner">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="cta">
       <div class="container d-lg-flex align-items-center justify-content-between gap-4">
         <div><h2>Not sure what to choose?</h2><p>Tell Electroys the age, budget and interests. We’ll help narrow the options.</p></div>
@@ -1768,5 +1815,42 @@ a[role="button"]{
     })();
 
   </script>
+
+<script>
+(() => {
+  const banner = document.querySelector('.discovery-banner');
+  const slides = [...banner.querySelectorAll('.discovery-banner__slide')];
+  const controls = banner.querySelector('.discovery-banner__controls');
+  const pause = banner.querySelector('[data-banner-pause]');
+  const region = banner.querySelector('.discovery-banner__slides');
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0, paused = motion.matches, timer;
+  controls.hidden = false;
+  function show(next) {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((slide, i) => { slide.hidden = i !== index; });
+    banner.querySelector('.discovery-banner__count').textContent = `${index + 1} / ${slides.length}`;
+  }
+  function schedule() {
+    clearInterval(timer);
+    pause.textContent = paused ? 'Play' : 'Pause';
+    pause.setAttribute('aria-label', paused ? 'Start banner rotation' : 'Pause banner rotation');
+    region.setAttribute('aria-live', paused ? 'polite' : 'off');
+    if (!paused && !document.hidden && !banner.matches(':hover') && !banner.contains(document.activeElement)) {
+      timer = setInterval(() => show(index + 1), 8000);
+    }
+  }
+  pause.addEventListener('click', () => { paused = !paused; schedule(); });
+  banner.querySelector('[data-banner-prev]').addEventListener('click', () => { paused = true; show(index - 1); schedule(); });
+  banner.querySelector('[data-banner-next]').addEventListener('click', () => { paused = true; show(index + 1); schedule(); });
+  banner.addEventListener('mouseenter', schedule);
+  banner.addEventListener('mouseleave', schedule);
+  banner.addEventListener('focusin', schedule);
+  banner.addEventListener('focusout', () => setTimeout(schedule, 0));
+  document.addEventListener('visibilitychange', schedule);
+  motion.addEventListener('change', () => { paused = motion.matches; schedule(); });
+  schedule();
+})();
+</script>
 </body>
 </html>
