@@ -56,7 +56,7 @@
     "age": "8–13",
     "level": "Beginner → Intermediate",
     "focus": "Engineering + physics",
-    "price": "Check current subscription",
+    "price": "Check current price & availability",
     "learn": "Mechanisms, physics, iterative building, experimentation and engineering thinking.",
     "fit": "Kids who enjoy guided hands-on engineering projects and recurring builds.",
     "why": "The subscription format turns engineering into an ongoing activity rather than a single project.",
@@ -108,7 +108,7 @@
     "age": "14+",
     "level": "Intermediate",
     "focus": "Robotics + coding",
-    "price": "Check current subscription",
+    "price": "Check current price & availability",
     "learn": "Robotics, coding, mechanisms, experimentation and creative hardware hacking.",
     "fit": "Teens and adults who want more sophisticated recurring robotics builds.",
     "why": "It extends Electroys beyond children's products into hands-on projects for older learners and adults.",
@@ -192,7 +192,7 @@
       "Young Explorers"
     ],
     "focus": "Young Explorers",
-    "price": "Check current subscription",
+    "price": "Check current price & availability",
     "image": "https://www.crunchlabs.com/cdn/shop/files/preview_images/8aa6035721ef4726895321f97074a86f.thumbnail.0000000000.jpg?v=1770231036",
     "source": "https://www.crunchlabs.com/products/creative-kit-subscription",
     "reviewed": "2026-09-27",
@@ -213,13 +213,13 @@
     ],
     "categories": [
       "Robotics",
-      "Coding"
+      "Build & Make"
     ],
     "focus": "Robotics",
     "price": "Check current price & availability",
     "image": "https://images.kiwico.com/products/1986/6543.png",
     "source": "https://www.kiwico.com/us/store/dp/walking-robot-project-kit/6338",
-    "reviewed": "2026-09-27",
+    "reviewed": "2026-10-13",
     "dealbadge": ""
   },
   "kiwi-coder": {
@@ -712,7 +712,7 @@
     "price": "Check current price & availability",
     "image": "https://dfimg.dfrobot.com/enshop/image/data/MBT0046/MBT0046_Main_08.jpg",
     "source": "https://www.dfrobot.com/product-2937.html",
-    "reviewed": "2026-09-27",
+    "reviewed": "2026-10-13",
     "dealbadge": ""
   },
   "df-huskylens": {
@@ -973,6 +973,32 @@
     "price": "Check current price & availability",
     "image": "",
     "reviewed": "2026-09-28",
+    "dealbadge": ""
+  },
+  "arduino-r4": {
+    "t": "Arduino Starter Kit R4",
+    "store": "Arduino",
+    "url": "https://store-usa.arduino.cc/products/starter-kit-r4",
+    "cat": "Electronics",
+    "age": "Check maker guidance",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "Electronics",
+      "Coding",
+      "Makers & Adults"
+    ],
+    "focus": "Electronics + coding",
+    "why": "Start with an UNO R4 WiFi board and 13 guided projects that connect code to real circuits.",
+    "learn": "Build circuits with sensors, motors and displays while learning programming fundamentals.",
+    "fit": "Beginners who want a guided introduction to programmable electronics.",
+    "consider": "Check computer requirements, current kit contents and maker safety guidance before ordering.",
+    "price": "Check current price & availability",
+    "image": "https://store-usa.arduino.cc/cdn/shop/files/K000007_R4_02.unbox_934x700.jpg?v=1763106905",
+    "source": "https://store-usa.arduino.cc/products/starter-kit-r4",
+    "reviewed": "2026-10-13",
     "dealbadge": ""
   }
 }
