@@ -1000,5 +1000,32 @@
     "source": "https://store-usa.arduino.cc/products/starter-kit-r4",
     "reviewed": "2026-10-13",
     "dealbadge": ""
+  },
+  "mbot-ranger": {
+    "t": "Makeblock mBot Ranger",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys",
+    "cat": "Robotics",
+    "age": "8+",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding",
+      "Build & Make"
+    ],
+    "focus": "Robot construction + coding",
+    "why": "Rebuild one kit as a tracked robot, a balancing robot or a racing car, then explore how code changes its movement.",
+    "learn": "Mechanical assembly, sensor-based navigation and a progression from block coding to Arduino C.",
+    "fit": "Learners who enjoy assembling and reconfiguring a robot as well as programming it.",
+    "consider": "Check current bundle contents, power requirements and device compatibility. Allow time for assembly and adult help where needed.",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.makeblock.com/products/buy-mbot-ranger",
+    "reviewed": "2026-10-14",
+    "dealbadge": ""
   }
 }
