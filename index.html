@@ -1774,5 +1774,43 @@ a[role="button"]{
   schedule();
 })();
 </script>
+
+<script>
+/* Electroys welcome subscription prompt: reuse existing verified modal. */
+(() => {
+  const modalEl = document.getElementById('subscribeModal');
+  const form = document.getElementById('subscribeForm');
+  if (!modalEl || !form || !window.bootstrap || !bootstrap.Modal) return;
+  const dismissedKey = 'electroys_subscription_dismissed_until_v1';
+  const submittedKey = 'electroys_subscription_submitted_v1';
+  const sevenDays = 7 * 24 * 60 * 60 * 1000;
+  const read = key => { try { return localStorage.getItem(key); } catch (_) { return null; } };
+  const write = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
+  let automaticOpening = false;
+  let submitted = false;
+  form.addEventListener('submit', event => {
+    // Wait until the existing email, consent and Turnstile submit checks have run.
+    queueMicrotask(() => {
+      if (event.defaultPrevented || !form.checkValidity()) return;
+      submitted = true;
+      // This records submission on this browser, not backend confirmation.
+      write(submittedKey, '1');
+    });
+  });
+  modalEl.addEventListener('hidden.bs.modal', () => {
+    if (automaticOpening && !submitted) write(dismissedKey, String(Date.now() + sevenDays));
+    automaticOpening = false;
+  });
+  window.addEventListener('load', () => {
+    if (read(submittedKey) === '1' || Number(read(dismissedKey) || 0) > Date.now()) return;
+    window.setTimeout(() => {
+      if (document.hidden || read(submittedKey) === '1' || Number(read(dismissedKey) || 0) > Date.now()) return;
+      if (document.querySelector('.modal.show')) return;
+      automaticOpening = true;
+      bootstrap.Modal.getOrCreateInstance(modalEl).show();
+    }, 5000);
+  }, { once: true });
+})();
+</script>
 </body>
 </html>
