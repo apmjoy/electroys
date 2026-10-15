@@ -1,6 +1,6 @@
 # Electroys product catalog
 
-The catalog contains 43 products. Homepage store buttons open the corresponding catalog filter.
+The catalog contains 44 products. Homepage store buttons open the corresponding catalog filter.
 
 To add or update products:
 

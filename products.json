@@ -1027,5 +1027,31 @@
     "source": "https://www.makeblock.com/products/buy-mbot-ranger",
     "reviewed": "2026-10-14",
     "dealbadge": ""
+  },
+  "df-science-starter": {
+    "t": "DFRobot BOSON Science Starter Pack",
+    "store": "DFRobot",
+    "url": "https://www.dfrobot.com/product-2425.html",
+    "cat": "STEM & Science",
+    "age": "8+",
+    "level": "Beginner",
+    "levels": [
+      "Beginner"
+    ],
+    "categories": [
+      "STEM & Science",
+      "Electronics"
+    ],
+    "focus": "Sensor measurements + scientific investigation",
+    "why": "Measure light and soil moisture, then compare readings on an OLED display without starting with code.",
+    "learn": "Observe environmental changes, compare measurements and test ideas using reusable sensor modules.",
+    "fit": "Learners who prefer hands-on science investigations before moving into programming.",
+    "consider": "Check battery requirements and current contents. A micro:bit and expansion hardware are separate additions for programming activities.",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.dfrobot.com/product-2425.html",
+    "age_source": "https://www.dfrobot.com/boson",
+    "reviewed": "2026-10-15",
+    "dealbadge": ""
   }
 }
