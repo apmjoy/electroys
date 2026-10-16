@@ -1,4 +1,25 @@
 {
+  "arduino-plug-make": {
+    "t": "Arduino Plug and Make Kit",
+    "store": "Arduino",
+    "url": "https://store-usa.arduino.cc/products/plug-and-make-kit",
+    "cat": "Coding",
+    "age": "Check maker guidance",
+    "level": "Beginner",
+    "levels": ["Beginner"],
+    "categories": ["Coding", "Electronics", "Makers & Adults"],
+    "focus": "Programming + modular electronics",
+    "why": "Connect seven Modulino modules to an UNO R4 WiFi and explore guided projects without breadboard wiring or soldering.",
+    "learn": "Read sensors, control lights and sound, and connect programming ideas to interactive physical projects.",
+    "fit": "Beginners who want to focus on coding and connected devices before learning detailed circuit wiring.",
+    "consider": "Check computer and connectivity requirements. An Arduino account is needed for the online learning content and Cloud features; review current Cloud plan limits.",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://store-usa.arduino.cc/products/plug-and-make-kit",
+    "documentation": "https://docs.arduino.cc/hardware/plug-and-make-kit/",
+    "reviewed": "2026-10-16",
+    "dealbadge": ""
+  },
   "mbot2": {
     "t": "Makeblock mBot2",
     "cat": "Robotics",
