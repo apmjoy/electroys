@@ -1,4 +1,24 @@
 {
+  "spark-flashlight": {
+    "t": "SparkFun Basic Flashlight Soldering Kit",
+    "store": "SparkFun",
+    "url": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html",
+    "cat": "Electronics",
+    "age": "10+",
+    "level": "Beginner",
+    "levels": ["Beginner"],
+    "categories": ["Electronics", "Build & Make", "Makers & Adults"],
+    "focus": "Through-hole soldering + circuits",
+    "why": "Solder a working LED flashlight and trace how its battery, switch and resistor form a simple circuit.",
+    "learn": "Practice through-hole soldering, identify component polarity and relate a circuit diagram to a finished board.",
+    "fit": "Learners ready to move from temporary circuit connections to soldered electronics, with appropriate supervision.",
+    "consider": "Requires a soldering iron, solder and cutters, sold separately. Adult supervision is appropriate for hot tools. Includes a CR2032 coin cell; keep it away from young children and follow maker safety guidance.",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html",
+    "reviewed": "2026-10-17",
+    "dealbadge": ""
+  },
   "arduino-plug-make": {
     "t": "Arduino Plug and Make Kit",
     "store": "Arduino",
