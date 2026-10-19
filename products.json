@@ -1,4 +1,25 @@
 {
+  "mtiny-discover": {
+    "t": "Makeblock mTiny Discover Kit",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-mtiny?ref=electroys",
+    "cat": "Young Explorers",
+    "age": "4+",
+    "level": "Beginner",
+    "levels": ["Beginner"],
+    "categories": ["Young Explorers", "Coding", "Robotics"],
+    "focus": "Screen-free coding + creative play",
+    "why": "Use a tap pen and physical coding cards to guide a panda robot across themed maps and explore drawing activities.",
+    "learn": "Plan command sequences, test routes and connect instructions with movement and shapes.",
+    "fit": "Preschool learners who benefit from tangible coding activities without a phone or tablet.",
+    "consider": "Select the Discover Kit; the Coding Kit has different accessories and no markers. Check charging instructions, current contents and delivery options. Adult help may be needed for setup.",
+    "price": "Check current price & availability",
+    "image": "",
+    "source": "https://www.makeblock.com/products/buy-mtiny",
+    "documentation": "https://support.makeblock.com/hc/en-us/articles/12823234387479-A-Beginner-s-Guide-to-mTiny",
+    "reviewed": "2026-10-19",
+    "dealbadge": ""
+  },
   "spark-flashlight": {
     "t": "SparkFun Basic Flashlight Soldering Kit",
     "store": "SparkFun",
