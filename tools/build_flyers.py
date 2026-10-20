@@ -86,6 +86,18 @@ def validate_manifest(manifest, catalog_bytes, products, now, preview=False):
     return eligible
 
 
+def description_for(product):
+    guidance = {
+        'Project kit': 'Plan your next hands-on build. Check the kit contents, required tools and manufacturer instructions before you begin.',
+        'PC case': 'Planning a custom PC? Check motherboard size, cooling clearance and power-supply fit before choosing your case.',
+        'Power supply': 'Plan the power behind your next PC build. Check required wattage, connectors and case compatibility before ordering.',
+        'PC cooling': 'Think through cooling for your next PC build. Check the supported socket, case clearance and mounting requirements.',
+        'Book': 'Find inspiration for your next STEM project. Check the edition, required hardware and software before following along.',
+    }
+    if product.get('classificationStatus') == 'rule-classified':
+        return guidance.get(product.get('productType'), product.get('why') or product.get('learn') or 'Explore the product details on Electroys.')
+    return product.get('learn') or product.get('why') or 'Explore the product and its learning possibilities on Electroys.'
+
 def choose(products, eligible, history, now):
     # Avoid all products used in the previous 14 days when enough choices exist.
     last_used = {}
@@ -194,7 +206,7 @@ def render(product, concept, size, output, preview=False, theme=None):
     fit_text(draw, clean(product.get('cat', 'STEM & MAKER PICKS'), 80).upper(), (90, panel_y + 28, 900, 70), 26, teal if concept == 0 else orange, True)
     fit_text(draw, clean(product.get('t'), 180), (90, panel_y + 103, 900, 210), 53, ink, True, 28)
     # Descriptive facts from the verified catalog, no price/ease/rank claims invented.
-    description = clean(product.get('learn') or product.get('why') or 'Explore the product and its learning possibilities on Electroys.', 360)
+    description = clean(description_for(product), 360)
     fit_text(draw, description, (90, panel_y + 335, 900, panel_h - 355), 32, secondary, min_size=21)
     bottom = height - 260
     draw.rounded_rectangle((80, bottom, 1000, bottom + 82), radius=20, fill=teal if concept == 0 else orange)
@@ -238,7 +250,7 @@ def generate(catalog, manifest_path, output_root, history_path, now=None, previe
             base = f'{index+1:02d}-' + ('project-spotlight' if index == 0 else 'learning-spotlight')
             url = 'https://electroys.com/products.html?' + urlencode({'q': clean(product['t'], 180), 'utm_source': 'social', 'utm_medium': 'flyer', 'utm_campaign': day, 'utm_content': str(index + 1)})
             title = clean(product['t'], 180)
-            description = clean(product.get('learn') or product.get('why'), 360)
+            description = clean(description_for(product), 360)
             caption = f'{theme["intro"]}\n\n{title}\n\n{description}\n\nExplore the details: {url}\n\nCheck the retailer for current price, availability and product guidance.\n{DISCLOSURE}\n\n#Electroys #STEM #HandsOnLearning #MakerProjects {theme["tag"]}\n'
             alt = f'Electroys {theme["name"]} spotlight: {title}. {description} Abstract circuit illustration. Visit electroys.com for details.'
             for variant, size in SIZES.items():
