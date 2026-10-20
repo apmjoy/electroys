@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6993516462163" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6993516462163">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit CAN Bus FeatherWing - MCP2515</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5709-00.jpg?v=1684934773&amp;width=640" alt="Adafruit CAN Bus FeatherWing - MCP2515" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6993516462163">Adafruit CAN Bus FeatherWing - MCP2515</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6993513775187" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6993513775187">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit PiCowbell DVI Output for Pico - Works with HDMI Display</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5745-00.jpg?v=1684931065&amp;width=640" alt="Adafruit PiCowbell DVI Output for Pico - Works with HDMI Display" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6993513775187">Adafruit PiCowbell DVI Output for Pico - Works with HDMI Display</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6973942497363" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6973942497363">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Feather RP2040 with USB Type A Host</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5723-00.jpg?v=1681919022&amp;width=640" alt="Adafruit Feather RP2040 with USB Type A Host" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6973942497363">Adafruit Feather RP2040 with USB Type A Host</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6964032405587" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6964032405587">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Inventor HAT Mini</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/inventor-hat-mini-1.jpg?v=1681462076&amp;width=640" alt="Inventor HAT Mini" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6964032405587">Inventor HAT Mini</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6914164228179" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6914164228179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>M12 Lens for Raspberry Pi High Quality Camera</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/SC0947M122.7mmLens.jpg?v=1678795888&amp;width=640" alt="M12 Lens for Raspberry Pi High Quality Camera" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-6914164228179">M12 Lens for Raspberry Pi High Quality Camera</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6952076804179" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6952076804179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit PiCowbell Adalogger for Pico - MicroSD, RTC</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5703-00.jpg?v=1678117986&amp;width=640" alt="Adafruit PiCowbell Adalogger for Pico - MicroSD, RTC" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6952076804179">Adafruit PiCowbell Adalogger for Pico - MicroSD, RTC</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6952074281043" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6952074281043">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit ATtiny1616 Breakout with seesaw</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5690-00.jpg?v=1678116936&amp;width=640" alt="Adafruit ATtiny1616 Breakout with seesaw" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6952074281043">Adafruit ATtiny1616 Breakout with seesaw</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6891816255571" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6891816255571">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>5m Flexible RGB LED Wire (50 lights)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/ledwire.jpg?v=1669656866&amp;width=640" alt="5m Flexible RGB LED Wire (50 lights)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6891816255571">5m Flexible RGB LED Wire (50 lights)</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6937856278611" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6937856278611">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Inky Impression</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/inky-impression-spectra-4-1.jpg?v=1774459747&amp;width=640" alt="Inky Impression" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6937856278611">Inky Impression</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6946464399443" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6946464399443">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit ATtiny816 Breakout with seesaw</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5681-00.jpg?v=1676906142&amp;width=640" alt="Adafruit ATtiny816 Breakout with seesaw" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6946464399443">Adafruit ATtiny816 Breakout with seesaw</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6937403392083" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6937403392083">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Raspberry Pi Debug Probe</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/DEBUG_HERO_CASE.jpg?v=1676880388&amp;width=640" alt="Raspberry Pi Debug Probe" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6937403392083">Raspberry Pi Debug Probe</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6941808525395" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6941808525395">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit OV5640 Camera Breakout - 120 Degree Lens</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5673-02.jpg?v=1675941770&amp;width=640" alt="Adafruit OV5640 Camera Breakout - 120 Degree Lens" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6941808525395">Adafruit OV5640 Camera Breakout - 120 Degree Lens</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6941808164947" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6941808164947">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Floppy FeatherWing with 34-Pin IDC Connector</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5679-00.jpg?v=1675941378&amp;width=640" alt="Adafruit Floppy FeatherWing with 34-Pin IDC Connector" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6941808164947">Adafruit Floppy FeatherWing with 34-Pin IDC Connector</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6937384190035" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6937384190035">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SparkFun MicroMod Cellular Function Board - Blues Wireless Notecarrier</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/Function_Board-_05.jpg?v=1675170938&amp;width=640" alt="SparkFun MicroMod Cellular Function Board - Blues Wireless Notecarrier" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6937384190035">SparkFun MicroMod Cellular Function Board - Blues Wireless Notecarrier</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6926880047187" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6926880047187">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit IoT Button with NeoPixel BFF Add-On for QT Py and Xiao</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5666-00.jpg?v=1745608082&amp;width=640" alt="Adafruit IoT Button with NeoPixel BFF Add-On for QT Py and Xiao" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6926880047187">Adafruit IoT Button with NeoPixel BFF Add-On for QT Py and Xiao</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6914158952531" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6914158952531">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Raspberry Pi Camera Module 3 (Autofocus, HDR)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/StandardHero.jpg?v=1672852696&amp;width=640" alt="Raspberry Pi Camera Module 3 (Autofocus, HDR)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6914158952531">Raspberry Pi Camera Module 3 (Autofocus, HDR)</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6925210517587" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6925210517587">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit PCA9546 4-Channel I2C Multiplexer - TCA9546A Compatible</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5664-00.jpg?v=1672925230&amp;width=640" alt="Adafruit PCA9546 4-Channel I2C Multiplexer - TCA9546A Compatible" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6925210517587">Adafruit PCA9546 4-Channel I2C Multiplexer - TCA9546A Compatible</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6925209075795" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6925209075795">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 5x5 NeoPixel Grid BFF Add-On for QT Py and Xiao</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5646-04.jpg?v=1745608087&amp;width=640" alt="Adafruit 5x5 NeoPixel Grid BFF Add-On for QT Py and Xiao" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6925209075795">Adafruit 5x5 NeoPixel Grid BFF Add-On for QT Py and Xiao</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6921433874515" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6921433874515">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit QT 3V to 5V Level Booster Breakout</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5649-00.jpg?v=1671631119&amp;width=640" alt="Adafruit QT 3V to 5V Level Booster Breakout" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6921433874515">Adafruit QT 3V to 5V Level Booster Breakout</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6919924809811" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6919924809811">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SparkFun Absolute Digital Barometer - LPS28DFW (Qwiic)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/21221_SEN-_Barometer-_01.jpg?v=1671195928&amp;width=640" alt="SparkFun Absolute Digital Barometer - LPS28DFW (Qwiic)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6919924809811">SparkFun Absolute Digital Barometer - LPS28DFW (Qwiic)</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6919924482131" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6919924482131">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SparkFun Micro Absolute Digital Barometer - LPS28DFW (Qwiic)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/21222_SEN-_Mirco_Barometer-_01.jpg?v=1671195544&amp;width=640" alt="SparkFun Micro Absolute Digital Barometer - LPS28DFW (Qwiic)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6919924482131">SparkFun Micro Absolute Digital Barometer - LPS28DFW (Qwiic)</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6919760576595" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6919760576595">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit MOSFET Driver - For Motors, Solenoids, LEDs, etc - STEMMA JST PH 2mm</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5648-00.jpg?v=1671123671&amp;width=640" alt="Adafruit MOSFET Driver - For Motors, Solenoids, LEDs, etc - STEMMA JST PH 2mm" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6919760576595">Adafruit MOSFET Driver - For Motors, Solenoids, LEDs, etc - STEMMA JST PH 2mm</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6914189328467" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6914189328467">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>2.8&quot; TFT LCD with Cap Touch Breakout Board w/MicroSD Socket - EYESPI Connector</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/2090-06.jpg?v=1670252828&amp;width=640" alt="2.8&quot; TFT LCD with Cap Touch Breakout Board w/MicroSD Socket - EYESPI Connector" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6914189328467">2.8&quot; TFT LCD with Cap Touch Breakout Board w/MicroSD Socket - EYESPI Connector</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6912459571283" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6912459571283">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SparkFun Qwiic MultiStar Constellation Ornament</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/21277_WIG-_01.jpg?v=1669914832&amp;width=640" alt="SparkFun Qwiic MultiStar Constellation Ornament" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6912459571283">SparkFun Qwiic MultiStar Constellation Ornament</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

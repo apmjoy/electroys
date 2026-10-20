@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Best Sellers | Electroys</title>
-  <meta name="description" content="Best-seller listings appear only while current category evidence is available. Rankings across unrelated categories are not directly comparable.">
+  <meta name="description" content="Explore 15 Amazon picks curated by Electroys for STEM learning and supporting technology. These are editorial selections; Amazon sales rankings are shown only when verified.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -797,6 +797,7 @@ a[role="button"]{
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=electroysTurnstileReady&amp;render=explicit" defer></script>
 <link rel="canonical" href="https://electroys.com/best-sellers.html">
 <meta name="robots" content="index,follow">
+<link rel="stylesheet" href="collections.css?v=20261020-2">
 </head>
 <body data-collection="bestsellers">
   <div class="topbar">
@@ -831,14 +832,14 @@ a[role="button"]{
       <div class="container">
         <p class="product-kicker">Explore. Build. Learn. Play.</p>
         <h1>Explore what is getting attention.</h1>
-        <p class="text-secondary mb-0">Best-seller listings appear only while current category evidence is available. Rankings across unrelated categories are not directly comparable.</p>
+        <p class="text-secondary mb-0">Explore 15 Amazon picks curated by Electroys for STEM learning and supporting technology. These are editorial selections; Amazon sales rankings are shown only when verified.</p>
       </div>
     </section>
-    <div class="alert alert-light border mt-3"><strong>No verified ranking? Explore our curated picks.</strong> Electroys recommendations are editorial selections, not Amazon sales rankings. <a href="products.html?sort=recommended">Explore Electroys picks</a> · <a href="https://www.amazon.com/gp/bestsellers/?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer">Browse Amazon Best Sellers (paid link)</a>.</div>
-<section class="section pt-4" aria-labelledby="catalog-title">
+    <div class="alert alert-light border mt-3"><strong>Curated by Electroys.</strong> Electroys recommendations are editorial selections, not Amazon sales rankings. <a href="products.html?sort=recommended">Explore Electroys picks</a> · <a href="https://www.amazon.com/gp/bestsellers/?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer">Browse Amazon Best Sellers (paid link)</a>.</div>
+<section class="container py-4" aria-label="Curated Amazon picks"><p id="bestSellersRibbonStatus" role="status">Loading Electroys Amazon picks.</p><div id="bestSellersRibbon" class="amazon-ribbon"></div></section><section class="section pt-4" aria-labelledby="catalog-title">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
-          <div><h2 id="catalog-title">Verified best sellers</h2></div>
+          <div><h2 id="catalog-title">Curated Amazon picks</h2></div>
           <div class="d-flex align-items-center gap-2"><button id="catalogFiltersToggle" class="btn btn-outline-primary" type="button" aria-expanded="false" aria-controls="catalogFilters" hidden><i class="bi bi-sliders me-2" aria-hidden="true"></i>Filters</button>
           <a class="btn btn-outline-primary" href="index.html#ask">Help me choose</a></div>
         </div>
@@ -1029,6 +1030,7 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
+<script src="collections.js?v=20261020-2"></script>
 </body>
 </html>

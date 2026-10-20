@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6610555404371" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6610555404371">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>I2C Breakout Shield</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/thumb-I2C-breakout.jpg?v=1631026706&amp;width=640" alt="I2C Breakout Shield" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6610555404371">I2C Breakout Shield</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6608832888915" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6608832888915">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5187-07.jpg?v=1630586311&amp;width=640" alt="Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6608832888915">Adafruit SCD-40 - True CO2, Temperature and Humidity Sensor</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6608806117459" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6608806117459">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 1.69&quot; 280x240 Round Rectangle Color IPS TFT Display - ST7789</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5206-00.jpg?v=1653321174&amp;width=640" alt="Adafruit 1.69&quot; 280x240 Round Rectangle Color IPS TFT Display - ST7789" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6608806117459">Adafruit 1.69&quot; 280x240 Round Rectangle Color IPS TFT Display - ST7789</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6608066052179" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6608066052179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SparkFun Pro Micro - RP2040</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/18288-SparkFun_Pro_Micro_-_RP2040-01.jpg?v=1630426122&amp;width=640" alt="SparkFun Pro Micro - RP2040" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6608066052179">SparkFun Pro Micro - RP2040</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6603363319891" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6603363319891">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Cool White - ~6000K</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5162-06.jpg?v=1629468409&amp;width=640" alt="Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Cool White - ~6000K" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6603363319891">Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Cool White - ~6000K</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6603358077011" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6603358077011">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Warm White - ~3000K</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5163-05.jpg?v=1629467755&amp;width=640" alt="Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Warm White - ~3000K" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6603358077011">Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Warm White - ~3000K</h3>
@@ -951,6 +951,90 @@ a[role="button"]{
       <div class="product-facts"><span><b>Age / audience:</b> Check maker guidance</span><span><b>Level:</b> Check prerequisites</span></div>
       <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Explore breakout as part of a suitable project. Follow the manufacturer documentation for setup and supported uses.</p><p class="small text-secondary">This listing is for the selected item, not a complete project unless the retailer specifies a complete kit. Check included parts, voltage, tools, shipping, tax and compatibility. Variant: Default Title.</p></details>
       <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://shop.pimoroni.com/products/ultra-bright-4-watt-chainable-rgbw-neopixel-led-warm-white-3000k?variant=39432816427091" target="_blank" rel="noopener noreferrer" aria-label="View Ultra Bright 4 Watt Chainable RGBW NeoPixel LED - Warm White - ~3000K at Pimoroni">View at Pimoroni <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+    </div>
+  </article>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="book-arduino-workshop-2" data-brand="Amazon" data-cat="Books &amp; Learning Resources">
+  <article class="product-card h-100" aria-labelledby="title-book-arduino-workshop-2">
+    <div class="product-img-wrap"><img src="assets/illustrations/arduino-workshop-2.svg" alt="Arduino Workshop, 2nd Edition" loading="lazy" decoding="async"></div>
+    <div class="p-4 catalog-card-body">
+      <span class="product-kicker">Books &amp; Learning Resources</span>
+      <h3 id="title-book-arduino-workshop-2">Arduino Workshop, 2nd Edition</h3>
+      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Amazon</p>
+      <p class="product-copy">65 practical projects develop Arduino programming, circuit, display, sensor and motor skills.</p>
+      <div class="product-facts"><span><b>Age / audience:</b> Check publisher guidance</span><span><b>Level:</b> Beginner</span></div>
+      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">65 practical projects develop Arduino programming, circuit, display, sensor and motor skills.</p><p class="small text-secondary">Arduino board, computer and project components are purchased separately. Covers Arduino IDE 2.x; check the publisher’s updates and each project’s parts list.</p></details>
+      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.amazon.com/dp/1718500580?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Arduino Workshop, 2nd Edition at Amazon">View at Amazon <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><small class="d-block mt-2">Amazon paid link</small></div>
+    </div>
+  </article>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="book-electronics-for-kids-2" data-brand="Amazon" data-cat="Books &amp; Learning Resources">
+  <article class="product-card h-100" aria-labelledby="title-book-electronics-for-kids-2">
+    <div class="product-img-wrap"><img src="assets/illustrations/electronics-for-kids-2.svg" alt="Electronics for Kids, 2nd Edition" loading="lazy" decoding="async"></div>
+    <div class="p-4 catalog-card-body">
+      <span class="product-kicker">Books &amp; Learning Resources</span>
+      <h3 id="title-book-electronics-for-kids-2">Electronics for Kids, 2nd Edition</h3>
+      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Amazon</p>
+      <p class="product-copy">Build circuits while exploring electrical components, schematics and digital logic through 21 projects.</p>
+      <div class="product-facts"><span><b>Age / audience:</b> 10+</span><span><b>Level:</b> Beginner</span></div>
+      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Build circuits while exploring electrical components, schematics and digital logic through 21 projects.</p><p class="small text-secondary">Components and tools are separate purchases. Some activities involve soldering; follow the book’s safety guidance and provide adult supervision.</p></details>
+      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.amazon.com/dp/1718503504?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Electronics for Kids, 2nd Edition at Amazon">View at Amazon <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><small class="d-block mt-2">Amazon paid link</small></div>
+    </div>
+  </article>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="book-beginners-guide-circuits" data-brand="Amazon" data-cat="Books &amp; Learning Resources">
+  <article class="product-card h-100" aria-labelledby="title-book-beginners-guide-circuits">
+    <div class="product-img-wrap"><img src="assets/illustrations/beginners-guide-circuits.svg" alt="A Beginner’s Guide to Circuits" loading="lazy" decoding="async"></div>
+    <div class="p-4 catalog-card-body">
+      <span class="product-kicker">Books &amp; Learning Resources</span>
+      <h3 id="title-book-beginners-guide-circuits">A Beginner’s Guide to Circuits</h3>
+      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Amazon</p>
+      <p class="product-copy">Start with breadboards and circuit diagrams, then build nine projects involving lights, sound and simple electronic controls.</p>
+      <div class="product-facts"><span><b>Age / audience:</b> Check publisher guidance</span><span><b>Level:</b> Beginner</span></div>
+      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Start with breadboards and circuit diagrams, then build nine projects involving lights, sound and simple electronic controls.</p><p class="small text-secondary">Book only; breadboard, batteries and components are not included. Follow the publisher’s errata and project parts lists.</p></details>
+      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.amazon.com/dp/1593279043?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View A Beginner’s Guide to Circuits at Amazon">View at Amazon <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><small class="d-block mt-2">Amazon paid link</small></div>
+    </div>
+  </article>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="book-python-for-kids-2" data-brand="Amazon" data-cat="Books &amp; Learning Resources">
+  <article class="product-card h-100" aria-labelledby="title-book-python-for-kids-2">
+    <div class="product-img-wrap"><img src="assets/illustrations/python-for-kids-2.svg" alt="Python for Kids, 2nd Edition" loading="lazy" decoding="async"></div>
+    <div class="p-4 catalog-card-body">
+      <span class="product-kicker">Books &amp; Learning Resources</span>
+      <h3 id="title-book-python-for-kids-2">Python for Kids, 2nd Edition</h3>
+      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Amazon</p>
+      <p class="product-copy">Practice Python fundamentals, draw with turtle and build two games while learning functions, loops and classes.</p>
+      <div class="product-facts"><span><b>Age / audience:</b> Check publisher guidance</span><span><b>Level:</b> Beginner</span></div>
+      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Practice Python fundamentals, draw with turtle and build two games while learning functions, loops and classes.</p><p class="small text-secondary">Requires a computer with Python 3.x. Check current installation instructions; the book does not include hardware or a robotics kit.</p></details>
+      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.amazon.com/dp/1718503024?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Python for Kids, 2nd Edition at Amazon">View at Amazon <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><small class="d-block mt-2">Amazon paid link</small></div>
+    </div>
+  </article>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="book-arduino-project-handbook" data-brand="Amazon" data-cat="Books &amp; Learning Resources">
+  <article class="product-card h-100" aria-labelledby="title-book-arduino-project-handbook">
+    <div class="product-img-wrap"><img src="assets/illustrations/arduino-project-handbook.svg" alt="Arduino Project Handbook" loading="lazy" decoding="async"></div>
+    <div class="p-4 catalog-card-body">
+      <span class="product-kicker">Books &amp; Learning Resources</span>
+      <h3 id="title-book-arduino-project-handbook">Arduino Project Handbook</h3>
+      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Amazon</p>
+      <p class="product-copy">Explore Arduino Uno electronics through 25 practical builds with wiring diagrams and code.</p>
+      <div class="product-facts"><span><b>Age / audience:</b> Check publisher guidance</span><span><b>Level:</b> Beginner</span></div>
+      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Explore Arduino Uno electronics through 25 practical builds with wiring diagrams and code.</p><p class="small text-secondary">Published in 2016. Check the publisher’s errata and current availability of the specified components. Arduino Uno, computer and parts are separate.</p></details>
+      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.amazon.com/dp/1593276907?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Arduino Project Handbook at Amazon">View at Amazon <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><small class="d-block mt-2">Amazon paid link</small></div>
+    </div>
+  </article>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="book-raspberry-pi-robotics" data-brand="Amazon" data-cat="Books &amp; Learning Resources">
+  <article class="product-card h-100" aria-labelledby="title-book-raspberry-pi-robotics">
+    <div class="product-img-wrap"><img src="assets/illustrations/raspberry-pi-robotics.svg" alt="Learn Robotics with Raspberry Pi" loading="lazy" decoding="async"></div>
+    <div class="p-4 catalog-card-body">
+      <span class="product-kicker">Books &amp; Learning Resources</span>
+      <h3 id="title-book-raspberry-pi-robotics">Learn Robotics with Raspberry Pi</h3>
+      <p class="catalog-store"><i class="bi bi-shop" aria-hidden="true"></i> Amazon</p>
+      <p class="product-copy">Build a two-wheeled robot and explore Python control, obstacle sensing, line following and computer vision.</p>
+      <div class="product-facts"><span><b>Age / audience:</b> Check publisher guidance</span><span><b>Level:</b> Beginner</span></div>
+      <details class="product-details mt-3"><summary>What you’ll learn</summary><p class="small mt-2">Build a two-wheeled robot and explore Python control, obstacle sensing, line following and computer vision.</p><p class="small text-secondary">Published in 2019 with Raspberry Pi 3A+/3B+ or Zero W recommended by the publisher. Confirm current OS, library and camera compatibility before buying parts. Hardware is separate.</p></details>
+      <div class="catalog-card-action"><p class="product-price">Check current price &amp; availability</p><a class="btn btn-primary btn-sm" href="https://www.amazon.com/dp/1593279205?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Learn Robotics with Raspberry Pi at Amazon">View at Amazon <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><small class="d-block mt-2">Amazon paid link</small></div>
     </div>
   </article>
 </div>
@@ -1113,6 +1197,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

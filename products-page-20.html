@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7422125047891" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7422125047891">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Raspberry Pi Pico 2</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/pico-2-1.png?v=1723032077&amp;width=640" alt="Raspberry Pi Pico 2" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7422125047891">Raspberry Pi Pico 2</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7421651517523" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7421651517523">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Pico 2 Jumbo</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/jumbo.png?v=1726576925&amp;width=640" alt="Pico 2 Jumbo" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7421651517523">Pico 2 Jumbo</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7421123788883" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7421123788883">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Plasma 2350</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/plasma-2350-1.jpg?v=1723003789&amp;width=640" alt="Plasma 2350" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7421123788883">Plasma 2350</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417753600083" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417753600083">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Tiny FX - LED Effects Controller</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/tiny-fx-2.jpg?v=1722521718&amp;width=640" alt="Tiny FX - LED Effects Controller" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417753600083">Tiny FX - LED Effects Controller</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417745440851" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417745440851">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>LED Strips for Tiny FX (pack of 6)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/Red_Strips.png?v=1722610392&amp;width=640" alt="LED Strips for Tiny FX (pack of 6)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417745440851">LED Strips for Tiny FX (pack of 6)</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417748291667" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417748291667">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>USB Power Cables for Tiny FX (pack of 2)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/USBcables.png?v=1722443012&amp;width=640" alt="USB Power Cables for Tiny FX (pack of 2)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417748291667">USB Power Cables for Tiny FX (pack of 2)</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417750192211" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417750192211">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>RGB LED Kit for Tiny FX</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/RepeatRainbow1.png?v=1722613883&amp;width=640" alt="RGB LED Kit for Tiny FX" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417750192211">RGB LED Kit for Tiny FX</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417739083859" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417739083859">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>LED Dots for Tiny FX (pack of 6)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/GreenLit.png?v=1722610026&amp;width=640" alt="LED Dots for Tiny FX (pack of 6)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417739083859">LED Dots for Tiny FX (pack of 6)</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417746948179" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417746948179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>6 Port Expansion Board for Tiny FX (pack of 2)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/Extensionports.png?v=1722442895&amp;width=640" alt="6 Port Expansion Board for Tiny FX (pack of 2)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417746948179">6 Port Expansion Board for Tiny FX (pack of 2)</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417749962835" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417749962835">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>3 x AAA Battery Holder for Tiny FX</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/tiny-fx-aaa-1_f0a87a2c-930e-4946-a35a-18b4e2cb3874.jpg?v=1726487195&amp;width=640" alt="3 x AAA Battery Holder for Tiny FX" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417749962835">3 x AAA Battery Holder for Tiny FX</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7417747406931" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7417747406931">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>2 Pin Cables for Tiny FX (pack of 6)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/smol_cables.png?v=1722442814&amp;width=640" alt="2 Pin Cables for Tiny FX (pack of 6)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7417747406931">2 Pin Cables for Tiny FX (pack of 6)</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7406806237267" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7406806237267">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Pico Display Pack 2.8&quot;</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/display-pack-2-8-1.jpg?v=1722419233&amp;width=640" alt="Pico Display Pack 2.8&quot;" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7406806237267">Pico Display Pack 2.8&quot;</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7394655043667" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7394655043667">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Unicorn Diffuser Kit</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/unicorn-diffuser-3.jpg?v=1720709740&amp;width=640" alt="Unicorn Diffuser Kit" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-7394655043667">Unicorn Diffuser Kit</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7279726231635" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7279726231635">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>AS7343 14-Channel Multi-Spectral Sensor Breakout</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/AS7343-1.jpg?v=1718122172&amp;width=640" alt="AS7343 14-Channel Multi-Spectral Sensor Breakout" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7279726231635">AS7343 14-Channel Multi-Spectral Sensor Breakout</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7389104635987" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7389104635987">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>USB 2.0 microSD Card Reader</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/microsd-reader-1.jpg?v=1719319587&amp;width=640" alt="USB 2.0 microSD Card Reader" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-7389104635987">USB 2.0 microSD Card Reader</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7368067776595" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7368067776595">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit LTC4316 I2C Address Translator</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5914-01.jpg?v=1717683810&amp;width=640" alt="Adafruit LTC4316 I2C Address Translator" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7368067776595">Adafruit LTC4316 I2C Address Translator</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7368006565971" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7368006565971">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit STEMMA Reflective Photo Interrupt Sensor - TCRT1000</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5913-00.jpg?v=1717682606&amp;width=640" alt="Adafruit STEMMA Reflective Photo Interrupt Sensor - TCRT1000" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7368006565971">Adafruit STEMMA Reflective Photo Interrupt Sensor - TCRT1000</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7367965835347" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7367965835347">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit CH552 QT Py - 8051 Dev Board</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5960-00.jpg?v=1717680073&amp;width=640" alt="Adafruit CH552 QT Py - 8051 Dev Board" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7367965835347">Adafruit CH552 QT Py - 8051 Dev Board</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7367943880787" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7367943880787">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit S-35710 Low-Power Wake Up Timer Breakout</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5959-00.jpg?v=1717679478&amp;width=640" alt="Adafruit S-35710 Low-Power Wake Up Timer Breakout" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7367943880787">Adafruit S-35710 Low-Power Wake Up Timer Breakout</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7367900823635" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7367900823635">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Qwiic / Stemma QT Breakout Board</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5961-00.jpg?v=1717678834&amp;width=640" alt="Adafruit Qwiic / Stemma QT Breakout Board" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7367900823635">Adafruit Qwiic / Stemma QT Breakout Board</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7367868547155" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7367868547155">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 555 PWM Output STEMMA - 1.5K~25 KHz or 1.5~250 Hz - STEMMA JST PH 2mm</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5963-00.jpg?v=1717677809&amp;width=640" alt="Adafruit 555 PWM Output STEMMA - 1.5K~25 KHz or 1.5~250 Hz - STEMMA JST PH 2mm" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7367868547155">Adafruit 555 PWM Output STEMMA - 1.5K~25 KHz or 1.5~250 Hz - STEMMA JST PH 2mm</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7367753334867" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7367753334867">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit SEN54 or SEN55 Adapter Breakout</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5964-00.jpg?v=1717674431&amp;width=640" alt="Adafruit SEN54 or SEN55 Adapter Breakout" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7367753334867">Adafruit SEN54 or SEN55 Adapter Breakout</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7366427115603" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7366427115603">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit TRRS Trinkey - USB Key for Assistive Technology</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5954-00.jpg?v=1717602725&amp;width=640" alt="Adafruit TRRS Trinkey - USB Key for Assistive Technology" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7366427115603">Adafruit TRRS Trinkey - USB Key for Assistive Technology</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-7298572910675" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-7298572910675">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Proto Under Plate PiCowBell for Pico</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5905-00.jpg?v=1714654299&amp;width=640" alt="Adafruit Proto Under Plate PiCowBell for Pico" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-7298572910675">Adafruit Proto Under Plate PiCowBell for Pico</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

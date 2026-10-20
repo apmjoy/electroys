@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6766944944211" data-brand="Pimoroni" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6766944944211">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Space Shuttle Discovery Soldering Kit</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/STS_00.jpg?v=1652785774&amp;width=640" alt="Space Shuttle Discovery Soldering Kit" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-pimoroni-6766944944211">Space Shuttle Discovery Soldering Kit</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6752710361171" data-brand="Pimoroni" data-cat="Robotics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6752710361171">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-robot mb-2" aria-hidden="true"></i><span>Motor SHIM for Pico</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/motor-shim-for-pico-4_5013dc24-7661-4a90-8cd2-a14e4f6dacb6.jpg?v=1652285627&amp;width=640" alt="Motor SHIM for Pico" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Robotics</span>
       <h3 id="title-pimoroni-6752710361171">Motor SHIM for Pico</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6755552034899" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6755552034899">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Micro Metal Gearmotor with Motor Connector Shim (MCS)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/motors-with-mcs-2.jpg?v=1652277122&amp;width=640" alt="Micro Metal Gearmotor with Motor Connector Shim (MCS)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6755552034899">Micro Metal Gearmotor with Motor Connector Shim (MCS)</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6754883108947" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6754883108947">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Motor Connector Shim (MCS) (pack of 2)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/motor-connector-shim-2.jpg?v=1650972654&amp;width=640" alt="Motor Connector Shim (MCS) (pack of 2)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6754883108947">Motor Connector Shim (MCS) (pack of 2)</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6596988993619" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6596988993619">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Motor Connector Shim Cable (pack of 2)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/motor-accessories-4.jpg?v=1649696457&amp;width=640" alt="Motor Connector Shim Cable (pack of 2)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-6596988993619">Motor Connector Shim Cable (pack of 2)</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6761253175379" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6761253175379">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>FlexyPin Adapter</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/IMG_6073.jpg?v=1652188910&amp;width=640" alt="FlexyPin Adapter" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6761253175379">FlexyPin Adapter</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6760880996435" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6760880996435">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>RP2040 Stamp Round Carrier</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/IMG_0313.jpg?v=1745607462&amp;width=640" alt="RP2040 Stamp Round Carrier" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6760880996435">RP2040 Stamp Round Carrier</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6752788742227" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6752788742227">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit VL53L4CX Time of Flight Distance Sensor - ~1 to 6000mm</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5425-02.jpg?v=1650559672&amp;width=640" alt="Adafruit VL53L4CX Time of Flight Distance Sensor - ~1 to 6000mm" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6752788742227">Adafruit VL53L4CX Time of Flight Distance Sensor - ~1 to 6000mm</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6752769540179" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6752769540179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Ultra Bright 4 Watt RGBW NeoPixel LED - Natural White - ~4000K</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5408-04.jpg?v=1745607465&amp;width=640" alt="Ultra Bright 4 Watt RGBW NeoPixel LED - Natural White - ~4000K" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6752769540179">Ultra Bright 4 Watt RGBW NeoPixel LED - Natural White - ~4000K</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6747887140947" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6747887140947">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Long Micro Metal Gearmotor Bracket (pack of 2)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/DSC00044.jpg?v=1649851936&amp;width=640" alt="Long Micro Metal Gearmotor Bracket (pack of 2)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6747887140947">Long Micro Metal Gearmotor Bracket (pack of 2)</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6746413695059" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6746413695059">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>LAN Module W5500 with POE V12</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/1_11f9f748-36b2-4bb6-b62b-7c31a3fa3f5e.jpg?v=1649751386&amp;width=640" alt="LAN Module W5500 with POE V12" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6746413695059">LAN Module W5500 with POE V12</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6746379026515" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6746379026515">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SERVO2 Module 16 Channels - 13.2 (PCA9685)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/1_20ee1bef-57de-444b-b7a1-a416dc62ae8c.jpg?v=1649676355&amp;width=640" alt="SERVO2 Module 16 Channels - 13.2 (PCA9685)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6746379026515">SERVO2 Module 16 Channels - 13.2 (PCA9685)</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6746365329491" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6746365329491">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>TinyS3[D] - ESP32-S3 Dev Board with Dual Antenna</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/TinyS3_D__Product.jpg?v=1753282029&amp;width=640" alt="TinyS3[D] - ESP32-S3 Dev Board with Dual Antenna" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6746365329491">TinyS3[D] - ESP32-S3 Dev Board with Dual Antenna</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6745112739923" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6745112739923">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit TSC2007 I2C Resistive Touch Screen Controller</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5423-00.jpg?v=1649414304&amp;width=640" alt="Adafruit TSC2007 I2C Resistive Touch Screen Controller" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6745112739923">Adafruit TSC2007 I2C Resistive Touch Screen Controller</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6734815199315" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6734815199315">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Servo 2040 - 18 Channel Servo Controller</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/servo-2040-1.jpg?v=1648821753&amp;width=640" alt="Servo 2040 - 18 Channel Servo Controller" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6734815199315">Servo 2040 - 18 Channel Servo Controller</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6735236169811" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6735236169811">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>SparkFun MicroMod Ethernet Function Board - W5500</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/18708-SparkFun_MicroMod_Ethernet_Function_Board_-_W5500-01a.jpg?v=1648048949&amp;width=640" alt="SparkFun MicroMod Ethernet Function Board - W5500" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6735236169811">SparkFun MicroMod Ethernet Function Board - W5500</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6735172567123" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6735172567123">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Right Angle VEML7700 Lux Sensor - I2C Light Sensor</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5378-00.jpg?v=1648036857&amp;width=640" alt="Adafruit Right Angle VEML7700 Lux Sensor - I2C Light Sensor" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6735172567123">Adafruit Right Angle VEML7700 Lux Sensor - I2C Light Sensor</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6735169585235" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6735169585235">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 1.9&quot; 320x170 Color IPS TFT Display - ST7789</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5394-01.jpg?v=1648036365&amp;width=640" alt="Adafruit 1.9&quot; 320x170 Color IPS TFT Display - ST7789" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6735169585235">Adafruit 1.9&quot; 320x170 Color IPS TFT Display - ST7789</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6735164670035" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6735164670035">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Adafruit LiIon or LiPoly Charger BFF Add-On for QT Py</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5397-00.jpg?v=1745608123&amp;width=640" alt="Adafruit LiIon or LiPoly Charger BFF Add-On for QT Py" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-6735164670035">Adafruit LiIon or LiPoly Charger BFF Add-On for QT Py</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6732320735315" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6732320735315">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Kitronik Air Quality Datalogging Board for Pico</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5336_press-1-kitronik-air-quality-monitoring-board-raspberry-pi-pico.jpg?v=1647521660&amp;width=640" alt="Kitronik Air Quality Datalogging Board for Pico" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6732320735315">Kitronik Air Quality Datalogging Board for Pico</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6726872596563" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6726872596563">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit VL53L4CD Time of Flight Distance Sensor - ~1 to 1300mm</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/5396-00.jpg?v=1646662787&amp;width=640" alt="Adafruit VL53L4CD Time of Flight Distance Sensor - ~1 to 1300mm" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6726872596563">Adafruit VL53L4CD Time of Flight Distance Sensor - ~1 to 1300mm</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6722700869715" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6722700869715">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>ProS3[D] - ESP32-S3 Dev Board with Dual Antenna</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/ProS3_D__Product.jpg?v=1753285524&amp;width=640" alt="ProS3[D] - ESP32-S3 Dev Board with Dual Antenna" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6722700869715">ProS3[D] - ESP32-S3 Dev Board with Dual Antenna</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6721875312723" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6721875312723">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Kitty’s Flower - Bluetooth Wearable Brooches</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/Flower_DFRobot_KittyYeung2.jpg?v=1646062414&amp;width=640" alt="Kitty’s Flower - Bluetooth Wearable Brooches" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-6721875312723">Kitty’s Flower - Bluetooth Wearable Brooches</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-6718412030035" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-6718412030035">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Recycled Lanyard</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/black-lanyard-1.jpg?v=1645623413&amp;width=640" alt="Recycled Lanyard" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-6718412030035">Recycled Lanyard</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

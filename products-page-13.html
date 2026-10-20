@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-411310745" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-411310745">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Engineer® Solder Sucker with Flexible Silicone Nozzle</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/products/SSS-02-800x800.jpg?v=1423665352&amp;width=640" alt="Engineer® Solder Sucker with Flexible Silicone Nozzle" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-411310745">Engineer® Solder Sucker with Flexible Silicone Nozzle</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15340038357371" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15340038357371">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Sparkle Motion Stick + Enclosure Kit</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6333-04.png?v=1770740861&amp;width=640" alt="Adafruit Sparkle Motion Stick + Enclosure Kit" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15340038357371">Adafruit Sparkle Motion Stick + Enclosure Kit</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15341114589563" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15341114589563">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Enclosure for the Adafruit Feather RP2350 with HSTX</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6305-03.jpg?v=1770821395&amp;width=640" alt="Enclosure for the Adafruit Feather RP2350 with HSTX" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15341114589563">Enclosure for the Adafruit Feather RP2350 with HSTX</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15340969427323" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15340969427323">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit PiCowBell HSTX DVI Output for Pico - Works with HDMI Displays</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6363-05.jpg?v=1770818646&amp;width=640" alt="Adafruit PiCowBell HSTX DVI Output for Pico - Works with HDMI Displays" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15340969427323">Adafruit PiCowBell HSTX DVI Output for Pico - Works with HDMI Displays</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15340962349435" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15340962349435">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit TLV320DAC3100 - I2S DAC with Headphone and Speaker Out</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6309-00.jpg?v=1770811619&amp;width=640" alt="Adafruit TLV320DAC3100 - I2S DAC with Headphone and Speaker Out" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15340962349435">Adafruit TLV320DAC3100 - I2S DAC with Headphone and Speaker Out</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15340900712827" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15340900712827">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit PCM5122 I2S DAC with Line Level Output - HW, I2C or SPI</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6421-00.jpg?v=1770810538&amp;width=640" alt="Adafruit PCM5122 I2S DAC with Line Level Output - HW, I2C or SPI" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15340900712827">Adafruit PCM5122 I2S DAC with Line Level Output - HW, I2C or SPI</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15340354666875" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15340354666875">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit PCM5100 I2S DAC with Line Level Output - 100dB SNR</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6251-00.jpg?v=1770742565&amp;width=640" alt="Adafruit PCM5100 I2S DAC with Line Level Output - 100dB SNR" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15340354666875">Adafruit PCM5100 I2S DAC with Line Level Output - 100dB SNR</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15254044311931" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15254044311931">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Badgeware Badger</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/badger_launch.png?v=1769702908&amp;width=640" alt="Badgeware Badger" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15254044311931">Badgeware Badger</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15257107661179" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15257107661179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Badgeware Blinky</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/blinky_launch.png?v=1769694922&amp;width=640" alt="Badgeware Blinky" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15257107661179">Badgeware Blinky</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15331431317883" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15331431317883">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Replacement Badgeware Case</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/case_blue.png?v=1769609984&amp;width=640" alt="Replacement Badgeware Case" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15331431317883">Replacement Badgeware Case</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15321251676539" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15321251676539">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit LM73100 23V 5A Max Ideal Diode Breakout</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6359-04.jpg?v=1766580606&amp;width=640" alt="Adafruit LM73100 23V 5A Max Ideal Diode Breakout" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15321251676539">Adafruit LM73100 23V 5A Max Ideal Diode Breakout</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15321228902779" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15321228902779">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>JST SH Compatible 1mm Pitch 3-pin Cable</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6405-01.jpg?v=1766578637&amp;width=640" alt="JST SH Compatible 1mm Pitch 3-pin Cable" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15321228902779">JST SH Compatible 1mm Pitch 3-pin Cable</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15321226576251" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15321226576251">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Simple Soil Moisture Sensor - For micro:bit, and more</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6362-00.jpg?v=1766574826&amp;width=640" alt="Adafruit Simple Soil Moisture Sensor - For micro:bit, and more" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15321226576251">Adafruit Simple Soil Moisture Sensor - For micro:bit, and more</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15321218384251" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15321218384251">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit Pi Stemma QT Breakout for Raspberry Pi and Compatibles</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6365-04.jpg?v=1766573967&amp;width=640" alt="Adafruit Pi Stemma QT Breakout for Raspberry Pi and Compatibles" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15321218384251">Adafruit Pi Stemma QT Breakout for Raspberry Pi and Compatibles</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15321214452091" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15321214452091">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit QMC5883P - Triple Axis Magnetometer - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6388-00.jpg?v=1766571863&amp;width=640" alt="Adafruit QMC5883P - Triple Axis Magnetometer - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15321214452091">Adafruit QMC5883P - Triple Axis Magnetometer - STEMMA QT</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15319664951675" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15319664951675">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit MLX90632 FIR Remote Thermal Temperature Sensor - Medical Grade STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6403-00.jpg?v=1766163186&amp;width=640" alt="Adafruit MLX90632 FIR Remote Thermal Temperature Sensor - Medical Grade STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15319664951675">Adafruit MLX90632 FIR Remote Thermal Temperature Sensor - Medical Grade STEMMA QT / Qwiic</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15319649878395" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15319649878395">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit BMP580 I2C or SPI Temperature and Pressure Sensor - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6411-00.jpg?v=1766159965&amp;width=640" alt="Adafruit BMP580 I2C or SPI Temperature and Pressure Sensor - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15319649878395">Adafruit BMP580 I2C or SPI Temperature and Pressure Sensor - STEMMA QT</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15319643947387" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15319643947387">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit BMP585 Ported I2C / SPI Temperature and Pressure Sensor - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6413-00.jpg?v=1766158666&amp;width=640" alt="Adafruit BMP585 Ported I2C / SPI Temperature and Pressure Sensor - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15319643947387">Adafruit BMP585 Ported I2C / SPI Temperature and Pressure Sensor - STEMMA QT</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15319636246907" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15319636246907">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit SPA06-003 Temperature + Pressure Sensor - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6420-00.jpg?v=1766156992&amp;width=640" alt="Adafruit SPA06-003 Temperature + Pressure Sensor - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15319636246907">Adafruit SPA06-003 Temperature + Pressure Sensor - STEMMA QT</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15319630217595" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15319630217595">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit ENS161 MOX Gas Sensor - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6431-00.jpg?v=1766155157&amp;width=640" alt="Adafruit ENS161 MOX Gas Sensor - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15319630217595">Adafruit ENS161 MOX Gas Sensor - STEMMA QT / Qwiic</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15327129665915" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15327129665915">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Raspberry Pi Flash Drive</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/Flash_drive_hero_-_square_256GB.png?v=1768308834&amp;width=640" alt="Raspberry Pi Flash Drive" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15327129665915">Raspberry Pi Flash Drive</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15322764968315" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15322764968315">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Sonoff AirGuard CO2 Matter Air Quality Monitor</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/main_sawf-08p_1600_1600.png?v=1767201973&amp;width=640" alt="Sonoff AirGuard CO2 Matter Air Quality Monitor" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15322764968315">Sonoff AirGuard CO2 Matter Air Quality Monitor</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15322680885627" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15322680885627">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Sonoff AirGuard PM2.5/PM10 Matter Air Quality Monitor</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/SAWF-07P_NEW.png?v=1767199806&amp;width=640" alt="Sonoff AirGuard PM2.5/PM10 Matter Air Quality Monitor" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15322680885627">Sonoff AirGuard PM2.5/PM10 Matter Air Quality Monitor</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15322588512635" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15322588512635">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Sonoff AirGuard TH Zigbee Temperature and Humidity Sensor with 3.6&#x27;&#x27; LCD</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/main-snzb-02dr2.png?v=1767185879&amp;width=640" alt="Sonoff AirGuard TH Zigbee Temperature and Humidity Sensor with 3.6&#x27;&#x27; LCD" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15322588512635">Sonoff AirGuard TH Zigbee Temperature and Humidity Sensor with 3.6&#x27;&#x27; LCD</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

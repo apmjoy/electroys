@@ -288,8 +288,14 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--history', type=Path, required=True)
     parser.add_argument('--preview', action='store_true')
+    parser.add_argument('--page-validation', type=Path, help='Private same-release page/image QA record; required for publication')
     args = parser.parse_args()
     try:
+        if not args.preview:
+            if not args.page_validation:
+                raise ValueError('Run page/image validation after content loading before creating flyers')
+            from morning_gate import validate_files
+            validate_files(args.page_validation, args.publication_manifest)
         result = generate(args.catalog, args.publication_manifest, args.output, args.history, preview=args.preview)
     except (ValueError, OSError, TypeError, KeyError, ImportError) as error:
         parser.exit(1, f'Flyers not generated: {error}\n')

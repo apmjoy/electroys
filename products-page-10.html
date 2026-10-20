@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087875791" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087875791">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Leonardo with Headers</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000057_03.front.jpg?v=1727102647&amp;width=640" alt="Arduino Leonardo with Headers" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544087875791">Arduino Leonardo with Headers</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087843023" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087843023">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Due without Headers</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000056_00.default.jpg?v=1727102642&amp;width=640" alt="Arduino Due without Headers" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544087843023">Arduino Due without Headers</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087744719" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087744719">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Leonardo without Headers</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000052_00.default.jpg?v=1727102630&amp;width=640" alt="Arduino Leonardo without Headers" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544087744719">Arduino Leonardo without Headers</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087646415" data-brand="Arduino" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087646415">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Dipole Pentaband Waterproof Antenna</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/X000016_01.iso_d0f52860-4581-4a9e-ad36-76b99467e888.jpg?v=1771604236&amp;width=640" alt="Dipole Pentaband Waterproof Antenna" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-arduino-6544087646415">Dipole Pentaband Waterproof Antenna</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087613647" data-brand="Arduino" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087613647">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>MKR2UNO Adapter</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/TSX00005_03.front.jpg?v=1727102607&amp;width=640" alt="MKR2UNO Adapter" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-arduino-6544087613647">MKR2UNO Adapter</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087580879" data-brand="Arduino" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087580879">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>USB 2.0 Cable Type A/B</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/M000006_01.iso.jpg?v=1727102603&amp;width=640" alt="USB 2.0 Cable Type A/B" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-arduino-6544087580879">USB 2.0 Cable Type A/B</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544032399567" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544032399567">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Nano</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000005_03.front.jpg?v=1777476630&amp;width=640" alt="Arduino Nano" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544032399567">Arduino Nano</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15418958315899" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15418958315899">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Presto Screen Kit (No Stand)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/presto-frame-kit-3.jpg?v=1790689451&amp;width=640" alt="Presto Screen Kit (No Stand)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15418958315899">Presto Screen Kit (No Stand)</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15442145378683" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15442145378683">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Rectangular Mini Speaker 8Ω (2W) (pack of 10)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/COM1607-1.jpg?v=1790699450&amp;width=640" alt="Rectangular Mini Speaker 8Ω (2W) (pack of 10)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15442145378683">Rectangular Mini Speaker 8Ω (2W) (pack of 10)</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15434587341179" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15434587341179">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>LEGO®-Compatible Vertical Micro Servo Mount</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6044-03_92cb2d05-cc1d-46ff-adcd-aa43262467b5.png?v=1790942408&amp;width=640" alt="LEGO®-Compatible Vertical Micro Servo Mount" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15434587341179">LEGO®-Compatible Vertical Micro Servo Mount</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15434540548475" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15434540548475">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>LEGO®-Compatible Horizontal Micro Servo Mount</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6043-04.png?v=1789052563&amp;width=640" alt="LEGO®-Compatible Horizontal Micro Servo Mount" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15434540548475">LEGO®-Compatible Horizontal Micro Servo Mount</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15434421600635" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15434421600635">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>LEGO®-Compatible Micro Servo Axle Adapter</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/4252-05_e417ce21-fbd3-4b80-acf9-ba798611992e.png?v=1790939879&amp;width=640" alt="LEGO®-Compatible Micro Servo Axle Adapter" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15434421600635">LEGO®-Compatible Micro Servo Axle Adapter</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15428945543547" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15428945543547">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit MAX44009 Wide-range Lux Light Sensor - 188,000 Lux Max - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6498-00.png?v=1788525642&amp;width=640" alt="Adafruit MAX44009 Wide-range Lux Light Sensor - 188,000 Lux Max - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15428945543547">Adafruit MAX44009 Wide-range Lux Light Sensor - 188,000 Lux Max - STEMMA QT / Qwiic</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15427285516667" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15427285516667">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit ADS7128 8-Channel ADC and GPIO Expander - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6494-00.png?v=1787585917&amp;width=640" alt="Adafruit ADS7128 8-Channel ADC and GPIO Expander - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15427285516667">Adafruit ADS7128 8-Channel ADC and GPIO Expander - STEMMA QT / Qwiic</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15431856423291" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15431856423291">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit VCNL4030 Proximity and Lux Sensor - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6491-00.png?v=1788533574&amp;width=640" alt="Adafruit VCNL4030 Proximity and Lux Sensor - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15431856423291">Adafruit VCNL4030 Proximity and Lux Sensor - STEMMA QT / Qwiic</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15431838761339" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15431838761339">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit TMAG5273 3D Hall Effect Magnetometer Breakout - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6489-00.png?v=1788531782&amp;width=640" alt="Adafruit TMAG5273 3D Hall Effect Magnetometer Breakout - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15431838761339">Adafruit TMAG5273 3D Hall Effect Magnetometer Breakout - STEMMA QT</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15431833387387" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15431833387387">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit TMP119 High-Precision ±0.03°C I2C Temperature Sensor - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6482-01.png?v=1788530692&amp;width=640" alt="Adafruit TMP119 High-Precision ±0.03°C I2C Temperature Sensor - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15431833387387">Adafruit TMP119 High-Precision ±0.03°C I2C Temperature Sensor - STEMMA QT / Qwiic</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15431829389691" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15431829389691">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit TCS3430 / TCS34303 Ambient Tri-Stimulus Color Sensor</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6479-00.png?v=1788529576&amp;width=640" alt="Adafruit TCS3430 / TCS34303 Ambient Tri-Stimulus Color Sensor" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15431829389691">Adafruit TCS3430 / TCS34303 Ambient Tri-Stimulus Color Sensor</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15431825588603" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15431825588603">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit AS7343 14-Channel Light / Color Sensor Breakout - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6477-01.png?v=1788528305&amp;width=640" alt="Adafruit AS7343 14-Channel Light / Color Sensor Breakout - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15431825588603">Adafruit AS7343 14-Channel Light / Color Sensor Breakout - STEMMA QT / Qwiic</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15431820444027" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15431820444027">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit APDS9999 Proximity, Lux Light &amp; Color Sensor - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6461-00.png?v=1788527238&amp;width=640" alt="Adafruit APDS9999 Proximity, Lux Light &amp; Color Sensor - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15431820444027">Adafruit APDS9999 Proximity, Lux Light &amp; Color Sensor - STEMMA QT / Qwiic</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15427274637691" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15427274637691">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 1.28&quot; 240x240 Round TFT LCD Display with MicroSD - GC9A01A with EYESPI Connector</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6178-05.png?v=1787583390&amp;width=640" alt="Adafruit 1.28&quot; 240x240 Round TFT LCD Display with MicroSD - GC9A01A with EYESPI Connector" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15427274637691">Adafruit 1.28&quot; 240x240 Round TFT LCD Display with MicroSD - GC9A01A with EYESPI Connector</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15427266314619" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15427266314619">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit EYESPI Pi Beret - Buttons, EYESPI and STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5783-04.jpg?v=1787581721&amp;width=640" alt="Adafruit EYESPI Pi Beret - Buttons, EYESPI and STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15427266314619">Adafruit EYESPI Pi Beret - Buttons, EYESPI and STEMMA QT</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15425849393531" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15425849393531">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit RP2040 Feather ThinkInk for 24-pin E-Paper Displays - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5727-00.jpg?v=1787234397&amp;width=640" alt="Adafruit RP2040 Feather ThinkInk for 24-pin E-Paper Displays - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15425849393531">Adafruit RP2040 Feather ThinkInk for 24-pin E-Paper Displays - STEMMA QT</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-4365857947731" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-4365857947731">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit eInk Feather Friend with 32KB SRAM</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/4446-06.jpg?v=1787231001&amp;width=640" alt="Adafruit eInk Feather Friend with 32KB SRAM" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-4365857947731">Adafruit eInk Feather Friend with 32KB SRAM</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15358387487099" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15358387487099">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>LED Matrix Extender Cable</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/CAB0251-1.jpg?v=1773762809&amp;width=640" alt="LED Matrix Extender Cable" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15358387487099">LED Matrix Extender Cable</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356317958523" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356317958523">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 2.13&quot; 250x122 Quad-Color eInk / ePaper Display w/ SRAM</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6366-07.jpg?v=1773336213&amp;width=640" alt="Adafruit 2.13&quot; 250x122 Quad-Color eInk / ePaper Display w/ SRAM" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356317958523">Adafruit 2.13&quot; 250x122 Quad-Color eInk / ePaper Display w/ SRAM</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356165259643" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356165259643">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit E-Ink Bonnet for Raspberry Pi - 24-pin E-Paper Displays</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6418-01.jpg?v=1773335866&amp;width=640" alt="Adafruit E-Ink Bonnet for Raspberry Pi - 24-pin E-Paper Displays" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356165259643">Adafruit E-Ink Bonnet for Raspberry Pi - 24-pin E-Paper Displays</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356326609275" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356326609275">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>24-pin 0.5mm pitch FPC Flex A-B (D) type Cable</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6384-00.jpg?v=1773335003&amp;width=640" alt="24-pin 0.5mm pitch FPC Flex A-B (D) type Cable" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15356326609275">24-pin 0.5mm pitch FPC Flex A-B (D) type Cable</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356284862843" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356284862843">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit 3.52&quot; 340x180 Quad-Color eInk / ePaper - Bare Display</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6414-00.jpg?v=1773333927&amp;width=640" alt="Adafruit 3.52&quot; 340x180 Quad-Color eInk / ePaper - Bare Display" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356284862843">Adafruit 3.52&quot; 340x180 Quad-Color eInk / ePaper - Bare Display</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356288827771" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356288827771">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>2.13&quot; 250x122 Quad-Color eInk / ePaper - Bare Display</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6373-00.jpg?v=1773337213&amp;width=640" alt="2.13&quot; 250x122 Quad-Color eInk / ePaper - Bare Display" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356288827771">2.13&quot; 250x122 Quad-Color eInk / ePaper - Bare Display</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356223881595" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356223881595">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>7.5&quot; 800x480 Tri-Color eInk / ePaper - Bare Display</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6415-03.jpg?v=1773333148&amp;width=640" alt="7.5&quot; 800x480 Tri-Color eInk / ePaper - Bare Display" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356223881595">7.5&quot; 800x480 Tri-Color eInk / ePaper - Bare Display</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356277490043" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356277490043">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>4.2&quot; 300x400 Tri-Color eInk / ePaper - Bare Display - SSD1683</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6382-00.jpg?v=1773333017&amp;width=640" alt="4.2&quot; 300x400 Tri-Color eInk / ePaper - Bare Display - SSD1683" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356277490043">4.2&quot; 300x400 Tri-Color eInk / ePaper - Bare Display - SSD1683</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356258812283" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356258812283">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>3.7&quot; 416x240 Tri-Color Red / Black / White eInk - Bare Display - UC8253</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6394-01.jpg?v=1773332939&amp;width=640" alt="3.7&quot; 416x240 Tri-Color Red / Black / White eInk - Bare Display - UC8253" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356258812283">3.7&quot; 416x240 Tri-Color Red / Black / White eInk - Bare Display - UC8253</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356271886715" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356271886715">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>2.66&quot; 296x152 Tri-Color Red / Black / White EInk - Bare Display - SSD1680Z</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6393-00.jpg?v=1773337350&amp;width=640" alt="2.66&quot; 296x152 Tri-Color Red / Black / White EInk - Bare Display - SSD1680Z" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356271886715">2.66&quot; 296x152 Tri-Color Red / Black / White EInk - Bare Display - SSD1680Z</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356295840123" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356295840123">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>5.83&quot; 648x480 Monochrome Black / White eInk / ePaper - Bare Display - UC8179</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6397-04.png?v=1773332647&amp;width=640" alt="5.83&quot; 648x480 Monochrome Black / White eInk / ePaper - Bare Display - UC8179" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356295840123">5.83&quot; 648x480 Monochrome Black / White eInk / ePaper - Bare Display - UC8179</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356313796987" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356313796987">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>4.2&quot; 300x400 Monochrome or 4-Gray eInk / ePaper - Bare Display - SSD1683</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6381-00.jpg?v=1773332242&amp;width=640" alt="4.2&quot; 300x400 Monochrome or 4-Gray eInk / ePaper - Bare Display - SSD1683" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356313796987">4.2&quot; 300x400 Monochrome or 4-Gray eInk / ePaper - Bare Display - SSD1683</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356303016315" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356303016315">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>3.7&quot; 416x240 Monochrome Black/White eInk / ePaper - Bare Display - UC8253</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6395-03.png?v=1773332004&amp;width=640" alt="3.7&quot; 416x240 Monochrome Black/White eInk / ePaper - Bare Display - UC8253" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356303016315">3.7&quot; 416x240 Monochrome Black/White eInk / ePaper - Bare Display - UC8253</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356299673979" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356299673979">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>2.66&quot; 296x152 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6392-00.jpg?v=1773331895&amp;width=640" alt="2.66&quot; 296x152 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356299673979">2.66&quot; 296x152 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15356311306619" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15356311306619">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>2.13&quot; 250x122 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680Z</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6383-00.jpg?v=1773331735&amp;width=640" alt="2.13&quot; 250x122 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680Z" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15356311306619">2.13&quot; 250x122 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680Z</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15355844100475" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15355844100475">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Mini Speaker 4Ω (3W) with JST-PH Connector</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/COM1606.jpg?v=1773245082&amp;width=640" alt="Mini Speaker 4Ω (3W) with JST-PH Connector" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15355844100475">Mini Speaker 4Ω (3W) with JST-PH Connector</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15354215924091" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15354215924091">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Badgeware Stand</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/badgeware-stand-7.jpg?v=1773152815&amp;width=640" alt="Badgeware Stand" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15354215924091">Badgeware Stand</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15346716508539" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15346716508539">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit SGP41 Multi-Pixel Gas Sensor Breakout - VOC &amp; NOx - STEMMA QT / Qwiic</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6455-05.png?v=1771954600&amp;width=640" alt="Adafruit SGP41 Multi-Pixel Gas Sensor Breakout - VOC &amp; NOx - STEMMA QT / Qwiic" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15346716508539">Adafruit SGP41 Multi-Pixel Gas Sensor Breakout - VOC &amp; NOx - STEMMA QT / Qwiic</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15346710348155" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15346710348155">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit NeoPixel Breakout with JST SH Connectors</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/5975-00.jpg?v=1771953489&amp;width=640" alt="Adafruit NeoPixel Breakout with JST SH Connectors" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15346710348155">Adafruit NeoPixel Breakout with JST SH Connectors</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15347145605499" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15347145605499">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit NeoPot - Clear Shaft Potentiometer with RGB NeoPixel</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6387-00.jpg?v=1772034453&amp;width=640" alt="Adafruit NeoPot - Clear Shaft Potentiometer with RGB NeoPixel" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15347145605499">Adafruit NeoPot - Clear Shaft Potentiometer with RGB NeoPixel</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15347163136379" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15347163136379">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit AS5600 Magnetic Angle Sensor - STEMMA QT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6357-00.jpg?v=1772036269&amp;width=640" alt="Adafruit AS5600 Magnetic Angle Sensor - STEMMA QT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15347163136379">Adafruit AS5600 Magnetic Angle Sensor - STEMMA QT</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15347194921339" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15347194921339">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit ANO Rotary Navigation Encoder Breakout with Pre-Soldered Encoder</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6311-00.jpg?v=1772041766&amp;width=640" alt="Adafruit ANO Rotary Navigation Encoder Breakout with Pre-Soldered Encoder" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15347194921339">Adafruit ANO Rotary Navigation Encoder Breakout with Pre-Soldered Encoder</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15347952615803" data-brand="Pimoroni" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15347952615803">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Adafruit ANO Rotary Navigation Encoder to I2C Stemma QT Adapter with Pre-Soldered Encoder</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/6310-00.jpg?v=1772122503&amp;width=640" alt="Adafruit ANO Rotary Navigation Encoder to I2C Stemma QT Adapter with Pre-Soldered Encoder" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-pimoroni-15347952615803">Adafruit ANO Rotary Navigation Encoder to I2C Stemma QT Adapter with Pre-Soldered Encoder</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="pimoroni-15345288642939" data-brand="Pimoroni" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-pimoroni-15345288642939">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Replacement Silicone Tubes for Engineer® Solder Suckers</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0174/1800/files/0__00521.png?v=1771597145&amp;width=640" alt="Replacement Silicone Tubes for Engineer® Solder Suckers" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-pimoroni-15345288642939">Replacement Silicone Tubes for Engineer® Solder Suckers</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

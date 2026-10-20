@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "kind": "editorial",
+  "description": "Electroys editorial picks with Amazon destinations. This is not an Amazon sales ranking.",
+  "productIds": [
+    "amazon-hand",
+    "book-arduino-workshop-2",
+    "amazon-maze",
+    "book-electronics-for-kids-2",
+    "amazon-mini",
+    "book-beginners-guide-circuits",
+    "amazon-robot-engineer",
+    "book-python-for-kids-2",
+    "amazon-kids-coding",
+    "book-arduino-project-handbook",
+    "amazon-code-mouse",
+    "book-raspberry-pi-robotics",
+    "amazon-snap-beginner",
+    "snap-junior",
+    "amazon-rc-robot-car"
+  ]
+}

@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import urlsplit, parse_qs
+from retailer_images import apply_image
 
 ROOT = Path(__file__).resolve().parent.parent
 PROVIDERS = [('arduino', 'Arduino', 'https://store-usa.arduino.cc', 'USD', 2),
@@ -150,6 +151,7 @@ def import_catalog(products, previous_offers, feeds, now, target=600):
                             'sourceType': 'retailer-feed', 'sourceFeed': base + '/products.json',
                             'verification': {'status': 'verified', 'checkedAt': checked, 'scope': ['identity', 'selected-variant', 'price', 'availability'],
                                              'issues': ['Learning guidance is editorial; no independent build test is claimed.']}})
+            apply_image(product, item, v, checked)
             price = money(v['price'])
             offer = {'id': prefix + '-' + str(v['id']), 'productId': key, 'retailer': retailer,
                      'url': url, 'price': price, 'currency': currency, 'verification': 'verified',

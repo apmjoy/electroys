@@ -29,6 +29,7 @@ Requires Python 3.10+ and Pillow. The bundled desktop Python includes Pillow; sy
 ```sh
 python3 tools/build_flyers.py \
   --publication-manifest /absolute/private/publication.json \
+  --page-validation /absolute/private/page-validation.json \
   --output /absolute/social-output \
   --history /absolute/private/flyer-history.json
 ```
@@ -39,7 +40,11 @@ The two selections prioritize newest `addedAt` / `publishedAt` timestamps and av
 
 ## Schedule integration
 
-The existing 5:15 a.m. America/Chicago discovery job should trigger publication only after existing-product validation and new-product validation complete. Flyer generation follows successful live publication verification, rather than a separate clock time that could race an unfinished refresh. This script does not itself schedule, deploy, post to social media, or fabricate the publication manifest.
+The existing content-loading job runs at 5:15 a.m. America/Chicago. Page/catalog/image validation follows at 6:00; flyer generation follows at 7:00 only after the same live release passed validation. A late or failed upstream stage blocks downstream work.
+
+The production CLI requires `--page-validation`: a private JSON record with `status: "passed"`, matching `publicationId` and `catalogSha256`, today's `checkedAt` timestamp, and `checks` set to true for `contentLoaded`, `images`, `browser`, `functional`, and `security`. Write this record only after actually performing those checks. A refresh alone does not establish page/image success. The morning image check uses `tools/validate_images.py` and browser decoding checks for homepage featured/deals/ribbon cards. The renderer does not itself schedule, deploy, or fabricate evidence.
+
+After all four images and captions pass visual review, prepare Gmail MIME attachments using `tools/prepare_flyer_email.py`. The user authorized delivery to both operational recipients configured in the helper. Pass the prepared `gmail` object to the connected Gmail `send_email` tool. Save its successful returned message ID, the deliveryId, recipient list and attachment hashes to a private dated receipt. If a receipt exists or a send result is uncertain, inspect Gmail Sent before retrying; do not duplicate delivery. Email is the final step, and a failure must not be marked as delivered. Nothing is posted to social media.
 
 ## Tests
 

@@ -68,3 +68,33 @@ The scripts do not mutate schedulers, publish websites, manufacture a verified s
 Provider fetches permit HTTPS on port 443 only, reject credentials and private literal addresses, resolve public IPs only, pin the validated address to the TLS connection, and repeat these checks for every redirect. They do not inherit proxy credentials or browser cookies. Responses are bounded to 2 MB, redirects to five, and requested content to HTML/JSON/plain text. Tests cover private DNS results, malformed URLs, expired prices, duplicate variants, empty inputs and 1,000 synthetic records.
 
 Test data belongs under tests or temporary directories, never in the production catalog. Exclude tools, tests, reports, raw provider responses and staging files from the deployed public files. No claim of a security certification is made.
+
+
+## Daily image validation and repair
+
+`import_retailer_catalogs.py` now selects image references from each configured original Shopify retailer feed. It prefers the exact selected variant, then an unassigned family image; it will not use an image explicitly assigned only to another variant. Only HTTPS raster URLs from the exact `cdn.shopify.com/s/files/` host/path are accepted. Requests use a 640-pixel rendition to avoid serving multi-megabyte original product photos. Existing curated/local images remain unchanged.
+
+Use this image-only staging command to enrich existing catalog records without altering product additions, offers, editorial copy, or verification dates:
+
+```sh
+python3 tools/retailer_images.py --products products.json --cached-feeds /private/tmp/electroys-provider-data --output /private/tmp/electroys-images-staged.json
+```
+
+Review and apply the staged result in the release owner workflow. Cached feed image references are not fresh price evidence; image metadata explicitly records `contentVerified: false` until a separate content check. Missing images retain the branded fallback. Never replace accurate product photography with an unrelated/generated product image.
+
+Run the morning image audit with the bundled Python runtime (Pillow required):
+
+```sh
+python3 tools/validate_images.py --products products.json --online --output /private/tmp/electroys-image-report.json
+```
+
+An optional `--ids ID1 ID2` checks selected homepage/deal products. The validator checks local paths cannot escape the site root, downloads remote images into memory only, limits content to 5 MB and decoded size to 25 million pixels, verifies raster content and decodes it. It records dimensions, format, byte count and failure reasons without persisting retailer images. Local-only runs report remote images as unverified, not successful.
+
+The image checker uses an exact-host/path allowlist and same-host validated redirects for the known Shopify CDN, allowing the host environment's outbound proxy. Other image hosts use the public-IP-pinned TLS request path and may be unavailable in a proxy-only environment. Failed checks do not assert an image is permanently gone; retain a safe fallback and retry later. A publisher must inspect the browser's actual decoded images too.
+
+
+## Morning ordering and release evidence
+
+Content loading runs at 05:15 America/Chicago; validation runs at 06:00 after that job finishes, then flyers at 07:00 after validation succeeds. A late job blocks its dependents. Validate the union of current homepage featured IDs, the six displayed deals, and the 15 Amazon picks; report missing images elsewhere separately. Owned SVG illustrations are accepted only under assets/illustrations, with a strict passive-element/attribute check. Never label an illustration as an actual product photo.
+
+After actual browser, image, functional and security checks on the live release, write the private dated page-validation.json described in FLYERS.md. It must match publicationId and catalogSha256 and is required by the production flyer CLI. Do not automatically write success from a working catalog URL alone. Email delivery follows visual flyer review and records a Gmail message ID; failed upstream checks must prevent email.

@@ -56,6 +56,13 @@
     const checked = Date.parse(evidence.checkedAt), expires = Date.parse(evidence.expiresAt);
     return Number.isFinite(checked) && checked <= now + 300000 && now - checked < 86400000 && expires > now && expires > checked && expires <= checked + 86400000;
   }
+  function amazonDestination(product) {
+    const destination = safeURL(product.amazonUrl || product.url);
+    if (!destination) return '';
+    const url = new URL(destination);
+    return ['amazon.com', 'www.amazon.com'].includes(url.hostname) && /^\/(?:dp|gp\/product)\/[A-Z0-9]{10}(?:\/|$)/i.test(url.pathname) ? destination : '';
+  }
+  function isAmazonPick(product) {return product.amazonPick === true && !!amazonDestination(product);}
   function priceMap(data, now = Date.now(), currency = 'USD') {
     const prices = new Map();
     for (const offer of (data && Array.isArray(data.offers) ? data.offers : [])) {
@@ -94,7 +101,7 @@
     const page = Math.min(Math.max(1, state.page), pages);
     return {items: selected.slice((page - 1) * state.size, page * state.size), total: selected.length, page, pages};
   }
-  const api = {PAGE_SIZES, safeURL, ageBand, normalizeProducts, validOffer, validCoupon, isDeal, isBestSeller, priceMap, stateFromParams, selectProducts};
+  const api = {PAGE_SIZES, safeURL, ageBand, normalizeProducts, validOffer, validCoupon, isDeal, isBestSeller, amazonDestination, isAmazonPick, priceMap, stateFromParams, selectProducts};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (typeof document === 'undefined') return;
   root.ElectroysCatalog = api;
@@ -115,7 +122,7 @@
     const article = el('article', 'product-card h-100');
     const photo = el('div', 'product-img-wrap');
     if (p.image) {
-      const img = document.createElement('img'); img.alt = p.t; img.loading = 'lazy'; img.decoding = 'async'; img.src = p.image; photo.append(img); fixImage(img);
+      const img = document.createElement('img'); img.alt = p.imageAlt || p.t; img.loading = 'lazy'; img.decoding = 'async'; img.src = p.image; photo.append(img); fixImage(img);
     } else photo.append(fallback(p.t));
     const body = el('div', 'p-4 catalog-card-body');
     body.append(el('span', 'product-kicker', p.cat || p.categories[0] || 'Explore'), el('h3', '', p.t), el('p', 'catalog-store', p.store), el('p', 'product-copy', p.why));
@@ -154,6 +161,7 @@
     if (!form || !toggle) return;
     document.querySelectorAll('.product-img-wrap img').forEach(fixImage);
     const count = document.getElementById('catalogCount'), grid = document.getElementById('productGrid'), empty = document.getElementById('catalogEmpty'), notice = document.getElementById('catalogNotice'), pagination = document.getElementById('catalogPagination');
+    form.before(count); count.classList.add('mb-3');
     const controls = {q: 'catalogSearch', category: 'categoryFilter', store: 'brandFilter', level: 'levelFilter', age: 'ageFilter', type: 'typeFilter', relationship: 'relationshipFilter', budget: 'budgetFilter', sort: 'catalogSort', size: 'catalogPageSize', currency: 'currencyFilter'};
     let state = stateFromParams(new URLSearchParams(location.search), Number(document.body.dataset.catalogPage) || 1);
     toggle.addEventListener('click', () => {form.hidden = !form.hidden; toggle.setAttribute('aria-expanded', String(!form.hidden));});
@@ -188,9 +196,9 @@
         const collection = document.body.dataset.collection;
         const scopedOffers = collection === 'deals' ? {offers: (Array.isArray(offerData?.offers) ? offerData.offers : []).filter(offer => isDeal(offer))} : offerData;
         const prices = priceMap(scopedOffers, Date.now(), state.budget ? 'USD' : state.currency);
-        const eligible = collection === 'deals' ? products.filter(p => prices.has(p.id)) : collection === 'bestsellers' ? products.filter(p => isBestSeller(p)) : products;
+        const eligible = collection === 'deals' ? products.filter(p => prices.has(p.id)) : collection === 'bestsellers' ? products.filter(p => isBestSeller(p) || isAmazonPick(p)).sort((a,b) => (a.amazonPickOrder ?? 1000) - (b.amazonPickOrder ?? 1000)) : products;
         const result = selectProducts(eligible, state, prices); state.page = result.page;
-        grid.replaceChildren(...result.items.map(p => card(p, prices.get(p.id))));
+        grid.replaceChildren(...result.items.map(p => card(collection === 'bestsellers' && amazonDestination(p) ? {...p, url: amazonDestination(p), store: 'Amazon'} : p, collection === 'bestsellers' ? undefined : prices.get(p.id))));
         count.textContent = result.total ? `Showing ${(result.page - 1) * state.size + 1}–${Math.min(result.page * state.size, result.total)} of ${result.total} products` + (result.total !== products.length ? ` (${products.length} in the full catalog)` : '') : `Showing 0 of ${products.length} products`;
         empty.hidden = result.total !== 0;
         empty.querySelector('h3').textContent = collection === 'deals' && !eligible.length ? 'No verified deals right now.' : collection === 'bestsellers' && !eligible.length ? 'Best sellers are being verified.' : products.length ? 'No products match these filters.' : 'New discoveries are on their way.';
@@ -219,7 +227,7 @@
       form.addEventListener('reset', event => {event.preventDefault(); state = stateFromParams(new URLSearchParams()); applyControls(); render(true, true);});
       document.getElementById('catalogEmptyReset').addEventListener('click', () => form.reset());
       window.addEventListener('popstate', () => {state = stateFromParams(new URLSearchParams(location.search)); applyControls(); render(false);});
-      document.getElementById('catalogControls').hidden = false; toggle.hidden = false; form.hidden = false; toggle.setAttribute('aria-expanded', 'true');
+      document.getElementById('catalogControls').hidden = false; toggle.hidden = false; form.hidden = true; toggle.setAttribute('aria-expanded', 'false');
       document.getElementById('catalogStaticPagination')?.setAttribute('hidden', '');
       render();
       // Reevaluate offer freshness on an open tab as well as on each user action.

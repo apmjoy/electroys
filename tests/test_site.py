@@ -17,7 +17,7 @@ class Scan(HTMLParser):
 
 class SiteTests(unittest.TestCase):
     def test_local_assets_and_unique_ids(self):
-        for p in ROOT.glob('*.html'):
+        for p in [*ROOT.glob('*.html'), *ROOT.glob('reviews/*.html')]:
             if p.name.startswith('Electroys_'):continue
             with self.subTest(page=p.name):
                 scan=Scan();scan.feed(p.read_text())
@@ -25,7 +25,7 @@ class SiteTests(unittest.TestCase):
                 for value in scan.refs:
                     if value.startswith(('https:','http:','data:','mailto:','#','//')):continue
                     rel=value.split('?')[0].split('#')[0]
-                    target=ROOT/urlsplit(urljoin('https://electroys.com/'+p.name,rel)).path.lstrip('/')
+                    target=ROOT/urlsplit(urljoin('https://electroys.com/'+p.relative_to(ROOT).as_posix(),rel)).path.lstrip('/')
                     self.assertTrue(target.exists(),f'{p.name}: {value}')
     def test_inline_script_syntax(self):
         for name in ['index.html','products.html','deals.html','best-sellers.html']:
@@ -36,6 +36,14 @@ class SiteTests(unittest.TestCase):
                     f.write(script);f.flush()
                     result=subprocess.run(['node','--check',f.name],capture_output=True,text=True)
                     self.assertEqual(result.returncode,0,name+result.stderr)
+    def test_static_hero_and_cross_page_anchor(self):
+        text=(ROOT/'index.html').read_text()
+        hero=re.search(r'<section id="home".*?</section>',text,re.S).group()
+        self.assertEqual(hero.count('<img '),1)
+        self.assertNotIn('data-bs-ride',hero)
+        self.assertNotIn('carousel-control-',hero)
+        self.assertIn("window.addEventListener('load',alignInitialSection",text)
+        self.assertIn('<details class="mb-4"><summary',text)
     def test_static_pages_bounded(self):
         for p in [ROOT/'products.html',*ROOT.glob('products-page-*.html')]:
             self.assertLessEqual(p.read_text().count('data-product-id='),24)

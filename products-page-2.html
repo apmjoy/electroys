@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="amazon-robot-engineer" data-brand="Amazon" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-amazon-robot-engineer">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Thames &amp; Kosmos Kids First Robot Engineer</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="assets/illustrations/stem-kit.svg" alt="Thames &amp; Kosmos Kids First Robot Engineer" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-amazon-robot-engineer">Thames &amp; Kosmos Kids First Robot Engineer</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="amazon-kids-coding" data-brand="Amazon" data-cat="Coding">
   <article class="product-card h-100" aria-labelledby="title-amazon-kids-coding">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-code-slash mb-2" aria-hidden="true"></i><span>Thames &amp; Kosmos Kids First Coding &amp; Robotics</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="assets/illustrations/stem-kit.svg" alt="Thames &amp; Kosmos Kids First Coding &amp; Robotics" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Coding</span>
       <h3 id="title-amazon-kids-coding">Thames &amp; Kosmos Kids First Coding &amp; Robotics</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="amazon-code-mouse" data-brand="Amazon" data-cat="Coding">
   <article class="product-card h-100" aria-labelledby="title-amazon-code-mouse">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-code-slash mb-2" aria-hidden="true"></i><span>Learning Resources Code &amp; Go Robot Mouse Activity Set</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="assets/illustrations/stem-kit.svg" alt="Learning Resources Code &amp; Go Robot Mouse Activity Set" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Coding</span>
       <h3 id="title-amazon-code-mouse">Learning Resources Code &amp; Go Robot Mouse Activity Set</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="amazon-snap-beginner" data-brand="Amazon" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-amazon-snap-beginner">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Snap Circuits Beginner SCB-20</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="assets/illustrations/stem-kit.svg" alt="Snap Circuits Beginner SCB-20" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-amazon-snap-beginner">Snap Circuits Beginner SCB-20</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="amazon-rc-robot-car" data-brand="Amazon" data-cat="Robotics">
   <article class="product-card h-100" aria-labelledby="title-amazon-rc-robot-car">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-robot mb-2" aria-hidden="true"></i><span>LEPANDA RC Robot Car Kit</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="assets/illustrations/stem-kit.svg" alt="LEPANDA RC Robot Car Kit" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Robotics</span>
       <h3 id="title-amazon-rc-robot-car">LEPANDA RC Robot Car Kit</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-7960400560335" data-brand="Arduino" data-cat="Maker Essentials">
   <article class="product-card h-100" aria-labelledby="title-arduino-7960400560335">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-box mb-2" aria-hidden="true"></i><span>Arduino USB Camera</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/TPX00246_01.iso.jpg?v=1791983696&amp;width=640" alt="Arduino USB Camera" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Maker Essentials</span>
       <h3 id="title-arduino-7960400560335">Arduino USB Camera</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>

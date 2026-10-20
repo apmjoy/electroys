@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 DESCRIPTIONS = {
     'deals': ('Deals', 'Find a worthwhile next step.', 'Verified offers on STEM projects, books, maker equipment and supporting technology. Use Project-focused to hide general tech and supporting gear.', 'Current verified deals'),
-    'bestsellers': ('Best Sellers', 'Explore what is getting attention.', 'Best-seller listings appear only while current category evidence is available. Rankings across unrelated categories are not directly comparable.', 'Verified best sellers'),
+    'bestsellers': ('Best Sellers', 'Explore what is getting attention.', 'Explore 15 Amazon picks curated by Electroys for STEM learning and supporting technology. These are editorial selections; Amazon sales rankings are shown only when verified.', 'Curated Amazon picks'),
 }
 
 
@@ -46,10 +46,15 @@ def collection_page(template, kind):
                 'Conditional coupons, membership requirements, shipping and tax can affect the final cost. '
                 '<a href="https://www.amazon.com/deals?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer">Browse Amazon deals (paid link)</a> · <a href="products.html">Browse all products</a> · <a href="products.html?category=Books%20%26%20Learning%20Resources">Books &amp; learning</a> · '
                 '<a href="products.html?category=Computer%20Parts">PC components</a></div>') if kind == 'deals' else (
-                '<div class="alert alert-light border mt-3"><strong>No verified ranking? Explore our curated picks.</strong> '
+                '<div class="alert alert-light border mt-3"><strong>Curated by Electroys.</strong> '
                 'Electroys recommendations are editorial selections, not Amazon sales rankings. '
                 '<a href="products.html?sort=recommended">Explore Electroys picks</a> · <a href="https://www.amazon.com/gp/bestsellers/?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer">Browse Amazon Best Sellers (paid link)</a>.</div>')
     page = page.replace('<section class="section pt-4"', fallback + '\n<section class="section pt-4"', 1)
+    if kind == 'bestsellers':
+        ribbon = '<section class="container py-4" aria-label="Curated Amazon picks"><p id="bestSellersRibbonStatus" role="status">Loading Electroys Amazon picks.</p><div id="bestSellersRibbon" class="amazon-ribbon"></div></section>'
+        page = page.replace('<section class="section pt-4"', ribbon + '<section class="section pt-4"', 1)
+        page = page.replace('</head>', '<link rel="stylesheet" href="collections.css?v=20261020-2">\n</head>', 1)
+        page = page.replace('</body>', '<script src="collections.js?v=20261020-2"></script>\n</body>', 1)
     return page
 
 
@@ -61,8 +66,8 @@ HOME_COLLECTIONS = '''<!-- HOME-COLLECTIONS-START -->
   <div class="text-center mt-4"><a class="btn btn-primary px-4" href="deals.html">More deals</a> <a class="btn btn-outline-primary" href="deals.html?relationship=core">STEM project deals</a></div>
 </div></section>
 <section id="best-sellers" class="section" aria-labelledby="home-bestsellers-title"><div class="container">
-  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div><p>Discover products with current category-ranking evidence, including STEM projects and supporting technology.</p></div>
-  <p id="homeBestSellersStatus" class="text-center" role="status">Current rankings are checked before products appear here. Our editorial picks remain available in All Products.</p>
+  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div><p>Fifteen Amazon picks curated for STEM learning and supporting technology. Electroys editorial selections; not a claim of Amazon sales rank.</p></div>
+  <p id="homeBestSellersStatus" class="text-center" role="status">Loading our curated Amazon picks. All picks are also in All Products.</p>
   <div id="homeBestSellersGrid" class="row g-4"></div>
   <div class="text-center mt-4"><a class="btn btn-primary px-4" href="best-sellers.html">Explore Best Sellers</a> <a class="btn btn-outline-primary" href="products.html?sort=recommended">Electroys picks</a></div>
 </div></section>
@@ -77,10 +82,12 @@ def update_home(home):
         home = replace_once(r'<!-- HOME-COLLECTIONS-START -->.*?<!-- HOME-COLLECTIONS-END -->', HOME_COLLECTIONS, home)
     else:
         home = replace_once(r'<section id="deals".*?</section>', HOME_COLLECTIONS, home)
-    if 'href="collections.css"' not in home:
-        home = home.replace('</head>', '<link rel="stylesheet" href="collections.css">\n</head>', 1)
+    if 'href="collections.css' not in home:
+        home = home.replace('</head>', '<link rel="stylesheet" href="collections.css?v=20261020-2">\n</head>', 1)
     if 'src="collections.js' not in home:
-        home = home.replace('</body>', '<script src="catalog.js?v=4"></script>\n<script src="collections.js?v=1"></script>\n</body>', 1)
+        home = home.replace('</body>', '<script src="catalog.js?v=20261020-2"></script>\n<script src="collections.js?v=20261020-2"></script>\n</body>', 1)
+    home = home.replace("catalog.js?v=20261020-2", "catalog.js?v=20261020-2").replace("collections.js?v=20261020-2", "collections.js?v=20261020-2")
+    home = home.replace('href="collections.css"', 'href="collections.css?v=20261020-2"')
     return home
 
 

@@ -96,7 +96,7 @@ def validate_offer(offer, products, now=None):
         else:
             if coupon.get('type') not in ('clip', 'code') or not isinstance(coupon.get('conditions'), str) or not coupon['conditions'].strip():
                 errors.append('coupon type and conditions required')
-            if coupon.get('type') == 'code' and not coupon.get('code'):
+            if coupon.get('type') == 'code' and (not isinstance(coupon.get('code'), str) or not coupon['code'].strip()):
                 errors.append('coupon code required')
             if 'percent' in coupon and (not number(coupon['percent']) or not 0 < coupon['percent'] <= 100):
                 errors.append('invalid coupon percent')

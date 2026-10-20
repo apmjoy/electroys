@@ -378,7 +378,7 @@ a[role="button"]{
 
 .brand-grid.logos-style{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   border-top:1px solid #dcdcdc;
   border-left:1px solid #dcdcdc;
   background:#fff;
@@ -415,11 +415,11 @@ a[role="button"]{
   text-align:center;
 }
 @media(max-width:991px){
-  .brand-grid.logos-style{grid-template-columns:repeat(3,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}
   .brand-logo-cell{min-height:165px}
 }
 @media(max-width:575px){
-  .brand-grid.logos-style{grid-template-columns:repeat(2,1fr)}
+  .brand-grid.logos-style{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand-logo-cell{min-height:140px;padding:22px 18px}
   .brand-logo-cell img{max-width:78%;max-height:62px}
   .brand-logo-fallback{font-size:18px}
@@ -872,7 +872,7 @@ a[role="button"]{
 <div class="row g-4" id="productGrid">
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544117956815" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544117956815">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino MKR CAN Shield</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ASX00005_03.front.jpg?v=1727103237&amp;width=640" alt="Arduino MKR CAN Shield" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544117956815">Arduino MKR CAN Shield</h3>
@@ -886,7 +886,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544117334223" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544117334223">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Mega Proto Shield Rev3 (PCB)</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000080_03.front.jpg?v=1727103220&amp;width=640" alt="Arduino Mega Proto Shield Rev3 (PCB)" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544117334223">Arduino Mega Proto Shield Rev3 (PCB)</h3>
@@ -900,7 +900,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544117203151" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544117203151">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Motor Shield Rev3</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000079_03.front.jpg?v=1727103215&amp;width=640" alt="Arduino Motor Shield Rev3" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544117203151">Arduino Motor Shield Rev3</h3>
@@ -914,7 +914,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544117072079" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544117072079">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino 9 Axis Motion Shield</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000070_03.front.jpg?v=1727103211&amp;width=640" alt="Arduino 9 Axis Motion Shield" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544117072079">Arduino 9 Axis Motion Shield</h3>
@@ -928,7 +928,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544109306063" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544109306063">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Environmental Monitor Bundle</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/VB00012_02.unbox.jpg?v=1727103202&amp;width=640" alt="Environmental Monitor Bundle" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544109306063">Environmental Monitor Bundle</h3>
@@ -942,7 +942,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544109240527" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544109240527">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Voice Controlled Light Bundle</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/VB00011_00.default.jpg?v=1727103198&amp;width=640" alt="Voice Controlled Light Bundle" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544109240527">Voice Controlled Light Bundle</h3>
@@ -956,7 +956,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544108912847" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544108912847">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Tinkerkit Braccio robot</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/T050000_01.iso.jpg?v=1727103189&amp;width=640" alt="Tinkerkit Braccio robot" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544108912847">Tinkerkit Braccio robot</h3>
@@ -970,7 +970,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544108323023" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544108323023">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>IoTerrific Bundle</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ioterrific-bun_00.default.jpg?v=1727102987&amp;width=640" alt="IoTerrific Bundle" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544108323023">IoTerrific Bundle</h3>
@@ -984,7 +984,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544108159183" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544108159183">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Arduino Starter Kit Multi-Language</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/K000007.extra.jpg?v=1773148489&amp;width=640" alt="Arduino Starter Kit Multi-Language" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544108159183">Arduino Starter Kit Multi-Language</h3>
@@ -998,7 +998,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544108060879" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544108060879">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Arduino Certification Bundle: Kit &amp; Exam</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/fundamentals-bundle_00.default.jpg?v=1758115623&amp;width=640" alt="Arduino Certification Bundle: Kit &amp; Exam" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544108060879">Arduino Certification Bundle: Kit &amp; Exam</h3>
@@ -1012,7 +1012,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544107733199" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544107733199">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Nano Every</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00028_03.front.jpg?v=1727104428&amp;width=640" alt="Arduino Nano Every" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544107733199">Arduino Nano Every</h3>
@@ -1026,7 +1026,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544100622543" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544100622543">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Arduino Engineering Kit Rev2</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/AKX00022_04.unbox-3.jpg?v=1727102967&amp;width=640" alt="Arduino Engineering Kit Rev2" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544100622543">Arduino Engineering Kit Rev2</h3>
@@ -1040,7 +1040,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544100327631" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544100327631">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Arduino Workshop Kit</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/AKX00013_02.unbox.jpg?v=1727102961&amp;width=640" alt="Arduino Workshop Kit" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544100327631">Arduino Workshop Kit</h3>
@@ -1054,7 +1054,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544099901647" data-brand="Arduino" data-cat="Build &amp; Make">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544099901647">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-tools mb-2" aria-hidden="true"></i><span>Arduino CTC 101 Program - FULL</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/AKX00002_01.iso.jpg?v=1727102951&amp;width=640" alt="Arduino CTC 101 Program - FULL" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Build &amp; Make</span>
       <h3 id="title-arduino-6544099901647">Arduino CTC 101 Program - FULL</h3>
@@ -1068,7 +1068,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544099082447" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544099082447">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Portenta H7</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00042_00.iso.jpg?v=1729786389&amp;width=640" alt="Portenta H7" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544099082447">Portenta H7</h3>
@@ -1082,7 +1082,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544098820303" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544098820303">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Nano 33 BLE with headers</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00034_03.front.jpg?v=1727102908&amp;width=640" alt="Arduino Nano 33 BLE with headers" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544098820303">Arduino Nano 33 BLE with headers</h3>
@@ -1096,7 +1096,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544093413583" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544093413583">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Nano 33 IoT</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00027_03.front.jpg?v=1727102724&amp;width=640" alt="Arduino Nano 33 IoT" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544093413583">Arduino Nano 33 IoT</h3>
@@ -1110,7 +1110,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544093216975" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544093216975">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino MKR WiFi 1010</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00023_03.front.jpg?v=1727102718&amp;width=640" alt="Arduino MKR WiFi 1010" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544093216975">Arduino MKR WiFi 1010</h3>
@@ -1124,7 +1124,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544092922063" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544092922063">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>ARDUINO UNO WiFi REV2</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00021_03.front.jpg?v=1727102708&amp;width=640" alt="ARDUINO UNO WiFi REV2" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544092922063">ARDUINO UNO WiFi REV2</h3>
@@ -1138,7 +1138,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544092037327" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544092037327">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino MKR1000 WIFI with Headers Mounted</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00011_03.front.jpg?v=1727102691&amp;width=640" alt="Arduino MKR1000 WIFI with Headers Mounted" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544092037327">Arduino MKR1000 WIFI with Headers Mounted</h3>
@@ -1152,7 +1152,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544091939023" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544091939023">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino MKR1000 WIFI</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/ABX00004_03.front.jpg?v=1727102686&amp;width=640" alt="Arduino MKR1000 WIFI" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544091939023">Arduino MKR1000 WIFI</h3>
@@ -1166,7 +1166,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544088105167" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544088105167">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Micro without headers</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000093_03.front.jpg?v=1780299338&amp;width=640" alt="Arduino Micro without headers" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544088105167">Arduino Micro without headers</h3>
@@ -1180,7 +1180,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544088072399" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544088072399">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Uno Rev3 SMD</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000073_00.front.jpg?v=1727102668&amp;width=640" alt="Arduino Uno Rev3 SMD" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544088072399">Arduino Uno Rev3 SMD</h3>
@@ -1194,7 +1194,7 @@ a[role="button"]{
 </div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="arduino-6544087941327" data-brand="Arduino" data-cat="Electronics">
   <article class="product-card h-100" aria-labelledby="title-arduino-6544087941327">
-    <div class="product-img-wrap"><span class="image-fallback"><i class="bi bi-lightning-charge mb-2" aria-hidden="true"></i><span>Arduino Due</span><small>Product photo at the store</small></span></div>
+    <div class="product-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0506/1689/3647/files/A000062_00.front.jpg?v=1727102652&amp;width=640" alt="Arduino Due" loading="lazy" decoding="async"></div>
     <div class="p-4 catalog-card-body">
       <span class="product-kicker">Electronics</span>
       <h3 id="title-arduino-6544087941327">Arduino Due</h3>
@@ -1365,6 +1365,6 @@ a[role="button"]{
 
 
 </script>
-<script src="catalog.js?v=20261020-1"></script>
+<script src="catalog.js?v=20261020-2"></script>
 </body>
 </html>
