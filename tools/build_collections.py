@@ -44,11 +44,11 @@ def collection_page(template, kind):
     page = page.replace(f'class="nav-link" href="{filename}"', f'class="nav-link active" href="{filename}" aria-current="page"')
     fallback = ('<div class="alert alert-light border mt-3"><strong>Every deal is also in All Products.</strong> '
                 'Conditional coupons, membership requirements, shipping and tax can affect the final cost. '
-                '<a href="products.html">Browse all products</a> · <a href="products.html?category=Books%20%26%20Learning%20Resources">Books &amp; learning</a> · '
+                '<a href="https://www.amazon.com/deals?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer">Browse Amazon deals (paid link)</a> · <a href="products.html">Browse all products</a> · <a href="products.html?category=Books%20%26%20Learning%20Resources">Books &amp; learning</a> · '
                 '<a href="products.html?category=Computer%20Parts">PC components</a></div>') if kind == 'deals' else (
                 '<div class="alert alert-light border mt-3"><strong>No verified ranking? Explore our curated picks.</strong> '
                 'Electroys recommendations are editorial selections, not Amazon sales rankings. '
-                '<a href="products.html?sort=recommended">Explore Electroys picks</a>.</div>')
+                '<a href="products.html?sort=recommended">Explore Electroys picks</a> · <a href="https://www.amazon.com/gp/bestsellers/?tag=myelectroys-20" target="_blank" rel="sponsored nofollow noopener noreferrer">Browse Amazon Best Sellers (paid link)</a>.</div>')
     page = page.replace('<section class="section pt-4"', fallback + '\n<section class="section pt-4"', 1)
     return page
 
