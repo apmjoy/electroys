@@ -42081,11 +42081,11 @@
       "status": "verified",
       "checkedAt": "2026-10-20T22:29:28.535951+00:00",
       "scope": [
-        "publisher identity",
-        "ISBN",
+        "identity",
+        "isbn",
         "edition",
-        "project subject",
-        "Amazon ASIN identity from indexed retailer page"
+        "project-subject",
+        "retailer-identity"
       ],
       "issues": [
         "Live Amazon stock and price not verified; no price or availability claims."
@@ -42137,11 +42137,11 @@
       "status": "verified",
       "checkedAt": "2026-10-20T22:29:28.535951+00:00",
       "scope": [
-        "publisher identity",
-        "ISBN",
+        "identity",
+        "isbn",
         "edition",
-        "project subject",
-        "Amazon ASIN identity from indexed retailer page"
+        "project-subject",
+        "retailer-identity"
       ],
       "issues": [
         "Live Amazon stock and price not verified; no price or availability claims."
@@ -42193,11 +42193,11 @@
       "status": "verified",
       "checkedAt": "2026-10-20T22:29:28.535951+00:00",
       "scope": [
-        "publisher identity",
-        "ISBN",
+        "identity",
+        "isbn",
         "edition",
-        "project subject",
-        "Amazon ASIN identity from indexed retailer page"
+        "project-subject",
+        "retailer-identity"
       ],
       "issues": [
         "Live Amazon stock and price not verified; no price or availability claims."
@@ -42249,11 +42249,11 @@
       "status": "verified",
       "checkedAt": "2026-10-20T22:29:28.535951+00:00",
       "scope": [
-        "publisher identity",
-        "ISBN",
+        "identity",
+        "isbn",
         "edition",
-        "project subject",
-        "Amazon ASIN identity from indexed retailer page"
+        "project-subject",
+        "retailer-identity"
       ],
       "issues": [
         "Live Amazon stock and price not verified; no price or availability claims."
@@ -42305,11 +42305,11 @@
       "status": "verified",
       "checkedAt": "2026-10-20T22:29:28.535951+00:00",
       "scope": [
-        "publisher identity",
-        "ISBN",
+        "identity",
+        "isbn",
         "edition",
-        "project subject",
-        "Amazon ASIN identity from indexed retailer page"
+        "project-subject",
+        "retailer-identity"
       ],
       "issues": [
         "Live Amazon stock and price not verified; no price or availability claims."
@@ -42361,11 +42361,11 @@
       "status": "verified",
       "checkedAt": "2026-10-20T22:29:28.535951+00:00",
       "scope": [
-        "publisher identity",
-        "ISBN",
+        "identity",
+        "isbn",
         "edition",
-        "project subject",
-        "Amazon ASIN identity from indexed retailer page"
+        "project-subject",
+        "retailer-identity"
       ],
       "issues": [
         "Live Amazon stock and price not verified; no price or availability claims."

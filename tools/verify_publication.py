@@ -36,7 +36,7 @@ def verify(catalog, publication_id, output):
                 verified.append(key)
         except (ValueError,TypeError):pass
     if len(verified)<2:raise ValueError('Insufficient fresh original-source evidence for flyers')
-    manifest={'status':'published','publicationId':publication_id,'verifiedAt':now.isoformat(),'baseUrl':'https://electroys.com','catalogSha256':hashlib.sha256(data).hexdigest(),'productIds':list(products),'verifiedProductIds':verified,'verificationScope':'Fresh original-source identity and offer checks; learning descriptions are editorial guidance, not claims of hands-on testing.'}
+    manifest={'status':'published','publicationId':publication_id,'verifiedAt':now.isoformat(),'baseUrl':'https://electroys.com','catalogSha256':hashlib.sha256(data).hexdigest(),'productIds':list(products),'verifiedProductIds':verified,'verificationScope':'Fresh original-source identity evidence; offers are checked only where independently available. Learning descriptions are editorial guidance, not claims of hands-on testing.'}
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps({'published':len(products),'sourceVerified':len(verified),'catalogSha256':manifest['catalogSha256']}))
     return manifest
