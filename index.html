@@ -818,6 +818,7 @@ a[role="button"]{
 .discovery-banner__count{font-size:13px;color:#515c66;margin-right:6px}
 @media(max-width:767px){.discovery-banner__card{grid-template-columns:1fr;gap:18px;padding:24px 22px 68px}.discovery-banner__logo{max-width:160px}.discovery-banner__slide{min-height:235px}.discovery-banner__controls{right:22px}.discovery-banner{padding:20px 0}}
 </style>
+<link rel="stylesheet" href="collections.css">
 </head>
 <body>
   <div class="topbar">
@@ -831,7 +832,7 @@ a[role="button"]{
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#home"><img class="brand-logo" src="assets/electroys-logo-header.png?v=2" alt="Electroys"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler" aria-label="Toggle navigation" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -853,9 +854,9 @@ a[role="button"]{
 <section id="home" class="hero">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#heroCarousel" aria-label="Show slide 1" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" aria-label="Show slide 2" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" aria-label="Show slide 3" data-bs-slide-to="2"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active hero-pcb-slide">
@@ -890,8 +891,8 @@ a[role="button"]{
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        <button class="carousel-control-prev" aria-label="Previous slide" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" aria-label="Next slide" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
       </div>
     </section>
 
@@ -959,42 +960,42 @@ a[role="button"]{
       <span class="product-kicker">Coding</span><h3>Arduino Plug and Make Kit</h3><p class="product-copy">Connect seven Modulino modules to an UNO R4 WiFi and explore guided projects without breadboard wiring or soldering.</p>
       <div class="product-facts"><span>Check maker guidance</span><span>Beginner</span></div>
       <div class="product-price">Check current price &amp; availability</div>
-      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" onclick="openQuick('arduino-plug-make')">Quick Look</button>
+      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="arduino-plug-make" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
       <a class="btn btn-primary btn-sm" href="https://store-usa.arduino.cc/products/plug-and-make-kit" target="_blank" rel="noopener noreferrer">View Product</a></div></div></div></div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-brand="DFRobot" data-cat="STEM &amp; Science">
       <div class="product-card h-100"><div class="product-img-wrap"><img src="assets/products/df-science-starter.jpg" alt="DFRobot BOSON Science Starter Pack" loading="lazy"></div><div class="p-4">
       <span class="product-kicker">STEM &amp; Science</span><h3>DFRobot BOSON Science Starter Pack</h3><p class="product-copy">Measure light and soil moisture, then compare readings on an OLED display without starting with code.</p>
       <div class="product-facts"><span>8+</span><span>Beginner</span></div>
       <div class="product-price">Check current price &amp; availability</div>
-      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" onclick="openQuick('df-science-starter')">Quick Look</button>
+      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="df-science-starter" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
       <a class="btn btn-primary btn-sm" href="https://www.dfrobot.com/product-2425.html" target="_blank" rel="noopener noreferrer">View Product</a></div></div></div></div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-brand="Makeblock" data-cat="Young Explorers">
       <div class="product-card h-100"><div class="product-img-wrap"><img src="assets/products/mtiny-discover.webp" alt="Makeblock mTiny Discover Kit" loading="lazy"></div><div class="p-4">
       <span class="product-kicker">Young Explorers</span><h3>Makeblock mTiny Discover Kit</h3><p class="product-copy">Use a tap pen and physical coding cards to guide a panda robot across themed maps and explore drawing activities.</p>
       <div class="product-facts"><span>4+</span><span>Beginner</span></div>
       <div class="product-price">Check current price &amp; availability</div>
-      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" onclick="openQuick('mtiny-discover')">Quick Look</button>
+      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="mtiny-discover" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
       <a class="btn btn-primary btn-sm" href="https://www.makeblock.com/products/buy-mtiny?ref=electroys" target="_blank" rel="sponsored nofollow noopener noreferrer">View Product</a></div></div></div></div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-brand="Makeblock" data-cat="Robotics">
       <div class="product-card h-100"><div class="product-img-wrap"><img src="assets/products/mbot-ranger.webp" alt="Makeblock mBot Ranger" loading="lazy"></div><div class="p-4">
       <span class="product-kicker">Robotics</span><h3>Makeblock mBot Ranger</h3><p class="product-copy">Rebuild one kit as a tracked robot, a balancing robot or a racing car, then explore how code changes its movement.</p>
       <div class="product-facts"><span>8+</span><span>Beginner → Intermediate</span></div>
       <div class="product-price">Check current price &amp; availability</div>
-      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" onclick="openQuick('mbot-ranger')">Quick Look</button>
+      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="mbot-ranger" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
       <a class="btn btn-primary btn-sm" href="https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys" target="_blank" rel="sponsored nofollow noopener noreferrer">View Product</a></div></div></div></div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-brand="SparkFun" data-cat="Electronics">
       <div class="product-card h-100"><div class="product-img-wrap"><img src="assets/products/spark-flashlight.jpg" alt="SparkFun Basic Flashlight Soldering Kit" loading="lazy"></div><div class="p-4">
       <span class="product-kicker">Electronics</span><h3>SparkFun Basic Flashlight Soldering Kit</h3><p class="product-copy">Solder a working LED flashlight and trace how its battery, switch and resistor form a simple circuit.</p>
       <div class="product-facts"><span>10+</span><span>Beginner</span></div>
       <div class="product-price">Check current price &amp; availability</div>
-      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" onclick="openQuick('spark-flashlight')">Quick Look</button>
+      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="spark-flashlight" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
       <a class="btn btn-primary btn-sm" href="https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html" target="_blank" rel="noopener noreferrer">View Product</a></div></div></div></div>
 <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-brand="CrunchLabs" data-cat="Makers &amp; Adults">
       <div class="product-card h-100"><div class="product-img-wrap"><img src="assets/products/hackpack.jpg" alt="CrunchLabs Hack Pack" loading="lazy"></div><div class="p-4">
       <span class="product-kicker">Makers &amp; Adults</span><h3>CrunchLabs Hack Pack</h3><p class="product-copy">It extends Electroys beyond children&#x27;s products into hands-on projects for older learners and adults.</p>
       <div class="product-facts"><span>14+</span><span>Intermediate</span></div>
       <div class="product-price">Check current price &amp; availability</div>
-      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" onclick="openQuick('hackpack')">Quick Look</button>
+      <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="hackpack" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
       <a class="btn btn-primary btn-sm" href="https://www.crunchlabs.com/products/hack-pack-subscription" target="_blank" rel="noopener noreferrer">View Product</a></div></div></div></div>
 </div>
 <!-- FEATURED-GRID-END -->
@@ -1035,64 +1036,23 @@ a[role="button"]{
 <div class="col-lg-3 col-md-6"><article class="h-100 border p-4 bg-white"><div class="text-primary small fw-bold text-uppercase">Guide</div><h3 class="mt-2">Choose by Age & Skill</h3><p class="text-secondary">A simple framework for matching challenge level to the learner.</p><a class="btn btn-outline-primary btn-sm" href="reviews/how-to-choose-stem-kit-by-age.html">Read Guide</a></article></div>
 </div><div class="text-center mt-4"><a class="btn btn-outline-primary px-4" href="reviews/">Browse All Reviews & Guides</a></div></div></section>
 
-    <section id="deals" class="section section-light">
-      <div class="container">
-        <div class="section-title"><h2>More STEM & Maker Picks</h2><div class="line"></div><p>Explore more hands-on builds at the retailer. Follow each link for current pricing and availability.</p></div>
-        <div class="deal-wheel-shell" aria-label="Electroys STEM and maker deals carousel">
-          <button class="deal-wheel-nav deal-wheel-prev" type="button" aria-label="Previous deal">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-
-          <div class="deal-wheel-viewport">
-            <div class="deal-wheel-track">
-              <div class="deal-wheel-item"><article class="deal-card h-100">
-    
-    <h3>LEGO Technic Volvo L120 Electric Wheel Loader</h3>
-    <div class="deal-price">Check current price</div>
-    <p>973-piece engineering build with articulated steering, an adjustable shovel and visible gearing.</p>
-    <div class="deal-store"><i class="bi bi-shop"></i> Target</div>
-    <a class="stretched-link-label" href="https://www.target.com/p/-/A-94152687" target="_blank" rel="noopener noreferrer">View at Target <i class="bi bi-arrow-right"></i></a>
-    <div class="deal-source">See retailer for price and availability</div>
-  </article></div>
-<div class="deal-wheel-item"><article class="deal-card h-100">
-    
-    <h3>LEGO Technic Bugatti Chiron Pur Sport</h3>
-    <div class="deal-price">Check current price</div>
-    <p>771-piece build for ages 9+ with steering, W16-engine details and opening bodywork.</p>
-    <div class="deal-store"><i class="bi bi-shop"></i> Walmart</div>
-    <a class="stretched-link-label" href="https://www.walmart.com/ip/17091658928" target="_blank" rel="noopener noreferrer">View at Walmart <i class="bi bi-arrow-right"></i></a>
-    <div class="deal-source">See retailer for price and availability</div>
-  </article></div>
-<div class="deal-wheel-item"><article class="deal-card h-100">
-    
-    <h3>LEGO Technic Nissan Skyline GT-R (R34)</h3>
-    <div class="deal-price">Check current price</div>
-    <p>1,410-piece advanced mechanical build with steering, suspension, a 6-cylinder engine and drift mechanism.</p>
-    <div class="deal-store"><i class="bi bi-shop"></i> Walmart</div>
-    <a class="stretched-link-label" href="https://www.walmart.com/ip/13978102449" target="_blank" rel="noopener noreferrer">View at Walmart <i class="bi bi-arrow-right"></i></a>
-    <div class="deal-source">See retailer for price and availability</div>
-  </article></div>
-<div class="deal-wheel-item"><article class="deal-card h-100">
-    
-    <h3>Discovery #Mindblown Action Circuitry STEM Kit</h3>
-    <div class="deal-price">Check current price</div>
-    <p>Hands-on electricity and circuitry experiments including a spinning robot, launcher and floating-ball project.</p>
-    <div class="deal-store"><i class="bi bi-shop"></i> Target</div>
-    <a class="stretched-link-label" href="https://www.target.com/p/-/A-80708291" target="_blank" rel="noopener noreferrer">View at Target <i class="bi bi-arrow-right"></i></a>
-    <div class="deal-source">See retailer for price and availability</div>
-  </article></div>
-            </div>
-          </div>
-
-          <button class="deal-wheel-nav deal-wheel-next" type="button" aria-label="Next deal">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="deal-wheel-dots" aria-label="Deal carousel position"></div>
-        <p class="deal-wheel-note">Auto-scrolls through these product picks. Hover over the wheel to pause.</p>
-      </div>
-    </section>
+    <!-- HOME-COLLECTIONS-START -->
+<section id="deals" class="section section-light" aria-labelledby="home-deals-title"><div class="container">
+  <div class="section-title"><h2 id="home-deals-title">Deals worth exploring</h2><div class="line"></div><p>Current verified offers from the same catalog. Every deal is also listed in All Products.</p></div>
+  <p id="homeDealsStatus" class="text-center" role="status">Open Deals to check current verified offers.</p>
+  <div id="homeDealsGrid" class="row g-4"></div>
+  <div class="text-center mt-4"><a class="btn btn-primary px-4" href="deals.html">More deals</a> <a class="btn btn-outline-primary" href="deals.html?relationship=core">STEM project deals</a></div>
+</div></section>
+<section id="best-sellers" class="section" aria-labelledby="home-bestsellers-title"><div class="container">
+  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div><p>Discover products with current category-ranking evidence, including STEM projects and supporting technology.</p></div>
+  <p id="homeBestSellersStatus" class="text-center" role="status">Current rankings are checked before products appear here. Our editorial picks remain available in All Products.</p>
+  <div id="homeBestSellersGrid" class="row g-4"></div>
+  <div class="text-center mt-4"><a class="btn btn-primary px-4" href="best-sellers.html">Explore Best Sellers</a> <a class="btn btn-outline-primary" href="products.html?sort=recommended">Electroys picks</a></div>
+</div></section>
+<section class="section section-light" aria-labelledby="more-ways-heading"><div class="container"><div class="section-title"><h2 id="more-ways-heading">More ways to build your curiosity</h2><div class="line"></div><p>Start with a project, learn from a book, or explore the equipment that supports your next build.</p></div>
+<div class="d-flex justify-content-center gap-3 flex-wrap"><a class="btn btn-outline-primary" href="products.html?relationship=core">Project-focused picks</a><a class="btn btn-outline-primary" href="products.html?category=Books%20%26%20Learning%20Resources">STEM books</a><a class="btn btn-outline-primary" href="products.html?category=Computer%20Parts">PC components</a><a class="btn btn-outline-primary" href="products.html?relationship=support">Projects + supporting gear</a></div>
+</div></section>
+<!-- HOME-COLLECTIONS-END -->
 
     <section id="brands" class="section">
       <div class="container">
@@ -1243,10 +1203,10 @@ a[role="button"]{
 
   <iframe name="electroysSubscriptionReceiver" id="electroysSubscriptionReceiver" style="display:none" title="Subscription response"></iframe>
 
-<div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+<div class="modal" id="subscribeModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header"><div><div class="text-primary fw-bold small text-uppercase">Electroys Updates</div><h2 class="modal-title fs-4">Subscribe</h2></div><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-header"><div><div class="text-primary fw-bold small text-uppercase">Electroys Updates</div><h2 class="modal-title fs-4">Subscribe</h2></div><button type="button" class="btn-close" aria-label="Close dialog" data-bs-dismiss="modal"></button></div>
         <form id="subscribeForm" method="POST"
           action="https://script.google.com/macros/s/AKfycbwXA0mKISUU9LbbRgrlOHymWCW--Znwd_cep4t1jIl3NNY9PqxrAnb4qTMRNqo4dq5LWA/exec"
           target="electroysSubscriptionReceiver">
@@ -1276,10 +1236,10 @@ a[role="button"]{
     </div>
   </div>
 
-  <div class="modal fade" id="quickModal" tabindex="-1" aria-hidden="true">
+  <div class="modal" id="quickModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header"><div><div class="text-primary fw-bold small text-uppercase">Electroys Quick Look</div><h2 class="modal-title fs-4" id="quickTitle"></h2></div><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-header"><div><div class="text-primary fw-bold small text-uppercase">Electroys Quick Look</div><h2 class="modal-title fs-4" id="quickTitle"></h2></div><button type="button" class="btn-close" aria-label="Close dialog" data-bs-dismiss="modal"></button></div>
         <div class="modal-body" id="quickBody"></div>
       </div>
     </div>
@@ -1287,7 +1247,7 @@ a[role="button"]{
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    const productData={"arduino-plug-make": {"t": "Arduino Plug and Make Kit", "store": "Arduino", "url": "https://store-usa.arduino.cc/products/plug-and-make-kit", "cat": "Coding", "age": "Check maker guidance", "level": "Beginner", "levels": ["Beginner"], "categories": ["Coding", "Electronics", "Makers & Adults"], "focus": "Programming + modular electronics", "why": "Connect seven Modulino modules to an UNO R4 WiFi and explore guided projects without breadboard wiring or soldering.", "learn": "Read sensors, control lights and sound, and connect programming ideas to interactive physical projects.", "fit": "Beginners who want to focus on coding and connected devices before learning detailed circuit wiring.", "consider": "Check computer and connectivity requirements. An Arduino account is needed for the online learning content and Cloud features; review current Cloud plan limits.", "price": "Check current price & availability", "image": "assets/products/arduino-plug-make.jpg", "source": "https://store-usa.arduino.cc/products/plug-and-make-kit", "documentation": "https://docs.arduino.cc/hardware/plug-and-make-kit/", "reviewed": "2026-10-16", "dealbadge": ""}, "df-science-starter": {"t": "DFRobot BOSON Science Starter Pack", "store": "DFRobot", "url": "https://www.dfrobot.com/product-2425.html", "cat": "STEM & Science", "age": "8+", "level": "Beginner", "levels": ["Beginner"], "categories": ["STEM & Science", "Electronics"], "focus": "Sensor measurements + scientific investigation", "why": "Measure light and soil moisture, then compare readings on an OLED display without starting with code.", "learn": "Observe environmental changes, compare measurements and test ideas using reusable sensor modules.", "fit": "Learners who prefer hands-on science investigations before moving into programming.", "consider": "Check battery requirements and current contents. A micro:bit and expansion hardware are separate additions for programming activities.", "price": "Check current price & availability", "image": "assets/products/df-science-starter.jpg", "source": "https://www.dfrobot.com/product-2425.html", "age_source": "https://www.dfrobot.com/boson", "reviewed": "2026-10-15", "dealbadge": ""}, "mtiny-discover": {"t": "Makeblock mTiny Discover Kit", "store": "Makeblock", "url": "https://www.makeblock.com/products/buy-mtiny?ref=electroys", "cat": "Young Explorers", "age": "4+", "level": "Beginner", "levels": ["Beginner"], "categories": ["Young Explorers", "Coding", "Robotics"], "focus": "Screen-free coding + creative play", "why": "Use a tap pen and physical coding cards to guide a panda robot across themed maps and explore drawing activities.", "learn": "Plan command sequences, test routes and connect instructions with movement and shapes.", "fit": "Preschool learners who benefit from tangible coding activities without a phone or tablet.", "consider": "Select the Discover Kit; the Coding Kit has different accessories and no markers. Check charging instructions, current contents and delivery options. Adult help may be needed for setup.", "price": "Check current price & availability", "image": "assets/products/mtiny-discover.webp", "source": "https://www.makeblock.com/products/buy-mtiny", "documentation": "https://support.makeblock.com/hc/en-us/articles/12823234387479-A-Beginner-s-Guide-to-mTiny", "reviewed": "2026-10-19", "dealbadge": ""}, "mbot-ranger": {"t": "Makeblock mBot Ranger", "store": "Makeblock", "url": "https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys", "cat": "Robotics", "age": "8+", "level": "Beginner → Intermediate", "levels": ["Beginner", "Intermediate"], "categories": ["Robotics", "Coding", "Build & Make"], "focus": "Robot construction + coding", "why": "Rebuild one kit as a tracked robot, a balancing robot or a racing car, then explore how code changes its movement.", "learn": "Mechanical assembly, sensor-based navigation and a progression from block coding to Arduino C.", "fit": "Learners who enjoy assembling and reconfiguring a robot as well as programming it.", "consider": "Check current bundle contents, power requirements and device compatibility. Allow time for assembly and adult help where needed.", "price": "Check current price & availability", "image": "assets/products/mbot-ranger.webp", "source": "https://www.makeblock.com/products/buy-mbot-ranger", "reviewed": "2026-10-14", "dealbadge": ""}, "spark-flashlight": {"t": "SparkFun Basic Flashlight Soldering Kit", "store": "SparkFun", "url": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html", "cat": "Electronics", "age": "10+", "level": "Beginner", "levels": ["Beginner"], "categories": ["Electronics", "Build & Make", "Makers & Adults"], "focus": "Through-hole soldering + circuits", "why": "Solder a working LED flashlight and trace how its battery, switch and resistor form a simple circuit.", "learn": "Practice through-hole soldering, identify component polarity and relate a circuit diagram to a finished board.", "fit": "Learners ready to move from temporary circuit connections to soldered electronics, with appropriate supervision.", "consider": "Requires a soldering iron, solder and cutters, sold separately. Adult supervision is appropriate for hot tools. Includes a CR2032 coin cell; keep it away from young children and follow maker safety guidance.", "price": "Check current price & availability", "image": "assets/products/spark-flashlight.jpg", "source": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html", "reviewed": "2026-10-17", "dealbadge": ""}, "hackpack": {"t": "CrunchLabs Hack Pack", "cat": "Makers & Adults", "age": "14+", "level": "Intermediate", "focus": "Robotics + coding", "price": "Check current price & availability", "learn": "Robotics, coding, mechanisms, experimentation and creative hardware hacking.", "fit": "Teens and adults who want more sophisticated recurring robotics builds.", "why": "It extends Electroys beyond children's products into hands-on projects for older learners and adults.", "consider": "Review current subscription and device requirements before joining.", "url": "https://www.crunchlabs.com/products/hack-pack-subscription", "source": "Official CrunchLabs Hack Pack page", "image": "assets/products/hackpack.jpg", "store": "CrunchLabs", "dealbadge": "", "categories": ["Makers & Adults", "Coding"], "levels": ["Intermediate"], "reviewed": "2026-09-27"}};
+    const productData={"arduino-plug-make": {"t": "Arduino Plug and Make Kit", "store": "Arduino", "url": "https://store-usa.arduino.cc/products/plug-and-make-kit", "cat": "Coding", "age": "Check maker guidance", "level": "Beginner", "levels": ["Beginner"], "categories": ["Coding", "Electronics", "Makers & Adults"], "focus": "Programming + modular electronics", "why": "Connect seven Modulino modules to an UNO R4 WiFi and explore guided projects without breadboard wiring or soldering.", "learn": "Read sensors, control lights and sound, and connect programming ideas to interactive physical projects.", "fit": "Beginners who want to focus on coding and connected devices before learning detailed circuit wiring.", "consider": "Check computer and connectivity requirements. An Arduino account is needed for the online learning content and Cloud features; review current Cloud plan limits.", "price": "Check current price & availability", "image": "assets/products/arduino-plug-make.jpg", "source": "https://store-usa.arduino.cc/products/plug-and-make-kit", "documentation": "https://docs.arduino.cc/hardware/plug-and-make-kit/", "reviewed": "2026-10-16", "dealbadge": "", "providerProductId": "7473016996047", "providerVariantId": "43714521661647", "sku": "AKX00069", "variant": "Default Title", "sourceType": "retailer-feed", "sourceFeed": "https://store-usa.arduino.cc/products.json", "verification": {"status": "verified", "checkedAt": "2026-10-20T16:32:43.573434+00:00", "scope": ["identity", "selected-variant", "price", "availability"], "issues": ["Learning guidance is editorial; no independent build test is claimed."]}, "relationship": "core", "classificationReason": "Existing curated hands-on STEM catalog selection.", "productType": "Coding"}, "df-science-starter": {"t": "DFRobot BOSON Science Starter Pack", "store": "DFRobot", "url": "https://www.dfrobot.com/product-2425.html", "cat": "STEM & Science", "age": "8+", "level": "Beginner", "levels": ["Beginner"], "categories": ["STEM & Science", "Electronics"], "focus": "Sensor measurements + scientific investigation", "why": "Measure light and soil moisture, then compare readings on an OLED display without starting with code.", "learn": "Observe environmental changes, compare measurements and test ideas using reusable sensor modules.", "fit": "Learners who prefer hands-on science investigations before moving into programming.", "consider": "Check battery requirements and current contents. A micro:bit and expansion hardware are separate additions for programming activities.", "price": "Check current price & availability", "image": "assets/products/df-science-starter.jpg", "source": "https://www.dfrobot.com/product-2425.html", "age_source": "https://www.dfrobot.com/boson", "reviewed": "2026-10-15", "dealbadge": "", "relationship": "core", "classificationReason": "Existing curated hands-on STEM catalog selection.", "productType": "STEM & Science"}, "mtiny-discover": {"t": "Makeblock mTiny Discover Kit", "store": "Makeblock", "url": "https://www.makeblock.com/products/buy-mtiny?ref=electroys", "cat": "Young Explorers", "age": "4+", "level": "Beginner", "levels": ["Beginner"], "categories": ["Young Explorers", "Coding", "Robotics"], "focus": "Screen-free coding + creative play", "why": "Use a tap pen and physical coding cards to guide a panda robot across themed maps and explore drawing activities.", "learn": "Plan command sequences, test routes and connect instructions with movement and shapes.", "fit": "Preschool learners who benefit from tangible coding activities without a phone or tablet.", "consider": "Select the Discover Kit; the Coding Kit has different accessories and no markers. Check charging instructions, current contents and delivery options. Adult help may be needed for setup.", "price": "Check current price & availability", "image": "assets/products/mtiny-discover.webp", "source": "https://www.makeblock.com/products/buy-mtiny", "documentation": "https://support.makeblock.com/hc/en-us/articles/12823234387479-A-Beginner-s-Guide-to-mTiny", "reviewed": "2026-10-19", "dealbadge": "", "relationship": "core", "classificationReason": "Existing curated hands-on STEM catalog selection.", "productType": "Young Explorers"}, "mbot-ranger": {"t": "Makeblock mBot Ranger", "store": "Makeblock", "url": "https://www.makeblock.com/products/buy-mbot-ranger?ref=electroys", "cat": "Robotics", "age": "8+", "level": "Beginner → Intermediate", "levels": ["Beginner", "Intermediate"], "categories": ["Robotics", "Coding", "Build & Make"], "focus": "Robot construction + coding", "why": "Rebuild one kit as a tracked robot, a balancing robot or a racing car, then explore how code changes its movement.", "learn": "Mechanical assembly, sensor-based navigation and a progression from block coding to Arduino C.", "fit": "Learners who enjoy assembling and reconfiguring a robot as well as programming it.", "consider": "Check current bundle contents, power requirements and device compatibility. Allow time for assembly and adult help where needed.", "price": "Check current price & availability", "image": "assets/products/mbot-ranger.webp", "source": "https://www.makeblock.com/products/buy-mbot-ranger", "reviewed": "2026-10-14", "dealbadge": "", "relationship": "core", "classificationReason": "Existing curated hands-on STEM catalog selection.", "productType": "Robotics"}, "spark-flashlight": {"t": "SparkFun Basic Flashlight Soldering Kit", "store": "SparkFun", "url": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html", "cat": "Electronics", "age": "10+", "level": "Beginner", "levels": ["Beginner"], "categories": ["Electronics", "Build & Make", "Makers & Adults"], "focus": "Through-hole soldering + circuits", "why": "Solder a working LED flashlight and trace how its battery, switch and resistor form a simple circuit.", "learn": "Practice through-hole soldering, identify component polarity and relate a circuit diagram to a finished board.", "fit": "Learners ready to move from temporary circuit connections to soldered electronics, with appropriate supervision.", "consider": "Requires a soldering iron, solder and cutters, sold separately. Adult supervision is appropriate for hot tools. Includes a CR2032 coin cell; keep it away from young children and follow maker safety guidance.", "price": "Check current price & availability", "image": "assets/products/spark-flashlight.jpg", "source": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html", "reviewed": "2026-10-17", "dealbadge": "", "relationship": "core", "classificationReason": "Existing curated hands-on STEM catalog selection.", "productType": "Electronics"}, "hackpack": {"t": "CrunchLabs Hack Pack", "cat": "Makers & Adults", "age": "14+", "level": "Intermediate", "focus": "Robotics + coding", "price": "Check current price & availability", "learn": "Robotics, coding, mechanisms, experimentation and creative hardware hacking.", "fit": "Teens and adults who want more sophisticated recurring robotics builds.", "why": "It extends Electroys beyond children's products into hands-on projects for older learners and adults.", "consider": "Review current subscription and device requirements before joining.", "url": "https://www.crunchlabs.com/products/hack-pack-subscription", "source": "Official CrunchLabs Hack Pack page", "image": "assets/products/hackpack.jpg", "store": "CrunchLabs", "dealbadge": "", "categories": ["Makers & Adults", "Coding"], "levels": ["Intermediate"], "reviewed": "2026-09-27", "relationship": "core", "classificationReason": "Existing curated hands-on STEM catalog selection.", "productType": "Makers & Adults"}};
     const productImages={"arduino-plug-make": "assets/products/arduino-plug-make.jpg", "df-science-starter": "assets/products/df-science-starter.jpg", "mtiny-discover": "assets/products/mtiny-discover.webp", "mbot-ranger": "assets/products/mbot-ranger.webp", "spark-flashlight": "assets/products/spark-flashlight.jpg", "hackpack": "assets/products/hackpack.jpg"};
     const productStores={"arduino-plug-make": "Arduino", "df-science-starter": "DFRobot", "mtiny-discover": "Makeblock", "mbot-ranger": "Makeblock", "spark-flashlight": "SparkFun", "hackpack": "CrunchLabs"};
     function productVisual(id, className=''){
@@ -1297,7 +1257,10 @@ a[role="button"]{
         ? `<img class="${escapeHTML(className)}" src="${escapeHTML(productImages[id])}" alt="${escapeHTML(p.t)}">`
         : `<div class="${escapeHTML(className)} d-flex flex-column align-items-center justify-content-center p-4 text-center bg-light"><strong>${escapeHTML(p.t)}</strong><small class="mt-2">Product photo at the store</small></div>`;
     }
+    const escapeHTML=value=>String(value??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const safeProductURL=value=>{try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'#'}catch{return '#'}};
     function openQuick(id){
+      if(!Object.prototype.hasOwnProperty.call(productData,id)) return;
       const p=productData[id], img=productImages[id], store=productStores[id]||'Original Website';
       document.getElementById('quickTitle').textContent=p.t;
       document.getElementById('quickBody').innerHTML=`
@@ -1305,14 +1268,14 @@ a[role="button"]{
           <div class="col-md-5">${productVisual(id, 'quick-modal-img')}</div>
           <div class="col-md-7">
             <div class="row g-2 mb-3">
-              <div class="col-6"><div class="p-2 bg-light border"><b>Age</b><br>${p.age}</div></div>
-              <div class="col-6"><div class="p-2 bg-light border"><b>Level</b><br>${p.level}</div></div>
-              <div class="col-6"><div class="p-2 bg-light border"><b>Focus</b><br>${p.focus}</div></div>
-              <div class="col-6"><div class="p-2 bg-light border"><b>Price</b><br>${p.price}</div></div>
+              <div class="col-6"><div class="p-2 bg-light border"><b>Age</b><br>${escapeHTML(p.age)}</div></div>
+              <div class="col-6"><div class="p-2 bg-light border"><b>Level</b><br>${escapeHTML(p.level)}</div></div>
+              <div class="col-6"><div class="p-2 bg-light border"><b>Focus</b><br>${escapeHTML(p.focus)}</div></div>
+              <div class="col-6"><div class="p-2 bg-light border"><b>Price</b><br>${escapeHTML(p.price)}</div></div>
             </div>
-            <h3 class="fs-6 fw-bold">Why it caught our attention</h3><p class="text-secondary">${p.why}</p>
-            <h3 class="fs-6 fw-bold">What can you learn?</h3><p class="text-secondary">${p.learn}</p>
-            <a class="btn btn-primary" href="${p.url}" target="_blank" rel="${/[?&](tag|ref)=/.test(p.url)?'sponsored nofollow noopener noreferrer':'noopener noreferrer'}">View at ${store}</a>
+            <h3 class="fs-6 fw-bold">Why it caught our attention</h3><p class="text-secondary">${escapeHTML(p.why)}</p>
+            <h3 class="fs-6 fw-bold">What can you learn?</h3><p class="text-secondary">${escapeHTML(p.learn)}</p>
+            <a class="btn btn-primary" href="${escapeHTML(safeProductURL(p.url))}" target="_blank" rel="${/[?&](tag|ref)=/.test(p.url)?'sponsored nofollow noopener noreferrer':'noopener noreferrer'}">View at ${escapeHTML(store)}</a>
           </div>
         </div>`;
       bootstrap.Modal.getOrCreateInstance(document.getElementById('quickModal')).show();
@@ -1348,6 +1311,7 @@ a[role="button"]{
     let turnstileWidgetId=null;
     let subscribeModalOpen=false;
     function renderSubscriptionTurnstile(){
+      if(!['electroys.com','www.electroys.com'].includes(location.hostname)){const note=document.getElementById('subscribeVerificationError');note.textContent='Human verification is available on the live Electroys website.';note.style.display='block';return;}
       if(!subscribeModalOpen || turnstileWidgetId!==null || !window.turnstile) return;
       turnstileWidgetId=window.turnstile.render('#subscribeTurnstile',{
         sitekey:'0x4AAAAAAFIM0lsA-wVK-xNb',
@@ -1600,12 +1564,12 @@ a[role="button"]{
                 <div class="ask-result-card h-100">
                   ${productVisual(id)}
                   <div class="p-3">
-                    <h5>${p.t}</h5>
-                    <p class="small text-secondary mb-2">${p.fit||p.why||''}</p>
-                    <div class="small mb-2"><b>${p.age||''}</b> · ${p.level||''}</div>
-                    <div class="small fw-bold mb-3">${p.price||'Check current price'}</div>
+                    <h5>${escapeHTML(p.t)}</h5>
+                    <p class="small text-secondary mb-2">${escapeHTML(p.fit||p.why||'')}</p>
+                    <div class="small mb-2"><b>${escapeHTML(p.age||'')}</b> · ${escapeHTML(p.level||'')}</div>
+                    <div class="small fw-bold mb-3">${escapeHTML(p.price||'Check current price')}</div>
                     <button type="button" class="btn btn-outline-primary btn-sm me-1" onclick="openQuick('${id}')">Quick Look</button>
-                    <a class="btn btn-primary btn-sm" href="${p.url||'#'}" target="_blank" rel="noopener noreferrer">View Product</a>
+                    <a class="btn btn-primary btn-sm" href="${escapeHTML(safeProductURL(p.url))}" target="_blank" rel="noopener noreferrer">View Product</a>
                   </div>
                 </div>
               </div>`).join('')}
@@ -1812,5 +1776,7 @@ a[role="button"]{
   }, { once: true });
 })();
 </script>
+<script src="catalog.js?v=20261020-1"></script>
+<script src="collections.js?v=1"></script>
 </body>
 </html>

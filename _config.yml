@@ -1,0 +1,12 @@
+# GitHub Pages keeps operational code and internal handoff material out of the site.
+exclude:
+  - tools
+  - tests
+  - docs
+  - CATALOG.md
+  - FLYERS.md
+  - README.md
+  - output
+  - .runtime
+  - .release
+  - Electroys_1_8_4_Updated_Live_Subscription_URL.html
