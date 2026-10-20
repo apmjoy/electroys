@@ -1,0 +1,38 @@
+{
+  "arduino-plug-make": {
+    "product": "Arduino Plug and Make Kit",
+    "product_page": "https://store-usa.arduino.cc/products/plug-and-make-kit",
+    "source_image": "https://store-usa.arduino.cc/cdn/shop/files/AKX00069_00.default_1200x900.jpg?v=1740391708",
+    "local_image": "assets/products/arduino-plug-make.jpg"
+  },
+  "df-science-starter": {
+    "product": "DFRobot BOSON Science Starter Pack",
+    "product_page": "https://www.dfrobot.com/product-2425.html",
+    "source_image": "https://dfimg.dfrobot.com/enshop/image/data/TOY0084-lite/TOY0084lite-900x600%20(3).JPG",
+    "local_image": "assets/products/df-science-starter.jpg"
+  },
+  "mbot-ranger": {
+    "product": "Makeblock mBot Ranger",
+    "product_page": "https://www.makeblock.com/products/buy-mbot-ranger",
+    "source_image": "https://www.makeblock.com/cdn/shop/files/Ranger-Mainpic.webp?v=1765011896&width=800",
+    "local_image": "assets/products/mbot-ranger.webp"
+  },
+  "spark-flashlight": {
+    "product": "SparkFun Basic Flashlight Soldering Kit",
+    "product_page": "https://www.sparkfun.com/sparkfun-basic-flashlight-soldering-kit.html",
+    "source_image": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/4/14877-SparkFun_Basic_Flashlight_Soldering_Kit-01.jpg",
+    "local_image": "assets/products/spark-flashlight.jpg"
+  },
+  "mtiny-discover": {
+    "product": "Makeblock mTiny Discover Kit",
+    "product_page": "https://www.makeblock.com/products/buy-mtiny",
+    "source_image": "https://www.makeblock.com/cdn/shop/files/P1030157_mTiny-Discover-Kit_1259x_progressive_webp_80233623-d7a4-4942-8b62-050397e6d33e.webp?v=1766999499",
+    "local_image": "assets/products/mtiny-discover.webp"
+  },
+  "hackpack": {
+    "product": "CrunchLabs Hack Pack",
+    "product_page": "https://www.crunchlabs.com/products/hack-pack-subscription",
+    "source_image": "https://www.crunchlabs.com/cdn/shop/files/Reeder_250925_00240_Easy-Resize.com.jpg?v=1767390479&width=1000",
+    "local_image": "assets/products/hackpack.jpg"
+  }
+}
