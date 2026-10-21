@@ -36,12 +36,16 @@ class SiteTests(unittest.TestCase):
                     f.write(script);f.flush()
                     result=subprocess.run(['node','--check',f.name],capture_output=True,text=True)
                     self.assertEqual(result.returncode,0,name+result.stderr)
-    def test_static_hero_and_cross_page_anchor(self):
+    def test_shared_hero_background_and_cross_page_anchor(self):
         text=(ROOT/'index.html').read_text()
         hero=re.search(r'<section id="home".*?</section>',text,re.S).group()
         self.assertEqual(hero.count('<img '),1)
-        self.assertNotIn('data-bs-ride',hero)
-        self.assertNotIn('carousel-control-',hero)
+        self.assertIn('data-bs-interval="7000"',hero)
+        self.assertIn('carousel.cycle()',text)
+        self.assertEqual(hero.count('class="carousel-item'),3)
+        self.assertIn('class="hero-background"',hero)
+        self.assertIn('carousel-control-next',hero)
+        self.assertIn('Pause hero messages',text)
         self.assertIn("window.addEventListener('load',alignInitialSection",text)
         self.assertIn('<details class="mb-4"><summary',text)
     def test_static_pages_bounded(self):

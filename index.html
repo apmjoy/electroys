@@ -73,8 +73,8 @@
     .deal-card p{color:var(--muted);font-size:.91rem}
     .deal-store{font-size:.84rem;margin-bottom:15px}
     .stretched-link-label{font-weight:800;color:var(--brand)}
-    
-    
+
+
     .ask-box{background:#25313c;color:#fff;padding:38px}
     .ask-box input{min-height:48px}
     .about-list i{color:var(--brand);margin-right:8px}
@@ -86,7 +86,7 @@
     .modal-header{border-bottom:1px solid var(--line)} .modal-footer-note{font-size:.78rem;color:var(--muted)}
     @media(max-width:991px){.hero .carousel-item{height:520px}.navbar-nav{padding:12px 0}.subscribe-nav{margin:5px 0 8px}}
     @media(max-width:575px){.hero .carousel-item{height:540px}.hero-copy{padding:24px 20px}.section{padding:58px 0}}
-  
+
 h1,h2,h3,h4,h5,h6{font-family:"Raleway",sans-serif;color:var(--heading);letter-spacing:-.012em}
 .hero h1,.cta h2,.ask-box h2{color:#fff}
 .feature-box h3,.product-card h3,.deal-card h3{color:var(--heading)}
@@ -123,7 +123,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Raleway",sans-serif;color:var(--heading);letter-s
   color:var(--brand)!important;
   border-radius:5px!important;
   font-family:"Poppins",sans-serif!important;
-  
+
   letter-spacing:.02em;
   box-shadow:none!important;
 }
@@ -229,7 +229,7 @@ a[role="button"]{
 #mainNav .subscribe-nav{
   font-family:"Poppins",sans-serif!important;
   font-size:16px!important;
-  
+
   line-height:1.5!important;
   letter-spacing:0!important;
   text-transform:none!important;
@@ -795,6 +795,23 @@ a[role="button"]{
 
 @media(max-width:575px){#about .row.g-5{--bs-gutter-x:1.5rem}}
 .brand-logo-cell{min-width:0}.brand-logo-fallback{white-space:normal;overflow-wrap:anywhere;max-width:100%}
+
+/* The image is stationary; only the three message panels cycle. */
+.hero{position:relative;isolation:isolate;background:#252525}
+.hero-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;pointer-events:none;z-index:-1}
+.hero .carousel-item{background:transparent}
+.hero .carousel-indicators{margin-bottom:1rem}
+.hero .carousel-indicators button{min-width:30px;min-height:6px}
+.hero .carousel-control-prev,.hero .carousel-control-next{width:5%}
+.hero-pcb-slide::before{display:none}
+.hero .hero-copy{position:relative;z-index:1;background:rgba(26,26,26,.42);backdrop-filter:blur(2px)}
+.hero-pause{position:absolute;right:20px;bottom:20px;z-index:5;border:1px solid #fff;background:#102c49cc;color:#fff;border-radius:5px;padding:7px 12px;font-size:.8rem}
+.brand-grid.logos-style{grid-template-columns:repeat(6,minmax(0,1fr))}
+.brand-logo-cell{min-height:108px;padding:16px 14px}
+.brand-logo-cell img{max-height:52px;max-width:85%}
+.brand-logo-fallback{font-size:18px!important}
+@media(max-width:991px){.brand-grid.logos-style{grid-template-columns:repeat(4,minmax(0,1fr))}.brand-logo-cell{min-height:96px;padding:12px}}
+@media(max-width:575px){.brand-grid.logos-style{grid-template-columns:repeat(3,minmax(0,1fr))}.brand-logo-cell{min-height:82px;padding:10px 7px}.brand-logo-cell img{max-height:42px}.brand-logo-fallback{font-size:14px!important}.hero-pause{right:14px;bottom:10px}.hero-copy{padding-left:26px!important;padding-right:26px!important}}
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=20260928">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=20260928">
@@ -855,9 +872,16 @@ a[role="button"]{
 
   <main>
 <section id="home" class="hero" aria-label="Welcome to Electroys">
-<div id="heroStatic" class="carousel"><div class="carousel-inner">
-<div class="carousel-item active hero-pcb-slide">
-            <img src="assets/hero-first.jpg" alt="Gaming controller hero background">
+<img class="hero-background" src="assets/hero-first.jpg" alt="" fetchpriority="high">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-interval="7000" data-bs-pause="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" aria-label="Show slide 1" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" aria-label="Show slide 2" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" aria-label="Show slide 3" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active hero-pcb-slide">
+
             <div class="carousel-caption container">
               <div class="hero-copy">
                 <h1>Explore. Build. Learn. Play.</h1>
@@ -867,8 +891,31 @@ a[role="button"]{
               </div>
             </div>
           </div>
+          <div class="carousel-item">
 
-</div></div></section>
+            <div class="carousel-caption container">
+              <div class="hero-copy">
+                <h1>Learn by making something real.</h1>
+                <p>From a first circuit to a hands-on electronics project, we organize products by age, skill level and what you can actually learn from them.</p>
+                <a class="btn btn-primary btn-lg" href="products.html">Find a Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="carousel-caption container">
+              <div class="hero-copy">
+                <h1>STEM is not only for kids.</h1>
+                <p>Electroys includes serious maker projects for teens and adults too — robotics, electronics, coding, mechanisms and creative engineering.</p>
+                <a class="btn btn-primary btn-lg" href="products.html">Explore Maker Picks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" aria-label="Previous slide" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" aria-label="Next slide" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </section>
 
 
 
@@ -921,7 +968,7 @@ a[role="button"]{
           <button class="filter-btn" data-filter="STEM & Science">STEM & Science</button>
           <button class="filter-btn" data-filter="Makers & Adults">Makers & Adults</button>
         </div></details>
-        
+
         <div id="brandFilterStatus" class="brand-filter-status" style="display:none" aria-live="polite">
           <span id="brandFilterText"></span>
           <button type="button" id="clearBrandFilter" class="brand-filter-clear">Show All</button>
@@ -1020,8 +1067,8 @@ a[role="button"]{
   <div class="text-center mt-4"><a class="btn btn-primary px-4" href="deals.html">More deals</a> <a class="btn btn-outline-primary" href="deals.html?relationship=core">STEM project deals</a></div>
 </div></section>
 <section id="best-sellers" class="section" aria-labelledby="home-bestsellers-title"><div class="container">
-  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div><p>Fifteen Amazon picks curated for STEM learning and supporting technology. Electroys editorial selections; not a claim of Amazon sales rank.</p></div>
-  <p id="homeBestSellersStatus" class="text-center" role="status">Loading our curated Amazon picks. All picks are also in All Products.</p>
+  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div></div>
+  <p id="homeBestSellersStatus" class="text-center" role="status" hidden></p>
   <div id="homeBestSellersGrid" class="row g-4"></div>
   <div class="text-center mt-4"><a class="btn btn-primary px-4" href="best-sellers.html">Explore Best Sellers</a> <a class="btn btn-outline-primary" href="products.html?sort=recommended">Electroys picks</a></div>
 </div></section>
@@ -1192,7 +1239,7 @@ a[role="button"]{
             <input id="subName" name="name" class="form-control mb-3" type="text" required autocomplete="name" placeholder="Your name">
             <label for="subEmail" class="form-label fw-bold">Email</label>
             <input id="subEmail" name="email" class="form-control" type="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-describedby="subEmailHelp">
-            
+
             <div id="subEmailHelp" class="form-text">Use an address you can open to confirm your subscription.</div>
             <input type="hidden" name="source" value="Electroys.com">
             <div class="form-check mt-3">
@@ -1281,8 +1328,8 @@ a[role="button"]{
     });
     email.addEventListener('input',function(){this.setCustomValidity('')});
 
-    
-    
+
+
     const subscribeForm=document.getElementById('subscribeForm');
     let turnstileWidgetId=null;
     let subscribeModalOpen=false;
@@ -1763,7 +1810,22 @@ a[role="button"]{
   }, { once: true });
 })();
 </script>
+<script>
+(function(){
+  const element=document.getElementById('heroCarousel');
+  if(!element || !window.bootstrap)return;
+  const carousel=bootstrap.Carousel.getOrCreateInstance(element);
+  const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const button=document.createElement('button');button.type='button';button.className='hero-pause';button.setAttribute('aria-controls','heroCarousel');element.append(button);
+  let paused=motion.matches;
+  function update(){button.textContent=paused?'Play messages':'Pause messages';button.setAttribute('aria-label',paused?'Play hero messages':'Pause hero messages');if(paused)carousel.pause();else carousel.cycle();}
+  button.addEventListener('click',()=>{paused=!paused;update();});
+  element.addEventListener('focusin',()=>{paused=true;update();});
+  motion.addEventListener?.('change',()=>{if(motion.matches){paused=true;update();}});
+  update();
+})();
+</script>
 <script src="catalog.js?v=20261020-2"></script>
-<script src="collections.js?v=20261020-2"></script>
+<script src="collections.js?v=20261020-3"></script>
 </body>
 </html>

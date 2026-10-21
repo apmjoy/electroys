@@ -21,7 +21,7 @@
   }
   function makeRibbon(grid, status, products) {
     const selected = products.filter(p => api.isAmazonPick(p) || (api.isBestSeller(p) && api.amazonDestination(p))).sort((a,b) => (a.amazonPickOrder ?? 1000) - (b.amazonPickOrder ?? 1000)).slice(0,15);
-    if (status) status.textContent = selected.length ? `${selected.length} Electroys picks on Amazon. These are editorial recommendations, not an Amazon sales ranking. Check Amazon for current price and availability.` : 'No curated Amazon picks are available yet. Explore All Products for more ideas.';
+    if (status) {status.textContent = selected.length ? '' : 'No curated Amazon picks are available yet. Explore All Products for more ideas.'; status.hidden = selected.length > 0;}
     grid.replaceChildren(...selected.map((p,index) => {
       const result=card({...p,url:api.amazonDestination(p),store:'Amazon'}, undefined, grid.id);
       result.className='collection-card ribbon-card';
@@ -82,6 +82,6 @@
   }catch(error){
     console.error('Electroys collections could not load:', error);
     if(dealStatus)dealStatus.textContent='Current deals could not be checked. Open Deals or browse All Products.';
-    for(const [,status] of ribbons)if(status)status.textContent='Amazon picks could not load. Please browse All Products or reload to try again.';
+    for(const [,status] of ribbons)if(status){status.hidden=false;status.textContent='Amazon picks could not load. Please browse All Products or reload to try again.';}
   }
 })();

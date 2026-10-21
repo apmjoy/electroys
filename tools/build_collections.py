@@ -54,7 +54,7 @@ def collection_page(template, kind):
         ribbon = '<section class="container py-4" aria-label="Curated Amazon picks"><p id="bestSellersRibbonStatus" role="status">Loading Electroys Amazon picks.</p><div id="bestSellersRibbon" class="amazon-ribbon"></div></section>'
         page = page.replace('<section class="section pt-4"', ribbon + '<section class="section pt-4"', 1)
         page = page.replace('</head>', '<link rel="stylesheet" href="collections.css?v=20261020-2">\n</head>', 1)
-        page = page.replace('</body>', '<script src="collections.js?v=20261020-2"></script>\n</body>', 1)
+        page = page.replace('</body>', '<script src="collections.js?v=20261020-3"></script>\n</body>', 1)
     return page
 
 
@@ -66,8 +66,8 @@ HOME_COLLECTIONS = '''<!-- HOME-COLLECTIONS-START -->
   <div class="text-center mt-4"><a class="btn btn-primary px-4" href="deals.html">More deals</a> <a class="btn btn-outline-primary" href="deals.html?relationship=core">STEM project deals</a></div>
 </div></section>
 <section id="best-sellers" class="section" aria-labelledby="home-bestsellers-title"><div class="container">
-  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div><p>Fifteen Amazon picks curated for STEM learning and supporting technology. Electroys editorial selections; not a claim of Amazon sales rank.</p></div>
-  <p id="homeBestSellersStatus" class="text-center" role="status">Loading our curated Amazon picks. All picks are also in All Products.</p>
+  <div class="section-title"><h2 id="home-bestsellers-title">Best Sellers</h2><div class="line"></div></div>
+  <p id="homeBestSellersStatus" class="text-center" role="status" hidden></p>
   <div id="homeBestSellersGrid" class="row g-4"></div>
   <div class="text-center mt-4"><a class="btn btn-primary px-4" href="best-sellers.html">Explore Best Sellers</a> <a class="btn btn-outline-primary" href="products.html?sort=recommended">Electroys picks</a></div>
 </div></section>
@@ -85,8 +85,8 @@ def update_home(home):
     if 'href="collections.css' not in home:
         home = home.replace('</head>', '<link rel="stylesheet" href="collections.css?v=20261020-2">\n</head>', 1)
     if 'src="collections.js' not in home:
-        home = home.replace('</body>', '<script src="catalog.js?v=20261020-2"></script>\n<script src="collections.js?v=20261020-2"></script>\n</body>', 1)
-    home = home.replace("catalog.js?v=20261020-2", "catalog.js?v=20261020-2").replace("collections.js?v=20261020-2", "collections.js?v=20261020-2")
+        home = home.replace('</body>', '<script src="catalog.js?v=20261020-2"></script>\n<script src="collections.js?v=20261020-3"></script>\n</body>', 1)
+    home = home.replace("collections.js?v=20261020-2", "collections.js?v=20261020-3")
     home = home.replace('href="collections.css"', 'href="collections.css?v=20261020-2"')
     return home
 

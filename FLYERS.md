@@ -2,6 +2,14 @@
 
 `tools/build_flyers.py` produces exactly two concepts, each with a 1080 × 1350 feed PNG, 1080 × 1920 story PNG, and caption/alt-text file. The artwork is original typographic/circuit decoration; retailer product photographs are not downloaded or redistributed. The templates intentionally avoid unverified price, coupon, ease-of-build, and bestseller claims. The first concept emphasizes product learning value. The second uses a date-aware editorial theme: autumn making in October, gift-season inspiration in November/December, back-to-learning in August/September, summer discovery in June/July, or evergreen learning otherwise. These are invitations to explore, not claims of product suitability or holiday discounts. Offer-specific creative requires an approved, evidence-backed input extension rather than invented claims.
 
+## Required Electroys flyer skill
+
+Before generating any new flyer, read and apply the installed `electroys-flyers` skill at `~/.codex/skills/electroys-flyers/SKILL.md`. Its supplied logo assets and established layouts are the visual authority. Inspect its design preview, and adapt a workspace copy of its script for current source-verified copy and the requested social formats. Never edit the installed skill or its assets.
+
+Keep the existing exact-publication/page-validation gates, selection history, two-concept count, captions and delivery receipts. Recompose each concept at 1080×1350 and 1080×1920; these requested social sizes override the skill's default Letter format. Use a supplied logo exactly once per image with its original proportions, colors and wording; do not substitute the old text-only ELECTROYS badge. Vary the two concepts' compositions. Follow the skill's palette, clean spacing, focal-visual limits and visible electroys.com CTA. Adapt the legacy renderer before using it for a new production run; its old typography-only artwork is not the approved visual default.
+
+Deliver direct PNG links, a compact preview and a ZIP containing only the four final PNGs. Keep captions/alt text as separate files and email them alongside the PNGs after visual inspection. No new send is authorized merely by changing this documentation; normal daily delivery and explicit flyer requests retain their existing authorization and duplicate checks.
+
 ## Publication gate
 
 Invoke this only after the refreshed website is published and checked live. The publishing job writes a private manifest (outside the public site) containing:
