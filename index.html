@@ -1820,7 +1820,7 @@ a[role="button"]{
   let paused=motion.matches;
   function update(){button.textContent=paused?'Play messages':'Pause messages';button.setAttribute('aria-label',paused?'Play hero messages':'Pause hero messages');if(paused)carousel.pause();else carousel.cycle();}
   button.addEventListener('click',()=>{paused=!paused;update();});
-  element.addEventListener('focusin',()=>{paused=true;update();});
+  element.addEventListener('focusin',event=>{if(event.target===button)return;paused=true;update();});
   motion.addEventListener?.('change',()=>{if(motion.matches){paused=true;update();}});
   update();
 })();
