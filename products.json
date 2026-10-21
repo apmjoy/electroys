@@ -42371,5 +42371,97 @@
         "Live Amazon stock and price not verified; no price or availability claims."
       ]
     }
+  },
+  "amazon-iqkidz-car-robot": {
+    "t": "IQKidz 2-in-1 RC Race Car & Robot Building Set",
+    "store": "Amazon",
+    "brand": "IQKidz",
+    "url": "https://www.amazon.com/dp/B0DT8N8WS1?tag=myelectroys-20",
+    "asin": "B0DT8N8WS1",
+    "source": "https://www.amazon.com/dp/B0DT8N8WS1",
+    "cat": "Build & Make",
+    "categories": [
+      "Build & Make",
+      "Car Building Sets"
+    ],
+    "productType": "Car Building Set",
+    "relationship": "core",
+    "classificationStatus": "editor-reviewed",
+    "classificationReason": "Construction models used for hands-on assembly and exploring structure or mechanisms.",
+    "age": "Check maker guidance",
+    "level": "Check prerequisites",
+    "levels": [
+      "Check prerequisites"
+    ],
+    "focus": "Construction and mechanisms",
+    "why": "Build a race-car or robot model, then compare how the construction changes between the two forms.",
+    "learn": "Explore model assembly, structural connections and how a physical build can change function. Check the supplied instructions for controls and power requirements.",
+    "fit": "Builders interested in car models and step-by-step construction. Check the exact kit and prerequisites.",
+    "consider": "Confirm the exact model, parts, dimensions, any powered functions, battery or tool requirements and maker age guidance at the retailer. Current price, stock and seller are not verified.",
+    "price": "Check current price & availability",
+    "image": "assets/illustrations/car-building-set.svg",
+    "imageAlt": "Original Electroys car-building illustration; not an exact product photo.",
+    "imageRights": "Original Electroys vector illustration.",
+    "addedAt": "2026-10-21T04:10:52.996212+00:00",
+    "reviewed": "2026-10-21",
+    "sourceType": "indexed-retailer-page",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-10-21T04:10:52.996212+00:00",
+      "scope": [
+        "indexed-retailer-identity",
+        "product-type"
+      ],
+      "issues": [
+        "Identity was checked against the original Amazon indexed product page. Live Amazon price, promotions, stock and seller are not verified; no current offer is advertised.",
+        "Learning suggestions are editorial and are not a claim of hands-on testing."
+      ]
+    }
+  },
+  "amazon-pikaro-sports-car": {
+    "t": "PIKARO Sports Race Car Building Set",
+    "store": "Amazon",
+    "brand": "PIKARO",
+    "url": "https://www.amazon.com/dp/B0FPR6XHZS?tag=myelectroys-20",
+    "asin": "B0FPR6XHZS",
+    "source": "https://www.amazon.com/PIKARO-Sports-Building-Adults-Pieces/dp/B0FPR6XHZS",
+    "cat": "Build & Make",
+    "categories": [
+      "Build & Make",
+      "Car Building Sets"
+    ],
+    "productType": "Car Building Set",
+    "relationship": "core",
+    "classificationStatus": "editor-reviewed",
+    "classificationReason": "Construction models used for hands-on assembly and exploring structure or mechanisms.",
+    "age": "Check maker guidance",
+    "level": "Check prerequisites",
+    "levels": [
+      "Check prerequisites"
+    ],
+    "focus": "Construction and mechanisms",
+    "why": "A 2,143-piece, 1:10 sports-car construction model for a larger building and display project.",
+    "learn": "Practice following staged assembly instructions, connecting subassemblies and checking alignment. Learning guidance is editorial; no hands-on build test is claimed.",
+    "fit": "Builders interested in car models and step-by-step construction. Check the exact kit and prerequisites.",
+    "consider": "Confirm the exact model, parts, dimensions, any powered functions, battery or tool requirements and maker age guidance at the retailer. Current price, stock and seller are not verified.",
+    "price": "Check current price & availability",
+    "image": "assets/illustrations/car-building-set.svg",
+    "imageAlt": "Original Electroys car-building illustration; not an exact product photo.",
+    "imageRights": "Original Electroys vector illustration.",
+    "addedAt": "2026-10-21T04:10:52.996212+00:00",
+    "reviewed": "2026-10-21",
+    "sourceType": "indexed-retailer-page",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-10-21T04:10:52.996212+00:00",
+      "scope": [
+        "indexed-retailer-identity",
+        "product-type"
+      ],
+      "issues": [
+        "Identity was checked against the original Amazon indexed product page. Live Amazon price, promotions, stock and seller are not verified; no current offer is advertised.",
+        "Learning suggestions are editorial and are not a claim of hands-on testing."
+      ]
+    }
   }
 }

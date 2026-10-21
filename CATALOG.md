@@ -1,6 +1,6 @@
 # Electroys product catalog
 
-The catalog is generated from canonical products.json; the October 20 release contains 750 products. Homepage store buttons open the corresponding catalog filter.
+The catalog is generated from canonical products.json; the current catalog total derives from the canonical records. Homepage store buttons open the corresponding catalog filter.
 
 To add or update products:
 
@@ -27,3 +27,10 @@ Refresh original Arduino, Cooler Master and Pimoroni feeds with tools/import_ret
 Slickdeals discovery writes a private review queue with tools/discover_deals.py. A candidate cannot become an offer until the original retailer, exact variant and promotion are verified. Purchase links never use Slickdeals. Amazon API credentials and best-seller evidence are separate external dependencies.
 
 After deployment, tools/verify_publication.py verifies the exact live catalog digest and writes a private publication manifest. tools/build_flyers.py uses that manifest; see FLYERS.md. Neither a successful structural check nor a reachable link proves all editorial claims are verified. See docs/VALIDATION.md for evidence scope.
+
+
+## Personal preferences and private analytics
+
+All Products offers device-local Like/Dislike choices, not public vote totals. Clicking the active choice clears it; preferences persist across filters/pages and reloads when storage works. When storage fails, the UI explicitly keeps the choice for this visit only. There is no shared preference database or public visitor counter.
+
+The existing Google Analytics property records measured visitors/page views. `engagement.js` adds `product_outbound_click` and `product_reaction` events without delaying retailer navigation. It sends canonical product IDs, public product names, retailer domain and page section, not full destination URLs, query strings, free-text requests or newsletter fields. Custom events are suppressed off the production domains and for GPC/DNT preferences. See docs/ANALYTICS.md for report setup and count definitions. Keep private reports separate from public site content.

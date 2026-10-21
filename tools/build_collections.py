@@ -35,6 +35,7 @@ def collection_page(template, kind):
     page = replace_once(r'<h1>.*?</h1>', f'<h1>{headline}</h1>', page)
     page = replace_once(r'<p class="text-secondary mb-0">.*?</p>', f'<p class="text-secondary mb-0">{description}</p>', page)
     page = replace_once(r'<h2 id="catalog-title">.*?</h2>', f'<h2 id="catalog-title">{section_title}</h2>', page)
+    page = re.sub(r'[ \t]*<p class="small text-secondary catalog-preference-note">.*?</p>\n', '', page)
     # Never inherit regular products, fallback counts or all-product page links.
     page = replace_once(r'<!-- CATALOG-GRID-START -->.*?<!-- CATALOG-GRID-END -->', '<!-- CATALOG-GRID-START -->\n<div class="row g-4" id="productGrid"></div>\n<!-- CATALOG-GRID-END -->', page)
     page = replace_once(r'<!-- CATALOG-PAGES-START -->.*?<!-- CATALOG-PAGES-END -->', '<!-- CATALOG-PAGES-START --><!-- CATALOG-PAGES-END -->', page)

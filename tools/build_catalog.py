@@ -72,7 +72,7 @@ for key in featured:
     if not p: continue
     picture=f'<img src="{esc(safe_url(p.get("image"),True))}" alt="{esc(p["t"])}" loading="lazy">' if p.get('image') else f'<span class="p-4">{esc(p["t"])}</span>'
     relation='sponsored nofollow noopener noreferrer' if 'tag=' in p['url'] or 'ref=' in p['url'] else 'noopener noreferrer'
-    featured_cards.append(f'''<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-brand="{esc(p['store'])}" data-cat="{esc(p['cat'])}">
+    featured_cards.append(f'''<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="{esc(key)}" data-brand="{esc(p['store'])}" data-cat="{esc(p['cat'])}">
       <div class="product-card h-100"><div class="product-img-wrap">{picture}</div><div class="p-4">
       <span class="product-kicker">{esc(p['cat'])}</span><h3>{esc(p['t'])}</h3><p class="product-copy">{esc(p.get('why',''))}</p>
       <div class="product-facts"><span>{esc(p.get('age','Check maker guidance'))}</span><span>{esc(p.get('level','Check product details'))}</span></div>
@@ -86,5 +86,25 @@ for name,data in [('productData',{k:products[k] for k in featured if k in produc
     value=json.dumps(data,ensure_ascii=False).replace('<','\\u003c')
     home,n=re.subn(r'const '+name+r'=.*?;(?=\r?\n)',lambda _:'const '+name+'='+value+';',home,count=1)
     assert n==1
+def link_identity(value):
+    try:
+        u=urlsplit(html.unescape(value)); host=(u.hostname or '').removeprefix('www.')
+        if u.scheme!='https':return None
+        asin=re.search(r'/(?:dp|gp/product)/([A-Z0-9]{10})(?:/|$)',u.path,re.I)
+        return ('amazon.com',asin.group(1).upper()) if host=='amazon.com' and asin else (host,u.path.rstrip('/'))
+    except ValueError:return None
+link_products={}
+for key,p in products.items():
+    for url in [p.get('url'),p.get('amazonUrl')]:
+        identity=link_identity(url or '')
+        if identity:link_products[identity]=key
+def annotate_link(match):
+    attrs,url=match.group(1),match.group(2)
+    key=link_products.get(link_identity(url))
+    if not key:return match.group(0)
+    if 'data-product-id=' not in attrs:attrs+=' data-product-id="'+esc(key)+'"'
+    if 'data-product-name=' not in attrs:attrs+=' data-product-name="'+esc(products[key]['t'])+'"'
+    return '<a'+attrs+'>'
+home=re.sub(r'<a(\s[^>]*?href="([^"]+)"[^>]*)>',annotate_link,home)
 (root/'index.html').write_bytes(home.encode('utf-8'))
 print(f'Rendered {len(featured)} homepage cards from the shared catalog.')
