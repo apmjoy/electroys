@@ -42463,5 +42463,53 @@
         "Learning suggestions are editorial and are not a claim of hands-on testing."
       ]
     }
+  },
+  "makeblock-cyberpi-go": {
+    "t": "Makeblock CyberPi Go Kit",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-cyberpi?ref=electroys",
+    "cat": "Coding",
+    "age": "8+",
+    "level": "Beginner → Advanced",
+    "levels": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "categories": [
+      "Coding",
+      "Electronics",
+      "STEM & Science"
+    ],
+    "focus": "Physical computing + Python",
+    "why": "Program a pocket-size controller with a color display and built-in sensors, starting with blocks and progressing to Python.",
+    "learn": "Create sensor-driven games, collect and display data, and connect code with motion, sound and on-screen feedback.",
+    "fit": "Learners who want one compact device for beginner coding activities and a path into text-based programming.",
+    "consider": "Select the CyberPi Go Kit; project bundles include different parts and lessons. Check current device requirements, bundle contents and delivery options.",
+    "price": "Check current price & availability",
+    "source": "https://www.makeblock.com/products/buy-cyberpi",
+    "documentation": "https://support.makeblock.com/hc/en-us/categories/1500000167602-CyberPi",
+    "reviewed": "2026-10-21",
+    "dealbadge": "",
+    "relationship": "core",
+    "classificationReason": "Manufacturer-documented physical-computing kit with a learning path from block coding to Python.",
+    "classificationStatus": "editor-reviewed",
+    "productType": "Coding",
+    "addedAt": "2026-10-21T08:00:00+00:00",
+    "status": "active",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-10-21T08:00:00+00:00",
+      "scope": [
+        "identity",
+        "selected-variant",
+        "age-guidance",
+        "programming-languages"
+      ],
+      "issues": [
+        "Learning guidance is editorial; no hands-on test is claimed.",
+        "Current price and availability are not displayed on Electroys."
+      ]
+    }
   }
 }
