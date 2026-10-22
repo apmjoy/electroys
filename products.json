@@ -42511,5 +42511,56 @@
         "Current price and availability are not displayed on Electroys."
       ]
     }
+  },
+  "df-lark-weather-station": {
+    "t": "DFRobot Lark Weather Station",
+    "store": "DFRobot",
+    "brand": "DFRobot",
+    "url": "https://www.dfrobot.com/product-2785.html",
+    "manufacturerPartNumber": "EDU0157-EN",
+    "cat": "STEM & Science",
+    "age": "Check maker guidance",
+    "level": "Beginner → Intermediate",
+    "levels": [
+      "Beginner",
+      "Intermediate"
+    ],
+    "categories": [
+      "STEM & Science",
+      "Coding",
+      "Electronics"
+    ],
+    "focus": "Weather data + environmental science",
+    "why": "Collect wind, temperature, humidity and pressure data with one compact station, then export CSV files or connect a controller for coding projects.",
+    "learn": "Compare local weather measurements, graph changes over time and use real sensor data in MakeCode, Arduino or Python activities.",
+    "fit": "Classrooms, clubs and families planning structured meteorology, data-logging or environmental-science investigations.",
+    "consider": "A 5V mobile power supply or adapter and a computer are needed for standalone logging and export. Controller-based projects require compatible hardware. Follow the maker's startup orientation and wind-vane calibration steps, and protect the bottom ports from water.",
+    "price": "Check current price & availability",
+    "source": "https://www.dfrobot.com/product-2785.html",
+    "documentation": "https://wiki.dfrobot.com/edu0157-en/",
+    "reviewed": "2026-10-22",
+    "dealbadge": "",
+    "relationship": "core",
+    "classificationReason": "Manufacturer-documented environmental data-logging kit with standalone use and supported coding integrations.",
+    "classificationStatus": "editor-reviewed",
+    "productType": "STEM & Science",
+    "addedAt": "2026-10-22T07:15:00+00:00",
+    "status": "active",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-10-22T07:15:00+00:00",
+      "scope": [
+        "identity",
+        "manufacturer-part-number",
+        "measured-data-types",
+        "controller-compatibility",
+        "included-components"
+      ],
+      "issues": [
+        "The manufacturer page does not state an age range; Electroys uses Check maker guidance.",
+        "Learning guidance is editorial; no hands-on test is claimed.",
+        "Current price and availability are not displayed on Electroys."
+      ]
+    }
   }
 }
