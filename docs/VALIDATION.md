@@ -50,12 +50,12 @@ The daily validator never deletes or merges product records. An approved merge m
 
 ## Refresh staging and daily sequence
 
-The owner confirmed an existing discovery automation at **05:15 America/Chicago**. Its scheduler configuration is not in this checkout. Do not create a duplicate or claim the scheduler was updated.
+The owner confirmed an existing discovery automation at **02:00 America/Chicago**. Its scheduler configuration is not in this checkout. Do not create a duplicate or claim the scheduler was updated.
 
 Recommended integration:
 
-1. At 04:30 CT, run validation; record completion and unresolved fields.
-2. At 05:15 CT, refresh original retailer feeds and discover candidates. Slickdeals is discovery only; verify the original retailer before intake.
+1. At 02:00 CT, let the existing content-loading job finish; inspect its completion and release evidence.
+2. At 04:00 CT, validate the completed refresh. Refresh original retailer feeds into private staging where needed to verify source claims. Slickdeals is discovery only; verify the original retailer before intake.
 3. Run `refresh_catalog.py` into a unique directory for the run. It stages products/offers and removes stale offers from the staged snapshot, preserving the production files. Rejected candidates and unresolved verification remain explicit.
 4. Check duplicate candidates, field coverage and publication policy. Build an isolated public-file allowlist, test it, then publish atomically through the existing hosting workflow.
 5. Verify the live catalog digest and URLs before writing the publication manifest used by `build_flyers.py`. The staging state always has `published: false` and `flyerReady: false`; staging alone cannot unlock flyers.
@@ -95,6 +95,6 @@ The image checker uses an exact-host/path allowlist and same-host validated redi
 
 ## Morning ordering and release evidence
 
-Content loading runs at 05:15 America/Chicago; validation runs at 06:00 after that job finishes, then flyers at 07:00 after validation succeeds. A late job blocks its dependents. Validate the union of current homepage featured IDs, the six displayed deals, and the 15 Amazon picks; report missing images elsewhere separately. Owned SVG illustrations are accepted only under assets/illustrations, with a strict passive-element/attribute check. Never label an illustration as an actual product photo.
+Content loading runs at 02:00 America/Chicago; validation runs at 04:00 after that job finishes, then flyers at 07:00 after validation succeeds. A late job blocks its dependents. Validate the union of current homepage featured IDs, the six displayed deals, and the 15 Amazon picks; report missing images elsewhere separately. Owned SVG illustrations are accepted only under assets/illustrations, with a strict passive-element/attribute check. Never label an illustration as an actual product photo.
 
 After actual browser, image, functional and security checks on the live release, write the private dated page-validation.json described in FLYERS.md. It must match publicationId and catalogSha256 and is required by the production flyer CLI. Do not automatically write success from a working catalog URL alone. Email delivery follows visual flyer review and records a Gmail message ID; failed upstream checks must prevent email.

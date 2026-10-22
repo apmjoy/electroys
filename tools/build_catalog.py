@@ -18,7 +18,7 @@ icons={'Robotics':'robot','Coding':'code-slash','Electronics':'lightning-charge'
 cards=[]
 for key,p in products.items():
     fallback=f'<span class="image-fallback"><i class="bi bi-{icons.get(p["cat"],"box")} mb-2" aria-hidden="true"></i><span>{esc(p["t"])}</span><small>Product photo at the store</small></span>'
-    picture=f'<img src="{esc(safe_url(p.get("image"),True))}" alt="{esc(p["t"])}" loading="lazy" decoding="async">' if p.get('image') else fallback
+    picture=f'<img src="{esc(safe_url(p.get("image"),True))}" alt="{esc(p.get("imageAlt") or p["t"])}" loading="lazy" decoding="async">' if p.get('image') else fallback
     paid=p['store']=='Amazon' and 'tag=' in p['url']
     relation='sponsored nofollow noopener noreferrer' if paid or p['store']=='Makeblock' else 'noopener noreferrer'
     disclosure='<small class="d-block mt-2">Amazon paid link</small>' if paid else ''
@@ -70,7 +70,7 @@ featured_cards=[]
 for key in featured:
     p=products.get(key)
     if not p: continue
-    picture=f'<img src="{esc(safe_url(p.get("image"),True))}" alt="{esc(p["t"])}" loading="lazy">' if p.get('image') else f'<span class="p-4">{esc(p["t"])}</span>'
+    picture=f'<img src="{esc(safe_url(p.get("image"),True))}" alt="{esc(p.get("imageAlt") or p["t"])}" loading="lazy">' if p.get('image') else f'<span class="p-4">{esc(p["t"])}</span>'
     relation='sponsored nofollow noopener noreferrer' if 'tag=' in p['url'] or 'ref=' in p['url'] else 'noopener noreferrer'
     featured_cards.append(f'''<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="{esc(key)}" data-brand="{esc(p['store'])}" data-cat="{esc(p['cat'])}">
       <div class="product-card h-100"><div class="product-img-wrap">{picture}</div><div class="p-4">

@@ -48,7 +48,7 @@ The two selections prioritize newest `addedAt` / `publishedAt` timestamps and av
 
 ## Schedule integration
 
-The existing content-loading job runs at 5:15 a.m. America/Chicago. Page/catalog/image validation follows at 6:00; flyer generation follows at 7:00 only after the same live release passed validation. A late or failed upstream stage blocks downstream work.
+The existing content-loading job runs at 2:00 a.m. America/Chicago. Page/catalog/image validation follows at 4:00; flyer generation follows at 7:00 only after the same live release passed validation. A late or failed upstream stage blocks downstream work.
 
 The production CLI requires `--page-validation`: a private JSON record with `status: "passed"`, matching `publicationId` and `catalogSha256`, today's `checkedAt` timestamp, and `checks` set to true for `contentLoaded`, `images`, `browser`, `functional`, and `security`. Write this record only after actually performing those checks. A refresh alone does not establish page/image success. The morning image check uses `tools/validate_images.py` and browser decoding checks for homepage featured/deals/ribbon cards. The renderer does not itself schedule, deploy, or fabricate evidence.
 
