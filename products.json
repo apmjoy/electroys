@@ -42660,5 +42660,58 @@
     "image": "assets/illustrations/weather-learning.svg",
     "imageAlt": "Original Electroys topic illustration; not a photograph of DFRobot Lark Weather Station.",
     "imageRights": "Original Electroys vector illustration; actual product photo available at retailer."
+  },
+  "sparkfun-xrp-kit": {
+    "t": "SparkFun Experiential Robotics Platform (XRP) Kit",
+    "store": "SparkFun",
+    "brand": "SparkFun",
+    "url": "https://www.sparkfun.com/experiential-robotics-platform-xrp-kit.html",
+    "manufacturerPartNumber": "KIT-27644",
+    "sku": "KIT-27644",
+    "cat": "Robotics",
+    "age": "Check maker guidance",
+    "level": "Beginner → Advanced",
+    "levels": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "categories": [
+      "Robotics",
+      "Coding",
+      "Build & Make"
+    ],
+    "focus": "Robot assembly + multi-language coding",
+    "why": "Snap together an expandable wheeled robot, then use its line, distance, motion and motor hardware for progressively more capable coding challenges.",
+    "learn": "Build and test sensor-driven movement, work with motor feedback and progress from Blockly projects to Python or WPILib programming.",
+    "fit": "Learners, clubs and robotics teams seeking one reusable platform for introductory builds and more advanced control projects.",
+    "consider": "Four AA batteries and a USB-C cable are required but not included. Check current computer, browser and programming-environment requirements, and review the retailer's XRP consortium data-sharing notice before ordering.",
+    "price": "Check current price & availability",
+    "source": "https://www.sparkfun.com/experiential-robotics-platform-xrp-kit.html",
+    "documentation": "https://xrp.experiential.bot/",
+    "reviewed": "2026-10-23",
+    "dealbadge": "",
+    "relationship": "core",
+    "classificationReason": "Manufacturer-documented, expandable educational robotics platform with structured beginner-to-advanced programming resources.",
+    "classificationStatus": "editor-reviewed",
+    "productType": "Robotics",
+    "addedAt": "2026-10-23T07:15:00+00:00",
+    "status": "active",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-10-23T07:15:00+00:00",
+      "scope": [
+        "identity",
+        "manufacturer-part-number",
+        "included-components",
+        "programming-environments",
+        "required-accessories"
+      ],
+      "issues": [
+        "The manufacturer page does not state an age range; Electroys uses Check maker guidance.",
+        "Learning guidance is editorial; no hands-on test is claimed.",
+        "Current price and availability are not displayed on Electroys."
+      ]
+    }
   }
 }
