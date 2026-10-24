@@ -14,8 +14,7 @@ from urllib.parse import urlsplit, parse_qs
 from retailer_images import apply_image
 
 ROOT = Path(__file__).resolve().parent.parent
-PROVIDERS = [('arduino', 'Arduino', 'https://store-usa.arduino.cc', 'USD', 2),
-             ('coolermaster', 'Cooler Master', 'https://store.coolermaster.com', 'USD', 1),
+PROVIDERS = [('coolermaster', 'Cooler Master', 'https://store.coolermaster.com', 'USD', 1),
              ('pimoroni', 'Pimoroni', 'https://shop.pimoroni.com', 'GBP', 4)]
 
 def classification(item):
@@ -56,7 +55,7 @@ def fetch_json(url):
     # urllib honors the execution environment's outbound proxy and TLS trust.
     import urllib.request
     from time import sleep
-    allowed = {"store-usa.arduino.cc", "shop.pimoroni.com", "store.coolermaster.com"}
+    allowed = {"shop.pimoroni.com", "store.coolermaster.com"}
     def allowed_url(value):
         p = urlsplit(value)
         return p.scheme == "https" and p.hostname in allowed and not p.username and not p.password and p.port in (None, 443) and p.path in ("/products.json", "/meta.json")

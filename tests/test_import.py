@@ -13,12 +13,12 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(money('12.34'),12.34)
     def test_exclude_filler(self):
         self.assertIsNone(classification({'product_type':'Swag','title':'Sticker'}))
-        self.assertIsNone(classification({'product_type':'Board','title':'Arduino UNO एक R4'}))
+        self.assertIsNone(classification({'product_type':'Board','title':'Controller एक R4'}))
         self.assertEqual(classification({'product_type':'Display','title':'eInk SSD1680Z'})[0],'Electronics')
         self.assertEqual(classification({'product_type':'Book','title':'Robotics guide'})[1],'Book')
     def test_idempotence_and_exact_variant(self):
         item={'id':12,'title':'Sensor module','handle':'sensor','product_type':'Sensor','variants':[{'id':13,'title':'3V','price':'7.50','available':True},{'id':14,'title':'5V','price':'5.50','available':False}]}
-        feeds={'arduino':[item],'pimoroni':[]}; now=datetime.now(timezone.utc)
+        feeds={'pimoroni':[item],'coolermaster':[]}; now=datetime.now(timezone.utc)
         p,o,c=import_catalog({}, {'offers':[]},feeds,now)
         self.assertEqual(len(p),1);self.assertEqual(o['offers'][0]['price'],7.5)
         self.assertIn('variant=13',o['offers'][0]['url'])

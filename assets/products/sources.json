@@ -1,10 +1,4 @@
 {
-  "arduino-plug-make": {
-    "product": "Arduino Plug and Make Kit",
-    "product_page": "https://store-usa.arduino.cc/products/plug-and-make-kit",
-    "source_image": "https://store-usa.arduino.cc/cdn/shop/files/AKX00069_00.default_1200x900.jpg?v=1740391708",
-    "local_image": "assets/products/arduino-plug-make.jpg"
-  },
   "df-science-starter": {
     "product": "DFRobot BOSON Science Starter Pack",
     "product_page": "https://www.dfrobot.com/product-2425.html",

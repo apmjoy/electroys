@@ -95,6 +95,6 @@ The image checker uses an exact-host/path allowlist and same-host validated redi
 
 ## Morning ordering and release evidence
 
-Content loading runs at 02:00 America/Chicago; validation runs at 04:00 after that job finishes, then flyers at 07:00 after validation succeeds. A late job blocks its dependents. Validate the union of current homepage featured IDs, the six displayed deals, and the 15 Amazon picks; report missing images elsewhere separately. Owned SVG illustrations are accepted only under assets/illustrations, with a strict passive-element/attribute check. Never label an illustration as an actual product photo.
+Content loading runs at 02:00 America/Chicago; validation runs at 04:00 after that job finishes, then flyers at 07:00 after validation succeeds. A late job blocks its dependents. Validate the union of current homepage featured IDs, the six displayed deals, and the configured editorial Amazon picks; report missing images elsewhere separately. Owned SVG illustrations are accepted only under assets/illustrations, with a strict passive-element/attribute check. Never label an illustration as an actual product photo.
 
 After actual browser, image, functional and security checks on the live release, write the private dated page-validation.json described in FLYERS.md. It must match publicationId and catalogSha256 and is required by the production flyer CLI. Do not automatically write success from a working catalog URL alone. Email delivery follows visual flyer review and records a Gmail message ID; failed upstream checks must prevent email.

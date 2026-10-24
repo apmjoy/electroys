@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 DESCRIPTIONS = {
     'deals': ('Deals', 'Find a worthwhile next step.', 'Verified offers on STEM projects, books, maker equipment and supporting technology. Use Project-focused to hide general tech and supporting gear.', 'Current verified deals'),
-    'bestsellers': ('Best Sellers', 'Explore what is getting attention.', 'Explore 15 Amazon picks curated by Electroys for STEM learning and supporting technology. These are editorial selections; Amazon sales rankings are shown only when verified.', 'Curated Amazon picks'),
+    'bestsellers': ('Best Sellers', 'Explore what is getting attention.', 'Explore Amazon picks curated by Electroys for STEM learning and supporting technology. These are editorial selections; Amazon sales rankings are shown only when verified.', 'Curated Amazon picks'),
 }
 
 
@@ -106,15 +106,29 @@ def build(root=ROOT):
     element = tree.getroot()
     targets = {'https://electroys.com/deals.html', 'https://electroys.com/best-sellers.html'}
     targets.update('https://electroys.com/' + p.name for p in root.glob('products-page-*.html'))
+    today = datetime.now(timezone.utc).date().isoformat()
+    changed_pages = targets | {
+        'https://electroys.com/',
+        'https://electroys.com/products.html',
+        'https://electroys.com/reviews/choose-stem-project-book.html',
+    }
     for entry in list(element):
         location = entry.find(f'{{{namespace}}}loc')
-        if location is not None and location.text == 'https://electroys.com/prime-deals.html':
+        url = location.text if location is not None else ''
+        stale_catalog_page = re.fullmatch(r'https://electroys\.com/products-page-\d+\.html', url) and url not in targets
+        if url == 'https://electroys.com/prime-deals.html' or stale_catalog_page:
             element.remove(entry)
+            continue
+        if url in changed_pages:
+            modified = entry.find(f'{{{namespace}}}lastmod')
+            if modified is None:
+                modified = ET.SubElement(entry, f'{{{namespace}}}lastmod')
+            modified.text = today
     existing = {e.find(f'{{{namespace}}}loc').text for e in element if e.find(f'{{{namespace}}}loc') is not None}
     for url in sorted(targets - existing):
         entry = ET.SubElement(element, f'{{{namespace}}}url')
         ET.SubElement(entry, f'{{{namespace}}}loc').text = url
-        ET.SubElement(entry, f'{{{namespace}}}lastmod').text = datetime.now(timezone.utc).date().isoformat()
+        ET.SubElement(entry, f'{{{namespace}}}lastmod').text = today
     tree.write(path, encoding='UTF-8', xml_declaration=True)
     return ['deals.html', 'best-sellers.html', 'prime-deals.html', 'index.html', 'sitemap.xml']
 

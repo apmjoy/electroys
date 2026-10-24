@@ -22,7 +22,7 @@ Homepage selection: edit `featured.json` to choose product keys from `products.j
 
 Sorting, URL filters and 12/24/48/100 page sizes operate on the full catalog. Static pages contain 24 cards each. Offers are separate in offers.json and prices expire automatically within 24 hours. Budgets are item prices in USD, excluding conditional coupons, tax and shipping. No currency conversion is applied.
 
-Refresh original Arduino, Cooler Master and Pimoroni feeds with tools/import_retailer_catalogs.py --output-dir PRIVATE_STAGING --target 750. Review staged changes and scoped verification before replacing canonical data. Run build_catalog.py followed by build_collections.py and the test suite. The source adapters preserve original editorial records and never scrape Amazon prices.
+Refresh the configured Cooler Master and Pimoroni feeds with tools/import_retailer_catalogs.py --output-dir PRIVATE_STAGING --target 750. Review staged changes and scoped verification before replacing canonical data. Run build_catalog.py followed by build_collections.py and the test suite. The source adapters preserve original editorial records and never scrape Amazon prices. The excluded Arduino catalog must not be imported or restored.
 
 Slickdeals discovery writes a private review queue with tools/discover_deals.py. A candidate cannot become an offer until the original retailer, exact variant and promotion are verified. Purchase links never use Slickdeals. Amazon API credentials and best-seller evidence are separate external dependencies.
 

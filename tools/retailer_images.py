@@ -73,7 +73,7 @@ def enrich_existing(products, feeds):
         for item in items if isinstance(items, list) else []:
             if isinstance(item, dict):
                 index[(provider, str(item.get('id')))] = item
-    stores = {'Arduino':'arduino','Pimoroni':'pimoroni','Cooler Master':'coolermaster'}
+    stores = {'Pimoroni':'pimoroni','Cooler Master':'coolermaster'}
     changed, missing = [], []
     for key, product in products.items():
         if not isinstance(product, dict) or product.get('store') not in stores:
@@ -97,7 +97,7 @@ def main():
     args=parser.parse_args()
     if args.output.resolve()==args.products.resolve():parser.error('use a separate staging output; never overwrite production directly')
     products=json.loads(args.products.read_text())
-    feeds={p.stem:json.loads(p.read_text()) for p in args.cached_feeds.glob('*.json') if p.stem in ('arduino','pimoroni','coolermaster')}
+    feeds={p.stem:json.loads(p.read_text()) for p in args.cached_feeds.glob('*.json') if p.stem in ('pimoroni','coolermaster')}
     result=enrich_existing(products,feeds)
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(products,indent=2,ensure_ascii=False)+'\n')

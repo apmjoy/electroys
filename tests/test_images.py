@@ -29,9 +29,9 @@ class ImageTests(unittest.TestCase):
         p={'image':'assets/products/test.png'}
         self.assertFalse(apply_image(p,item(),{'id':2}));self.assertEqual(p['image'],'assets/products/test.png')
     def test_apply_and_enrich_only_image(self):
-        products={'one':{'store':'Arduino','providerProductId':'1','providerVariantId':'2','image':'','t':'Keep title','verification':{'checkedAt':'old'}},'book':{'store':'Amazon','image':'','t':'Keep book'}}
+        products={'one':{'store':'Pimoroni','providerProductId':'1','providerVariantId':'2','image':'','t':'Keep title','verification':{'checkedAt':'old'}},'book':{'store':'Amazon','image':'','t':'Keep book'}}
         before=copy.deepcopy(products)
-        result=enrich_existing(products,{'arduino':[item()]})
+        result=enrich_existing(products,{'pimoroni':[item()]})
         self.assertEqual(result['updated'],1);self.assertEqual(products['one']['t'],'Keep title');self.assertEqual(products['one']['verification'],before['one']['verification']);self.assertEqual(products['book'],before['book'])
         self.assertFalse(products['one']['imageSource']['contentVerified'])
     def test_no_network_means_not_verified(self):
