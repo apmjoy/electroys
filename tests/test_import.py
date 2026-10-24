@@ -16,6 +16,16 @@ class ImportTests(unittest.TestCase):
         self.assertIsNone(classification({'product_type':'Board','title':'Controller एक R4'}))
         self.assertEqual(classification({'product_type':'Display','title':'eInk SSD1680Z'})[0],'Electronics')
         self.assertEqual(classification({'product_type':'Book','title':'Robotics guide'})[1],'Book')
+    def test_excluded_brand_does_not_return_through_other_retailer(self):
+        self.assertIsNone(classification({'product_type':'Board','title':'Arduino Nano','vendor':'Arduino'}))
+        self.assertIsNone(classification({'product_type':'Book','title':'Arduino Project Handbook'}))
+        item={'id':12,'title':'Adafruit Metro RP2040','handle':'metro','product_type':'Arduino Compatible','vendor':'Adafruit','variants':[{'id':13,'title':'Default Title','price':'12.50','available':True}]}
+        products,offers,_=import_catalog({}, {'offers':[]}, {'pimoroni':[item],'coolermaster':[]}, datetime.now(timezone.utc))
+        self.assertEqual(len(products),1)
+        product=products['pimoroni-12']
+        self.assertEqual(product['productType'],'Microcontroller board')
+        self.assertNotIn('Arduino',product['focus'])
+        self.assertEqual(offers['offers'][0]['productId'],'pimoroni-12')
     def test_idempotence_and_exact_variant(self):
         item={'id':12,'title':'Sensor module','handle':'sensor','product_type':'Sensor','variants':[{'id':13,'title':'3V','price':'7.50','available':True},{'id':14,'title':'5V','price':'5.50','available':False}]}
         feeds={'pimoroni':[item],'coolermaster':[]}; now=datetime.now(timezone.utc)

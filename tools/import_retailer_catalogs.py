@@ -21,10 +21,13 @@ def classification(item):
     kind = item.get('product_type', '').lower()
     title = item.get('title', '').lower()
     if 'एक' in title: return None
+    if re.search(r'\barduino\b', title) or str(item.get('vendor', '')).casefold() == 'arduino': return None
     if kind in ('merchandising', 'swag', 'software') or any(w in title for w in ('notebook', 't-shirt', 'gift card', 'sticker pack')):
         return None
     if kind in ('pc cases','power supplies','cooling'):
         return ('Computer Parts', {'pc cases':'PC case','power supplies':'Power supply','cooling':'PC cooling'}[kind], 'support', 'A PC build component; verify motherboard size, physical clearance, power requirements and connectors before ordering.')
+    if kind == 'arduino compatible':
+        return ('Electronics', 'Microcontroller board', 'core', 'A development board or electronic component for building and experimenting.')
     if kind == 'book':
         return ('Books & Learning Resources', 'Book', 'core', 'A practical learning resource; verify edition and prerequisites at the publisher.')
     if any(w in kind for w in ('robot', 'motor', 'servo')):
