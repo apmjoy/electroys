@@ -133,26 +133,13 @@
     const details = el('details', 'product-details mt-3');
     details.append(el('summary', '', 'What you’ll learn'), el('p', 'small mt-2', p.learn), el('p', 'small text-secondary', p.consider)); body.append(details);
     const action = el('div', 'catalog-card-action');
-    action.append(el('p', 'product-price', offer ? new Intl.NumberFormat('en-US', {style: 'currency', currency: offer.currency}).format(offer.price) : 'Check current price & availability'));
+    action.append(el('p', 'product-price', 'Check current price & availability'));
     if (offer && offer.variant && offer.variant !== 'Default Title') action.append(el('p', 'small', 'Selected option: ' + offer.variant));
-    if (offer && isDeal(offer)) {
-      if (offer.referencePrice > offer.price) action.append(el('p', 'small', 'Retailer comparison price: ' + new Intl.NumberFormat('en-US', {style: 'currency', currency: offer.currency}).format(offer.referencePrice)));
-      if (offer.coupon) {
-        const coupon = offer.coupon;
-        action.append(el('p', 'small', (coupon.type === 'clip' ? 'Clip coupon at retailer' : 'Code: ' + coupon.code) + (coupon.percent ? ' — ' + coupon.percent + '% off' : coupon.amount ? ' — ' + new Intl.NumberFormat('en-US', {style: 'currency', currency: offer.currency}).format(coupon.amount) + ' off' : '') + '. ' + coupon.conditions));
-      }
-    }
     const destination = offer ? offer.url : p.url;
     const link = el('a', 'btn btn-primary btn-sm', 'View at ' + (offer ? offer.retailer : p.store));
     link.href = destination; link.target = '_blank'; link.rel = 'sponsored nofollow noopener noreferrer';
     link.setAttribute('aria-label', 'View ' + p.t + ' at ' + (offer ? offer.retailer : p.store)); action.append(link);
     if (/amazon\.|amzn\./i.test(destination)) action.append(el('small', 'd-block mt-2', 'Amazon paid link'));
-    if (offer) {
-      action.append(el('small', 'd-block mt-2', 'Price checked ' + new Date(offer.checkedAt).toLocaleString('en-US', {timeZoneName: 'short'})));
-      const note = el('details', 'product-details mt-2');
-      note.append(el('summary', '', 'Price details'), el('p', 'small', 'Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on the retailer’s site at the time of purchase will apply to the purchase of this product. Prices exclude shipping and tax; conditional coupons are not deducted.'));
-      action.append(note);
-    }
     body.append(action); article.append(photo, body); column.append(article); return column;
   }
   api.card = card;

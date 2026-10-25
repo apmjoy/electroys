@@ -32179,5 +32179,32 @@
     "image": "assets/illustrations/stem-kit.svg",
     "imageAlt": "Original Electroys STEM illustration; not a photograph of SparkFun Experiential Robotics Platform (XRP) Kit.",
     "imageRights": "Original Electroys vector illustration; product photo available at retailer."
+  },
+  "makeblock-codey-rocky": {
+    "t": "Makeblock Codey Rocky",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-codey-rocky?ref=electroys",
+    "cat": "Robotics",
+    "categories": ["Robotics", "Coding"],
+    "age": "6+",
+    "level": "Beginner → Intermediate",
+    "levels": ["Beginner", "Intermediate"],
+    "focus": "Sensor-based robotics + coding",
+    "why": "Start coding a ready-built robot, using movement, lights and sensors to turn instructions into visible results.",
+    "learn": "Practice sequences and sensor responses through line-following and maze activities, with blocks and a path into Python using mBlock 5.",
+    "fit": "Learners who want to explore robot programming without first assembling a kit.",
+    "consider": "Choose the standard Codey Rocky package; the Bluetooth-dongle bundle is a separate option. Check current device compatibility, connection requirements and charging guidance before ordering.",
+    "price": "Check current price & availability",
+    "dealbadge": "",
+    "image": "",
+    "source": "https://www.makeblock.com/products/buy-codey-rocky",
+    "documentation": "https://support.makeblock.com/hc/en-us/articles/12990942477847-A-Beginner-s-Guide-to-Codey-Rocky",
+    "reviewed": "2026-10-25",
+    "addedAt": "2026-10-25T07:53:43+00:00",
+    "relationship": "core",
+    "productType": "Robotics",
+    "classificationStatus": "editor-reviewed",
+    "classificationReason": "Ready-built robot with manufacturer-documented sensor activities and block/Python programming.",
+    "status": "active"
   }
 }
