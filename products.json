@@ -175,34 +175,6 @@
     "classificationReason": "Existing curated hands-on STEM catalog selection.",
     "productType": "Robotics"
   },
-  "hackpack": {
-    "t": "CrunchLabs Hack Pack",
-    "cat": "Makers & Adults",
-    "age": "14+",
-    "level": "Intermediate",
-    "focus": "Robotics + coding",
-    "price": "Check current price & availability",
-    "learn": "Robotics, coding, mechanisms, experimentation and creative hardware hacking.",
-    "fit": "Teens and adults who want more sophisticated recurring robotics builds.",
-    "why": "It extends Electroys beyond children's products into hands-on projects for older learners and adults.",
-    "consider": "Review current subscription and device requirements before joining.",
-    "url": "https://www.crunchlabs.com/products/hack-pack-subscription",
-    "source": "Official CrunchLabs Hack Pack page",
-    "image": "assets/products/hackpack.jpg",
-    "store": "CrunchLabs",
-    "dealbadge": "",
-    "categories": [
-      "Makers & Adults",
-      "Coding"
-    ],
-    "levels": [
-      "Intermediate"
-    ],
-    "reviewed": "2026-09-27",
-    "relationship": "core",
-    "classificationReason": "Existing curated hands-on STEM catalog selection.",
-    "productType": "Makers & Adults"
-  },
   "snap": {
     "t": "Snap Circuits Classic SC-300",
     "cat": "Electronics",

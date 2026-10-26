@@ -72,13 +72,14 @@ for key in featured:
     if not p: continue
     picture=f'<img src="{esc(safe_url(p.get("image"),True))}" alt="{esc(p.get("imageAlt") or p["t"])}" loading="lazy">' if p.get('image') else f'<span class="p-4">{esc(p["t"])}</span>'
     relation='sponsored nofollow noopener noreferrer' if 'tag=' in p['url'] or 'ref=' in p['url'] else 'noopener noreferrer'
+    disclosure='<small class="d-block mt-2">Amazon paid link</small>' if p['store']=='Amazon' and 'tag=' in p['url'] else ''
     featured_cards.append(f'''<div class="col-xl-3 col-lg-4 col-md-6 product-item" data-product-id="{esc(key)}" data-brand="{esc(p['store'])}" data-cat="{esc(p['cat'])}">
       <div class="product-card h-100"><div class="product-img-wrap">{picture}</div><div class="p-4">
       <span class="product-kicker">{esc(p['cat'])}</span><h3>{esc(p['t'])}</h3><p class="product-copy">{esc(p.get('why',''))}</p>
       <div class="product-facts"><span>{esc(p.get('age','Check maker guidance'))}</span><span>{esc(p.get('level','Check product details'))}</span></div>
       <div class="product-price">Check current price &amp; availability</div>
       <div class="d-flex gap-2 flex-wrap mt-3"><button class="btn btn-outline-primary btn-sm" data-product-key="{esc(key)}" onclick="openQuick(this.dataset.productKey)">Quick Look</button>
-      <a class="btn btn-primary btn-sm" href="{esc(safe_url(p['url']))}" target="_blank" rel="{relation}">View Product</a></div></div></div></div>''')
+      <a class="btn btn-primary btn-sm" href="{esc(safe_url(p['url']))}" target="_blank" rel="{relation}">View Product</a></div>{disclosure}</div></div></div>''')
 grid='<!-- FEATURED-GRID-START -->\n<div class="row g-4" id="productGrid">\n'+'\n'.join(featured_cards)+'\n</div>\n<!-- FEATURED-GRID-END -->'
 home,n=re.subn(r'<!-- FEATURED-GRID-START -->.*?<!-- FEATURED-GRID-END -->',lambda _:grid,home,flags=re.S)
 assert n==1
