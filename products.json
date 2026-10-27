@@ -32183,5 +32183,32 @@
     "imageAlt": "Makeblock Codey Rocky, standard robot package.",
     "imageRights": "Official Makeblock product image referenced from the manufacturer product page.",
     "imageSource": "https://www.makeblock.com/cdn/shop/files/SKU-CodeyRocky.webp?v=1766999230&width=1000"
+  },
+  "sparkfun-weevileye": {
+    "t": "SparkFun WeevilEye - Beginner Soldering Kit",
+    "store": "SparkFun",
+    "url": "https://www.sparkfun.com/sparkfun-weevileye-beginner-soldering-kit.html",
+    "manufacturerPartNumber": "KIT-10723",
+    "cat": "Electronics",
+    "categories": ["Electronics", "Build & Make", "Makers & Adults"],
+    "age": "10+",
+    "level": "Beginner",
+    "levels": ["Beginner"],
+    "focus": "Soldering + light sensing",
+    "why": "Build a small electronic beetle whose LED eyes respond to changing light, without writing code.",
+    "learn": "Practice solder joints, identify polarized parts and resistor markings, and explore a simple light-sensing circuit.",
+    "fit": "Beginners who want a compact soldering project with visible sensor feedback.",
+    "consider": "Requires a soldering iron, solder and cutters, sold separately. Use appropriate supervision for hot tools. Includes a coin-cell battery; keep it away from young children and follow maker safety guidance.",
+    "price": "Check current price & availability",
+    "dealbadge": "",
+    "image": "",
+    "source": "https://www.sparkfun.com/sparkfun-weevileye-beginner-soldering-kit.html",
+    "reviewed": "2026-10-27",
+    "addedAt": "2026-10-27T07:53:43+00:00",
+    "relationship": "core",
+    "productType": "Electronics",
+    "classificationStatus": "editor-reviewed",
+    "classificationReason": "Self-contained analog circuit kit for learning soldering and sensor response; no microcontroller or programming required.",
+    "status": "active"
   }
 }
