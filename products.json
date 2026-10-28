@@ -32215,5 +32215,33 @@
     "imageAlt": "SparkFun WeevilEye beginner soldering kit, KIT-10723.",
     "imageRights": "Official SparkFun product photograph referenced from the manufacturer product page.",
     "imageSource": "https://www.sparkfun.com/media/catalog/product/cache/f3020b7489dcfc4d1d147cf4dad07b7f/1/0/10723-05a.jpg"
+  },
+  "lr-switcheroo-coding-crew": {
+    "t": "Learning Resources Switcheroo Coding Crew",
+    "store": "Learning Resources",
+    "url": "https://www.learningresources.com/item-switcheroo-coding-crewtm",
+    "manufacturerPartNumber": "LER3108",
+    "cat": "Young Explorers",
+    "categories": ["Young Explorers", "Coding", "Robotics"],
+    "age": "4+",
+    "level": "Beginner",
+    "levels": ["Beginner"],
+    "focus": "Screen-free coding + route planning",
+    "why": "Build a puzzle town and program a rescue robot with directional buttons, swapping vehicle shells to suit each mission.",
+    "learn": "Plan command sequences, explore directions and debug routes by watching where the robot goes and adjusting the next attempt.",
+    "fit": "Young beginners who enjoy pretend-play vehicles and want a first coding activity without a screen.",
+    "consider": "AAA batteries are not included. Adults may need to help set up the map and explain challenge cards. Contains small parts; not for children under three.",
+    "price": "Check current price & availability",
+    "dealbadge": "",
+    "image": "",
+    "source": "https://www.learningresources.com/item-switcheroo-coding-crewtm",
+    "documentation": "https://www.learningresources.com/switcheroo",
+    "reviewed": "2026-10-28",
+    "addedAt": "2026-10-28T07:24:10+00:00",
+    "relationship": "core",
+    "productType": "Robotics",
+    "classificationStatus": "editor-reviewed",
+    "classificationReason": "Self-contained button-programmed robot and puzzle map introduce sequencing and route planning without a computer.",
+    "status": "active"
   }
 }
