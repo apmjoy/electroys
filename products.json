@@ -290,22 +290,26 @@
     "store": "KiwiCo",
     "url": "https://www.kiwico.com/us/store/dp/robot-coder-starter-kit/5555",
     "cat": "Coding",
-    "why": "A hands-on starting point for exploring robot coding.",
-    "learn": "Sequencing commands, testing ideas and solving movement challenges.",
+    "why": "Build wooden robot figures and plan a rabbit's route through a tile maze with directional cards, without a screen.",
+    "learn": "Practice sequencing, spatial reasoning and debugging by laying out commands and checking the planned route.",
+    "fit": "Young beginners who enjoy hands-on puzzles and want to explore coding ideas before using software.",
     "consider": "Review the current age guidance, included accessories and availability.",
-    "age": "See maker guidance",
+    "age": "5+",
     "level": "Beginner",
     "levels": [
       "Beginner"
     ],
     "categories": [
-      "Coding"
+      "Coding",
+      "Young Explorers"
     ],
     "focus": "Coding",
     "price": "Check current price & availability",
     "image": "assets/illustrations/stem-kit.svg",
     "source": "https://www.kiwico.com/us/store/dp/robot-coder-starter-kit/5555",
-    "reviewed": "2026-09-27",
+    "documentation": "https://www.kiwico.com/blog/stem/best-robotics-gifts-for-kids",
+    "age_source": "https://www.kiwico.com/us/store/cp/stem-toys-for-5-year-olds",
+    "reviewed": "2026-10-30",
     "dealbadge": "",
     "relationship": "core",
     "classificationReason": "Existing curated hands-on STEM catalog selection.",
