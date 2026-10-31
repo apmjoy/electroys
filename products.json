@@ -32293,5 +32293,32 @@
     "imageAlt": "DFRobot BOSON Science Design Kit TOY0136, manufacturer product photograph",
     "imageSource": "https://www.dfrobot.com/product-2176.html",
     "imageRights": "Manufacturer product image referenced from the original DFRobot product page; not Amazon imagery."
+  },
+  "makeblock-xlight-n1": {
+    "t": "Makeblock xLight N1",
+    "store": "Makeblock",
+    "url": "https://www.makeblock.com/products/buy-xlight?ref=electroys",
+    "cat": "Electronics",
+    "categories": ["Electronics", "Coding", "Build & Make"],
+    "age": "4+",
+    "level": "Beginner",
+    "levels": ["Beginner"],
+    "focus": "Programmable lighting + creative coding",
+    "why": "Assemble an acrylic-board nightlight, explore interactive lighting modes and use code to design your own color effects.",
+    "learn": "Connect sensor inputs to visible output, experiment with LED colors and brightness, and build lighting programs in mBlock.",
+    "fit": "Learners who prefer a creative light-and-art project to a moving robot, with adult support for setup and programming.",
+    "consider": "Select xLight N1, the five-board nightlight kit; S1 and U1 have different contents. Connect a suitable power supply and check current mBlock device requirements. The maker's 4+ guidance does not imply independent programming at that age.",
+    "price": "Check current price & availability",
+    "dealbadge": "",
+    "image": "",
+    "source": "https://www.makeblock.com/products/buy-xlight",
+    "documentation": "https://support.makeblock.com/hc/en-us/articles/12823382748055-A-Beginner-s-Guide-to-xLight",
+    "reviewed": "2026-10-31",
+    "addedAt": "2026-10-31T07:14:47+00:00",
+    "relationship": "core",
+    "productType": "Electronics",
+    "classificationStatus": "editor-reviewed",
+    "classificationReason": "Manufacturer-documented lighting kit with sensor interaction and mBlock programming; N1 nightlight variant selected.",
+    "status": "active"
   }
 }
