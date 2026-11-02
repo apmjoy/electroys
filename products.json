@@ -831,8 +831,8 @@
     "cat": "Electronics",
     "why": "Connect modular sensors and outputs for light, sound and motion projects.",
     "learn": "Inputs, outputs and micro:bit programming with modular electronics.",
-    "consider": "Confirm whether a micro:bit is included in the selected option and check power requirements.",
-    "age": "See maker guidance",
+    "consider": "A micro:bit board must be purchased separately. The expansion board's USB port supplies power only and cannot upload programs. Check the maker's wiring and power guidance before use.",
+    "age": "10+",
     "level": "Beginner",
     "levels": [
       "Beginner"
@@ -844,7 +844,8 @@
     "price": "Check current price & availability",
     "image": "https://dfimg.dfrobot.com/enshop/TOY0086/TOY0086_Main_01.jpg",
     "source": "https://www.dfrobot.com/product-1638.html",
-    "reviewed": "2026-09-27",
+    "reviewed": "2026-11-02",
+    "manufacturerPartNumber": "TOY0086",
     "dealbadge": "",
     "relationship": "core",
     "classificationReason": "Existing curated hands-on STEM catalog selection.",
