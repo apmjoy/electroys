@@ -1107,13 +1107,15 @@
   },
   "amazon-code-mouse": {
     "t": "Learning Resources Code & Go Robot Mouse Activity Set",
-    "age": "5+",
+    "age": "4+",
     "cat": "Coding",
     "why": "Build mazes and plan a path for a programmable robot mouse.",
     "learn": "Sequencing, spatial reasoning, debugging and early coding concepts.",
-    "consider": "Confirm battery requirements and whether the listing is the full activity set rather than the standalone mouse.",
+    "consider": "Requires 3 AAA batteries, not included. Choose the full LER2831 activity set with maze pieces, not the standalone mouse. Follow the maker's supervision and safety guidance.",
     "url": "https://www.amazon.com/dp/B01A5YMCH4?tag=myelectroys-20",
     "source": "https://www.learningresources.com/item-code-gor-robot-mouse-activity-set",
+    "manufacturerPartNumber": "LER2831",
+    "documentation": "https://www.learningresources.com/item-code-gor-robot-mouse-activity-set-all-questions",
     "categories": [
       "Coding",
       "Young Explorers"
@@ -1126,7 +1128,7 @@
     "focus": "Coding",
     "price": "Check current price & availability",
     "image": "assets/illustrations/stem-kit.svg",
-    "reviewed": "2026-09-28",
+    "reviewed": "2026-11-05",
     "dealbadge": "",
     "relationship": "core",
     "classificationReason": "Existing curated hands-on STEM catalog selection.",
