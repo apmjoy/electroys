@@ -97,9 +97,11 @@
     "learn": "Sequencing, logic, spatial reasoning, problem solving and early programming concepts.",
     "fit": "Young learners and families who want coding play without a phone, tablet or app.",
     "why": "Botley makes early coding tangible and screen-free while allowing increasingly long command sequences.",
-    "consider": "Requires 5 AAA batteries, not included. Contains small parts; follow manufacturer safety guidance.",
+    "consider": "This is the LER2941 robot package, not the larger Activity Set. Requires 5 AAA batteries, not included: 3 for the robot and 2 for the remote programmer. Have a Phillips screwdriver ready and follow maker safety guidance for small parts.",
     "url": "https://www.learningresources.com/item-botleyr-the-coding-robot-2",
-    "source": "Official Learning Resources product page",
+    "source": "https://www.learningresources.com/item-botleyr-the-coding-robot-2",
+    "documentation": "https://www.learningresources.com/amfile/file/download/file/10808/product/5891/",
+    "manufacturerPartNumber": "LER2941",
     "image": "assets/illustrations/stem-kit.svg",
     "store": "Learning Resources",
     "dealbadge": "",
@@ -110,7 +112,7 @@
     "levels": [
       "Beginner"
     ],
-    "reviewed": "2026-09-27",
+    "reviewed": "2026-11-08",
     "relationship": "core",
     "classificationReason": "Existing curated hands-on STEM catalog selection.",
     "productType": "Young Explorers",
