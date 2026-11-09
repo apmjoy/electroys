@@ -806,9 +806,9 @@
     "url": "https://www.sparkfun.com/sparkfun-inventor-s-kit-for-micro-bit-v2.html",
     "cat": "Coding",
     "why": "A micro:bit v2 and components for experimenting with electronic circuits.",
-    "learn": "Reading sensors, moving a servo and coding physical interactions.",
-    "consider": "Check battery requirements and included parts; use the matching v2 guide.",
-    "age": "See maker guidance",
+    "learn": "Use MakeCode or MicroPython to read sensors, control a servo and connect code to physical circuits.",
+    "consider": "The KIT-17362 package includes a micro:bit v2, breadboard and USB cable. Its battery holder takes two AAA batteries, which are not included. Use the matching online experiment guide; no soldering is required.",
+    "age": "Check maker guidance",
     "level": "Beginner",
     "levels": [
       "Beginner"
@@ -820,7 +820,8 @@
     "price": "Check current price & availability",
     "image": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/5/15228-SparkFun_Inventor_s_Kit_for_micro-bit-01.jpg",
     "source": "https://www.sparkfun.com/sparkfun-inventor-s-kit-for-micro-bit-v2.html",
-    "reviewed": "2026-09-27",
+    "manufacturerPartNumber": "KIT-17362",
+    "reviewed": "2026-11-09",
     "dealbadge": "",
     "relationship": "core",
     "classificationReason": "Existing curated hands-on STEM catalog selection.",
