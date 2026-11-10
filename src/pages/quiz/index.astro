@@ -1,0 +1,132 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { QUIZ, MAKER_TYPES } from '../../lib/makers';
+import { AGE_BANDS } from '../../lib/taxonomy';
+
+const steps = QUIZ.length + 1; // age + questions
+---
+<Base
+  title="What Kind of Maker Is Your Kid? The 60-Second Quiz"
+  description="Five fun questions reveal your kid’s maker type (Tinkerer, Inventor, Explorer, Artist-Engineer or Puzzle Master) with a gift list to match."
+  image="/og/quiz/index.jpg"
+  bodyClass="dark-top quiz-page"
+>
+  <section class="quiz" data-at="intro" data-quiz data-total={steps} data-types={JSON.stringify(MAKER_TYPES.map((m) => m.slug))}>
+    <canvas class="cover-canvas" data-circuit aria-hidden="true"></canvas>
+    <div class="quiz-inner">
+      <div class="quiz-top">
+        <button type="button" class="quiz-back" data-back aria-label="Previous question" hidden><Icon name="arrow" /></button>
+        <div class="quiz-progress" aria-hidden="true"><i data-progress></i></div>
+        <span class="quiz-count" data-count></span>
+      </div>
+
+      <!-- Intro -->
+      <div class="qstep is-active" data-step="intro">
+        <p class="cover-kicker">60-second quiz</p>
+        <h1 class="quiz-title">What kind of <em>maker</em> is your kid?</h1>
+        <p class="quiz-lead">Five fun questions. One maker type. A gift list that fits them perfectly.</p>
+        <div class="quiz-types" aria-hidden="true">
+          {MAKER_TYPES.map((m) => <span style={`--a:${m.colors[0]};--b:${m.colors[1]}`}><Icon name={m.icon} /></span>)}
+        </div>
+        <button type="button" class="btn btn-sun btn-lg quiz-start" data-start><Icon name="sparkle" /> Start the quiz</button>
+      </div>
+
+      <!-- Age -->
+      <div class="qstep" data-step="age" data-key="age">
+        <h2 class="quiz-q">First, how old are they?</h2>
+        <div class="qopts">
+          {AGE_BANDS.map((b) => (
+            <button type="button" class="qopt" data-value={b.slug}>
+              <span class="qopt-emoji qopt-num">{b.min}{b.max < 99 ? `–${b.max}` : '+'}</span>
+              <span class="qopt-label">{b.name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {QUIZ.map((q, i) => (
+        <div class="qstep" data-step={`q${i}`} data-key={`q${i}`}>
+          <h2 class="quiz-q">{q.q}</h2>
+          <div class="qopts">
+            {q.options.map((o) => (
+              <button type="button" class="qopt" data-value="" data-weights={JSON.stringify(o.weights)}>
+                <span class="qopt-emoji" aria-hidden="true">{o.emoji}</span>
+                <span class="qopt-label">{o.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <!-- Thinking -->
+      <div class="qstep" data-step="thinking">
+        <div class="quiz-spark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <h2 class="quiz-q" style="text-align:center">Reading the sparks…</h2>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { buzz } from '../../scripts/site';
+
+  const root = document.querySelector<HTMLElement>('[data-quiz]')!;
+  const stepsEl = Array.from(root.querySelectorAll<HTMLElement>('.qstep'));
+  const progress = root.querySelector<HTMLElement>('[data-progress]')!;
+  const count = root.querySelector<HTMLElement>('[data-count]')!;
+  const back = root.querySelector<HTMLButtonElement>('[data-back]')!;
+  const types: string[] = JSON.parse(root.dataset.types!);
+  const total = Number(root.dataset.total);
+  const answers = new Map<string, HTMLElement>();
+  let idx = 0;
+
+  function go(n: number, dir = 1) {
+    const from = stepsEl[idx];
+    const to = stepsEl[n];
+    from.classList.remove('is-active', 'from-left', 'from-right');
+    to.classList.remove('from-left', 'from-right');
+    to.classList.add('is-active', dir > 0 ? 'from-right' : 'from-left');
+    idx = n;
+    root.dataset.at = to.dataset.step ?? '';
+    const answered = Math.max(0, n - 1);
+    progress.style.transform = `scaleX(${Math.min(1, answered / total)})`;
+    count.textContent = n >= 1 && n <= total ? `${n} / ${total}` : '';
+    back.hidden = n < 1 || n > total;
+    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+  }
+
+  root.querySelector('[data-start]')!.addEventListener('click', () => { buzz(12); go(1); });
+  back.addEventListener('click', () => go(Math.max(1, idx - 1), -1));
+
+  stepsEl.forEach((step) => {
+    const key = step.dataset.key;
+    if (!key) return;
+    step.querySelectorAll<HTMLButtonElement>('.qopt').forEach((opt) => {
+      opt.addEventListener('click', () => {
+        step.querySelectorAll('.qopt').forEach((o) => o.classList.remove('picked'));
+        opt.classList.add('picked');
+        answers.set(key, opt);
+        buzz(10);
+        const next = stepsEl.indexOf(step) + 1;
+        window.setTimeout(() => (stepsEl[next].dataset.step === 'thinking' ? finish(next) : go(next)), 280);
+      });
+    });
+  });
+
+  function finish(n: number) {
+    go(n);
+    progress.style.transform = 'scaleX(1)';
+    const score: Record<string, number> = Object.fromEntries(types.map((t) => [t, 0]));
+    for (const [key, el] of answers) {
+      if (key === 'age') continue;
+      const w: Record<string, number> = JSON.parse(el.dataset.weights || '{}');
+      for (const [t, v] of Object.entries(w)) score[t] = (score[t] ?? 0) + v;
+    }
+    const winner = types.reduce((best, t) => (score[t] > score[best] ? t : best), types[0]);
+    const age = answers.get('age')?.dataset.value ?? '';
+    (window as any).gtag?.('event', 'maker_quiz_complete', { maker_type: winner, age });
+    buzz([20, 60, 20, 60, 40]);
+    window.setTimeout(() => { location.href = `/quiz/${winner}/?new=1${age ? `&age=${age}` : ''}`; }, 1300);
+  }
+</script>

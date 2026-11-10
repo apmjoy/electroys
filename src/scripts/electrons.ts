@@ -120,19 +120,30 @@ function cloud(n: number, size: number): Shape {
 }
 
 export interface StageItem { image: string; href: string | null }
+export interface StageOptions {
+  /** Cycle through items forever (homepage) or assemble once and hold (gift reveal). */
+  loop?: boolean;
+  /** Start right away (after a tap) instead of waiting for page load + idle. */
+  immediate?: boolean;
+  /** Which item is a transparent logo sampled by alpha; null when all are photos. */
+  alphaIndex?: number | null;
+}
 
 /** Waits for load + an idle moment, so the stage never competes with first paint. */
-export function mountElectrons(root: HTMLElement, items: StageItem[], onShow: (index: number) => void) {
+export function mountElectrons(root: HTMLElement, items: StageItem[], onShow: (index: number) => void, opts: StageOptions = {}) {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { root.dataset.mode = 'static'; return; }
+  if (opts.immediate) { startElectrons(root, items, onShow, opts); return; }
   const go = () => {
     const idle = (cb: () => void) => ('requestIdleCallback' in window ? (window as any).requestIdleCallback(cb, { timeout: 2000 }) : setTimeout(cb, 600));
-    idle(() => startElectrons(root, items, onShow));
+    idle(() => startElectrons(root, items, onShow, opts));
   };
   if (document.readyState === 'complete') go();
   else addEventListener('load', go, { once: true });
 }
 
-function startElectrons(root: HTMLElement, items: StageItem[], onShow: (index: number) => void) {
+function startElectrons(root: HTMLElement, items: StageItem[], onShow: (index: number) => void, opts: StageOptions) {
+  const cycle = opts.loop ?? true;
+  const alphaIndex = opts.alphaIndex === undefined ? 0 : opts.alphaIndex;
   const canvas = root.querySelector<HTMLCanvasElement>('canvas')!;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const coarse = matchMedia('(pointer: coarse)').matches;
@@ -146,7 +157,7 @@ function startElectrons(root: HTMLElement, items: StageItem[], onShow: (index: n
   if (/swiftshader|llvmpipe|softpipe|software|basic render/i.test(renderer)) {
     gl.getExtension('WEBGL_lose_context')?.loseContext();
     root.dataset.mode = 'static';
-    onShow(1);
+    onShow(Math.min(1, items.length - 1));
     return;
   }
 
@@ -215,7 +226,7 @@ function startElectrons(root: HTMLElement, items: StageItem[], onShow: (index: n
 
   // Shape sequence: cloud → logo → products…
   const shapes: (Shape | null)[] = new Array(items.length).fill(null);
-  const load = (i: number) => shapes[i] ? Promise.resolve(shapes[i]!) : sampleImage(items[i].image, N, size, { alpha: i === 0 }).then((s) => (shapes[i] = s));
+  const load = (i: number) => shapes[i] ? Promise.resolve(shapes[i]!) : sampleImage(items[i].image, N, size, { alpha: i === alphaIndex }).then((s) => (shapes[i] = s));
   let current = cloud(N, size);
   let next = 0;
   let morphStart = -1;
@@ -256,7 +267,7 @@ function startElectrons(root: HTMLElement, items: StageItem[], onShow: (index: n
     if (target.on > 1) target.on = Math.max(0, target.on - .05);
     const morph = morphStart < 0 ? 0 : Math.min(1, (now - morphStart) / 1000 / MORPH);
     if (phase === 'morph' && morph >= 1) { phase = 'hold'; phaseEnd = now + HOLD * 1000; }
-    else if (phase === 'hold' && now > phaseEnd) advance();
+    else if (phase === 'hold' && now > phaseEnd && cycle) advance();
     const rect = root.getBoundingClientRect();
     scroll = Math.min(1, Math.max(0, -rect.top / Math.max(1, rect.height)));
     gl.uniform1f(uTime, t);

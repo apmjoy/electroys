@@ -1,0 +1,151 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PageCover from '../components/PageCover.astro';
+import PriceTag from '../components/PriceTag.astro';
+import { ADVENT } from '../data/advent';
+import { productById, buyUrl, photoFor, type Product } from '../lib/products';
+import { artUrl } from '../lib/art';
+
+const year = 2026;
+// A fixed, playful door order, like a real advent calendar.
+const ORDER = [7, 18, 3, 12, 22, 1, 15, 9, 20, 5, 24, 11, 2, 17, 13, 6, 23, 10, 14, 4, 19, 8, 21, 16];
+const days = ORDER.map((n) => ADVENT.find((d) => d.day === n)!);
+const TONES = ['#f26a1b', '#2e8bff', '#2fae5a', '#e2508c', '#7558f0', '#ffb915'];
+// Each day with its paired product (the advent test guarantees every product exists).
+const dayContent = ADVENT.map((d) => ({ d, p: productById(d.productId) as Product }));
+const thumb = (p: Product) => (photoFor(p)?.kind === 'brand' ? photoFor(p)!.src.replace('.webp', '-sm.webp') : artUrl(p));
+---
+<Base
+  title="The Electroys Advent Calendar: 24 Days of 10-Minute STEM Fun"
+  description="A free STEM advent calendar: every day from December 1 to 24, unlock a 10-minute science or engineering activity you can do at home with kitchen supplies."
+  bodyClass="dark-top"
+>
+  <PageCover eyebrow={`Advent ${year}`} crumbs={[{ href: '/', label: 'Home' }, { label: 'Advent calendar' }]}
+    lead="Every day from December 1 to 24, a new door opens with a free 10-minute STEM activity you can do at home with things from the kitchen drawer.">
+    <Fragment slot="title">24 days of <em>little sparks.</em></Fragment>
+    <p class="advent-status" data-advent-status></p>
+  </PageCover>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="advent-grid" data-advent data-year={year}>
+        {days.map((d, i) => (
+          <button type="button" class="door" data-day={d.day} style={`--door:${TONES[i % TONES.length]}`} aria-label={`Day ${d.day}`}>
+            <span class="door-back" aria-hidden="true"><span class="door-emoji">{d.emoji}</span></span>
+            <span class="door-front" aria-hidden="true">
+              <span class="door-num">{d.day}</span>
+              <span class="door-lock"><Icon name="clock" /></span>
+            </span>
+          </button>
+        ))}
+      </div>
+      <p class="advent-foot muted">Doors open at midnight, US Central time. Activities use household supplies; follow the grown-up notes where they appear.</p>
+    </div>
+  </section>
+
+  {dayContent.map(({ d, p }) => (
+      <div class="ad-src" hidden data-day-content={d.day}>
+        <div class="ad-head">
+          <span class="ad-emoji" aria-hidden="true">{d.emoji}</span>
+          <div>
+            <span class="eyebrow">Day {d.day} · {d.minutes} minutes</span>
+            <h2>{d.title}</h2>
+          </div>
+        </div>
+        {d.adult && <p class="ad-adult"><Icon name="shield" /> <span><strong>Grown-up note:</strong> {d.adult}</span></p>}
+        <h3>You’ll need</h3>
+        <ul class="ad-supplies">{d.supplies.map((s) => <li><label><input type="checkbox" /> <span>{s}</span></label></li>)}</ul>
+        <h3>Let’s go</h3>
+        <ol class="ad-steps">{d.steps.map((s) => <li>{s}</li>)}</ol>
+        <div class="ad-science"><strong>The science</strong><p>{d.science}</p></div>
+        <a class="ad-pick" href={`/products/${p.id}/`}>
+          <img src={thumb(p)} alt="" width="440" height="330" loading="lazy" />
+          <span>
+            <span class="eyebrow">Loved this? Try</span>
+            <strong>{p.title}</strong>
+            <PriceTag p={p} />
+          </span>
+        </a>
+        <div class="ad-actions">
+          <a class="btn btn-buy" href={buyUrl(p)} target="_blank" rel="sponsored nofollow noopener" data-outbound={p.id} data-surface={`advent_day_${d.day}`} data-name={p.title}>View on Amazon</a>
+          <a class="share-btn share-wa" target="_blank" rel="noopener" data-share-channel="whatsapp"
+            href={`https://wa.me/?text=${encodeURIComponent(`Today’s 10-minute STEM activity: ${d.title} ${d.emoji}\nhttps://electroys.com/advent/?utm_source=whatsapp&utm_medium=share&utm_campaign=advent`)}`}>
+            <Icon name="whatsapp" /> Send to a friend
+          </a>
+        </div>
+      </div>
+  ))}
+
+  <dialog class="gift-sheet advent-sheet" data-advent-sheet aria-label="Today’s activity">
+    <form method="dialog" class="gs-form">
+      <div class="sheet-grab" aria-hidden="true"></div>
+      <div class="advent-body" data-advent-body></div>
+      <button class="gs-close icon-btn" value="close" aria-label="Close"><Icon name="close" /></button>
+    </form>
+  </dialog>
+</Base>
+
+<script>
+  import { buzz, toast } from '../scripts/site';
+
+  const grid = document.querySelector<HTMLElement>('[data-advent]')!;
+  const year = Number(grid.dataset.year);
+  const sheet = document.querySelector<HTMLDialogElement>('[data-advent-sheet]')!;
+  const body = sheet.querySelector<HTMLElement>('[data-advent-body]')!;
+  const status = document.querySelector<HTMLElement>('[data-advent-status]')!;
+  const KEY = 'electroys.advent.opened.v1';
+
+  // Today's date in US Central time. ?day=N previews a day (handy for testing).
+  const central = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', year: 'numeric', month: 'numeric', day: 'numeric' }).formatToParts(new Date());
+  const part = (t: string) => Number(central.find((p) => p.type === t)?.value);
+  const preview = Number(new URLSearchParams(location.search).get('day'));
+  const unlockedThrough = preview >= 1 && preview <= 24 ? preview
+    : part('year') > year || (part('year') === year && part('month') === 12 && part('day') > 24) ? 24
+    : part('year') === year && part('month') === 12 ? part('day') : 0;
+
+  const read = (): number[] => { try { return JSON.parse(localStorage.getItem(KEY) ?? '[]'); } catch { return []; } };
+  const save = (days: number[]) => { try { localStorage.setItem(KEY, JSON.stringify(days)); } catch { /* private mode */ } };
+  const opened = new Set(read());
+
+  if (unlockedThrough === 0) {
+    const dec1 = Date.UTC(year, 11, 1, 6); // midnight Central ≈ 06:00 UTC
+    const daysLeft = Math.max(1, Math.ceil((dec1 - Date.now()) / 864e5));
+    status.innerHTML = `<span class="hint-dot"></span><span>Door 1 opens in <strong>${daysLeft} day${daysLeft === 1 ? '' : 's'}</strong>, on December 1.</span>`;
+  } else if (unlockedThrough < 24) {
+    status.innerHTML = `<span class="hint-dot"></span><span><strong>Door ${unlockedThrough}</strong> is open today. Tap it!</span>`;
+  } else {
+    status.innerHTML = `<span class="hint-dot"></span><span>All 24 doors are open. Merry everything!</span>`;
+  }
+
+  grid.querySelectorAll<HTMLButtonElement>('.door').forEach((door) => {
+    const day = Number(door.dataset.day);
+    const unlocked = day <= unlockedThrough;
+    door.classList.toggle('is-locked', !unlocked);
+    door.classList.toggle('is-today', day === unlockedThrough);
+    door.classList.toggle('is-open', opened.has(day));
+    door.setAttribute('aria-label', unlocked ? `Open day ${day}` : `Day ${day}, opens December ${day}`);
+    door.addEventListener('click', () => {
+      if (!unlocked) {
+        door.classList.remove('nope'); void door.offsetWidth; door.classList.add('nope');
+        buzz([30, 40, 30]);
+        toast(`Door ${day} opens on December ${day} ✨`);
+        return;
+      }
+      const first = !opened.has(day);
+      opened.add(day); save([...opened]);
+      door.classList.add('is-open');
+      buzz(first ? [15, 40, 25] : 10);
+      window.setTimeout(() => {
+        const src = document.querySelector<HTMLElement>(`[data-day-content="${day}"]`)!;
+        body.replaceChildren(...Array.from(src.cloneNode(true).childNodes));
+        sheet.showModal();
+        body.scrollTop = 0;
+        (window as any).gtag?.('event', 'advent_open', { day: String(day) });
+      }, first ? 520 : 120);
+    });
+  });
+  sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.close(); });
+  // A tiny buzz when ticking off supplies.
+  sheet.addEventListener('change', () => buzz(8));
+</script>

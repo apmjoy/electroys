@@ -76,3 +76,36 @@ test('card prices round sensibly', () => {
   assert.equal(aboutPrice(149.99), 'About $150');
   assert.equal(aboutPrice(121.47), 'About $120');
 });
+
+import { ADVENT } from '../src/data/advent.ts';
+
+test('advent calendar: 24 days, each pointing at an active product', () => {
+  assert.deepEqual(ADVENT.map((d) => d.day), Array.from({ length: 24 }, (_, i) => i + 1));
+  const active = new Set(products.filter((p) => p.status !== 'unavailable').map((p) => p.id));
+  for (const d of ADVENT) {
+    assert.ok(active.has(d.productId), `day ${d.day} points at missing product ${d.productId}`);
+    assert.ok(d.steps.length >= 3 && d.supplies.length >= 1, `day ${d.day} needs steps and supplies`);
+  }
+});
+
+import { LEVELS, buildLevel, powered, rotate, key } from '../src/scripts/circuit-logic.ts';
+
+test('circuit puzzle: rotation math', () => {
+  assert.equal(rotate(1, 1), 2);   // N → E
+  assert.equal(rotate(8, 1), 1);   // W → N
+  assert.equal(rotate(5, 1), 10);  // N+S straight → E+W
+  assert.equal(rotate(3, 4), 3);   // full turn
+});
+
+test('circuit puzzle: every level is solvable and never starts solved', () => {
+  for (const level of LEVELS) {
+    for (let trial = 0; trial < 200; trial++) {
+      const grid = buildLevel(level);
+      const bulb = key(level.path.at(-1));
+      assert.ok(!powered(grid).has(bulb), 'level must not start solved');
+      // Restoring the designed rotation of every path tile must light the bulb.
+      for (const [r, c] of level.path) grid[r][c].rot = 0;
+      assert.ok(powered(grid).has(bulb), 'designed path must light the bulb');
+    }
+  }
+});

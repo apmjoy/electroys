@@ -11,19 +11,19 @@ const year = new Date().getFullYear();
         <p>Hand-picked STEM kits and brain-building gifts for curious kids, teens and young adults. Explore. Build. Learn. Play.</p>
       </div>
       <div>
-        <h3>Shop by age</h3>
+        <h2 class="footer-h">Shop by age</h2>
         <ul>{AGE_BANDS.map((b) => <li><a href={`/shop/${b.slug}/`}>{b.label}</a></li>)}<li><a href="/shop/">All products</a></li></ul>
       </div>
       <div>
-        <h3>Interests</h3>
+        <h2 class="footer-h">Interests</h2>
         <ul>{INTERESTS.slice(0, 6).map((i) => <li><a href={`/shop/${i.slug}/`}>{i.name}</a></li>)}</ul>
       </div>
       <div>
-        <h3>Gift guides</h3>
+        <h2 class="footer-h">Gift guides</h2>
         <ul>{GIFT_GUIDES.slice(0, 6).map((g) => <li><a href={`/gifts/${g.slug}/`}>{g.short}</a></li>)}</ul>
       </div>
       <div>
-        <h3>Electroys</h3>
+        <h2 class="footer-h">Electroys</h2>
         <ul>
           <li><a href="/about/">About us</a></li>
           <li><a href="/how-we-choose/">How we choose</a></li>

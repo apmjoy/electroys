@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PageCover from '../components/PageCover.astro';
+import { productById } from '../lib/products';
+
+const snap = productById('snap-circuits-jr-sc-100');
+---
+<Base
+  title="Play: Circuit Puzzle, Maker Quiz & STEM Advent Calendar"
+  description="Free STEM fun from Electroys: light the bulb in our tap-to-rotate circuit puzzle, find your kid’s maker type, and open a new 10-minute activity every day in December."
+  bodyClass="dark-top"
+>
+  <PageCover eyebrow="Play" compact crumbs={[{ href: '/', label: 'Home' }, { label: 'Play' }]}
+    lead="Little games that teach real ideas. Free, quick, and made for your phone.">
+    <Fragment slot="title">Play with <em>electrons.</em></Fragment>
+  </PageCover>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="game" data-game>
+        <div class="game-head">
+          <div>
+            <span class="eyebrow">Light it up</span>
+            <h2 class="game-title">Tap the wires to <em>light the bulb.</em></h2>
+          </div>
+          <div class="game-stats"><span data-level></span><span data-taps></span></div>
+        </div>
+        <div class="board-wrap">
+          <div class="board" data-board aria-label="Circuit puzzle board"></div>
+          <div class="game-win" data-win hidden>
+            <span class="gw-burst" aria-hidden="true"></span>
+            <strong data-win-text></strong>
+            <button type="button" class="btn btn-sun btn-lg" data-next>Next level →</button>
+          </div>
+        </div>
+        <div class="game-foot">
+          <p class="muted">Current flows from the <strong>battery</strong> through every wire whose ends touch. Connect it all the way to the <strong>bulb</strong>.</p>
+          <button type="button" class="link-btn" data-reset>Shuffle this level</button>
+        </div>
+        {snap && (
+          <a class="game-plug" href={`/products/${snap.id}/`}>
+            <Icon name="bolt" />
+            <span>Liked that? <strong>{snap.title}</strong> lets kids build 100+ real circuits that light, buzz and spin.</span>
+            <Icon name="arrow" />
+          </a>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2 class="serif-xl" style="margin-bottom:22px">More <em>things to play.</em></h2>
+      <div class="play-grid">
+        <a class="play-card" href="/quiz/" style="--a:#ffb915;--b:#e2508c">
+          <span class="pc-icon"><Icon name="sparkle" /></span>
+          <strong>What kind of maker is your kid?</strong>
+          <span>A 60-second quiz with a shareable result and a gift list to match.</span>
+          <span class="pc-go">Take the quiz <Icon name="arrow" /></span>
+        </a>
+        <a class="play-card" href="/advent/" style="--a:#2fae5a;--b:#2e8bff">
+          <span class="pc-icon"><Icon name="gift" /></span>
+          <strong>STEM Advent Calendar</strong>
+          <span>24 doors, 24 ten-minute experiments you can do at home in December.</span>
+          <span class="pc-go">Open the calendar <Icon name="arrow" /></span>
+        </a>
+        <a class="play-card" href="/shop/" style="--a:#2e8bff;--b:#7558f0">
+          <span class="pc-icon"><Icon name="heart" /></span>
+          <strong>Send a surprise</strong>
+          <span>Pick any gift idea and send it as a wrapped box that unwraps itself.</span>
+          <span class="pc-go">Choose a gift <Icon name="arrow" /></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { mountCircuitGame } from '../scripts/circuit-game';
+  const g = document.querySelector<HTMLElement>('[data-game]');
+  if (g) mountCircuitGame(g);
+</script>

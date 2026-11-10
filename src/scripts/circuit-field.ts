@@ -120,6 +120,16 @@ export function mountCircuitField(canvas: HTMLCanvasElement) {
   if (!ctx) { canvas.dataset.fallback = 'true'; return; }
   const gl: WebGLRenderingContext = ctx;
 
+  // Check for a real GPU before compiling anything: without one the shader runs on the CPU.
+  const dbg = gl.getExtension('WEBGL_debug_renderer_info');
+  const renderer = dbg ? String(gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) : '';
+  if (/swiftshader|llvmpipe|softpipe|software|basic render/i.test(renderer)) {
+    // No real GPU: even one full-screen frame is costly on the CPU. Use the CSS background.
+    gl.getExtension('WEBGL_lose_context')?.loseContext();
+    canvas.dataset.fallback = 'true';
+    return;
+  }
+
   const compile = (type: number, src: string) => {
     const s = gl.createShader(type)!;
     gl.shaderSource(s, src);
@@ -157,14 +167,7 @@ export function mountCircuitField(canvas: HTMLCanvasElement) {
   let still = reduced;
 
   // No GPU (software rasterizer)? The shader would run on the CPU: show one frame.
-  const dbg = gl.getExtension('WEBGL_debug_renderer_info');
-  const renderer = dbg ? String(gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL)) : '';
-  if (/swiftshader|llvmpipe|softpipe|software|basic render/i.test(renderer)) {
-    // No real GPU: even one full-screen frame is costly on the CPU. Use the CSS background.
-    gl.getExtension('WEBGL_lose_context')?.loseContext();
-    canvas.dataset.fallback = 'true';
-    return;
-  }
+
 
   let W = 0, H = 0;
   const resize = () => {
