@@ -1,0 +1,101 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import PriceTag from '../../components/PriceTag.astro';
+import { products, buyUrl, ageLabel, photoFor, type Product } from '../../lib/products';
+import { artUrl } from '../../lib/art';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { id: p.id }, props: { p } }));
+}
+const { p } = Astro.props as { p: Product };
+const photo = photoFor(p);
+// Particles sample the card-size photo (or the illustration when there's no photo).
+const image = photo?.kind === 'brand' ? photo.src.replace('.webp', '-sm.webp') : artUrl(p);
+---
+<Base title="Someone sent you a gift idea" description="A surprise STEM gift idea, picked just for you. Tap to unwrap." image="/og/gift.jpg" noindex bodyClass="dark-top gift-page">
+  <section class="gift" data-gift data-image={image}>
+    <canvas class="cover-canvas" data-circuit aria-hidden="true"></canvas>
+    <div class="gift-inner">
+      <p class="cover-kicker" data-gift-for>A gift idea, just for you</p>
+      <h1 class="gift-title" data-gift-title>Someone sent you a <em>surprise.</em></h1>
+
+      <div class="gift-stage" data-stage>
+        <button type="button" class="giftbox" data-unwrap aria-label="Unwrap your gift">
+          <span class="gb-glow" aria-hidden="true"></span>
+          <span class="gb-lid" aria-hidden="true"><span class="gb-bow"><i></i><i></i></span></span>
+          <span class="gb-body" aria-hidden="true"></span>
+          <span class="gb-ribbon" aria-hidden="true"></span>
+        </button>
+        <div class="gift-electrons" data-electrons-gift>
+          <canvas aria-hidden="true"></canvas>
+          <img class="stage-fallback" src={image} alt="" width="440" height="330" />
+        </div>
+        <span class="gift-hint" data-hint><span class="hint-dot"></span> Tap the box to unwrap</span>
+      </div>
+
+      <div class="gift-reveal" data-reveal hidden>
+        <p class="gift-note" data-note hidden></p>
+        <span class="sc-no">{ageLabel(p)} · {p.brand}</span>
+        <h2>{p.title}</h2>
+        <p class="gift-best">{p.glance?.bestFor ? `Best for kids who ${p.glance.bestFor.replace(/\.$/, '')}.` : `${p.tagline}.`}</p>
+        <div class="gift-price"><PriceTag p={p} size="large" /></div>
+        <div class="gift-actions">
+          <a class="btn btn-buy btn-lg" href={buyUrl(p)} target="_blank" rel="sponsored nofollow noopener" data-outbound={p.id} data-surface="gift_reveal" data-name={p.title}>View on Amazon <Icon name="external" /></a>
+          <button type="button" class="btn btn-glass btn-lg" data-save={p.id} aria-pressed="false"><Icon name="heart" /> Save</button>
+        </div>
+        <div class="gift-more">
+          <a href={`/products/${p.id}/`}>Read why we love it <Icon name="arrow" /></a>
+          <a href="/quiz/">What kind of maker is your kid? <Icon name="arrow" /></a>
+        </div>
+        <p class="buy-note" style="color:#8ea2c6">Paid link: Electroys may earn a commission at no extra cost to you.</p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { mountElectrons } from '../../scripts/electrons';
+  import { buzz } from '../../scripts/site';
+
+  const root = document.querySelector<HTMLElement>('[data-gift]')!;
+  const params = new URLSearchParams(location.search);
+  // Personal touches from the sender. Plain text only, length-limited.
+  const clean = (v: string | null, max: number) => (v ?? '').replace(/[\u0000-\u001f<>]/g, '').trim().slice(0, max);
+  const to = clean(params.get('to'), 30);
+  const from = clean(params.get('from'), 30);
+  const note = clean(params.get('note'), 140);
+
+  if (to) {
+    document.querySelector('[data-gift-for]')!.textContent = `A gift idea for ${to}`;
+    const t = document.querySelector('[data-gift-title]')!;
+    t.textContent = `${to}, someone sent you a `;
+    const em = document.createElement('em'); em.textContent = 'surprise.'; t.appendChild(em);
+  }
+  if (note || from) {
+    const n = document.querySelector<HTMLElement>('[data-note]')!;
+    n.hidden = false;
+    n.textContent = `${note ? `“${note}”` : ''}${from ? `${note ? ' — ' : 'From '}${from}` : ''}`;
+  }
+
+  const box = root.querySelector<HTMLButtonElement>('[data-unwrap]')!;
+  const stage = root.querySelector<HTMLElement>('[data-electrons-gift]')!;
+  const reveal = root.querySelector<HTMLElement>('[data-reveal]')!;
+  const hint = root.querySelector<HTMLElement>('[data-hint]')!;
+  let opened = false;
+
+  box.addEventListener('click', () => {
+    if (opened) return;
+    opened = true;
+    buzz([20, 40, 20, 40, 60]);
+    hint.hidden = true;
+    root.classList.add('is-opening');
+    (window as any).gtag?.('event', 'gift_unwrap', { product_id: location.pathname.split('/')[2] });
+    window.setTimeout(() => {
+      root.classList.add('is-open');
+      mountElectrons(stage, [{ image: root.dataset.image!, href: null }], () => {}, { loop: false, immediate: true, alphaIndex: null });
+      if (stage.dataset.mode === 'static') stage.classList.add('static-pop');
+      window.setTimeout(() => { reveal.hidden = false; reveal.classList.add('in'); buzz(15); }, 2300);
+    }, 650);
+  });
+</script>

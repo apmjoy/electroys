@@ -1,0 +1,74 @@
+---
+// "Send as a surprise": builds a gift-reveal link (/gift/<id>/) with an
+// optional To / From / note, then shares it via WhatsApp or the share sheet.
+import Icon from './Icon.astro';
+interface Props { id: string; title: string }
+const { id, title } = Astro.props;
+---
+<button type="button" class="btn btn-ghost btn-block gift-send-btn" data-gift-open={id}>
+  <Icon name="gift" /> Send as a surprise
+</button>
+
+<dialog class="gift-sheet" data-gift-sheet={id} aria-label="Send a surprise gift idea">
+  <form method="dialog" class="gs-form" data-gift-form>
+    <div class="sheet-grab" aria-hidden="true"></div>
+    <div class="gs-head">
+      <span class="gs-icon"><Icon name="gift" /></span>
+      <div>
+        <h2>Send a surprise</h2>
+        <p>They’ll get a wrapped box that unwraps into <strong>{title}</strong>.</p>
+      </div>
+    </div>
+    <div class="gs-row">
+      <label><span>To</span><input class="input" name="to" maxlength="30" placeholder="Maya" autocomplete="off" /></label>
+      <label><span>From</span><input class="input" name="from" maxlength="30" placeholder="Grandma" autocomplete="off" /></label>
+    </div>
+    <label class="gs-note"><span>Note <em>(optional)</em></span><textarea class="input" name="note" maxlength="140" rows="2" placeholder="Saw this and thought of you!"></textarea></label>
+    <div class="gs-actions">
+      <a class="share-btn share-wa gs-wa" href="#" target="_blank" rel="noopener" data-gift-wa><Icon name="whatsapp" /> Send on WhatsApp</a>
+      <button type="button" class="share-btn" data-gift-share><Icon name="share" /> More</button>
+      <button type="button" class="share-btn" data-gift-copy><Icon name="link" /> Copy link</button>
+    </div>
+    <button class="gs-close icon-btn" value="close" aria-label="Close"><Icon name="close" /></button>
+  </form>
+</dialog>
+
+<script>
+  import { buzz, toast } from '../scripts/site';
+
+  document.querySelectorAll<HTMLButtonElement>('[data-gift-open]').forEach((btn) => {
+    const id = btn.dataset.giftOpen!;
+    const sheet = document.querySelector<HTMLDialogElement>(`[data-gift-sheet="${id}"]`)!;
+    const form = sheet.querySelector<HTMLFormElement>('[data-gift-form]')!;
+    const wa = sheet.querySelector<HTMLAnchorElement>('[data-gift-wa]')!;
+    const link = () => {
+      const u = new URL(`/gift/${id}/`, location.origin);
+      for (const k of ['to', 'from', 'note']) {
+        const v = (form.elements.namedItem(k) as HTMLInputElement).value.trim();
+        if (v) u.searchParams.set(k, v);
+      }
+      u.searchParams.set('utm_source', 'gift');
+      u.searchParams.set('utm_medium', 'share');
+      return u.toString();
+    };
+    const message = () => {
+      const to = (form.elements.namedItem('to') as HTMLInputElement).value.trim();
+      return `🎁 ${to ? `${to}, I` : 'I'} sent you a surprise gift idea. Tap to unwrap it!`;
+    };
+    const refresh = () => { wa.href = `https://wa.me/?text=${encodeURIComponent(`${message()}\n${link()}`)}`; };
+    form.addEventListener('input', refresh);
+    btn.addEventListener('click', () => { refresh(); sheet.showModal(); buzz(10); });
+    sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.close(); });
+    wa.addEventListener('click', () => { (window as any).gtag?.('event', 'share', { method: 'whatsapp', surface: 'gift_send' }); window.setTimeout(() => sheet.close(), 300); });
+    sheet.querySelector('[data-gift-share]')!.addEventListener('click', async () => {
+      try {
+        if (navigator.share) { await navigator.share({ title: 'A surprise for you', text: message(), url: link() }); sheet.close(); }
+        else { await navigator.clipboard.writeText(link()); toast('Gift link copied!'); }
+        (window as any).gtag?.('event', 'share', { method: 'native', surface: 'gift_send' });
+      } catch { /* dismissed */ }
+    });
+    sheet.querySelector('[data-gift-copy]')!.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(link()); toast('Gift link copied. Paste it anywhere!'); buzz(12); } catch { /* blocked */ }
+    });
+  });
+</script>

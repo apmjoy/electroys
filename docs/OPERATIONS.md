@@ -165,3 +165,19 @@ Most visitors will come from links shared on WhatsApp and Facebook, so the site 
   Links shared with the site's own "WhatsApp" and "Facebook" buttons are tagged automatically.
 - **Preview looks old on Facebook?** Facebook caches previews. Paste the link into the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and press "Scrape Again". WhatsApp refreshes on its own after a while.
 - **In Google Analytics,** the `share` event counts how often visitors pass pages along, and on which channel (`method` = whatsapp, facebook or native).
+
+---
+
+## 9. Play features: quiz, gift surprises, advent calendar, circuit game
+
+| Feature | Where | How to edit |
+|---|---|---|
+| **Maker quiz** | `/quiz/`; results at `/quiz/<type>/` | Types and questions live in `src/lib/makers.ts`. Each maker type has its own share image (`/og/quiz/<type>.jpg`). |
+| **Gift surprises** | "Send as a surprise" on every product page → `/gift/<product-id>/?to=…&from=…&note=…` | Nothing to maintain. The link preview is a mystery gift on purpose, so it never spoils what's inside. Gift pages stay out of Google. |
+| **Advent calendar** | `/advent/` | The 24 activities live in `src/data/advent.ts`. Doors unlock at midnight US Central on each December day. To preview a day before it unlocks, add `?day=6` to the URL. A test fails the build if any day points at a product that's been removed. |
+| **"Light it up" game** | `/play/` | Levels live in `src/scripts/circuit-logic.ts` as paths from battery to bulb. Tests guarantee every level is solvable. |
+| **Easter egg** | Tap the logo 5 times on the homepage (or type the Konami code) | — |
+
+**For the marketing calendar:** the advent calendar gives you a ready-made post every day of December 1–24. Share `electroys.com/advent/`, and quiz results (`electroys.com/quiz/`) make great "what's yours?" posts for parent groups.
+
+**Analytics events:** `maker_quiz_complete` (with `maker_type`), `gift_unwrap`, `advent_open` (with `day`), `circuit_level_complete`, `easter_egg`, and `share` (with `method` and `surface`).

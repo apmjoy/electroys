@@ -4,6 +4,7 @@ import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import PriceTag from '../../components/PriceTag.astro';
 import ShareBar from '../../components/ShareBar.astro';
+import GiftSender from '../../components/GiftSender.astro';
 import {
   products, ageLabel, buyUrl, effectiveAgeMax, priceFor, photoFor, batteriesLabel, GLANCE_LABELS, retailerName, interestsFor, bandsFor, related, budgetFor, type Product,
 } from '../../lib/products';
@@ -93,6 +94,7 @@ const ld = [
               {p.mfrUrl && <> <a href={p.mfrUrl} target="_blank" rel="noopener">See {p.brand}’s product page</a>.</>}
             </p>
             <ShareBar text={`${p.title}: ${p.tagline}. Found it on Electroys`} surface="product" />
+            <GiftSender id={p.id} title={p.title} />
           </div>
 
           <h2 class="sr-only">At a glance</h2>

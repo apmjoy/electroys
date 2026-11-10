@@ -44,6 +44,7 @@ const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefine
         <li><a class="nav-link" href="/gifts/" aria-current={current('/gifts')}>Gift guides</a></li>
         <li><a class="nav-link" href="/guides/" aria-current={current('/guides')}>Buying guides</a></li>
         <li><a class="nav-link" href="/finder/" aria-current={current('/finder')}>Kit Finder</a></li>
+        <li><a class="nav-link nav-play" href="/play/" aria-current={current('/play') || current('/quiz') || current('/advent')}>Play <span class="nav-new">New</span></a></li>
       </ul>
     </nav>
 
@@ -93,6 +94,9 @@ const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefine
         <div class="drawer-list">
           <a href="/shop/"><Icon name="tag" /> All products</a>
           <a href="/gifts/"><Icon name="gift" /> Gift guides</a>
+          <a href="/quiz/"><Icon name="sparkle" /> Maker quiz</a>
+          <a href="/play/"><Icon name="bolt" /> Light it up (game)</a>
+          <a href="/advent/"><Icon name="star" /> Advent calendar</a>
           <a href="/guides/"><Icon name="book" /> Buying guides</a>
           <a href="/wishlist/"><Icon name="heart" /> Saved gift list</a>
         </div>

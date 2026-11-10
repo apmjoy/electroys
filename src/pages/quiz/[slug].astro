@@ -1,0 +1,141 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { MAKER_TYPES, type MakerType } from '../../lib/makers';
+import { AGE_BANDS } from '../../lib/taxonomy';
+import { products, ranked, interestsFor } from '../../lib/products';
+
+export function getStaticPaths() {
+  return MAKER_TYPES.map((m) => ({ params: { slug: m.slug }, props: { m } }));
+}
+const { m } = Astro.props as { m: MakerType };
+const picks = ranked(products.filter((p) => interestsFor(p).some((i) => m.interests.includes(i.slug)))).slice(0, 24);
+const others = MAKER_TYPES.filter((x) => x.slug !== m.slug);
+const shareUrl = new URL(`/quiz/${m.slug}/`, Astro.site).toString();
+const [head, ...rest] = m.name.split(' ');
+---
+<Base
+  title={`My kid is ${m.name}! What kind of maker is yours?`}
+  description={`${m.tagline} ${m.description.split('. ')[0]}. Take the 60-second Electroys quiz and get a gift list that fits.`}
+  image={`/og/quiz/${m.slug}.jpg`}
+  bodyClass="dark-top"
+>
+  <section class="section-cover maker-cover" style={`--a:${m.colors[0]};--b:${m.colors[1]}`} data-maker={m.slug}>
+    <canvas class="cover-canvas" data-circuit aria-hidden="true"></canvas>
+    <div class="container maker-grid">
+      <div class="maker-medal" aria-hidden="true">
+        <span class="maker-ring"></span>
+        <span class="maker-core"><Icon name={m.icon} /></span>
+      </div>
+      <div class="maker-copy">
+        <p class="eyebrow" data-kicker-fresh hidden>Your kid is…</p>
+        <p class="eyebrow" data-kicker-shared>Meet the maker type</p>
+        <h1 class="maker-name">{head} <em>{rest.join(' ')}</em></h1>
+        <p class="maker-tag">{m.tagline}</p>
+        <p class="lead">{m.description}</p>
+        <ul class="maker-strengths">{m.strengths.map((s) => <li><Icon name="check" /> {s}</li>)}</ul>
+        <div class="maker-actions">
+          <button type="button" class="btn btn-sun btn-lg" data-share-result data-url={shareUrl} data-image={`/og/quiz/${m.slug}.jpg`} data-name={m.name}>
+            <Icon name="share" /> Share my result
+          </button>
+          <a class="btn btn-glass btn-lg" href="/quiz/" data-take-quiz><Icon name="sparkle" /> <span data-take-label>Retake the quiz</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="maker-invite" data-invite hidden>
+    <div class="container">
+      <p><strong>What kind of maker is <em>your</em> kid?</strong> Find out in 60 seconds.</p>
+      <a class="btn btn-brand" href="/quiz/"><Icon name="sparkle" /> Take the quiz</a>
+    </div>
+  </aside>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Gifts for {m.name.replace('The ', 'the ')}</span>
+          <h2 class="serif-xl">Picked for <em>this kind of mind.</em></h2>
+        </div>
+        <nav class="age-chips" aria-label="Filter by age" data-age-chips>
+          <button type="button" class="chip-btn is-on" data-age="">All ages</button>
+          {AGE_BANDS.map((b) => <button type="button" class="chip-btn" data-age={b.slug}>{b.label}</button>)}
+        </nav>
+      </div>
+      <div class="product-grid" data-maker-grid>
+        {picks.map((p, i) => <ProductCard p={p} eager={i < 2} surface={`quiz_${m.slug}`} />)}
+      </div>
+      <p class="muted" data-maker-empty hidden>No picks for this age in this maker type yet. <a href="/shop/">Browse every pick</a>.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2 class="pdp-h">The other <em>maker types</em></h2>
+      <div class="maker-others">
+        {others.map((o) => (
+          <a href={`/quiz/${o.slug}/`} style={`--a:${o.colors[0]};--b:${o.colors[1]}`}>
+            <span class="mo-icon"><Icon name={o.icon} /></span>
+            <span><strong>{o.name}</strong><span>{o.tagline}</span></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { shareWithImage, toast, buzz } from '../../scripts/site';
+
+  const params = new URLSearchParams(location.search);
+  const fresh = params.get('new') === '1';
+  const cover = document.querySelector<HTMLElement>('.maker-cover')!;
+  // Fresh result: celebrate. Shared link: invite the visitor to take it themselves.
+  if (fresh) {
+    document.querySelector<HTMLElement>('[data-kicker-fresh]')!.hidden = false;
+    document.querySelector<HTMLElement>('[data-kicker-shared]')!.hidden = true;
+    cover.classList.add('is-fresh');
+    buzz([15, 50, 15]);
+    // Keep the shareable URL clean.
+    history.replaceState(null, '', location.pathname + (params.get('age') ? `?age=${params.get('age')}` : ''));
+  } else {
+    document.querySelector<HTMLElement>('[data-invite]')!.hidden = false;
+    document.querySelector('[data-take-label]')!.textContent = 'Take the quiz';
+  }
+
+  // Age filter for the gift grid.
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-maker-grid] .card'));
+  const empty = document.querySelector<HTMLElement>('[data-maker-empty]')!;
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-age-chips] .chip-btn'));
+  const setAge = (age: string) => {
+    chips.forEach((c) => c.classList.toggle('is-on', c.dataset.age === age));
+    // Show the first 12 picks that fit the chosen age.
+    let shown = 0;
+    cards.forEach((c) => {
+      const fits = !age || (c.dataset.ages ?? '').split(' ').includes(age);
+      const show = fits && shown < 12;
+      c.hidden = !show;
+      if (show) shown++;
+    });
+    empty.hidden = shown > 0;
+  };
+  chips.forEach((c) => c.addEventListener('click', () => { buzz(8); setAge(c.dataset.age ?? ''); }));
+  setAge(params.get('age') ?? '');
+
+  // Share the result card as an image (phones) or a link.
+  const btn = document.querySelector<HTMLButtonElement>('[data-share-result]')!;
+  btn.addEventListener('click', async () => {
+    const url = `${btn.dataset.url}?utm_source=quiz_share&utm_medium=share&utm_campaign=maker_quiz`;
+    const r = await shareWithImage({
+      url,
+      title: `My kid is ${btn.dataset.name}!`,
+      text: `My kid is ${btn.dataset.name}! ⚡ What kind of maker is yours?`,
+      imageUrl: btn.dataset.image,
+      filename: 'my-maker-type.jpg',
+    });
+    if (r === 'copied') toast('Link copied. Paste it in WhatsApp or Facebook!');
+    (window as any).gtag?.('event', 'share', { method: 'quiz_result', surface: 'maker_quiz' });
+  });
+</script>
