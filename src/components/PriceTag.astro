@@ -1,0 +1,33 @@
+---
+// One place that decides how a price is shown, so labels stay honest everywhere.
+//  amazon → Amazon's live price via the Creators API, with "as of" time (Amazon rule)
+//  list   → the brand's own list price (exact on product pages, rounded on cards);
+//           hidden automatically once it's older than LIST_PRICE_MAX_AGE_DAYS
+//  band   → typical price range only
+import PriceBand from './PriceBand.astro';
+import { priceFor, type Product } from '../lib/products';
+
+interface Props { p: Product; size?: 'card' | 'large' }
+const { p, size = 'card' } = Astro.props;
+const v = priceFor(p);
+const usd = (n: number) => `$${n.toFixed(2).replace(/\.00$/, '')}`;
+const asOf = v.asOf
+  ? new Date(v.asOf).toLocaleString('en-US', v.kind === 'amazon'
+      ? { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Chicago', timeZoneName: 'short' }
+      : { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+  : null;
+---
+{v.kind === 'band' ? (
+  <PriceBand band={p.priceBand} long={size === 'large'} />
+) : (
+  <span class={`price price-${size}`}>
+    <span class="price-row">
+      <strong class="price-amount">{size === 'card' && v.kind === 'list' ? v.approx : v.display}</strong>
+      {v.was && <s class="price-was">{usd(v.was)}</s>}
+      {v.savingsPct && <span class="price-save">-{v.savingsPct}%</span>}
+    </span>
+    <span class="price-label">
+      {v.kind === 'amazon' ? (size === 'large' ? `Amazon price as of ${asOf}` : 'on Amazon') : size === 'large' ? `${p.brand} list price` : 'brand list price'}
+    </span>
+  </span>
+)}

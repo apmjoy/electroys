@@ -1,0 +1,22 @@
+---
+import PageCover from '../../components/PageCover.astro';
+import { AGE_BANDS } from '../../lib/taxonomy';
+import Base from '../../layouts/Base.astro';
+import ShopGrid from '../../components/ShopGrid.astro';
+import Icon from '../../components/Icon.astro';
+import { products, ranked } from '../../lib/products';
+const items = ranked(products);
+---
+<Base title="Shop All STEM Kits & Educational Gifts" description={`Browse all ${items.length} hand-picked STEM kits, coding robots, science sets and brain-building gifts. Filter by age, interest, budget and occasion.`} bodyClass="dark-top">
+  <PageCover eyebrow="The catalog" crumbs={[{ href: '/', label: 'Home' }, { label: 'Shop' }]}
+    lead={`${items.length} hand-picked kits and gifts, from first coding robots to Raspberry Pi. Filter by age, interest and budget, then save favorites to your gift list.`}>
+    <Fragment slot="title">Every pick, <em>in one place.</em></Fragment>
+    <nav class="cover-chips" aria-label="Shop by age">
+      {AGE_BANDS.map((b) => <a href={`/shop/${b.slug}/`}>{b.label}</a>)}
+      <a href="/gifts/">Gift guides</a>
+    </nav>
+  </PageCover>
+  <section class="section-tight">
+    <div class="container"><ShopGrid items={items} /></div>
+  </section>
+</Base>

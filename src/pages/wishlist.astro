@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+<Base title="Your Saved Gift List" description="Your saved Electroys gift ideas. Share the list with family so everyone knows what to give." noindex>
+  <section class="page-hero">
+    <div class="container">
+      <ol class="crumbs"><li><a href="/">Home</a></li><li aria-current="page">Gift list</li></ol>
+      <span class="eyebrow" data-shared-label hidden>Shared with you</span>
+      <h1 data-wl-title>Your gift <em>list</em></h1>
+      <p class="lead" data-wl-lead>Everything you’ve saved, in one place. Share the link with family so nobody doubles up.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap" data-wl-actions hidden>
+        <button class="btn btn-brand" data-share><Icon name="share" /> Share this list</button>
+        <button class="btn btn-ghost" data-import hidden><Icon name="heart" /> Save these to my list</button>
+        <button class="btn btn-ghost" data-clear>Clear list</button>
+      </div>
+    </div>
+  </section>
+  <section class="section-tight" style="padding-top:0">
+    <div class="container">
+      <div class="product-grid" data-wl-grid></div>
+      <div class="empty-state" data-wl-empty hidden>
+        <Icon name="heart" />
+        <h3>Your list is empty</h3>
+        <p class="muted">Tap the heart on any product to save it here.</p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+          <a class="btn btn-brand" href="/finder/"><Icon name="sparkle" /> Try the Kit Finder</a>
+          <a class="btn btn-ghost" href="/shop/">Browse all picks</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { wishlist } from '../scripts/wishlist';
+  import { loadIndex, toast } from '../scripts/site';
+
+  const grid = document.querySelector<HTMLElement>('[data-wl-grid]')!;
+  const empty = document.querySelector<HTMLElement>('[data-wl-empty]')!;
+  const actions = document.querySelector<HTMLElement>('[data-wl-actions]')!;
+  const importBtn = document.querySelector<HTMLButtonElement>('[data-import]')!;
+  const clearBtn = document.querySelector<HTMLButtonElement>('[data-clear]')!;
+  const shared = new URLSearchParams(location.search).get('ids');
+  const sharedIds = shared ? shared.split(',').filter((x) => /^[a-z0-9-]{1,80}$/.test(x)).slice(0, 100) : null;
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+  if (sharedIds) {
+    document.querySelector<HTMLElement>('[data-shared-label]')!.hidden = false;
+    document.querySelector('[data-wl-title]')!.innerHTML = 'A gift list <em>for you</em>';
+    document.querySelector('[data-wl-lead]')!.textContent = 'Someone shared these gift ideas. Tap any item to learn more or check the price.';
+    importBtn.hidden = false;
+    clearBtn.hidden = true;
+  }
+
+  async function render() {
+    const index = await loadIndex();
+    const ids = sharedIds ?? wishlist.all();
+    const items = ids.map((id) => index.find((p) => p.id === id)).filter(Boolean) as typeof index;
+    empty.hidden = items.length > 0;
+    actions.hidden = items.length === 0;
+    grid.innerHTML = items
+      .map((p) => `
+      <article class="card">
+        <div class="card-media"><img src="${esc(p.img)}" alt="" width="800" height="600" loading="lazy"></div>
+        ${sharedIds ? '' : `<button class="save-btn" type="button" data-save="${p.id}" aria-pressed="true" aria-label="Remove ${esc(p.t)} from your gift list"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-8-4.7-8-11a4.5 4.5 0 0 1 8-2.8 4.5 4.5 0 0 1 8 2.8c0 6.3-8 11-8 11z"/></svg></button>`}
+        <div class="card-body">
+          <div class="card-meta"><span>${esc(p.a)}</span><span class="dot"></span><span>${esc(p.i)}</span></div>
+          <h3 class="card-title"><a href="/products/${p.id}/">${esc(p.t)}</a></h3>
+          <p class="card-tagline">${esc(p.tl)}</p>
+          <div class="card-foot"><span class="price-band">${esc(p.pb)}</span>
+          <a class="btn btn-buy btn-sm card-buy" href="${esc(p.u)}" target="_blank" rel="sponsored nofollow noopener" data-outbound="${p.id}" data-surface="${sharedIds ? 'shared_list' : 'wishlist'}" data-name="${esc(p.t)}">View on Amazon</a></div>
+        </div>
+      </article>`)
+      .join('');
+  }
+
+  document.querySelector('[data-share]')!.addEventListener('click', async () => {
+    const ids = sharedIds ?? wishlist.all();
+    const url = `${location.origin}/wishlist/?ids=${ids.join(',')}`;
+    try {
+      if (navigator.share) await navigator.share({ title: 'My Electroys gift list', text: 'Gift ideas from my Electroys list', url });
+      else { await navigator.clipboard.writeText(url); toast('Link copied. Paste it anywhere to share your list.'); }
+    } catch { /* share sheet dismissed */ }
+  });
+  importBtn.addEventListener('click', () => {
+    const mine = wishlist.all();
+    wishlist.set([...new Set([...mine, ...sharedIds!])]);
+    toast(`Saved to your list <a href="/wishlist/">Open your list</a>`);
+  });
+  clearBtn.addEventListener('click', () => { if (confirm('Clear every item from your gift list?')) wishlist.clear(); });
+  wishlist.subscribe(() => { if (!sharedIds) render(); });
+  render();
+</script>

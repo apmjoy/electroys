@@ -1,0 +1,51 @@
+---
+import PageCover from '../../components/PageCover.astro';
+import ShareBar from '../../components/ShareBar.astro';
+import Base from '../../layouts/Base.astro';
+import ShopGrid from '../../components/ShopGrid.astro';
+import Icon from '../../components/Icon.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { AGE_BANDS, INTERESTS } from '../../lib/taxonomy';
+import { products, ranked, fitsBand, interestsFor } from '../../lib/products';
+
+export function getStaticPaths() {
+  return [
+    ...AGE_BANDS.map((b) => ({ params: { slug: b.slug }, props: { kind: 'age' as const, slug: b.slug } })),
+    ...INTERESTS.map((i) => ({ params: { slug: i.slug }, props: { kind: 'interest' as const, slug: i.slug } })),
+  ];
+}
+const { kind, slug } = Astro.props;
+const band = AGE_BANDS.find((b) => b.slug === slug);
+const interest = INTERESTS.find((i) => i.slug === slug);
+const items = ranked(kind === 'age'
+  ? products.filter((p) => fitsBand(p, band!))
+  : products.filter((p) => interestsFor(p).some((i) => i.slug === slug)));
+
+const title = kind === 'age'
+  ? `Best STEM Toys & Gifts for ${band!.label.replace('Ages', 'Ages')}${band!.max >= 99 ? ' (Teens & Young Adults)' : ''}`
+  : `Best ${interest!.name} Kits & Toys for Kids and Teens`;
+const h1 = kind === 'age' ? `${band!.name}: ${band!.label.toLowerCase()}` : interest!.name;
+const intro = kind === 'age' ? band!.intro : interest!.intro;
+const tone = kind === 'age' ? band!.color : interest!.color;
+const description = `${items.length} hand-picked ${kind === 'age' ? `STEM kits and gifts for ${band!.label.toLowerCase()}` : `${interest!.name.toLowerCase()} kits and toys`}: what each teaches, who it suits and what to know before buying.`;
+const siblings = kind === 'age' ? AGE_BANDS.filter((b) => b.slug !== slug) : INTERESTS.filter((i) => i.slug !== slug);
+
+const ld = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description,
+  mainEntity: { '@type': 'ItemList', numberOfItems: items.length, itemListElement: items.slice(0, 30).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `https://electroys.com/products/${p.id}/`, name: p.title })) },
+};
+---
+<Base title={title} description={description} jsonLd={ld} image={`/og/shop/${slug}.jpg`} bodyClass="dark-top">
+  <PageCover eyebrow={kind === 'age' ? `Chapter · ${band!.label}` : 'Department'} tone={tone}
+    crumbs={[{ href: '/', label: 'Home' }, { href: '/shop/', label: 'Shop' }, { label: kind === 'age' ? band!.label : interest!.name }]} lead={intro}>
+    <Fragment slot="title">{kind === 'age' ? <>{band!.name}, <em>{band!.label.toLowerCase()}</em></> : <>{interest!.name.split(' & ')[0]}{interest!.name.includes('&') && <em>{` & ${interest!.name.split(' & ')[1].toLowerCase()}`}</em>}</>}</Fragment>
+    <nav class="cover-chips" aria-label={kind === 'age' ? 'Other ages' : 'Other interests'}>
+      {(kind === 'age' ? AGE_BANDS : INTERESTS).map((x) => <a href={`/shop/${x.slug}/`} aria-current={x.slug === slug ? 'page' : undefined}>{'label' in x ? x.label : x.name.replace(' & Building', '')}</a>)}
+    </nav>
+    <ShareBar text={kind === 'age' ? `STEM gift ideas for ${band!.label.toLowerCase()} on Electroys` : `${interest!.name} gift ideas on Electroys`} surface={`shop_${slug}`} />
+  </PageCover>
+  <section class="section-tight">
+    <div class="container"><ShopGrid items={items} hide={[kind === 'age' ? 'ages' : 'interests']} surface={`shop_${slug}`} /></div>
+  </section>
+  <Newsletter surface={`shop_${slug}`} />
+</Base>

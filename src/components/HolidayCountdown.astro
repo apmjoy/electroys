@@ -1,0 +1,77 @@
+---
+// Seasonal band. Picks the next gifting moment at build time; the client
+// script keeps the clock live. A weekly scheduled rebuild keeps it current.
+import Icon from './Icon.astro';
+
+const now = new Date();
+const y = now.getFullYear();
+const events = [
+  { name: 'Christmas', date: new Date(`${y}-12-25T00:00:00-06:00`), from: new Date(`${y}-10-01T00:00:00-06:00`), copy: 'Shop early for the best selection and delivery before the big day.' },
+  { name: 'Christmas', date: new Date(`${y + 1}-12-25T00:00:00-06:00`), from: new Date(`${y + 1}-10-01T00:00:00-06:00`), copy: 'Shop early for the best selection and delivery before the big day.' },
+];
+const upcoming = events.find((e) => now >= e.from && now < e.date);
+const target = upcoming?.date ?? null;
+---
+{upcoming ? (
+  <section class="section-tight">
+    <div class="container">
+      <div class="countdown reveal" data-countdown={target!.toISOString()}>
+        <div>
+          <span class="eyebrow">Holiday {target!.getFullYear()}</span>
+          <h2>Gifts that make kids think, not just unwrap.</h2>
+          <p style="margin-bottom:20px">{upcoming.copy} Our holiday guide has picks for every age and budget, from stocking stuffers to the big gift.</p>
+          <div class="hero-actions" style="margin:0">
+            <a href="/gifts/holiday-gift-guide/" class="btn btn-light btn-lg">Open the gift guide <Icon name="arrow" class="icon icon-arrow" /></a>
+          </div>
+          <div class="countdown-links">
+            <a href="/gifts/stocking-stuffers/">Stocking stuffers</a>
+            <a href="/gifts/gifts-under-50/">Under $50</a>
+            <a href="/gifts/gifts-for-teens/">For teens</a>
+          </div>
+        </div>
+        <div>
+          <div class="countdown-clock" aria-label={`Time until ${upcoming.name}`}>
+            <div><b data-cd="d">--</b><span>Days</span></div>
+            <div><b data-cd="h">--</b><span>Hours</span></div>
+            <div><b data-cd="m">--</b><span>Mins</span></div>
+            <div><b data-cd="s">--</b><span>Secs</span></div>
+          </div>
+          <p style="margin:14px 0 0;font-size:.85rem;color:#9fb0cc;text-align:center">until {upcoming.name}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+) : (
+  <section class="section-tight">
+    <div class="container">
+      <div class="countdown reveal">
+        <div>
+          <span class="eyebrow">Gift ideas</span>
+          <h2>Birthday coming up? We’ve got you.</h2>
+          <p style="margin-bottom:20px">Browse hand-picked gifts by age and budget, or let the Kit Finder match one in under a minute.</p>
+          <div class="hero-actions" style="margin:0">
+            <a href="/finder/" class="btn btn-light btn-lg">Try the Kit Finder <Icon name="arrow" class="icon icon-arrow" /></a>
+          </div>
+        </div>
+        <div class="countdown-links"><a href="/gifts/gifts-under-25/">Under $25</a><a href="/gifts/gifts-under-50/">Under $50</a><a href="/gifts/screen-free-gifts/">Screen-free</a><a href="/gifts/gifts-for-teens/">For teens</a></div>
+      </div>
+    </div>
+  </section>
+)}
+
+<script>
+  const el = document.querySelector<HTMLElement>('[data-countdown]');
+  if (el) {
+    const target = new Date(el.dataset.countdown!).getTime();
+    const set = (k: string, v: number) => { const n = el.querySelector(`[data-cd="${k}"]`); if (n) n.textContent = String(v).padStart(2, '0'); };
+    const tick = () => {
+      const diff = Math.max(0, target - Date.now());
+      set('d', Math.floor(diff / 864e5));
+      set('h', Math.floor((diff / 36e5) % 24));
+      set('m', Math.floor((diff / 6e4) % 60));
+      set('s', Math.floor((diff / 1e3) % 60));
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+</script>

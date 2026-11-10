@@ -1,0 +1,218 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PageCover from '../components/PageCover.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { AGE_BANDS, BUDGETS, INTERESTS } from '../lib/taxonomy';
+import { products, ranked } from '../lib/products';
+const pool = ranked(products);
+---
+<Base bodyClass="dark-top" title="Kit Finder: Find the Perfect STEM Gift in 3 Questions" description="Answer three quick questions about age, interests and budget and the Electroys Kit Finder will match the best STEM kits and gifts.">
+  <PageCover eyebrow="Kit Finder" compact lead="Three quick questions. Hand-picked matches. No sign-up.">
+    <Fragment slot="title">Find the perfect gift <em>in under a minute.</em></Fragment>
+  </PageCover>
+
+  <section class="section-tight">
+    <div class="container finder" data-finder data-band-min={JSON.stringify(Object.fromEntries(AGE_BANDS.map((b) => [b.slug, b.min])))}>
+      <div class="finder-progress" aria-hidden="true"><div data-progress></div></div>
+
+      <div class="finder-step active" data-step="age">
+        <p class="eyebrow">Question 1 of 4</p>
+        <h2>Who’s the gift for?</h2>
+        <div class="option-grid" role="group" aria-label="Age">
+          {AGE_BANDS.map((b) => (
+            <button type="button" class="option" data-tone={b.color} data-value={b.slug} aria-pressed="false">
+              <span class="tick"><Icon name="check" /></span>
+              <span class="tile-icon" style="font:800 1rem var(--font-display)">{b.min}{b.max < 99 ? `–${b.max}` : '+'}</span>
+              <strong>{b.name}</strong><span>{b.label}</span>
+            </button>
+          ))}
+        </div>
+        <div class="finder-nav"><span></span><button class="btn btn-brand" data-next disabled>Next <Icon name="arrow" class="icon icon-arrow" /></button></div>
+      </div>
+
+      <div class="finder-step" data-step="interest" data-multi>
+        <p class="eyebrow">Question 2 of 4</p>
+        <h2>What are they into?</h2>
+        <p class="muted">Pick as many as you like, or skip if you’re not sure.</p>
+        <div class="option-grid" role="group" aria-label="Interests">
+          {INTERESTS.map((i) => (
+            <button type="button" class="option" data-tone={i.color} data-value={i.slug} aria-pressed="false">
+              <span class="tick"><Icon name="check" /></span>
+              <span class="tile-icon"><Icon name={i.icon} /></span>
+              <strong>{i.name.replace(' & Building', '')}</strong><span>{i.short}</span>
+            </button>
+          ))}
+        </div>
+        <div class="finder-nav"><button class="btn btn-ghost" data-back>Back</button><button class="btn btn-brand" data-next>Next <Icon name="arrow" class="icon icon-arrow" /></button></div>
+      </div>
+
+      <div class="finder-step" data-step="budget" data-multi>
+        <p class="eyebrow">Question 3 of 4</p>
+        <h2>What’s your budget?</h2>
+        <p class="muted">Choose one or more, or skip to see everything.</p>
+        <div class="option-grid" role="group" aria-label="Budget">
+          {BUDGETS.map((b) => (
+            <button type="button" class="option" data-value={b.slug} aria-pressed="false">
+              <span class="tick"><Icon name="check" /></span>
+              <span class="tile-icon" style="font:800 .95rem var(--font-body);letter-spacing:.04em">{b.short}</span>
+              <strong>{b.label}</strong><span>Typical price</span>
+            </button>
+          ))}
+        </div>
+        <div class="finder-nav"><button class="btn btn-ghost" data-back>Back</button><button class="btn btn-brand" data-next>Next <Icon name="arrow" class="icon icon-arrow" /></button></div>
+      </div>
+
+      <div class="finder-step" data-step="screen">
+        <p class="eyebrow">Question 4 of 4</p>
+        <h2>How do you feel about screens?</h2>
+        <div class="option-grid" role="group" aria-label="Screens">
+          <button type="button" class="option" data-tone="leaf" data-value="true" aria-pressed="false"><span class="tick"><Icon name="check" /></span><span class="tile-icon"><Icon name="shield" /></span><strong>Screen-free, please</strong><span>No apps, tablets or computers needed.</span></button>
+          <button type="button" class="option" data-tone="sky" data-value="any" aria-pressed="false"><span class="tick"><Icon name="check" /></span><span class="tile-icon"><Icon name="code" /></span><strong>Either is fine</strong><span>Include app-connected and coding kits.</span></button>
+        </div>
+        <div class="finder-nav"><button class="btn btn-ghost" data-back>Back</button><button class="btn btn-brand" data-next disabled><Icon name="sparkle" /> Show my matches</button></div>
+      </div>
+
+      <div class="finder-step" data-step="results">
+        <div class="section-head" style="margin-bottom:24px">
+          <div>
+            <span class="eyebrow">Your matches</span>
+            <h2 data-results-title>Here’s what we’d pick.</h2>
+            <p data-results-sub></p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn btn-ghost" data-restart>Start over</button>
+            <a class="btn btn-brand" data-see-all href="/shop/">See all matches <Icon name="arrow" class="icon icon-arrow" /></a>
+          </div>
+        </div>
+        <div class="product-grid" data-results></div>
+      </div>
+    </div>
+  </section>
+
+  <div hidden data-pool>
+    {pool.map((p) => <ProductCard p={p} surface="finder" />)}
+  </div>
+</Base>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-finder]')!;
+  const steps = Array.from(root.querySelectorAll<HTMLElement>('.finder-step'));
+  const progress = root.querySelector<HTMLElement>('[data-progress]')!;
+  const pool = Array.from(document.querySelectorAll<HTMLElement>('[data-pool] .card'));
+  const answers: Record<string, string[]> = { age: [], interest: [], budget: [], screen: [] };
+  let i = 0;
+
+  function show(n: number) {
+    steps[i].classList.remove('active');
+    i = n;
+    steps[i].classList.add('active');
+    progress.style.width = `${(i / (steps.length - 1)) * 100}%`;
+    root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    steps[i].querySelector<HTMLElement>('.option, button')?.focus({ preventScroll: true });
+  }
+
+  steps.forEach((step) => {
+    const key = step.dataset.step!;
+    const multi = step.hasAttribute('data-multi');
+    const next = step.querySelector<HTMLButtonElement>('[data-next]');
+    step.querySelectorAll<HTMLButtonElement>('.option').forEach((opt) => {
+      opt.addEventListener('click', () => {
+        const v = opt.dataset.value!;
+        if (multi) {
+          const on = opt.getAttribute('aria-pressed') !== 'true';
+          opt.setAttribute('aria-pressed', String(on));
+          answers[key] = on ? [...answers[key], v] : answers[key].filter((x) => x !== v);
+        } else {
+          step.querySelectorAll('.option').forEach((o) => o.setAttribute('aria-pressed', 'false'));
+          opt.setAttribute('aria-pressed', 'true');
+          answers[key] = [v];
+          if (next) next.disabled = false;
+          // Single-choice steps advance automatically for a snappier feel.
+          window.setTimeout(() => (key === 'screen' ? results() : show(steps.indexOf(step) + 1)), 260);
+        }
+      });
+    });
+    next?.addEventListener('click', () => (key === 'screen' ? results() : show(steps.indexOf(step) + 1)));
+    step.querySelector('[data-back]')?.addEventListener('click', () => show(steps.indexOf(step) - 1));
+  });
+  root.querySelector('[data-restart]')!.addEventListener('click', () => {
+    Object.keys(answers).forEach((k) => (answers[k] = []));
+    root.querySelectorAll('.option').forEach((o) => o.setAttribute('aria-pressed', 'false'));
+    root.querySelectorAll<HTMLButtonElement>('[data-step=age] [data-next], [data-step=screen] [data-next]').forEach((b) => (b.disabled = true));
+    show(0);
+  });
+
+  const BUDGET_ORDER = ['under-25', '25-50', '50-100', '100-plus'];
+  const BAND_MIN: Record<string, number> = JSON.parse(root.dataset.bandMin!);
+
+  function results() {
+    const age = answers.age[0];
+    const interests = answers.interest;
+    const budgets = answers.budget;
+    const screenFree = answers.screen[0] === 'true';
+
+    const score = (c: HTMLElement, relaxBudget: boolean) => {
+      const d = c.dataset;
+      if (!(d.ages ?? '').split(' ').includes(age)) return -1;
+      if (screenFree && d.screenfree !== 'true') return -1;
+      let s = 0;
+      if (budgets.length) {
+        if (budgets.includes(d.budget!)) s += 3;
+        else if (!relaxBudget) return -1;
+        else {
+          const dist = Math.min(...budgets.map((b) => Math.abs(BUDGET_ORDER.indexOf(b) - BUDGET_ORDER.indexOf(d.budget!))));
+          if (dist > 1) return -1;
+        }
+      }
+      const mine = (d.interests ?? '').split(' ');
+      const hits = interests.filter((x) => mine.includes(x)).length;
+      if (interests.length && !hits) s -= 2;
+      s += hits * 4;
+      if (d.pick === 'true') s += 1.5;
+      // Prefer products designed for this age over ones that merely allow it.
+      const gap = BAND_MIN[age] - Number(d.ageMin ?? 0);
+      if (gap <= 1) s += 2.5; else if (gap >= 4) s -= 2;
+      return s;
+    };
+
+    let ranked = pool.map((c) => ({ c, s: score(c, false) })).filter((x) => x.s >= 0);
+    let relaxed = false;
+    if (ranked.length < 4) { ranked = pool.map((c) => ({ c, s: score(c, true) })).filter((x) => x.s >= 0); relaxed = true; }
+    ranked.sort((a, b) => b.s - a.s);
+    const top = ranked.slice(0, 9);
+
+    const grid = root.querySelector<HTMLElement>('[data-results]')!;
+    grid.innerHTML = '';
+    top.forEach(({ c }, n) => {
+      const clone = c.cloneNode(true) as HTMLElement;
+      if (n === 0) {
+        const chips = clone.querySelector('.card-chips');
+        chips?.insertAdjacentHTML('afterbegin', '<span class="chip" style="background:var(--brand);color:#fff">Top match</span>');
+      }
+      clone.classList.add('enter');
+      clone.style.animationDelay = `${n * 0.06}s`;
+      grid.appendChild(clone);
+    });
+    // Saved-state for cloned heart buttons
+    document.dispatchEvent(new Event('electroys:sync'));
+
+    const title = root.querySelector('[data-results-title]')!;
+    const sub = root.querySelector('[data-results-sub]')!;
+    title.textContent = top.length ? `${top.length} great match${top.length === 1 ? '' : 'es'}.` : 'Nothing quite fits.';
+    sub.textContent = top.length
+      ? relaxed ? 'We stretched the budget a little to give you more options.' : 'Sorted by how well they fit your answers. Tap the heart to save favorites.'
+      : 'Try a different combination. Fewer filters usually helps.';
+
+    const qs = new URLSearchParams();
+    qs.set('age', age);
+    if (interests.length) qs.set('interest', interests.join(','));
+    if (budgets.length) qs.set('budget', budgets.join(','));
+    if (screenFree) qs.set('screenfree', 'true');
+    root.querySelector<HTMLAnchorElement>('[data-see-all]')!.href = `/shop/?${qs}`;
+
+    show(steps.length - 1);
+    progress.style.width = '100%';
+    (window as any).gtag?.('event', 'kit_finder_complete', { age, interests: interests.join(','), budget: budgets.join(','), results: String(top.length) });
+  }
+</script>

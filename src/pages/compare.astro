@@ -1,0 +1,115 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+<Base title="Compare STEM Kits Side by Side" description="Compare up to three STEM kits and gifts side by side: age, price, screens, batteries, adult help and what each one teaches." noindex>
+  <section class="page-hero">
+    <div class="container">
+      <ol class="crumbs"><li><a href="/">Home</a></li><li aria-current="page">Compare</li></ol>
+      <h1 data-split>Side by <em>side</em></h1>
+      <p class="lead">The differences that matter, in one view. Rows where the picks differ are highlighted.</p>
+    </div>
+  </section>
+  <section class="section-tight" style="padding-top:0">
+    <div class="container">
+      <div class="compare-table-wrap" data-compare-wrap hidden>
+        <table class="compare-table" data-compare-table></table>
+      </div>
+      <div class="empty-state" data-compare-empty hidden>
+        <Icon name="compare" />
+        <h3>Pick two or three to compare</h3>
+        <p class="muted">Tap “Compare” on any product card, then come back here.</p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+          <a class="btn btn-brand" href="/shop/">Browse products</a>
+          <a class="btn btn-ghost" href="/finder/"><Icon name="sparkle" /> Try the Kit Finder</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px" data-compare-actions hidden>
+        <button class="btn btn-ghost" data-share-compare><Icon name="share" /> Share this comparison</button>
+        <a class="btn btn-ghost" href="/shop/">Add another product</a>
+      </div>
+      <p class="form-note" style="margin-top:20px">Prices are typical or brand list prices unless marked “on Amazon”; Amazon’s price at checkout applies. Paid links: we may earn a commission.</p>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import { compare } from '../scripts/compare';
+  import { toast } from '../scripts/site';
+
+  type Row = {
+    id: string; title: string; brand: string; img: string; fallback: string; photo: boolean; price: string; priceAmount: number | null;
+    age: string; interests: string; screen: string; screenFree: boolean; batteries: string; adultHelp: string; playStyle: string;
+    bestFor: string | null; inTheBox: string | null; skills: string[]; highlights: string[]; considerations: string[]; url: string; pick: boolean;
+  };
+  const esc = (s: string) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+  const table = document.querySelector<HTMLTableElement>('[data-compare-table]')!;
+  const wrap = document.querySelector<HTMLElement>('[data-compare-wrap]')!;
+  const empty = document.querySelector<HTMLElement>('[data-compare-empty]')!;
+  const actions = document.querySelector<HTMLElement>('[data-compare-actions]')!;
+  let data: Row[] = [];
+
+  const fromUrl = new URLSearchParams(location.search).get('ids');
+  if (fromUrl) {
+    // A shared link: adopt it as the current comparison.
+    const ids = fromUrl.split(',').filter((x) => /^[a-z0-9-]{1,80}$/.test(x)).slice(0, 3);
+    compare.clear();
+    ids.forEach((id) => compare.toggle(id));
+  }
+
+  const list = (xs: string[]) => `<ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
+  const ROWS: [string, (r: Row) => string, ((r: Row) => string)?][] = [
+    ['Price', (r) => `<strong>${esc(r.price)}</strong>`, (r) => r.price],
+    ['Age', (r) => esc(r.age), (r) => r.age],
+    ['Best for kids who…', (r) => (r.bestFor ? esc(r.bestFor) : '<span class="muted">—</span>')],
+    ['Screen', (r) => `<span class="${r.screenFree ? 'yes' : 'no'}">${esc(r.screen)}</span>`, (r) => r.screen],
+    ['Batteries', (r) => esc(r.batteries), (r) => r.batteries],
+    ['Adult help', (r) => esc(r.adultHelp), (r) => r.adultHelp],
+    ['Play style', (r) => esc(r.playStyle), (r) => r.playStyle],
+    ['What it is', (r) => (r.inTheBox ? esc(r.inTheBox) : '<span class="muted">—</span>')],
+    ['Interests', (r) => esc(r.interests)],
+    ['They’ll learn', (r) => list(r.skills)],
+    ['Why we picked it', (r) => list(r.highlights)],
+    ['Good to know', (r) => (r.considerations.length ? list(r.considerations) : '<span class="muted">Nothing special</span>')],
+  ];
+
+  function render() {
+    const ids = compare.all();
+    const rows = ids.map((id) => data.find((d) => d.id === id)).filter(Boolean) as Row[];
+    const show = rows.length >= 1;
+    wrap.hidden = !show;
+    actions.hidden = rows.length < 2;
+    empty.hidden = rows.length >= 2;
+    if (!show) { table.innerHTML = ''; return; }
+    const cols = `<colgroup><col style="width:170px">${rows.map(() => '<col>').join('')}</colgroup>`;
+    const head = `<thead><tr><th></th>${rows.map((r) => `
+      <th scope="col"><div class="compare-head">
+        <div class="cmp-img ${r.photo ? 'is-photo' : ''}"><img src="${esc(r.img)}" alt="" data-fallback="${esc(r.fallback)}" loading="lazy">
+          <button class="remove" type="button" data-cmp-remove="${r.id}" aria-label="Remove ${esc(r.title)}">×</button></div>
+        <span class="card-meta">${esc(r.brand)}${r.pick ? ' · Editor’s pick' : ''}</span>
+        <h2><a href="/products/${r.id}/">${esc(r.title)}</a></h2>
+      </div></th>`).join('')}</tr></thead>`;
+    const body = ROWS.map(([label, cell, key]) => {
+      const differs = key && rows.length > 1 && new Set(rows.map(key)).size > 1;
+      return `<tr><th scope="row">${label}</th>${rows.map((r) => `<td class="${differs ? 'diff' : ''}">${cell(r)}</td>`).join('')}</tr>`;
+    }).join('');
+    const buy = `<tr><th scope="row"></th>${rows.map((r) => `<td><a class="btn btn-buy btn-block" href="${esc(r.url)}" target="_blank" rel="sponsored nofollow noopener" data-outbound="${r.id}" data-surface="compare" data-name="${esc(r.title)}">View on Amazon</a></td>`).join('')}</tr>`;
+    table.innerHTML = cols + head + `<tbody>${body}${buy}</tbody>`;
+    history.replaceState(null, '', ids.length ? `?ids=${ids.join(',')}` : location.pathname);
+  }
+
+  table.addEventListener('click', (e) => {
+    const rm = (e.target as Element).closest<HTMLElement>('[data-cmp-remove]');
+    if (rm) compare.remove(rm.dataset.cmpRemove!);
+  });
+  document.querySelector('[data-share-compare]')!.addEventListener('click', async () => {
+    const url = `${location.origin}/compare/?ids=${compare.all().join(',')}`;
+    try {
+      if (navigator.share) await navigator.share({ title: 'Compare STEM gifts | Electroys', url });
+      else { await navigator.clipboard.writeText(url); toast('Link copied. Send it to anyone helping you choose.'); }
+    } catch { /* dismissed */ }
+  });
+
+  compare.subscribe(render);
+  fetch('/compare.json').then((r) => r.json()).then((d: Row[]) => { data = d; render(); }).catch(() => { empty.hidden = false; });
+</script>

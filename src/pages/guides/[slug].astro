@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import PageCover from '../../components/PageCover.astro';
+import ShareBar from '../../components/ShareBar.astro';
+import { getCollection, render } from 'astro:content';
+import { productById, type Product } from '../../lib/products';
+
+export async function getStaticPaths() {
+  return (await getCollection('guides')).map((g) => ({ params: { slug: g.id }, props: { g } }));
+}
+const { g } = Astro.props;
+const { Content } = await render(g);
+const words = g.data.title.split(' ');
+const cut = Math.max(1, words.length - 2);
+const head = words.slice(0, cut).join(' ');
+const tail = words.slice(cut).join(' ');
+const minutes = Math.max(2, Math.round((g.body ?? '').split(/\s+/).length / 220));
+const picks = g.data.products.map(productById).filter(Boolean) as Product[];
+const updated = g.data.updated.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Article', headline: g.data.title, description: g.data.description,
+  dateModified: g.data.updated.toISOString(), author: { '@type': 'Organization', name: 'Electroys', url: 'https://electroys.com/' },
+  publisher: { '@type': 'Organization', name: 'Electroys', logo: { '@type': 'ImageObject', url: 'https://electroys.com/favicon-192.png' } },
+  mainEntityOfPage: `https://electroys.com/guides/${g.id}/`,
+};
+---
+<Base title={g.data.title} description={g.data.description} jsonLd={ld} bodyClass="dark-top">
+  <article>
+    <PageCover eyebrow="Buying guide" crumbs={[{ href: '/', label: 'Home' }, { href: '/guides/', label: 'Buying guides' }, { label: g.data.title }]} lead={g.data.description}>
+      <Fragment slot="title">{`${head} `}<em>{tail}</em></Fragment>
+      <p class="byline">By the Electroys team · Updated {updated} · {minutes} min read · <a href="/affiliate-disclosure/">We may earn from qualifying purchases</a></p>
+      <ShareBar text={`${g.data.title}, a helpful read from Electroys`} surface={`guide_${g.id}`} />
+    </PageCover>
+    <div class="read-progress" aria-hidden="true"><i data-read-progress></i></div>
+    <div class="narrow prose article-body"><Content /></div>
+  </article>
+  {picks.length > 0 && (
+    <section class="section-tight">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">From this guide</span><h2>Picks mentioned above</h2></div></div>
+        <div class="product-grid cols-4">{picks.map((p) => <ProductCard p={p} surface={`guide_${g.id}`} />)}</div>
+      </div>
+    </section>
+  )}
+  <Newsletter surface={`guide_${g.id}`} />
+</Base>
+
+<script>
+  const bar = document.querySelector<HTMLElement>('[data-read-progress]');
+  const body = document.querySelector<HTMLElement>('.article-body');
+  if (bar && body) {
+    let q = false;
+    const update = () => {
+      q = false;
+      const r = body.getBoundingClientRect();
+      const k = Math.min(1, Math.max(0, (window.innerHeight * 0.4 - r.top) / r.height));
+      bar.style.transform = `scaleX(${k})`;
+    };
+    window.addEventListener('scroll', () => { if (!q) { q = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+  }
+</script>

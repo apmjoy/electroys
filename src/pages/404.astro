@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+<Base title="Page not found" description="This page doesn’t exist." noindex bodyClass="dark-top">
+  <section class="cover lost">
+    <canvas class="cover-canvas" data-circuit aria-hidden="true"></canvas>
+    <div class="container lost-inner">
+      <p class="cover-kicker">Error 404</p>
+      <h1 class="cover-title"><span class="ct-line">This circuit</span><span class="ct-line">isn’t <em>connected.</em></span></h1>
+      <p class="cover-lead">The page you’re looking for moved or never existed. Tap the board to send a spark, then let’s get you somewhere useful.</p>
+      <div class="cover-actions">
+        <a class="btn btn-sun btn-lg" href="/finder/"><Icon name="sparkle" /> Find a gift</a>
+        <a class="btn btn-glass btn-lg" href="/shop/">Browse every pick</a>
+      </div>
+    </div>
+  </section>
+</Base>

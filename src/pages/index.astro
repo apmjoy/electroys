@@ -1,0 +1,332 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PriceTag from '../components/PriceTag.astro';
+import HolidayCountdown from '../components/HolidayCountdown.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { AGE_BANDS, INTERESTS } from '../lib/taxonomy';
+import { products, ranked, ageLabel, fitsBand, photoFor, buyUrl, primaryInterest, type Product } from '../lib/products';
+import { artUrl } from '../lib/art';
+import { GIFT_GUIDES, guideProducts } from '../lib/gifts';
+import { currentIssue } from '../lib/issue';
+import { getCollection } from 'astro:content';
+
+const issue = currentIssue();
+const all = ranked(products);
+const picks = all.filter((p) => p.editorPick);
+const withPhoto = (list: Product[]) => list.filter((p) => photoFor(p));
+const thumb = (p: Product) => (photoFor(p)?.kind === 'brand' ? photoFor(p)!.src.replace('.webp', '-sm.webp') : artUrl(p));
+
+// Cover stars: one photographed pick each from three different age bands.
+const coverStars: Product[] = [];
+for (const b of AGE_BANDS.slice(0, 3)) {
+  const p = withPhoto(picks).find((x) => fitsBand(x, b) && !coverStars.includes(x));
+  if (p) coverStars.push(p);
+}
+for (const p of withPhoto(picks)) if (coverStars.length < 3 && !coverStars.includes(p)) coverStars.push(p);
+
+// Particle stage: the logo, then photographed picks across ages.
+const stageProducts = [...coverStars, ...withPhoto(picks).filter((p) => !coverStars.includes(p))].slice(0, 5);
+const stageItems = [
+  { image: '/favicon-192.png', href: null },
+  ...stageProducts.map((p) => ({ image: thumb(p), href: `/products/${p.id}/` })),
+];
+
+// The feature spread: twelve editor's picks, photographed ones first.
+const feature = [...withPhoto(picks), ...picks.filter((p) => !photoFor(p))].slice(0, 12);
+
+const chapters = AGE_BANDS.map((b) => {
+  const inBand = all.filter((p) => fitsBand(p, b));
+  const thumbs = [...withPhoto(inBand.filter((p) => p.editorPick)), ...withPhoto(inBand)].filter((p, i, a) => a.indexOf(p) === i).slice(0, 3);
+  return { b, count: inBand.length, thumbs };
+});
+
+const guides = (await getCollection('guides')).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf()).slice(0, 3);
+const giftCards = GIFT_GUIDES.slice(0, 6);
+const skills = ['Circuits', 'Coding', 'Robotics', 'Chemistry', 'Engineering', 'Logic', 'Astronomy', 'Design', 'Soldering', 'Python', 'Physics', 'Problem solving'];
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Electroys',
+  url: 'https://electroys.com/',
+  potentialAction: { '@type': 'SearchAction', target: 'https://electroys.com/shop/?q={query}', 'query-input': 'required name=query' },
+};
+---
+<Base
+  title="Electroys | STEM Kits & Brain-Building Gifts for Kids, Teens and Young Adults"
+  description="Hand-picked STEM kits, coding robots, science sets and clever gifts for ages 3 to young adult. Shop by age, interest or budget, or let our Kit Finder choose."
+  jsonLd={ld}
+  bodyClass="home dark-top"
+>
+  <!-- ═══ COVER ═══ -->
+  <section class="cover" aria-label={`${issue.name}, Electroys magazine cover`}>
+    <canvas class="cover-canvas" data-circuit aria-hidden="true"></canvas>
+    <div class="cover-inner container">
+      <div class="masthead">
+        <span>{issue.name}</span>
+        <span class="masthead-rule" aria-hidden="true"></span>
+        <span>Vol. 1 · No. {issue.number}</span>
+        <span class="masthead-rule" aria-hidden="true"></span>
+        <span>{issue.season}</span>
+      </div>
+
+      <div class="cover-grid">
+        <div class="cover-copy">
+          <p class="cover-kicker">Hand-picked STEM gifts · Ages 3 to 18+</p>
+          <h1 class="cover-title">
+            <span class="ct-line">Gifts that</span>
+            <span class="ct-line">spark <em>big ideas.</em></span>
+          </h1>
+          <p class="cover-lead">Robots, circuits, science kits and builds that kids actually love, with honest notes on what each one teaches and who it’s for.</p>
+          <div class="cover-actions">
+            <a href="/finder/" class="btn btn-sun btn-lg" data-magnetic><Icon name="sparkle" /> Find the perfect gift</a>
+            <a href="#contents" class="btn btn-glass btn-lg" data-magnetic>Read this issue <Icon name="arrow" class="icon icon-arrow" /></a>
+          </div>
+        </div>
+
+        <div class="stage" data-electrons data-items={JSON.stringify(stageItems)}>
+          <div class="stage-frame">
+            <img class="stage-fallback" src={thumb(stageProducts[0])} alt="" width="440" height="330" fetchpriority="high" />
+            <canvas aria-hidden="true"></canvas>
+            <a class="stage-link" href={`/products/${stageProducts[0].id}/`} aria-label={`Featured: ${stageProducts[0].title}`}></a>
+            <span class="stage-hint" aria-hidden="true"><span class="hint-dot"></span><span class="hint-fine">Move through the electrons</span><span class="hint-touch">Touch the electrons</span></span>
+          </div>
+          <div class="stage-caption">
+            <div class="sc-item is-active" data-i="0">
+              <span class="sc-no">Electrons → toys</span>
+              <strong>Every gift here starts as a spark.</strong>
+              <span class="sc-meta">Watch them assemble</span>
+            </div>
+            {stageProducts.map((p, i) => (
+              <div class="sc-item" data-i={i + 1}>
+                <span class="sc-no">No. {String(i + 1).padStart(2, '0')} · {ageLabel(p)}</span>
+                <strong>{p.title}</strong>
+                <span class="sc-meta"><PriceTag p={p} /> <a href={`/products/${p.id}/`} class="sc-view">View <Icon name="arrow" /></a></span>
+              </div>
+            ))}
+          </div>
+          <div class="stage-dots" aria-hidden="true">{stageItems.map((_, i) => <i data-i={i}></i>)}</div>
+        </div>
+      </div>
+
+      <ul class="cover-lines">
+        <li><b data-count={products.length}>{products.length}</b><span>kits &amp; gifts, chosen by hand</span></li>
+        <li><b>3</b><span>questions to the perfect gift</span></li>
+        <li><b>{AGE_BANDS.length}</b><span>age chapters, preschool to young adult</span></li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ═══ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      {[0, 1].map(() => (
+        <span>{skills.map((s) => <><em>{s}</em><i>✦</i></>)}</span>
+      ))}
+    </div>
+  </div>
+
+  <!-- ═══ CONTENTS ═══ -->
+  <section class="section contents" id="contents">
+    <div class="container">
+      <div class="contents-grid">
+        <div>
+          <span class="eyebrow">In this issue</span>
+          <h2 class="serif-xl" data-split>What’s <em>inside.</em></h2>
+          <p class="muted" style="max-width:360px">A short, opinionated list. Every page is built to help you choose faster and give something that gets used.</p>
+        </div>
+        <ol class="toc">
+          <li><a href="#chapters"><span class="toc-n">01</span><span class="toc-t">Four age chapters</span><span class="toc-p">p. 04</span></a></li>
+          <li><a href="#picks"><span class="toc-n">02</span><span class="toc-t">The editor’s picks</span><span class="toc-p">p. 08</span></a></li>
+          <li><a href="/finder/"><span class="toc-n">03</span><span class="toc-t">The Kit Finder</span><span class="toc-p">p. 14</span></a></li>
+          <li><a href="#departments"><span class="toc-n">04</span><span class="toc-t">Departments by interest</span><span class="toc-p">p. 18</span></a></li>
+          <li><a href="#guides"><span class="toc-n">05</span><span class="toc-t">Gift guides &amp; buying guides</span><span class="toc-p">p. 22</span></a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CHAPTERS ═══ -->
+  <section class="section chapters" id="chapters">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Chapter 01 · Shop by age</span>
+          <h2 class="serif-xl" data-split>The right challenge at <em>every age.</em></h2>
+        </div>
+        <p>Too easy gets boring; too hard gets abandoned. Start with the age and we’ll show what hits the sweet spot.</p>
+      </div>
+      <ol class="chapter-list">
+        {chapters.map(({ b, count, thumbs }, i) => (
+          <li>
+            <a class="chapter" href={`/shop/${b.slug}/`} data-tone={b.color}>
+              <span class="chapter-no">0{i + 1}</span>
+              <span class="chapter-age">{b.min}{b.max < 99 ? `–${b.max}` : '+'}</span>
+              <span class="chapter-body">
+                <strong>{b.name}</strong>
+                <span>{b.blurb}</span>
+              </span>
+              <span class="chapter-thumbs" aria-hidden="true">
+                {thumbs.map((p) => <img src={thumb(p)} alt="" width="560" height="420" loading="lazy" />)}
+              </span>
+              <span class="chapter-go">{count} picks <Icon name="arrow" /></span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURE: horizontal spread ═══ -->
+  <section class="feature" id="picks" data-hscroll>
+    <div class="hs-sticky">
+      <div class="hs-head container">
+        <div>
+          <span class="eyebrow">Chapter 02 · The picks</span>
+          <h2 class="serif-xl" data-split>Twelve we’d <em>wrap ourselves.</em></h2>
+        </div>
+        <div class="hs-progress" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="hs-track">
+        {feature.map((p, i) => (
+          <article class="spread" data-tilt>
+            <span class="star-glare" aria-hidden="true"></span>
+            <a class:list={['spread-media', photoFor(p) && 'is-photo']} href={`/products/${p.id}/`} tabindex="-1" aria-hidden="true">
+              <img src={thumb(p)} alt="" width="560" height="420" loading="lazy" />
+            </a>
+            <div class="spread-body">
+              <span class="spread-no">No. {String(i + 1).padStart(2, '0')}</span>
+              <span class="card-meta">{ageLabel(p)} · {primaryInterest(p).name.replace(' & Building', '')}</span>
+              <h3><a href={`/products/${p.id}/`}>{p.title}</a></h3>
+              {p.glance?.bestFor
+                ? <p class="spread-quote">“Best for kids who {p.glance.bestFor.replace(/\.$/, '')}.”</p>
+                : <p class="spread-quote">“{p.tagline}.”</p>}
+              <div class="card-foot">
+                <PriceTag p={p} />
+                <a class="btn btn-buy btn-sm" href={buyUrl(p)} target="_blank" rel="sponsored nofollow noopener" data-outbound={p.id} data-surface="home_feature" data-name={p.title}>View on Amazon</a>
+              </div>
+            </div>
+          </article>
+        ))}
+        <a class="spread spread-end" href="/shop/?pick=true">
+          <span class="serif-xl">See every <em>editor’s pick</em></span>
+          <span class="btn btn-sun">Browse the picks <Icon name="arrow" class="icon icon-arrow" /></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <HolidayCountdown />
+
+  <!-- ═══ PULL QUOTE ═══ -->
+  <section class="section pull">
+    <div class="narrow">
+      <figure>
+        <blockquote class="pull-quote" data-split>If a kid won’t want to play with it <em>twice,</em> it doesn’t make the list.</blockquote>
+        <figcaption>The Electroys standard. <a href="/how-we-choose/">How we choose →</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ DEPARTMENTS ═══ -->
+  <section class="section" id="departments">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Chapter 04 · Departments</span>
+          <h2 class="serif-xl" data-split>What are they <em>curious about?</em></h2>
+        </div>
+        <a href="/shop/" class="btn btn-ghost" data-magnetic>All {products.length} picks <Icon name="arrow" class="icon icon-arrow" /></a>
+      </div>
+      <div class="interest-grid">
+        {INTERESTS.map((it, i) => (
+          <a class="interest-tile reveal" href={`/shop/${it.slug}/`} data-tone={it.color} style={`--d:${(i % 4) * 0.06}s`}>
+            <span class="tile-icon"><Icon name={it.icon} /></span>
+            <span><strong>{it.name}</strong><span>{it.short}</span></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ KIT FINDER PROMO ═══ -->
+  <section class="section-tight">
+    <div class="container">
+      <a class="finder-promo" href="/finder/" data-tilt>
+        <span class="star-glare" aria-hidden="true"></span>
+        <span class="eyebrow">Chapter 03 · The Kit Finder</span>
+        <span class="fp-title serif-xl">Three questions. <em>One perfect gift.</em></span>
+        <span class="fp-steps"><span>Age</span><Icon name="arrow" /><span>Interests</span><Icon name="arrow" /><span>Budget</span><Icon name="arrow" /><span class="on">Your matches</span></span>
+        <span class="btn btn-sun btn-lg">Start the Kit Finder <Icon name="arrow" class="icon icon-arrow" /></span>
+        <span class="fp-fan" aria-hidden="true">
+          {withPhoto(picks).slice(3, 6).map((p) => <img src={thumb(p)} alt="" width="560" height="420" loading="lazy" />)}
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ GUIDES ═══ -->
+  <section class="section" id="guides">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Chapter 05 · Gift guides</span>
+          <h2 class="serif-xl" data-split>Shortcuts for <em>busy gift-givers.</em></h2>
+        </div>
+        <a href="/gifts/" class="btn btn-ghost" data-magnetic>All gift guides <Icon name="arrow" class="icon icon-arrow" /></a>
+      </div>
+      <div class="guide-grid">
+        {giftCards.map((g, i) => (
+          <a class="guide-card reveal" href={`/gifts/${g.slug}/`} data-tone={g.tone} style={`--d:${(i % 3) * 0.07}s`} data-tilt>
+            <span class="tile-icon"><Icon name={g.icon} /></span>
+            <h3>{g.short}</h3>
+            <p>{g.description}</p>
+            <span class="more">{guideProducts(g, products).length} picks <Icon name="arrow" /></span>
+          </a>
+        ))}
+      </div>
+
+      {guides.length > 0 && (
+        <div class="reads">
+          <h3 class="reads-title">Also in this issue</h3>
+          {guides.map((g, i) => (
+            <a class="read" href={`/guides/${g.id}/`}>
+              <span class="read-n">{String(i + 1).padStart(2, '0')}</span>
+              <span class="read-t">{g.data.title}</span>
+              <span class="read-d">{g.data.description}</span>
+              <Icon name="arrow" />
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <Newsletter surface="home" />
+</Base>
+
+<script>
+  import { mountElectrons, type StageItem } from '../scripts/electrons';
+  const stage = document.querySelector<HTMLElement>('[data-electrons]');
+  if (stage) {
+    const items: StageItem[] = JSON.parse(stage.dataset.items!);
+    const caps = stage.querySelectorAll<HTMLElement>('.sc-item');
+    const dots = stage.querySelectorAll<HTMLElement>('.stage-dots i');
+    const link = stage.querySelector<HTMLAnchorElement>('.stage-link')!;
+    const show = (i: number) => {
+      caps.forEach((c) => c.classList.toggle('is-active', Number(c.dataset.i) === i));
+      dots.forEach((d) => d.classList.toggle('on', Number(d.dataset.i) === i));
+      const href = items[i].href;
+      link.hidden = !href;
+      if (href) {
+        link.href = href;
+        link.setAttribute('aria-label', `Featured: ${caps[i]?.querySelector('strong')?.textContent ?? ''}`);
+      }
+    };
+    show(0);
+    mountElectrons(stage, items, show);
+    if (stage.dataset.mode === 'static') show(1);
+  }
+</script>

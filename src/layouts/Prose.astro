@@ -1,0 +1,18 @@
+---
+import Base from './Base.astro';
+interface Props { title: string; description: string; eyebrow?: string; updated?: string; noindex?: boolean }
+const { title, description, eyebrow, updated, noindex } = Astro.props;
+---
+<Base title={title} description={description} noindex={noindex}>
+  <section class="page-hero">
+    <div class="narrow">
+      <ol class="crumbs"><li><a href="/">Home</a></li><li aria-current="page">{title}</li></ol>
+      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+      <h1>{title}</h1>
+      {updated && <p class="muted" style="margin:0">Last updated {updated}</p>}
+    </div>
+  </section>
+  <section class="section-tight" style="padding-top:0">
+    <div class="narrow prose"><slot /></div>
+  </section>
+</Base>

@@ -1,0 +1,28 @@
+---
+import PageCover from '../../components/PageCover.astro';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import HolidayCountdown from '../../components/HolidayCountdown.astro';
+import { GIFT_GUIDES, guideProducts } from '../../lib/gifts';
+import { products } from '../../lib/products';
+---
+<Base title="STEM Gift Guides for Kids, Teens & Young Adults" description="Curated STEM gift guides: holiday gifts, stocking stuffers, gifts under $25 and $50, screen-free toys and gifts for teens." bodyClass="dark-top">
+  <PageCover eyebrow="Gift guides" crumbs={[{ href: '/', label: 'Home' }, { label: 'Gift guides' }]}
+    lead="Hand-built lists for every occasion and budget. Not sure where to start? The Kit Finder narrows it down in three questions.">
+    <Fragment slot="title">Gifts for <em>every occasion.</em></Fragment>
+    <div class="cover-chips"><a href="/finder/">Try the Kit Finder</a><a href="/shop/">Browse every pick</a></div>
+  </PageCover>
+  <section class="section-tight">
+    <div class="container guide-grid">
+      {GIFT_GUIDES.map((g, i) => (
+        <a class="guide-card reveal" href={`/gifts/${g.slug}/`} data-tone={g.tone} style={`--d:${(i % 3) * 0.07}s`}>
+          <span class="tile-icon"><Icon name={g.icon} /></span>
+          <h3>{g.title}</h3>
+          <p>{g.description}</p>
+          <span class="more">{guideProducts(g, products).length} picks <Icon name="arrow" /></span>
+        </a>
+      ))}
+    </div>
+  </section>
+  <HolidayCountdown />
+</Base>

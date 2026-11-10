@@ -1,0 +1,102 @@
+---
+import Icon from './Icon.astro';
+import { AGE_BANDS, INTERESTS } from '../lib/taxonomy';
+
+const path = Astro.url.pathname;
+const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefined);
+---
+<header class="site-header" data-header>
+  <div class="container header-row">
+    <a href="/" class="logo" aria-label="Electroys home">
+      <img src="/logo-96.webp" alt="" width="40" height="40" />
+      <span class="logo-word">Electr<b>o</b>ys</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="nav-item" data-menu>
+          <button class="nav-link" aria-expanded="false" aria-controls="mega-age">
+            Shop by age <Icon name="caret" class="caret" />
+          </button>
+          <div class="mega" id="mega-age">
+            {AGE_BANDS.map((b) => (
+              <a href={`/shop/${b.slug}/`} data-tone={b.color}>
+                <span class="tile-icon"><b style="font:800 .95rem var(--font-display)">{b.min}{b.max < 99 ? `–${b.max}` : '+'}</b></span>
+                <span><strong>{b.name}</strong><span>{b.blurb}</span></span>
+              </a>
+            ))}
+            <div class="mega-foot"><a href="/shop/" style="padding:0;display:inline-flex;gap:6px;color:var(--brand);font-weight:600">Browse every product <Icon name="arrow" /></a></div>
+          </div>
+        </li>
+        <li class="nav-item" data-menu>
+          <button class="nav-link" aria-expanded="false" aria-controls="mega-interest">
+            Interests <Icon name="caret" class="caret" />
+          </button>
+          <div class="mega" id="mega-interest">
+            {INTERESTS.map((i) => (
+              <a href={`/shop/${i.slug}/`} data-tone={i.color}>
+                <span class="tile-icon"><Icon name={i.icon} /></span>
+                <span><strong>{i.name}</strong><span>{i.short}</span></span>
+              </a>
+            ))}
+          </div>
+        </li>
+        <li><a class="nav-link" href="/gifts/" aria-current={current('/gifts')}>Gift guides</a></li>
+        <li><a class="nav-link" href="/guides/" aria-current={current('/guides')}>Buying guides</a></li>
+        <li><a class="nav-link" href="/finder/" aria-current={current('/finder')}>Kit Finder</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-open-search aria-label="Search products" title="Search (/)">
+        <Icon name="search" />
+      </button>
+      <a class="icon-btn" href="/wishlist/" aria-label="Saved gift list" title="Saved gift list">
+        <Icon name="heart" />
+        <span class="badge-count" data-wish-count aria-hidden="true"></span>
+      </a>
+      <button class="icon-btn menu-toggle" data-open-drawer aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <Icon name="menu" />
+      </button>
+      <a href="/finder/" class="btn btn-brand btn-sm header-cta"><Icon name="sparkle" /> Find a gift</a>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-drawer aria-hidden="true">
+  <div class="drawer-scrim" data-close-drawer></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-head">
+      <a href="/" class="logo"><img src="/logo-96.webp" alt="" width="32" height="32" /><span class="logo-word">Electr<b>o</b>ys</span></a>
+      <button class="icon-btn" data-close-drawer aria-label="Close menu"><Icon name="close" /></button>
+    </div>
+    <div class="drawer-body">
+      <a href="/finder/" class="btn btn-brand btn-lg btn-block"><Icon name="sparkle" /> Find the perfect gift</a>
+      <section>
+        <h3>Shop by age</h3>
+        <div class="drawer-grid">
+          {AGE_BANDS.map((b) => (
+            <a href={`/shop/${b.slug}/`} data-tone={b.color}><span class="tile-icon" style="font:800 .8rem var(--font-display)">{b.min}{b.max < 99 ? '' : '+'}</span>{b.label}</a>
+          ))}
+        </div>
+      </section>
+      <section>
+        <h3>Interests</h3>
+        <div class="drawer-grid">
+          {INTERESTS.map((i) => (
+            <a href={`/shop/${i.slug}/`} data-tone={i.color}><span class="tile-icon"><Icon name={i.icon} /></span>{i.name.replace(' & Building', '')}</a>
+          ))}
+        </div>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <div class="drawer-list">
+          <a href="/shop/"><Icon name="tag" /> All products</a>
+          <a href="/gifts/"><Icon name="gift" /> Gift guides</a>
+          <a href="/guides/"><Icon name="book" /> Buying guides</a>
+          <a href="/wishlist/"><Icon name="heart" /> Saved gift list</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

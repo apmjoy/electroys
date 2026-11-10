@@ -1,0 +1,24 @@
+---
+// WhatsApp-first sharing. Most Electroys visitors arrive from WhatsApp and
+// Facebook, so passing a pick along to family should be one tap.
+// Shared URLs carry UTM tags so GA4 shows which pages spread, and where.
+import Icon from './Icon.astro';
+interface Props { path?: string; text: string; surface: string; compact?: boolean }
+const { path = Astro.url.pathname, text, surface, compact = false } = Astro.props;
+const base = new URL(path, Astro.site);
+const tagged = (source: string) => {
+  const u = new URL(base);
+  u.searchParams.set('utm_source', source);
+  u.searchParams.set('utm_medium', 'share');
+  u.searchParams.set('utm_campaign', surface);
+  return u.toString();
+};
+const wa = `https://wa.me/?text=${encodeURIComponent(`${text}\n${tagged('whatsapp')}`)}`;
+const fb = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(tagged('facebook'))}`;
+---
+<div class:list={['sharebar', compact && 'compact']} data-share-surface={surface}>
+  {!compact && <span class="sharebar-label">Send to family</span>}
+  <a class="share-btn share-wa" href={wa} target="_blank" rel="noopener" data-share-channel="whatsapp"><Icon name="whatsapp" /> <span>WhatsApp</span></a>
+  <a class="share-btn share-fb" href={fb} target="_blank" rel="noopener" data-share-channel="facebook"><span class="fb-f" aria-hidden="true">f</span> <span>Facebook</span></a>
+  <button class="share-btn" type="button" data-share-native data-share-url={tagged('native')} data-share-text={text}><Icon name="share" /> <span>More</span></button>
+</div>

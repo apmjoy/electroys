@@ -1,0 +1,4926 @@
+[
+ {
+  "id": "learning-resources-code-and-go-robot-mouse",
+  "title": "Learning Resources Code & Go Robot Mouse Activity Set",
+  "brand": "Learning Resources",
+  "asin": "B01A5YMCH4",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Robotics",
+   "Math & Logic"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Build a maze, plan the route, and code a mouse to the cheese",
+  "summary": "Kids snap together a grid maze with walls and tunnels, lay out coding cards to plan a path, then press arrow buttons on Colby the robot mouse to send him to the cheese. It turns the core idea of programming, a sequence of steps, into a tabletop puzzle with no screen involved.",
+  "highlights": [
+   "Big 83-piece set: maze grids, walls, tunnels, coding cards and activity cards",
+   "Coding cards let kids plan a sequence on the table before they program it",
+   "Maze is rebuilt for every challenge, so the puzzle never runs out"
+  ],
+  "skills": [
+   "Sequencing",
+   "Directional language",
+   "Planning ahead",
+   "Debugging",
+   "Spatial reasoning"
+  ],
+  "considerations": [
+   "Needs 3 AAA batteries, not included",
+   "Maze pieces are small and take a few minutes to set up"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B01A5YMCH4",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.learningresources.com/item-code-gor-robot-mouse-activity-set",
+  "listPrice": 71.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "3 AAA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to code a robot without a screen",
+   "inTheBox": "Robot mouse, maze grids, walls, tunnels, coding and activity cards"
+  }
+ },
+ {
+  "id": "learning-resources-switcheroo-coding-crew",
+  "title": "Learning Resources Switcheroo Coding Crew",
+  "brand": "Learning Resources",
+  "asin": "B09SVRLNMY",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Robotics"
+  ],
+  "priceBand": "$$$",
+  "tagline": "One robot, three rescue vehicles, lots of code-to-the-rescue missions",
+  "summary": "Kids draw a rescue challenge card, snap a police car, fire truck or construction shell onto the robot, and push direction buttons to drive it across a puzzle-piece town map. A separate Play Mode adds lights, sounds and tricks for each vehicle, so it works for free play as well as coding.",
+  "highlights": [
+   "46-piece set with a robot, 3 swappable vehicle shells, 9 map tiles and 15 challenge cards",
+   "Story-based rescue missions give preschoolers a reason to plan a route",
+   "Code Mode and Play Mode let it grow from pretend play into real sequencing"
+  ],
+  "skills": [
+   "Sequencing",
+   "Route planning",
+   "Problem solving",
+   "Following multi-step directions"
+  ],
+  "considerations": [
+   "Needs 3 AAA batteries, not included",
+   "Younger kids may need an adult to read the challenge cards at first"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B09SVRLNMY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "3 AAA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love pretend play with rescue vehicles",
+   "inTheBox": "Robot, 3 vehicle shells, 9 map tiles, 15 challenge cards"
+  }
+ },
+ {
+  "id": "learning-resources-botley-2-activity-set",
+  "title": "Learning Resources Botley 2.0 Coding Robot Activity Set",
+  "brand": "Learning Resources",
+  "asin": "B083T58PKM",
+  "ageMin": 5,
+  "ageMax": 7,
+  "categories": [
+   "Coding",
+   "Robotics"
+  ],
+  "priceBand": "$$$",
+  "tagline": "A screen-free coding robot with room to grow into longer programs",
+  "summary": "Kids program Botley with a handheld remote, building routes through obstacle courses made from the included sticks, cubes and cones. Botley can follow color-coded lines, move in six directions, react to objects in its path, and store programs of up to 150 steps.",
+  "highlights": [
+   "78-piece set with remote programmer, 40 coding cards, coding boards and obstacle pieces",
+   "Programs up to 150 steps long, so it stays challenging as skills grow",
+   "Includes line following, object detection and loops for older preschoolers"
+  ],
+  "skills": [
+   "Sequencing",
+   "Loops",
+   "If/then logic",
+   "Spatial reasoning",
+   "Debugging"
+  ],
+  "considerations": [
+   "Needs 5 AAA batteries, not included",
+   "Rated 5+; best for kids ready for longer instructions"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B083T58PKM",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "listPrice": 99.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "5 AAA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "are ready for longer coding challenges",
+   "inTheBox": "Robot, remote programmer, 40 coding cards, boards, obstacle pieces"
+  }
+ },
+ {
+  "id": "learning-resources-coding-critters-ranger-zip",
+  "title": "Learning Resources Coding Critters Ranger & Zip",
+  "brand": "Learning Resources",
+  "asin": "B07P5P3V5G",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Robotics"
+  ],
+  "priceBand": "$$",
+  "tagline": "A robot puppy that teaches coding through storybook adventures",
+  "summary": "Ranger is a programmable puppy that kids code with directional buttons to fetch, go down a slide and meet his magnetic friend Zip. A storybook walks children through coding challenges, and a separate pet mode lets them feed and care for Ranger.",
+  "highlights": [
+   "22-piece set with a coding puppy, playset pieces, coding cards and a storybook",
+   "Story-led challenges make sequencing feel like pretend play",
+   "Pet mode keeps it fun for kids not yet ready to code"
+  ],
+  "skills": [
+   "Sequencing",
+   "Cause and effect",
+   "Directional language",
+   "Storytelling"
+  ],
+  "considerations": [
+   "Needs 3 AAA batteries, not included",
+   "Simpler than Code & Go or Botley, so older 5s may outgrow it sooner"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B07P5P3V5G",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.learningresources.com/item-coding-critters-dog",
+  "listPrice": 52.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "3 AAA, not included",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "like stories and pretend pets more than puzzles",
+   "inTheBox": "Coding puppy, playset pieces, coding cards, storybook"
+  }
+ },
+ {
+  "id": "thames-kosmos-kids-first-coding-robotics",
+  "title": "Thames & Kosmos Kids First Coding & Robotics",
+  "brand": "Thames & Kosmos",
+  "asin": "B07B7SWPZJ",
+  "ageMin": 4,
+  "ageMax": 8,
+  "categories": [
+   "Coding",
+   "Robotics",
+   "Engineering"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Build Sammy the robot, then program him with code cards",
+  "summary": "Kids assemble Sammy, a snap-together robot, then line up physical code cards that Sammy reads with a scanner on his underside. Illustrated story lessons introduce sequences, loops, events, conditions and functions without any phone or computer.",
+  "highlights": [
+   "Combines a building project with card-based programming",
+   "Story-driven lessons step up from simple sequences to loops and conditions",
+   "No app or screen required at any point"
+  ],
+  "skills": [
+   "Sequencing",
+   "Loops",
+   "Conditionals",
+   "Building and assembly",
+   "Logical thinking"
+  ],
+  "considerations": [
+   "Needs AA batteries, not included",
+   "Robot assembly will need adult help for preschoolers"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B07B7SWPZJ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/coding-and-robotics",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/products/Web__0014_567012_KF_Coding_3DBox.jpg?v=1664293239",
+  "listPrice": 139.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/coding-and-robotics.json",
+  "image": "/products/thames-kosmos-kids-first-coding-robotics.webp",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "AA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to build a robot, then code it with cards",
+   "inTheBox": "Snap-together robot, code cards, illustrated story lessons"
+  }
+ },
+ {
+  "id": "thames-kosmos-kids-first-robot-engineer",
+  "title": "Thames & Kosmos Kids First Robot Engineer",
+  "brand": "Thames & Kosmos",
+  "asin": "B01CNSPHL8",
+  "ageMin": 3,
+  "ageMax": 7,
+  "categories": [
+   "Engineering",
+   "Building",
+   "Robotics"
+  ],
+  "priceBand": "$$",
+  "tagline": "Build 10 candy-factory robots while reading along with a story",
+  "summary": "An illustrated storybook follows two kids through a robot-run candy factory, and at each stop children build that robot from chunky parts with gears, wheels and moving arms. The 10 models are hand-powered, so the focus is on how mechanisms move rather than on electronics.",
+  "highlights": [
+   "53 large, easy-grip pieces sized for preschool hands",
+   "Story and building are tied together, giving each model a purpose",
+   "Introduces gears and simple machines with no batteries needed"
+  ],
+  "skills": [
+   "Simple machines",
+   "Gears",
+   "Following build steps",
+   "Fine motor skills"
+  ],
+  "considerations": [
+   "Robots are not motorized and do not move on their own",
+   "Expect adult help with the build steps for ages 3-4"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01CNSPHL8",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/robot-engineer-box-version",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/567009B_RobotEng_3DBox.jpg?v=1775141205",
+  "listPrice": 39.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/robot-engineer-box-version.json",
+  "image": "/products/thames-kosmos-kids-first-robot-engineer.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "like stories and seeing how gears and wheels move",
+   "inTheBox": "53 chunky pieces for 10 hand-powered robots, storybook"
+  }
+ },
+ {
+  "id": "thames-kosmos-kids-first-intro-to-tools-building",
+  "title": "Thames & Kosmos Kids First Intro to Tools & Building",
+  "brand": "Thames & Kosmos",
+  "asin": "B09QH5H8HV",
+  "ageMin": 3,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building"
+  ],
+  "priceBand": "$$",
+  "tagline": "Real tool skills with a kid-sized hammer, screwdriver and wrench",
+  "summary": "Preschoolers use chunky, lightweight tools to put together a workbench, race car, airplane, house, scissors and a toolbox. Along the way they learn what each tool does and how fasteners hold a structure together.",
+  "highlights": [
+   "47 pieces that build six different models",
+   "Large tools sized and weighted for small hands",
+   "Parts work with other Kids First engineering kits"
+  ],
+  "skills": [
+   "Tool use",
+   "Fine motor skills",
+   "Following build steps",
+   "Basic mechanics"
+  ],
+  "considerations": [
+   "Contains small parts; supervise younger 3-year-olds",
+   "Models are simple, so builders over 6 may move on quickly"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B09QH5H8HV",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/kids-first-intro-to-tools-building",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/products/567017_KF_Tools_3dBOX_Front_WEB.jpg?v=1644953537",
+  "listPrice": 29.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/kids-first-intro-to-tools-building.json",
+  "image": "/products/thames-kosmos-kids-first-intro-to-tools-building.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love pretending with grown-up tools",
+   "inTheBox": "47 pieces with kid-size tools that build six models"
+  }
+ },
+ {
+  "id": "snap-circuits-beginner-scb-20",
+  "title": "Snap Circuits Beginner SCB-20",
+  "brand": "Snap Circuits",
+  "asin": "B011M0XXXM",
+  "ageMin": 5,
+  "ageMax": 9,
+  "categories": [
+   "Electronics",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "First circuits with big snap-together parts and picture instructions",
+  "summary": "Kids snap color-coded electronic parts onto a plastic grid to make lights turn on, a fan spin and sounds play. The picture-based manual guides them through 20-plus projects, showing how switches and closed loops make electricity flow.",
+  "highlights": [
+   "Oversized snap parts, no wires, soldering or tools",
+   "Picture-only steps that pre-readers can follow",
+   "A natural lead-in to larger Snap Circuits sets later on"
+  ],
+  "skills": [
+   "Circuit basics",
+   "Switches and power",
+   "Following diagrams",
+   "Cause and effect"
+  ],
+  "considerations": [
+   "AA batteries not included",
+   "Rated 5+; younger kids will need an adult alongside"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B011M0XXXM",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://shop.elenco.com/consumers/snap-circuits-beginner.html",
+  "listPrice": 35.49,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "AA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want a first look at how electricity works",
+   "inTheBox": "Snap-together electronic parts, base grid, picture manual"
+  }
+ },
+ {
+  "id": "magna-tiles-classic-100-piece",
+  "title": "Magna-Tiles Classic 100-Piece Set",
+  "brand": "Magna-Tiles",
+  "asin": "B000CBSNRY",
+  "ageMin": 3,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Engineering",
+   "Math & Logic"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Translucent magnetic tiles that turn flat shapes into 3D builds",
+  "summary": "Squares and triangles with magnets on every edge click together in any direction, so kids can lay flat patterns and then fold them up into towers, houses and garages. The 100-piece set has enough tiles for big structures or for two children to build side by side.",
+  "highlights": [
+   "Magnets attract on all edges, so builds hold together with no tricks",
+   "Mix of squares and four kinds of triangles opens up domes and roofs",
+   "Open-ended play that holds up for years and across siblings"
+  ],
+  "skills": [
+   "2D to 3D geometry",
+   "Spatial reasoning",
+   "Structural balance",
+   "Creative design"
+  ],
+  "considerations": [
+   "A significant price for a building set",
+   "Check for cracked tiles over time and retire any with loose magnets"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B000CBSNRY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.magnatiles.com/products/magna-tiles-classic-100-piece-set",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0734/5009/4831/files/25Classic100_FR11_RGB.jpg?v=1748977990",
+  "listPrice": 119.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.magnatiles.com/products/magna-tiles-classic-100-piece-set.json",
+  "image": "/products/magna-tiles-classic-100-piece.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love building towers, houses and garages",
+   "inTheBox": "100 magnetic squares and triangles"
+  }
+ },
+ {
+  "id": "smartmax-start",
+  "title": "SmartMax Start Magnetic Discovery Set",
+  "brand": "SmartMax",
+  "asin": "B071YNVKVZ",
+  "ageMin": 1,
+  "ageMax": 10,
+  "categories": [
+   "Building",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "Chunky magnetic bars and balls that show attract and repel",
+  "summary": "Oversized magnetic bars click onto steel balls to make shapes, bridges and towers. The bars are color-coded so kids discover by feel that some pairs snap together and others push apart, an early hands-on look at magnetic poles.",
+  "highlights": [
+   "Big, sealed pieces suited to the youngest builders",
+   "Color-coded bars make attract and repel easy to see",
+   "Works with every other SmartMax set for later expansion"
+  ],
+  "skills": [
+   "Magnetism",
+   "Shape building",
+   "Cause and effect",
+   "Fine motor skills"
+  ],
+  "considerations": [
+   "Starter set is small; ambitious builders will want an expansion",
+   "Older 5s may prefer Magna-Tiles for bigger builds"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B071YNVKVZ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://smartmax.eu/en/collection/start",
+  "imageSourceUrl": "https://smartmax.eu/assets/pack_shots/Start-product-pack-6135bf4d34936.jpg",
+  "image": "/products/smartmax-start.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "are just starting to build and explore magnets",
+   "inTheBox": "Oversized magnetic bars and steel balls"
+  }
+ },
+ {
+  "id": "learning-resources-gears-deluxe-building-set",
+  "title": "Learning Resources Gears! Gears! Gears! Deluxe Building Set",
+  "brand": "Learning Resources",
+  "asin": "B00000DMCE",
+  "ageMin": 3,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building"
+  ],
+  "priceBand": "$$",
+  "tagline": "Snap gears onto pillars and crank to watch them all turn",
+  "summary": "Kids connect gears, pillars and axles on interlocking base plates, then turn the crank to see motion travel through the chain. Building a longer chain, or getting two gears to spin opposite ways, becomes a hands-on puzzle about cause and effect.",
+  "highlights": [
+   "100 pieces including gears, pillars, axles, bases and a crank",
+   "Builds out and up, from flat gear trains to tall towers",
+   "Compatible with all other Gears! Gears! Gears! sets"
+  ],
+  "skills": [
+   "Gear ratios and motion",
+   "Cause and effect",
+   "Pattern making",
+   "Fine motor skills"
+  ],
+  "considerations": [
+   "Many small parts to store and sort",
+   "No motor; motion comes from turning the hand crank"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00000DMCE",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.learningresources.com/item-gears-gears-gears-r-deluxe-building-set-set-of-100",
+  "listPrice": 36.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love cranks, gears and cause-and-effect puzzles",
+   "inTheBox": "100 pieces: gears, pillars, axles, bases and a crank"
+  }
+ },
+ {
+  "id": "educational-insights-design-and-drill-activity-center",
+  "title": "Educational Insights Design & Drill Activity Center",
+  "brand": "Educational Insights",
+  "asin": "B00012O42W",
+  "ageMin": 3,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Art & Design"
+  ],
+  "priceBand": "$$",
+  "tagline": "A real working toy drill for bolt patterns and pictures",
+  "summary": "Preschoolers use a kid-safe motorized drill, a screwdriver and a wrench to drive colorful plastic bolts into a pegboard, copying picture cards or inventing their own designs. Switching the drill between forward and reverse to put bolts in and take them out is part of the fun.",
+  "highlights": [
+   "Working drill plus 120 bolts, screwdriver, wrench and drill bits",
+   "Pattern cards add matching and copying challenges",
+   "Builds hand strength and coordination in a way kids find exciting"
+  ],
+  "skills": [
+   "Fine motor skills",
+   "Pattern copying",
+   "Tool use",
+   "Color recognition"
+  ],
+  "considerations": [
+   "Drill runs on AA batteries, not included",
+   "Bolts are small; keep track of them around younger siblings"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00012O42W",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.educationalinsights.com/item-design-drill-activity-center",
+  "listPrice": 39.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "AA, not included (drill)",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want to use a working drill like a grown-up",
+   "inTheBox": "Toy drill, 120 bolts, screwdriver, wrench, pegboard, pattern cards"
+  }
+ },
+ {
+  "id": "learning-resources-primary-science-lab-set",
+  "title": "Learning Resources Primary Science Lab Set",
+  "brand": "Learning Resources",
+  "asin": "B0035EQDTU",
+  "ageMin": 3,
+  "ageMax": null,
+  "categories": [
+   "Science"
+  ],
+  "priceBand": "$",
+  "tagline": "Real-looking lab tools sized for preschool scientists",
+  "summary": "A chunky, unbreakable set of beakers, test tubes, a funnel, an eyedropper, tweezers and goggles, plus activity cards for simple kitchen experiments. Kids mix colors, test what sinks or floats, and watch fizzing reactions using household ingredients.",
+  "highlights": [
+   "22 durable plastic pieces, including safety goggles",
+   "Activity cards use things you already have at home",
+   "Equally good for guided experiments and pretend lab play"
+  ],
+  "skills": [
+   "Observation",
+   "Measuring and pouring",
+   "Making predictions",
+   "Science vocabulary"
+  ],
+  "considerations": [
+   "Experiments need household supplies and adult setup",
+   "Expect spills; best on a washable surface"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Classroom",
+   "Rainy Day",
+   "Holiday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0035EQDTU",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.learningresources.com/item-primary-sciencetm-lab-set",
+  "listPrice": 39.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love mixing, fizzing and pretend lab play",
+   "inTheBox": "22 plastic lab pieces including goggles, activity cards"
+  }
+ },
+ {
+  "id": "educational-insights-geosafari-jr-my-first-microscope",
+  "title": "Educational Insights GeoSafari Jr. My First Microscope",
+  "brand": "Educational Insights",
+  "asin": "B00I0D3RE0",
+  "ageMin": 3,
+  "ageMax": 6,
+  "categories": [
+   "Science",
+   "Nature"
+  ],
+  "priceBand": "$$",
+  "tagline": "A real microscope with two big eyepieces made for little kids",
+  "summary": "This sturdy microscope magnifies 8x through two oversized eyepieces, so preschoolers can look with both eyes instead of squinting into one. Kids place leaves, bugs, coins or rocks on the large stage, turn a chunky focus knob, and switch on an LED light to see the details.",
+  "highlights": [
+   "Two wide eyepieces avoid the one-eye squint of standard scopes",
+   "Large stage holds everyday objects found outside",
+   "Built-in LED makes small details easier to see"
+  ],
+  "skills": [
+   "Observation",
+   "Nature exploration",
+   "Describing details",
+   "Focusing a real instrument"
+  ],
+  "considerations": [
+   "Needs 3 AAA batteries for the light, not included",
+   "8x magnification suits everyday objects, not cells"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00I0D3RE0",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "3 AAA, not included (light)",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want to look closely at leaves, bugs and rocks",
+   "inTheBox": "8x microscope with two wide eyepieces and LED light"
+  }
+ },
+ {
+  "id": "educational-insights-geosafari-jr-kidnoculars",
+  "title": "Educational Insights GeoSafari Jr. Kidnoculars",
+  "brand": "Educational Insights",
+  "asin": "B00B1Z6EPS",
+  "ageMin": 3,
+  "ageMax": 8,
+  "categories": [
+   "Nature",
+   "Science"
+  ],
+  "priceBand": "$",
+  "tagline": "Binoculars little kids can actually see through",
+  "summary": "These preschool binoculars have extra-large eyepieces and a goggle-style fit, so there is no focus knob to fiddle with and no need to line up tiny lenses. Kids get 2x magnification for spotting birds, bugs and clouds on walks, at the park or while camping.",
+  "highlights": [
+   "Focus-free design works right away for young children",
+   "Breakaway neck strap for safer outdoor wear",
+   "Gets kids looking closely at nature on everyday outings"
+  ],
+  "skills": [
+   "Observation",
+   "Nature exploration",
+   "Curiosity",
+   "Describing what they see"
+  ],
+  "considerations": [
+   "Only 2x magnification, so it is a starter tool, not real birding optics"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Holiday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00B1Z6EPS",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.educationalinsights.com/item-geosafari-jr-kidnoculars",
+  "listPrice": 15.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love spotting birds and bugs on walks",
+   "inTheBox": "Focus-free 2x binoculars with breakaway neck strap"
+  }
+ },
+ {
+  "id": "hand2mind-numberblocks-mathlink-cubes-1-10",
+  "title": "hand2mind Numberblocks MathLink Cubes 1-10 Activity Set",
+  "brand": "hand2mind",
+  "asin": "B08ZR65PLQ",
+  "ageMin": 3,
+  "ageMax": null,
+  "categories": [
+   "Math & Logic",
+   "Building"
+  ],
+  "priceBand": "$$",
+  "tagline": "Build the Numberblocks characters and see how numbers really work",
+  "summary": "Kids snap together linking cubes to build the characters One through Ten from the Numberblocks TV show, adding faceplates and stickers to bring them to life. Activities tied to specific episodes guide them through counting, adding, taking away and early grouping using the cubes they built.",
+  "highlights": [
+   "100 MathLink cubes plus faceplates, cards and write-and-wipe activity cards",
+   "30 activities linked to Numberblocks episodes",
+   "Makes number sense physical: Five is literally five cubes"
+  ],
+  "skills": [
+   "Counting",
+   "Number sense",
+   "Addition and subtraction",
+   "Patterns"
+  ],
+  "considerations": [
+   "Most fun for kids who know the Numberblocks show",
+   "Small faceplates and stickers are easy to lose"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B08ZR65PLQ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.hand2mind.com/item/mathlink-cubes-numberblocks-110-activity-set",
+  "listPrice": 27.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love the Numberblocks show and counting",
+   "inTheBox": "100 MathLink cubes, faceplates, stickers, activity cards"
+  }
+ },
+ {
+  "id": "thinkfun-robot-turtles",
+  "title": "ThinkFun Robot Turtles",
+  "brand": "ThinkFun",
+  "asin": "B00HN2BXUY",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$",
+  "tagline": "A board game where kids write code with cards to reach the jewel",
+  "summary": "Kids play forward, left and right cards to steer their turtle across the board to a jewel, while a grown-up moves the turtle exactly as instructed. New rules unlock walls, lasers and function cards, so the game gets harder as kids master the basics.",
+  "highlights": [
+   "Plays with 2-5 players, so it works as a family game night pick",
+   "A Bug card lets kids undo a move, introducing debugging",
+   "Levels add obstacles and functions as players improve"
+  ],
+  "skills": [
+   "Sequencing",
+   "Debugging",
+   "Functions",
+   "Turn-taking"
+  ],
+  "considerations": [
+   "Needs an adult to run the game and move the turtles",
+   "Cardboard pieces; store carefully"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Stocking Stuffer",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00HN2BXUY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "lots",
+   "playStyle": "together",
+   "bestFor": "want to learn coding through a family board game",
+   "inTheBox": "Game board, turtle pieces, jewels, walls and code cards"
+  }
+ },
+ {
+  "id": "smartgames-camelot-jr",
+  "title": "SmartGames Camelot Jr.",
+  "brand": "SmartGames",
+  "asin": "B01MRUSZ1Y",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Games & Puzzles",
+   "Math & Logic",
+   "Engineering"
+  ],
+  "priceBand": "$$",
+  "tagline": "Wooden block puzzles that build a path for the knight",
+  "summary": "Each challenge card shows a partial castle layout; kids add wooden blocks, stairs and bridges to build a walkable path that connects the knight to the princess. The 48 puzzles move from quick wins to multi-step spatial challenges, and every one has a single solution to check.",
+  "highlights": [
+   "48 challenges with a gentle difficulty curve",
+   "Sturdy wooden pieces that feel good to handle",
+   "Solo play that builds focus and persistence"
+  ],
+  "skills": [
+   "Spatial reasoning",
+   "Logical thinking",
+   "Planning",
+   "Persistence"
+  ],
+  "considerations": [
+   "Single-player puzzle, not a group game",
+   "Harder levels may frustrate younger 4s without help"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B01MRUSZ1Y",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.smartgamesusa.com/uk/one-player-games/camelot-jr-0",
+  "imageSourceUrl": "https://d32bxxnq6qs937.cloudfront.net/sites/default/files/SG-031-MULTI-Camelot-Jr-%28product%2Bbooklet%2Bpack%29_1.jpg",
+  "listPrice": 26.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/smartgames-camelot-jr.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "enjoy spatial puzzles they can solve on their own",
+   "inTheBox": "Wooden blocks, stairs, bridges and 48 challenge cards"
+  }
+ },
+ {
+  "id": "lego-city-lava-land-roller-coaster-park-60501",
+  "title": "LEGO City Lava Land Roller Coaster Park (60501)",
+  "brand": "LEGO",
+  "asin": "B0G2T1VN17",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Engineering"
+  ],
+  "priceBand": "$$$",
+  "tagline": "A 2026 theme-park build with a launchable coaster and spinning ride",
+  "summary": "This 2026 LEGO City set has kids assemble a volcano-themed amusement park, including a roller coaster with a launchable three-car train and a spinning mine-cart carousel. Once built, the arcade, souvenir stand and ride camera give eight minifigures plenty to do.",
+  "highlights": [
+   "1,165 pieces make it a substantial multi-session holiday build",
+   "Working ride functions let kids test how their build actually moves",
+   "Eight minifigures, including a posable rock monster, for storytelling play"
+  ],
+  "skills": [
+   "Following multi-step instructions",
+   "Mechanism basics",
+   "Spatial reasoning",
+   "Patience and focus"
+  ],
+  "considerations": [
+   "Large footprint (about 21 in. wide) once built",
+   "Small parts; the optional LEGO Builder app guide needs a device"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0G2T1VN17 (also linked from https://www.aboutamazon.com/news/retail/best-gifts-kids-amazon-toys-we-love-list-2026)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/lava-land-roller-coaster-park-60501",
+  "listPrice": 99.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want a big, multi-session build with working rides",
+   "inTheBox": "1,165-piece roller coaster park with 8 minifigures"
+  }
+ },
+ {
+  "id": "lego-pokemon-smart-play-training-house-pikachu-72164",
+  "title": "LEGO Pokémon SMART Play: Training House with Pikachu (72164)",
+  "brand": "LEGO",
+  "asin": "B0GHYFH499",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Electronics"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Pokémon's 30th year meets LEGO's new light-and-sound SMART Brick",
+  "summary": "Kids build a treehouse training area and a brick-built Pikachu, then slot in the included LEGO SMART Brick so Pikachu reacts with lights and sounds. SMART Tags around the set trigger different responses, turning the build into a role-play training game.",
+  "highlights": [
+   "Includes a rechargeable SMART Brick, charger and four SMART Tags",
+   "Play itself happens on the bricks, not on a screen",
+   "SMART Brick works with other LEGO SMART Play sets"
+  ],
+  "skills": [
+   "Building from instructions",
+   "Cause-and-effect thinking",
+   "Imaginative play",
+   "Fine motor skills"
+  ],
+  "considerations": [
+   "SMART Brick needs recharging (about 45 minutes of play per charge)",
+   "The LEGO SMART Assist app is used for setup and firmware updates"
+  ],
+  "screenFree": true,
+  "requiresDevice": "Smartphone or tablet for LEGO SMART Assist app setup/updates",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0GHYFH499 (also linked from https://www.aboutamazon.com/news/retail/best-gifts-kids-amazon-toys-we-love-list-2026)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/smart-play-training-house-with-pikachu-72164",
+  "listPrice": 69.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable SMART Brick, charger included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love Pikachu and want a build that reacts to play",
+   "inTheBox": "Treehouse and Pikachu build, SMART Brick, charger, 4 SMART Tags"
+  }
+ },
+ {
+  "id": "lego-star-wars-smart-play-throne-room-duel-a-wing-75427",
+  "title": "LEGO Star Wars SMART Play: Throne Room Duel & A-Wing (75427)",
+  "brand": "LEGO",
+  "asin": "B0FMYVF9NB",
+  "ageMin": 9,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Electronics"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Two interactive SMART Bricks bring a Star Wars duel to life",
+  "summary": "Builders assemble the Emperor's throne room and an A-Wing starfighter, then use two SMART Bricks and five SMART Tags to add interactive sounds and reactions to the action. A Toy Insider Hot 20 pick for 2026 that rewards both careful building and replay.",
+  "highlights": [
+   "962 pieces split across two builds for a longer project",
+   "Two SMART Bricks and five SMART Tags react to how kids play",
+   "Six minifigures for re-enacting the duel"
+  ],
+  "skills": [
+   "Complex instruction following",
+   "Spatial reasoning",
+   "Storytelling",
+   "Persistence"
+  ],
+  "considerations": [
+   "Premium price",
+   "SMART Bricks need charging; companion app used for setup"
+  ],
+  "screenFree": true,
+  "requiresDevice": "Smartphone or tablet for LEGO SMART Assist app setup/updates",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0FMYVF9NB (Toy Insider Hot 20 via https://www.today.com/shop/the-toy-insider-hottest-toys-2026-rcna596659)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/smart-play-throne-room-duel-a-wing-75427",
+  "listPrice": 159.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "2 rechargeable SMART Bricks",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love Star Wars and want a long, interactive build",
+   "inTheBox": "962 pieces, 2 SMART Bricks, 5 SMART Tags, 6 minifigures"
+  }
+ },
+ {
+  "id": "lego-classic-medium-creative-brick-box-10696",
+  "title": "LEGO Classic Medium Creative Brick Box (10696)",
+  "brand": "LEGO",
+  "asin": "B00NHQFA1I",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Art & Design",
+   "Engineering"
+  ],
+  "priceBand": "$$",
+  "tagline": "484 open-ended bricks for kids who'd rather invent than follow",
+  "summary": "A storage tub of mixed LEGO bricks, wheels, windows and eyes with idea starters rather than a single model. Kids design their own vehicles, animals and buildings, then tear them down and start again.",
+  "highlights": [
+   "Open-ended: no single 'right' build to finish",
+   "Comes in a reusable storage bin",
+   "Mixes with any existing LEGO collection"
+  ],
+  "skills": [
+   "Creative design",
+   "Spatial reasoning",
+   "Fine motor skills",
+   "Planning"
+  ],
+  "considerations": [
+   "Small parts for younger siblings",
+   "Idea booklet is inspiration only; kids need to self-direct"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00NHQFA1I",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/lego-medium-creative-brick-box-10696",
+  "imageSourceUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10696_Prod.jpg",
+  "listPrice": 34.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/lego-classic-medium-creative-brick-box-10696.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "like inventing their own builds without instructions",
+   "inTheBox": "Mixed LEGO bricks, wheels, windows and eyes in a storage bin"
+  }
+ },
+ {
+  "id": "lego-creator-3in1-space-shuttle-31134",
+  "title": "LEGO Creator 3 in 1 Space Shuttle (31134)",
+  "brand": "LEGO",
+  "asin": "B0BLJ4FDT4",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Space"
+  ],
+  "priceBand": "$",
+  "tagline": "One small box, three space builds to rebuild all winter",
+  "summary": "A compact 144-piece set that builds a space shuttle, then rebuilds into an astronaut figure or a spaceship. Rebuilding the same bricks into new shapes is a quick lesson in seeing parts differently.",
+  "highlights": [
+   "Fits in a stocking",
+   "Three models from one set of bricks",
+   "Quick build suits younger LEGO fans"
+  ],
+  "skills": [
+   "Following instructions",
+   "Rebuilding and redesign",
+   "Fine motor skills"
+  ],
+  "considerations": [
+   "Only one model can be built at a time",
+   "Small parts"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0BLJ4FDT4",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/space-shuttle-31134",
+  "listPrice": 9.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "like quick builds they can rebuild three ways",
+   "inTheBox": "144 bricks that build a shuttle, astronaut or spaceship"
+  }
+ },
+ {
+  "id": "magna-tiles-undersea-adventure-58",
+  "title": "MAGNA-TILES Undersea Adventure 58-Piece Set",
+  "brand": "MAGNA-TILES",
+  "asin": "B0GGTPDVLG",
+  "ageMin": 5,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Engineering",
+   "Nature"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Magnetic ocean habitats with slides, trapdoors and sea creatures",
+  "summary": "A 2026 ocean-themed Magna-Tiles set with an XL baseplate, dome and arc pieces, slides, trapdoor tiles and textured Sensory Tiles. Kids design multi-level undersea bases and test how pieces connect and balance.",
+  "highlights": [
+   "58 magnetic pieces including an XL baseplate",
+   "Slides and trapdoors add cause-and-effect play",
+   "Works with other Magna-Tiles sets"
+  ],
+  "skills": [
+   "Geometry and shapes",
+   "Structural balance",
+   "Imaginative play",
+   "Spatial reasoning"
+  ],
+  "considerations": [
+   "Premium price per piece",
+   "Contains magnets; keep away from toddlers"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0GGTPDVLG (also linked from https://www.aboutamazon.com/news/retail/best-gifts-kids-amazon-toys-we-love-list-2026)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.magnatiles.com/products/undersea-adventure-58-piece-set",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0734/5009/4831/files/26Undersea_Adventure_FR1_RGB_1.jpg?v=1777929366",
+  "listPrice": 89.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.magnatiles.com/products/undersea-adventure-58-piece-set.json",
+  "image": "/products/magna-tiles-undersea-adventure-58.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love designing ocean bases with slides and trapdoors",
+   "inTheBox": "58 magnetic pieces including an XL baseplate, slides, trapdoors"
+  }
+ },
+ {
+  "id": "crunchlabs-the-crunchinator",
+  "title": "CrunchLabs by Mark Rober The Crunchinator",
+  "brand": "CrunchLabs",
+  "asin": "B0G3Y3RNZQ",
+  "ageMin": 8,
+  "ageMax": 13,
+  "categories": [
+   "Engineering",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "A hand-cranked crusher that shows how gears multiply force",
+  "summary": "Mark Rober's crushing machine uses a hand-cranked wrench and gearing to multiply a kid's own strength so they can squash snacks and household objects inside a contained chamber. Three swappable crush plates and a QR-linked video explain the mechanical advantage behind it.",
+  "highlights": [
+   "Makes mechanical advantage tangible and memorable",
+   "Contained chamber rinses clean in the sink",
+   "Phone holder for filming slow-motion crushes"
+  ],
+  "skills": [
+   "Gears and leverage",
+   "Force multiplication",
+   "Experimenting",
+   "Observation"
+  ],
+  "considerations": [
+   "Kids will want a supply of things to crush; set ground rules",
+   "Explainer video is reached by QR code"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0G3Y3RNZQ (Toy Insider STEM 10 via https://www.today.com/shop/the-toy-insider-hottest-toys-2026-rcna596659)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.crunchlabs.com/products/the-crunchinator",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0634/1535/3575/files/Add_a_heading_4.png?v=1790952036",
+  "listPrice": 34.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.crunchlabs.com/products/the-crunchinator.json",
+  "image": "/products/crunchlabs-the-crunchinator.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love smashing things and asking why it works",
+   "inTheBox": "Hand-cranked crushing machine with 3 swappable crush plates"
+  }
+ },
+ {
+  "id": "thames-kosmos-v8-race-car",
+  "title": "Thames & Kosmos V8 Race Car Engineering Set",
+  "brand": "Thames & Kosmos",
+  "asin": "B0GDSDKR89",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "Build a motorized race car with a V8, gearbox and suspension",
+  "summary": "Kids assemble a vintage-style motorized race car from the inside out, including a visible V8 engine with crankshaft and pistons, a four-speed transmission with reverse and neutral, a differential and shock-absorbing suspension. A 40-page illustrated manual explains each mechanical system.",
+  "highlights": [
+   "Real car mechanisms you can watch working",
+   "Converts between left- and right-hand drive steering",
+   "Two to three hours of build time, then hands-on experiments"
+  ],
+  "skills": [
+   "Mechanical engineering",
+   "Gear ratios",
+   "Engine basics",
+   "Following technical diagrams"
+  ],
+  "considerations": [
+   "Requires batteries for the motor",
+   "Detailed build may need patience or adult help"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0GDSDKR89 (also linked from https://www.today.com/shop/the-toy-insider-hottest-toys-2026-rcna596659)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/v8-race-car",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/1_08799e64-1dd4-41ce-993d-878d8e42836a.jpg?v=1785869625",
+  "listPrice": 39.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/v8-race-car.json",
+  "image": "/products/thames-kosmos-v8-race-car.webp",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to see how real engines and gearboxes work",
+   "inTheBox": "Motorized race car kit with V8 engine and 40-page manual"
+  }
+ },
+ {
+  "id": "thames-kosmos-solarflower-ruby-ripple",
+  "title": "Thames & Kosmos SolarFlower: Ruby Ripple",
+  "brand": "Thames & Kosmos",
+  "asin": "B0G7LJMVPH",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Science",
+   "Art & Design"
+  ],
+  "priceBand": "$",
+  "tagline": "A sun-powered kinetic flower that teaches motors and gears",
+  "summary": "Kids build a red mechanical flower from 114 parts whose petals all turn together, driven by a single solar-powered motor and planetary gears. The spinning petals create an optical ripple effect, and the manual explains how solar cells make electricity.",
+  "highlights": [
+   "No batteries: runs on sunlight",
+   "Planetary gear system kids can see in motion",
+   "Petals swap with other SolarFlower kits"
+  ],
+  "skills": [
+   "Solar energy basics",
+   "Planetary gears",
+   "Motors",
+   "Careful assembly"
+  ],
+  "considerations": [
+   "Needs bright sunlight to spin well",
+   "Small parts"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0G7LJMVPH (Toy Insider STEM 10 via https://www.today.com/shop/the-toy-insider-hottest-toys-2026-rcna596659)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/solarflower-ruby-ripple",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/1_df26d320-572d-461b-9d67-682c1c1a32f1.jpg?v=1785871333",
+  "listPrice": 24.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/solarflower-ruby-ripple.json",
+  "image": "/products/thames-kosmos-solarflower-ruby-ripple.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Solar powered",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "like building machines powered by the sun",
+   "inTheBox": "114-part solar-powered mechanical flower kit"
+  }
+ },
+ {
+  "id": "catan-junior",
+  "title": "CATAN Junior",
+  "brand": "CATAN Studio",
+  "asin": "B007N0KZ64",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Games & Puzzles",
+   "Math & Logic"
+  ],
+  "priceBand": "$$",
+  "tagline": "Kid-sized Catan: trade resources and build pirate lairs",
+  "summary": "A simplified, pirate-themed take on Catan for two to four players. Kids collect resources like wood, goats and molasses, trade with others and build ships and lairs; the first to seven lairs wins, usually in about 30 minutes.",
+  "highlights": [
+   "Introduces trading and resource management gently",
+   "Short enough for younger attention spans",
+   "Natural stepping stone to full Catan"
+  ],
+  "skills": [
+   "Strategic planning",
+   "Trading and negotiation",
+   "Resource management",
+   "Turn-taking"
+  ],
+  "considerations": [
+   "Needs at least two players",
+   "Some reading of rules by an adult at first"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B007N0KZ64",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://catanshop.com/catan-junior",
+  "imageSourceUrl": "https://catanshop.com/images/thumbs/0000805_catan-junior.jpeg",
+  "listPrice": 37.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/catan-junior.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "together",
+   "bestFor": "are ready for trading and strategy games",
+   "inTheBox": null
+  }
+ },
+ {
+  "id": "ticket-to-ride-first-journey",
+  "title": "Ticket to Ride: First Journey",
+  "brand": "Days of Wonder",
+  "asin": "B01MQ4IKQJ",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Games & Puzzles",
+   "Math & Logic"
+  ],
+  "priceBand": "$$",
+  "tagline": "Route-building train game sized for younger players",
+  "summary": "Players collect colored train cards and claim routes to connect the cities on their tickets across a simplified U.S. map. The first to complete six tickets wins, so games finish in 15 to 30 minutes.",
+  "highlights": [
+   "Shorter routes and simpler rules than the adult game",
+   "Plays well with mixed ages, 2 to 4 players",
+   "Reinforces U.S. map familiarity"
+  ],
+  "skills": [
+   "Planning ahead",
+   "Set collection",
+   "Geography",
+   "Counting"
+  ],
+  "considerations": [
+   "Needs at least two players",
+   "Older kids may outgrow it and want the full version"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B01MQ4IKQJ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.daysofwonder.com/game/ticket-to-ride-my-first-journey/",
+  "imageSourceUrl": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2024/07/720025-T2RFJ-spreadbox-EN-layers-1.webp",
+  "image": "/products/ticket-to-ride-first-journey.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "together",
+   "bestFor": "like maps, trains and quick family games",
+   "inTheBox": "Simplified U.S. map, train cards and route tickets"
+  }
+ },
+ {
+  "id": "catan-on-the-road-card-game",
+  "title": "CATAN On The Road Card Game",
+  "brand": "CATAN",
+  "asin": "B0GKBJSPBS",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Games & Puzzles",
+   "Math & Logic"
+  ],
+  "priceBand": "$",
+  "tagline": "Catan's build-and-trade strategy in a 120-card travel deck",
+  "summary": "A new portable card version of Catan with no board: players use 120 cards to recreate the building, trading and settling decisions of the original. A full game takes about 15 minutes, making it easy to pack for holiday travel.",
+  "highlights": [
+   "Pocket-friendly for road trips and restaurants",
+   "Quick 15-minute games",
+   "Same resource-trading strategy as classic Catan"
+  ],
+  "skills": [
+   "Resource management",
+   "Strategic thinking",
+   "Negotiation"
+  ],
+  "considerations": [
+   "Aimed at ages 10+",
+   "Best with 3 to 4 players"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0GKBJSPBS (also linked from https://www.aboutamazon.com/news/retail/best-gifts-kids-amazon-toys-we-love-list-2026)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://catanshop.com/catan-on-the-road",
+  "imageSourceUrl": "https://catanshop.com/images/thumbs/0002197_catan-on-the-road.jpeg",
+  "listPrice": 9.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/catan-on-the-road-card-game.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "together",
+   "bestFor": "want quick strategy games for travel",
+   "inTheBox": "120-card portable game, no board"
+  }
+ },
+ {
+  "id": "kanoodle-fan-edition-20th-anniversary",
+  "title": "Educational Insights Kanoodle Fan Edition (20th Anniversary)",
+  "brand": "Educational Insights",
+  "asin": "B0GJ1BPKD1",
+  "ageMin": 7,
+  "ageMax": null,
+  "categories": [
+   "Math & Logic",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$",
+  "tagline": "220 new Kanoodle puzzles plus two bonus pieces",
+  "summary": "The 20th-anniversary edition of the pocket logic puzzle: kids follow a challenge setup, then fit the remaining 'noodle' pieces so the board fills exactly. It adds 220 new puzzles, two bonus pieces and 20 fan-inspired #ShakeChallenge cards.",
+  "highlights": [
+   "Each setup has a single solution to hunt for",
+   "Compact case keeps pieces together on the go",
+   "Fresh challenges even for kids who own the original"
+  ],
+  "skills": [
+   "Spatial reasoning",
+   "Logical deduction",
+   "Persistence",
+   "Problem solving"
+  ],
+  "considerations": [
+   "Solo play only",
+   "Small pieces are easy to lose outside the case"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0GJ1BPKD1 (also linked from https://www.aboutamazon.com/news/retail/best-gifts-kids-amazon-toys-we-love-list-2026)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "listPrice": 16.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "love pocket logic puzzles with one right answer",
+   "inTheBox": "Pocket case with pieces, 220 puzzles, 20 challenge cards"
+  }
+ },
+ {
+  "id": "thinkfun-gravity-maze",
+  "title": "ThinkFun Gravity Maze",
+  "brand": "ThinkFun",
+  "asin": "B00IUAAK2A",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Math & Logic",
+   "Engineering",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$$",
+  "tagline": "Marble-run logic puzzles where every tower placement counts",
+  "summary": "Each challenge card shows a partial setup; kids place the remaining towers on the grid so a dropped marble travels to the target. 60 challenges climb from beginner to expert, combining spatial planning with a satisfying physical test.",
+  "highlights": [
+   "Instant feedback: drop the marble to check your solution",
+   "60 graded challenges grow with the player",
+   "Toy of the Year award winner"
+  ],
+  "skills": [
+   "Spatial reasoning",
+   "Planning",
+   "Logical deduction",
+   "Cause and effect"
+  ],
+  "considerations": [
+   "Designed for one player",
+   "Small marbles; not for toddlers"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B00IUAAK2A",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.ravensburger.us/en-US/products/games/thinkfun/gravity-maze-44001006",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "like spatial puzzles they can test with a marble",
+   "inTheBox": "Grid, towers, marbles and 60 challenge cards"
+  }
+ },
+ {
+  "id": "thinkfun-rush-hour",
+  "title": "ThinkFun Rush Hour Traffic Jam Logic Game",
+  "brand": "ThinkFun",
+  "asin": "B00000DMER",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Math & Logic",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$",
+  "tagline": "Slide the cars to free the red one: logic in a small box",
+  "summary": "Kids set up a traffic jam from a challenge card, then slide cars and trucks forward and back until the red car can exit the grid. Cards progress from beginner to expert, so it builds sequential reasoning step by step.",
+  "highlights": [
+   "Long-running classic logic puzzle",
+   "Difficulty ramps gradually",
+   "Small enough for a stocking"
+  ],
+  "skills": [
+   "Sequential reasoning",
+   "Planning moves ahead",
+   "Spatial reasoning"
+  ],
+  "considerations": [
+   "Single-player puzzle",
+   "Challenge cards are easy to misplace"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Classroom",
+   "Rainy Day",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00000DMER",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.ravensburger.us/en-US/products/games/thinkfun/rush-hour-76582",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "enjoy step-by-step logic puzzles",
+   "inTheBox": "Traffic grid, cars and trucks, challenge cards"
+  }
+ },
+ {
+  "id": "gamewright-sushi-go",
+  "title": "Gamewright Sushi Go! Card Game",
+  "brand": "Gamewright",
+  "asin": "B00J57VU44",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Games & Puzzles",
+   "Math & Logic"
+  ],
+  "priceBand": "$",
+  "tagline": "A quick card-drafting game with sneaky math inside",
+  "summary": "Players pick one card from their hand and pass the rest, trying to collect the best-scoring sushi combinations. Rounds are quick, and kids practice tallying scores and weighing what opponents might take.",
+  "highlights": [
+   "About 15 minutes per game",
+   "Plays 2 to 5, good for family gatherings",
+   "Small tin fits a stocking"
+  ],
+  "skills": [
+   "Addition and scoring",
+   "Probability intuition",
+   "Strategic choices"
+  ],
+  "considerations": [
+   "Needs at least two players",
+   "Scoring rules take a round to learn"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00J57VU44",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://gamewright.com/product/Sushi-Go",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/2075/8229/products/GAMEWRIGHT-249.jpg?v=1510613875",
+  "listPrice": 16.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.ceaco.com/products/sushi-go.json",
+  "image": "/products/gamewright-sushi-go.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "together",
+   "bestFor": "like quick card games with the family",
+   "inTheBox": "Card game in a small tin"
+  }
+ },
+ {
+  "id": "vtech-kidizoom-printcam",
+  "title": "VTech KidiZoom PrintCam",
+  "brand": "VTech",
+  "asin": "B08V8RVDQD",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Art & Design",
+   "Electronics"
+  ],
+  "priceBand": "$$$",
+  "tagline": "A kids' camera that prints photos instantly in black and white",
+  "summary": "Kids frame shots on a 2.4-inch color screen, flip the lens for selfies, then print black-and-white photos on the built-in thermal printer to color in. Templates turn prints into comic strips, cards and games.",
+  "highlights": [
+   "Ink-free thermal printing; no cartridges to buy",
+   "Parents can set daily time and print limits or turn off games",
+   "Rechargeable via USB; English and Spanish"
+  ],
+  "skills": [
+   "Photo composition",
+   "Visual storytelling",
+   "Creative design"
+  ],
+  "considerations": [
+   "Prints are black and white only; extra paper rolls sold separately",
+   "Includes built-in games parents may want to limit"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B08V8RVDQD (also linked from https://hip2save.com/deals/vtech-kidizoom-camera/)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.vtechkids.com/kidizoomprintcam",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable via USB",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love taking photos and coloring in their prints",
+   "inTheBox": "Kids' camera with 2.4-in. screen and built-in thermal printer"
+  }
+ },
+ {
+  "id": "klutz-lego-chain-reactions",
+  "title": "Klutz LEGO Chain Reactions",
+  "brand": "Klutz",
+  "asin": "0545703301",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building",
+   "Science"
+  ],
+  "priceBand": "$",
+  "tagline": "Build 10 LEGO machines and link them into chain reactions",
+  "summary": "A book-and-parts kit with instructions for 10 LEGO machines that spin, swing, roll, lift and drop. Kids connect them into Rube Goldberg-style chain reactions and troubleshoot until each step triggers the next.",
+  "highlights": [
+   "Includes 33 LEGO elements plus paper ramps and props",
+   "Debugging a chain reaction teaches real engineering iteration",
+   "Works with LEGO bricks kids already own"
+  ],
+  "skills": [
+   "Simple machines",
+   "Trial and error",
+   "Engineering design",
+   "Cause and effect"
+  ],
+  "considerations": [
+   "Bigger chains need extra LEGO bricks from home",
+   "Paper parts wear out with heavy use"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Rainy Day",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/0545703301",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://shop.scholastic.com/parent-ecommerce/books/klutz-lego-chain-reactions-9780545703307.html",
+  "imageSourceUrl": "https://embed.cdn.pais.scholastic.com/v1/channels/sso/products/identifiers/isbn/9780545703307/primary/renditions/1000",
+  "listPrice": 21.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/klutz-lego-chain-reactions.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love Rube Goldberg machines and tinkering",
+   "inTheBox": "Instruction book, 33 LEGO elements, paper ramps and props"
+  }
+ },
+ {
+  "id": "klutz-lego-make-your-own-movie",
+  "title": "Klutz LEGO Make Your Own Movie",
+  "brand": "Klutz",
+  "asin": "1338137204",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Art & Design",
+   "Building"
+  ],
+  "priceBand": "$",
+  "tagline": "A starter kit for LEGO stop-motion filmmaking",
+  "summary": "A 78-page guide, 36 LEGO elements, fold-out backgrounds and punch-out animation frames walk kids through ten short stop-motion 'mini movies.' They plan scenes, move minifigures a frame at a time and edit with a free app.",
+  "highlights": [
+   "Teaches storyboarding and frame-by-frame animation",
+   "Six backdrops like outer space and underwater",
+   "Ten guided projects before kids make their own films"
+  ],
+  "skills": [
+   "Storytelling",
+   "Stop-motion animation",
+   "Planning and sequencing",
+   "Patience"
+  ],
+  "considerations": [
+   "Needs a phone, tablet or camera with a stop-motion app",
+   "Steady setup or stand helps for smooth shots"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Smartphone, tablet or digital camera with a stop-motion app",
+  "occasions": [
+   "Stocking Stuffer",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1338137204 (also linked from https://www.today.com/shop/hottest-toys-2026-rcna602966)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://shop.scholastic.com/parent-ecommerce/books/klutz-lego-make-your-own-movie-100-official-lego-guide-to-stop-motion-animation-9781338137200.html",
+  "imageSourceUrl": "https://embed.cdn.pais.scholastic.com/v1/channels/sso/products/identifiers/isbn/9781338137200/primary/renditions/700",
+  "image": "/products/klutz-lego-make-your-own-movie.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to make their own stop-motion movies",
+   "inTheBox": "78-page guide, 36 LEGO elements, backdrops, animation frames"
+  }
+ },
+ {
+  "id": "scrib3d-advanced-3d-printing-pen",
+  "title": "SCRIB3D Advanced 3D Printing Pen",
+  "brand": "SCRIB3D",
+  "asin": "B08HM3X3D3",
+  "ageMin": 14,
+  "ageMax": null,
+  "categories": [
+   "Art & Design",
+   "Engineering"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Draw in 3D with melted PLA, from stencils to freehand sculpture",
+  "summary": "A plug-in 3D pen that extrudes PLA plastic so teens can trace flat stencils, then join and stack them into 3D objects. An LCD screen shows heat and speed settings, and a stencil guide supplies starter projects.",
+  "highlights": [
+   "Adjustable temperature and multiple speed settings",
+   "Uses common PLA filament for refills",
+   "A Toy Insider STEM 10 pick for 2026"
+  ],
+  "skills": [
+   "3D design thinking",
+   "Fine motor control",
+   "Spatial reasoning",
+   "Creative prototyping"
+  ],
+  "considerations": [
+   "Nozzle gets hot; supervision recommended",
+   "Plugs into the wall via an adapter, not cordless"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B08HM3X3D3 (Toy Insider STEM 10 via https://www.today.com/shop/the-toy-insider-hottest-toys-2026-rcna596659)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://scrib3dpen.com/products/scrib3d-adv-3d-pen",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0705/0828/2103/files/1_SCRIB_ADV_ECOMM_Hero_c6dc28cd-58a9-47c9-9f90-ad949f92f131.jpg?v=1786444584",
+  "listPrice": 59.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://scrib3dpen.com/products/scrib3d-adv-3d-pen.json",
+  "image": "/products/scrib3d-advanced-3d-printing-pen.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Plugs into the wall; not cordless",
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "want to draw in 3D and make real objects",
+   "inTheBox": "Plug-in 3D pen with LCD screen and stencil guide"
+  }
+ },
+ {
+  "id": "barbie-sparkle-marble-run",
+  "title": "Barbie Sparkle Marble Run Building Set",
+  "brand": "Mattel",
+  "asin": "B0H4P5R3ZR",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "Design glittery marble runs and test drops, twists and races",
+  "summary": "A 2026 marble-run set with 65 glittery track pieces and 10 marbles. Kids design layouts with drops and twisting paths, test them, and adjust when a marble stalls or flies off, with a learning guide covering the physics.",
+  "highlights": [
+   "65 track pieces for many different layouts",
+   "Includes an instructions and learning guide",
+   "No batteries needed"
+  ],
+  "skills": [
+   "Gravity and momentum",
+   "Iterative design",
+   "Spatial planning"
+  ],
+  "considerations": [
+   "Marbles are a choking hazard for younger siblings",
+   "Taller builds need a stable flat surface"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0H4P5R3ZR (also linked from https://www.aboutamazon.com/news/retail/best-gifts-kids-amazon-toys-we-love-list-2026)",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "like designing tracks and fixing what goes wrong",
+   "inTheBox": "65 glittery track pieces, 10 marbles, learning guide"
+  }
+ },
+ {
+  "id": "thames-kosmos-mega-cyborg-hand",
+  "title": "Thames & Kosmos Mega Cyborg Hand",
+  "brand": "Thames & Kosmos",
+  "asin": "B085LRW4VR",
+  "ageMin": 7,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Robotics",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "Build a giant wearable robot hand powered by water pressure",
+  "summary": "Kids assemble an oversized mechanical hand from 200-plus plastic parts, then fill its piston tubes with water so the fingers open, close and grip when they move their own hand inside it. The full-color manual explains how the same hydraulic and pneumatic ideas show up in real industrial robots.",
+  "highlights": [
+   "No motors or batteries: every movement comes from the kid's own hand pushing water and air",
+   "Adjusts to fit the wearer, so the finished hand grabs and lifts real objects",
+   "Big, satisfying build that ends in a toy kids actually want to wear and show off"
+  ],
+  "skills": [
+   "Hydraulics and pneumatics",
+   "Following multi-step instructions",
+   "Mechanical engineering basics",
+   "Fine motor skills"
+  ],
+  "considerations": [
+   "Long build for a 7-year-old; plan on adult help for the first session",
+   "Filling the pistons with water can get a little messy"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B085LRW4VR",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/mega-cyborg-hand",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/620501_megacyborghand-Front.jpg?v=1774553461",
+  "listPrice": 44.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/mega-cyborg-hand.json",
+  "image": "/products/thames-kosmos-mega-cyborg-hand.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want a big build they can wear and show off",
+   "inTheBox": "200+ part kit for a wearable hydraulic hand, color manual"
+  }
+ },
+ {
+  "id": "thinkfun-circuit-maze",
+  "title": "ThinkFun Circuit Maze",
+  "brand": "ThinkFun",
+  "asin": "B01BX4G6FY",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Games & Puzzles",
+   "Math & Logic"
+  ],
+  "priceBand": "$$",
+  "tagline": "A logic puzzle where the reward is lighting up a real circuit",
+  "summary": "Each challenge card shows where a few pieces go; the player fills in the rest of the grid with path tiles so electricity flows from the power source to the right LED beacons. When the solution is correct the beacons actually light up, turning circuit concepts into a solo puzzle game.",
+  "highlights": [
+   "60 challenges that ramp from beginner to expert, with solutions included",
+   "Real current flows through the tiles, so kids get instant feedback on their logic",
+   "Introduces series and parallel circuits and switches without any wiring"
+  ],
+  "skills": [
+   "Circuit basics",
+   "Logical reasoning",
+   "Spatial planning",
+   "Persistence"
+  ],
+  "considerations": [
+   "Needs 3 AAA batteries, not included",
+   "Small tokens are easy to lose"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01BX4G6FY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.ravensburger.us/en-US/products/games/thinkfun/circuit-maze-44001008",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "3 AAA, not included",
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "like logic puzzles and want to learn about circuits",
+   "inTheBox": "Game grid, path tiles, LED beacons, 60 challenge cards"
+  }
+ },
+ {
+  "id": "snap-circuits-jr-sc-100",
+  "title": "Snap Circuits Jr. SC-100",
+  "brand": "Snap Circuits",
+  "asin": "B00008BFZH",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "Real electronic parts that snap together, no soldering",
+  "summary": "Color-coded components such as switches, a speaker, lamps and a small motor snap onto a plastic base grid to form working circuits. Following the illustrated manual, kids build 100-plus projects including a doorbell, a sound-activated switch and a spinning flying saucer.",
+  "highlights": [
+   "Over 100 guided projects, so there is a clear next step after every success",
+   "Parts are labeled with real electronics symbols, building a foundation for later study",
+   "Expandable with other Snap Circuits sets as interest grows"
+  ],
+  "skills": [
+   "Circuit basics",
+   "Reading diagrams",
+   "Cause and effect",
+   "Troubleshooting"
+  ],
+  "considerations": [
+   "Requires 2 AA batteries, not included",
+   "Younger kids may need help reading the project manual"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B00008BFZH",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "2 AA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to build working gadgets like a doorbell",
+   "inTheBox": "Snap-together parts, base grid, illustrated project manual"
+  }
+ },
+ {
+  "id": "educational-insights-kanoodle",
+  "title": "Educational Insights Kanoodle",
+  "brand": "Educational Insights",
+  "asin": "B000FGECAI",
+  "ageMin": 7,
+  "ageMax": null,
+  "categories": [
+   "Math & Logic",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$",
+  "tagline": "A pocket-size puzzle with 200 ways to stretch the brain",
+  "summary": "Kanoodle is a clamshell case with 12 bead-shaped pieces and a booklet of 200 puzzles. Kids copy a partial layout from the book and fit the remaining pieces into the gaps, first on a flat board and later stacked into 3D pyramids.",
+  "highlights": [
+   "Self-contained case keeps every piece together, ideal for car rides",
+   "Puzzles progress from easy 2D fills to hard 3D builds",
+   "Adults enjoy it too, so it works as a shared family challenge"
+  ],
+  "skills": [
+   "Spatial reasoning",
+   "Pattern recognition",
+   "Patience and persistence"
+  ],
+  "considerations": [
+   "Small pieces are not suitable for toddlers in the house"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B000FGECAI",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "like brain-teasers they can take on car rides",
+   "inTheBox": "Clamshell case, 12 pieces, 200-puzzle booklet"
+  }
+ },
+ {
+  "id": "smartgames-iq-puzzler-pro",
+  "title": "SmartGames IQ Puzzler Pro",
+  "brand": "SmartGames",
+  "asin": "B01G3PYWCW",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Math & Logic",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$",
+  "tagline": "120 travel-ready puzzles that move from flat to 3D",
+  "summary": "Players place a few colored pieces according to a challenge in the booklet, then work out how the rest fit to fill the board or build a pyramid. The latched case doubles as the play surface, so it can be played almost anywhere.",
+  "highlights": [
+   "120 challenges with a gentle start that suits 6-year-olds",
+   "Both 2D and 3D modes keep it interesting as skills grow",
+   "Portable case is built for travel and waiting rooms"
+  ],
+  "skills": [
+   "Spatial reasoning",
+   "Logical deduction",
+   "Focus"
+  ],
+  "considerations": [
+   "Small pieces; a lost piece makes some puzzles unsolvable"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01G3PYWCW",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.smartgamesusa.com/uk/one-player-games/iq-puzzler-pro-0",
+  "imageSourceUrl": "https://d32bxxnq6qs937.cloudfront.net/sites/default/files/SG-455-MULTI-IQ-PUZZLER-PRO-%28pack%29_1.jpg",
+  "image": "/products/smartgames-iq-puzzler-pro.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "enjoy 2D and 3D logic puzzles on the go",
+   "inTheBox": "Latching travel case, colored pieces, 120-challenge booklet"
+  }
+ },
+ {
+  "id": "national-geographic-mega-crystal-growing-kit",
+  "title": "National Geographic Mega Crystal Growing Kit",
+  "brand": "National Geographic",
+  "asin": "B01C3DSKTY",
+  "ageMin": 8,
+  "ageMax": 12,
+  "categories": [
+   "Science",
+   "Nature"
+  ],
+  "priceBand": "$$",
+  "tagline": "Grow eight colorful crystals and display them on a light-up stand",
+  "summary": "Kids mix crystal solutions and pour them into reusable silicone molds, then check back over a few days as eight crystals form, including some that glow in the dark. Finished crystals go on a light-up display, and the kit adds several real gemstone specimens with a guide to how crystals form.",
+  "highlights": [
+   "Visible results within a few days keep kids checking in",
+   "Light-up display turns the experiment into a keepsake",
+   "Includes real gemstone specimens to compare with the grown crystals"
+  ],
+  "skills": [
+   "Chemistry basics",
+   "Observation over time",
+   "Following procedures"
+  ],
+  "considerations": [
+   "Needs adult supervision when handling the crystal-growing chemicals",
+   "Display base is USB-powered"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01C3DSKTY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Display base is USB-powered",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "like watching experiments change over several days",
+   "inTheBox": "Crystal solutions, silicone molds, light-up display, gemstones"
+  }
+ },
+ {
+  "id": "national-geographic-mega-gemstone-dig-kit",
+  "title": "National Geographic Mega Gemstone Dig Kit",
+  "brand": "National Geographic",
+  "asin": "B0160JBGRA",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Science",
+   "Nature"
+  ],
+  "priceBand": "$",
+  "tagline": "Chip away at a dig brick to uncover 15 real gemstones",
+  "summary": "Kids use the included pick and brush to excavate a large plaster block and find 15 real gems and crystals hidden inside. A learning guide helps them identify each find and explains how it formed and what it is used for.",
+  "highlights": [
+   "Real specimens kids can keep and start a rock collection with",
+   "Excavation feels like a genuine treasure hunt",
+   "Identification guide connects each stone to earth science"
+  ],
+  "skills": [
+   "Mineral identification",
+   "Patience and fine motor control",
+   "Earth science basics"
+  ],
+  "considerations": [
+   "Digging is dusty and messy; best done outdoors or on newspaper",
+   "Small parts; adult supervision recommended"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0160JBGRA",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love treasure hunts and starting a rock collection",
+   "inTheBox": "Plaster dig block with 15 gems, pick, brush, learning guide"
+  }
+ },
+ {
+  "id": "national-geographic-earth-science-kit",
+  "title": "National Geographic Earth Science Kit",
+  "brand": "National Geographic",
+  "asin": "B082ZLM39R",
+  "ageMin": 8,
+  "ageMax": 12,
+  "categories": [
+   "Science",
+   "Nature"
+  ],
+  "priceBand": "$$",
+  "tagline": "Volcanoes, crystals, gem digs and tornadoes in one box",
+  "summary": "A sampler of earth science activities: kids build and erupt a volcano, grow crystals, dig for gemstones and make a tornado in a bottle, among others. A guide explains the real geology and weather science behind each experiment.",
+  "highlights": [
+   "Variety of experiments suits kids who haven't picked a favorite science yet",
+   "Covers rocks, minerals, volcanoes and weather in one kit",
+   "Good for a series of weekend projects rather than one sitting"
+  ],
+  "skills": [
+   "Earth science basics",
+   "Scientific observation",
+   "Following procedures"
+  ],
+  "considerations": [
+   "Some experiments are messy and need adult supervision",
+   "Consumables run out after one use of each activity"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B082ZLM39R",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "haven't picked a favorite science yet",
+   "inTheBox": "Volcano, crystal, gem-dig and tornado-in-a-bottle activities"
+  }
+ },
+ {
+  "id": "national-geographic-science-magic-kit",
+  "title": "National Geographic Science Magic Kit",
+  "brand": "National Geographic",
+  "asin": "B0876F6STP",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "Chemistry experiments disguised as magic tricks",
+  "summary": "Each experiment is staged as a trick to perform for an audience, such as making instant snow or a square bubble, and the guide then reveals the chemistry or physics that makes it work. A wand and gloves are included, along with ideas for extra experiments using household items.",
+  "highlights": [
+   "Performance angle motivates kids to repeat and perfect each experiment",
+   "Explains the real science behind every trick",
+   "Bonus guide extends play with common household supplies"
+  ],
+  "skills": [
+   "Chemistry basics",
+   "Scientific explanation",
+   "Presenting and public speaking"
+  ],
+  "considerations": [
+   "Adult supervision needed for the chemical components",
+   "Some consumables are single-use"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0876F6STP",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "love performing tricks for an audience",
+   "inTheBox": "Science-trick experiments with a wand and gloves"
+  }
+ },
+ {
+  "id": "osmo-genius-kit-ipad",
+  "title": "Osmo Genius Kit for iPad",
+  "brand": "Osmo",
+  "asin": "B07NHS4D4T",
+  "ageMin": 6,
+  "ageMax": 10,
+  "categories": [
+   "Math & Logic",
+   "Art & Design",
+   "Games & Puzzles"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Hands-on pieces that talk to an iPad game",
+  "summary": "A stand and mirror let the iPad camera see what kids do on the table in front of it. Across five games they arrange tangram shapes, lay down number and letter tiles for math and spelling, draw on paper and tracing, and sketch lines to steer falling balls in a physics puzzle.",
+  "highlights": [
+   "Kids manipulate real pieces instead of just tapping a screen",
+   "Five games cover math, spelling, spatial puzzles, drawing and physics",
+   "Difficulty adapts as kids improve"
+  ],
+  "skills": [
+   "Arithmetic",
+   "Spelling",
+   "Spatial reasoning",
+   "Drawing"
+  ],
+  "considerations": [
+   "Requires a compatible iPad, not included",
+   "Free Osmo game apps must be downloaded to the iPad"
+  ],
+  "screenFree": false,
+  "requiresDevice": "iPad",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B07NHS4D4T",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Needs an iPad (not included)",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want hands-on games that work with an iPad",
+   "inTheBox": "iPad stand, mirror, tangram pieces, number and letter tiles"
+  }
+ },
+ {
+  "id": "sphero-indi-at-home-learning-kit",
+  "title": "Sphero indi At-Home Learning Kit",
+  "brand": "Sphero",
+  "asin": "B094X6TV5V",
+  "ageMin": 4,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Robotics"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A little robot car kids program with colored cards",
+  "summary": "indi drives over colored cards and reacts to each color, changing speed, stopping or turning. Kids lay out card paths and mazes to steer it, then can move to the optional Sphero Edu Jr app to reassign what each color means.",
+  "highlights": [
+   "Fully screen-free start, with an app to grow into later",
+   "Builds sequencing and debugging habits through simple puzzles",
+   "Rechargeable, so no battery swaps"
+  ],
+  "skills": [
+   "Sequencing",
+   "Debugging",
+   "Problem solving",
+   "Early coding concepts"
+  ],
+  "considerations": [
+   "Premium price for a single robot",
+   "Older kids in the range may outgrow card-only play without the app"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B094X6TV5V",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want a first robot they can code without a screen",
+   "inTheBox": "indi robot with color cards for paths and mazes"
+  }
+ },
+ {
+  "id": "wonder-workshop-dash-robot",
+  "title": "Wonder Workshop Dash Robot",
+  "brand": "Wonder Workshop",
+  "asin": "B00SKURVKY",
+  "ageMin": 6,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Robotics"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A responsive robot that grows from drag-and-drop to real coding",
+  "summary": "Dash rolls, turns its head, lights up, makes sounds and responds to voices and obstacles. Using free apps on a phone or tablet, kids start by driving it, then build programs with picture blocks and later Blockly to make it navigate rooms and react to its surroundings.",
+  "highlights": [
+   "Several apps form a clear progression from simple to more advanced coding",
+   "Sensors let kids write programs that react to sound and obstacles",
+   "Rechargeable battery"
+  ],
+  "skills": [
+   "Block-based coding",
+   "Loops and events",
+   "Sensors and robotics",
+   "Problem solving"
+  ],
+  "considerations": [
+   "Requires a compatible iOS or Android phone or tablet",
+   "One of the pricier robots in this age group"
+  ],
+  "screenFree": false,
+  "requiresDevice": "iOS/Android tablet or phone",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00SKURVKY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://store.makewonder.com/products/dash",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0996/3602/files/Dash_with_Box-Contents-iPad_1af5c3cf-59dd-4b42-8274-29c12b3f34a4.jpg?v=1785978978",
+  "listPrice": 189.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://store.makewonder.com/products/dash.json",
+  "image": "/products/wonder-workshop-dash-robot.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want to grow from driving a robot to coding it",
+   "inTheBox": "Dash robot"
+  }
+ },
+ {
+  "id": "thames-kosmos-remote-control-machines",
+  "title": "Thames & Kosmos Remote Control Machines",
+  "brand": "Thames & Kosmos",
+  "asin": "B003KYXAQO",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building",
+   "Robotics"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Build motorized vehicles and drive them with an infrared remote",
+  "summary": "With 182 building pieces, three motors and an infrared remote, kids build 10 models such as a bulldozer, crane, race car and robotic arm. The remote runs each motor forward or backward, so kids see how motors, gears and axles turn into motion.",
+  "highlights": [
+   "Ten distinct motorized models from one kit",
+   "Three independently controlled motors allow more complex machines",
+   "Parts are compatible with other Thames & Kosmos engineering kits"
+  ],
+  "skills": [
+   "Gears and motors",
+   "Mechanical engineering",
+   "Following technical diagrams"
+  ],
+  "considerations": [
+   "Batteries not included",
+   "Builds can be fiddly; younger kids will need adult help"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B003KYXAQO",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "Not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to build motorized machines and drive them",
+   "inTheBox": "182 parts, 3 motors and an infrared remote for 10 models"
+  }
+ },
+ {
+  "id": "4m-kidzrobotix-tin-can-robot",
+  "title": "4M KidzRobotix Tin Can Robot",
+  "brand": "4M",
+  "asin": "B0014WO96Y",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Engineering"
+  ],
+  "priceBand": "$",
+  "tagline": "Turn an empty soda can into a walking robot",
+  "summary": "Kids attach a small motor unit, legs, arms and eyes to a cleaned-out soda can, then switch it on and watch it shuffle across the table. It's a quick, affordable first taste of how a motor and simple linkages create movement, with a recycling twist.",
+  "highlights": [
+   "Finishes in an afternoon, great for a quick win",
+   "Reuses household recycling as the robot body",
+   "Low price makes it an easy party favor or stocking stuffer"
+  ],
+  "skills": [
+   "Motors and motion",
+   "Hand-tool use",
+   "Following instructions",
+   "Recycling and reuse"
+  ],
+  "considerations": [
+   "Requires one AA battery, an empty soda can and a small screwdriver, none included",
+   "Simple project with limited replay value"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Rainy Day",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0014WO96Y",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.4m-ind.com/product/tin-can-robot/",
+  "imageSourceUrl": "https://www.4m-ind.com/wp-content/uploads/2019/02/3270_P_RGB_lores.jpg",
+  "image": "/products/4m-kidzrobotix-tin-can-robot.webp",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "1 AA, not included",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want a quick, low-cost first robot build",
+   "inTheBox": "Motor unit, legs, arms and eyes; you add a soda can"
+  }
+ },
+ {
+  "id": "ravensburger-gravitrax-starter-set",
+  "title": "Ravensburger GraviTrax Starter Set",
+  "brand": "Ravensburger",
+  "asin": "B07B7HNLMG",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building",
+   "Science"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Design marble runs powered by gravity, magnets and momentum",
+  "summary": "Kids arrange hexagonal tiles on base plates, stack height tiles and connect tracks to build marble runs, using parts like a magnetic cannon, vortex and switches to change the marble's path. They learn by testing: if the marble stalls, they adjust heights and angles until it reaches the finish.",
+  "highlights": [
+   "122 pieces support many different track designs",
+   "Includes action pieces like a magnetic cannon and vortex",
+   "Expandable with a wide range of add-on sets"
+  ],
+  "skills": [
+   "Gravity and momentum",
+   "Magnetism",
+   "Engineering design",
+   "Spatial planning"
+  ],
+  "considerations": [
+   "Contains marbles and small parts",
+   "First builds go best with an adult following the guide"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B07B7HNLMG",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "like building marble runs and fixing what stalls",
+   "inTheBox": "122 pieces: tiles, tracks, marbles, magnetic cannon, vortex"
+  }
+ },
+ {
+  "id": "sphero-mini",
+  "title": "Sphero Mini Coding Robot Ball",
+  "brand": "Sphero",
+  "asin": "B072B6QVVW",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding"
+  ],
+  "priceBand": "$$",
+  "tagline": "A ping-pong-ball-sized robot that turns code into motion",
+  "summary": "Sphero Mini is a tiny rolling robot ball that kids drive and program from a phone or tablet. They start by drawing paths and snapping together block code, then move on to typed JavaScript as they get more confident, testing each idea by watching the ball roll.",
+  "highlights": [
+   "Small enough for a desk or kitchen-table obstacle course",
+   "Same Sphero Edu app supports drawing, block and text coding, so it grows with the kid",
+   "Instant feedback: every bug shows up as a wrong turn on the floor"
+  ],
+  "skills": [
+   "Sequencing and loops",
+   "Block-to-text coding",
+   "Debugging",
+   "Angles and speed"
+  ],
+  "considerations": [
+   "Needs a compatible phone or tablet for driving and coding",
+   "Rechargeable battery; keep the USB cable handy"
+  ],
+  "screenFree": false,
+  "requiresDevice": "iOS/Android phone or tablet",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Stocking Stuffer"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B072B6QVVW",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://sphero.com/products/sphero-mini",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0306/6419/6141/products/Mini-Blue.png?v=1741829941",
+  "listPrice": 50,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://sphero.com/products/sphero-mini.json",
+  "variantId": 32255985025069,
+  "image": "/products/sphero-mini.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable via USB",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want to code a tiny robot, from blocks to JavaScript",
+   "inTheBox": "Tiny rolling robot ball"
+  }
+ },
+ {
+  "id": "sphero-bolt-plus",
+  "title": "Sphero BOLT+ Coding Robot",
+  "brand": "Sphero",
+  "asin": "B0D3JBNLTQ",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A sensor-packed robot ball with a screen kids can program",
+  "summary": "BOLT+ is Sphero's advanced rolling robot, with a built-in animated LCD screen and sensors kids can read in their programs. Coders can start with drawing and blocks, then write real Python or JavaScript to make it navigate, react and display custom graphics.",
+  "highlights": [
+   "Supports Draw, Blocks, Python and JavaScript in one app",
+   "Built-in screen lets kids show messages and animations from their code",
+   "Waterproof, durable shell with Qi wireless charging"
+  ],
+  "skills": [
+   "Python and JavaScript basics",
+   "Using sensor data",
+   "Conditionals and events",
+   "Problem solving"
+  ],
+  "considerations": [
+   "Premium price for a single robot",
+   "Requires a phone, tablet or computer running the Sphero app"
+  ],
+  "screenFree": false,
+  "requiresDevice": "iOS/Android tablet or computer",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0D3JBNLTQ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://sphero.com/products/sphero-bolt-plus",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0306/6419/6141/files/boltplus02.jpg?v=1747856499",
+  "listPrice": 199,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://sphero.com/products/sphero-bolt-plus.json",
+  "variantId": 42004713078829,
+  "image": "/products/sphero-bolt-plus.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable, Qi wireless charging",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "are ready to code a robot in Python or JavaScript",
+   "inTheBox": "Rolling robot with built-in LCD screen and sensors"
+  }
+ },
+ {
+  "id": "makeblock-mbot2",
+  "title": "Makeblock mBot2 Coding Robot",
+  "brand": "Makeblock",
+  "asin": "B0962Z216S",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding",
+   "Electronics"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Build a sensor robot, then code it from Scratch to Python",
+  "summary": "mBot2 is a wheeled robot kit built around Makeblock's CyberPi controller, with a color screen, ultrasonic distance sensor and a four-color line-following sensor. Kids assemble the chassis, then program it in the mBlock environment using Scratch-style blocks before graduating to Python.",
+  "highlights": [
+   "Real hardware: motors, sensors and a programmable controller kids assemble themselves",
+   "Smooth path from block coding to Python in the same mBlock software",
+   "Built-in rechargeable battery and a wireless remote for quick play"
+  ],
+  "skills": [
+   "Robot assembly",
+   "Block and Python coding",
+   "Line following and obstacle avoidance",
+   "Sensor logic"
+  ],
+  "considerations": [
+   "Coding requires a computer or tablet running mBlock",
+   "Younger kids may want adult help with the first build"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac computer or tablet",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0962Z216S",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://store.makeblock.com/products/buy-mbot2",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/5901/3716/files/mBot2_625x_progressive_webp_7ebf294e-d819-437c-b986-b8f81caa3023.webp?v=1766999460",
+  "listPrice": 149.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://store.makeblock.com/products/buy-mbot2.json",
+  "variantId": 43920249061592,
+  "image": "/products/makeblock-mbot2.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Built-in rechargeable battery",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to build a real robot and code it in blocks or Python",
+   "inTheBox": "Robot kit with CyberPi controller, sensors and wireless remote"
+  }
+ },
+ {
+  "id": "makeblock-mbot",
+  "title": "Makeblock mBot Robot Kit",
+  "brand": "Makeblock",
+  "asin": "B00SK5RUQY",
+  "ageMin": 8,
+  "ageMax": 12,
+  "categories": [
+   "Robotics",
+   "Coding"
+  ],
+  "priceBand": "$$$",
+  "tagline": "The classic build-and-code robot for first-time roboticists",
+  "summary": "The original mBot is a screwdriver-built robot car with line-following and ultrasonic sensors. Kids put it together, play with the preset modes, then write their own programs in Scratch-based mBlock and, later, Arduino code.",
+  "highlights": [
+   "Hands-on assembly shows how motors, sensors and a controller connect",
+   "Scratch-style coding lowers the barrier, with Arduino available for later",
+   "Lower price than mBot2 for families testing the waters"
+  ],
+  "skills": [
+   "Mechanical assembly",
+   "Scratch coding",
+   "Intro to Arduino",
+   "Sensor-based decisions"
+  ],
+  "considerations": [
+   "Needs a computer or tablet for coding",
+   "Batteries may not be included; check the listing"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac computer or tablet",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00SK5RUQY",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.makeblock.com/products/buy-mbot",
+  "listPrice": 69.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.makeblock.com/products/buy-mbot.json",
+  "variantId": 37655278420167,
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want an affordable first build-and-code robot",
+   "inTheBox": "Robot car kit with line-following and ultrasonic sensors"
+  }
+ },
+ {
+  "id": "snap-circuits-classic-sc-300",
+  "title": "Snap Circuits Classic SC-300 Electronics Kit",
+  "brand": "Snap Circuits",
+  "asin": "B0000683A4",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Science"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Build working circuits without a single wire or solder joint",
+  "summary": "Kids snap color-coded components onto a plastic grid to build more than 300 working projects, from alarms and lights to a radio and motor-driven fan. Each project in the illustrated manual explains what the circuit does, so kids learn how switches, resistors and transistors behave by actually using them.",
+  "highlights": [
+   "300+ guided projects using 60+ reusable snap-together parts",
+   "Parts look like the schematic symbols, building real circuit-reading skills",
+   "No tools or soldering, so kids can work independently"
+  ],
+  "skills": [
+   "Series and parallel circuits",
+   "Reading schematics",
+   "Switches and sensors",
+   "Troubleshooting"
+  ],
+  "considerations": [
+   "AA batteries are not included",
+   "Second half of the project book is a download"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day",
+   "Classroom"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0000683A4",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "AA, not included",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want hundreds of circuit projects to work through",
+   "inTheBox": "60+ snap-together parts, base grid, illustrated manual"
+  }
+ },
+ {
+  "id": "snap-circuits-pro-sc-500",
+  "title": "Snap Circuits Pro SC-500 Electronics Kit",
+  "brand": "Snap Circuits",
+  "asin": "B00008W73Z",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Science"
+  ],
+  "priceBand": "$$$",
+  "tagline": "The bigger Snap Circuits set for kids who want 500+ projects",
+  "summary": "The Pro set extends the snap-together system with more components and more than 500 projects. It suits kids who have outgrown a starter set or want deeper builds that combine sound, light and motion into more complex circuits.",
+  "highlights": [
+   "500+ guided projects for long-term exploration",
+   "More parts mean more advanced circuits than the Jr. and Classic sets",
+   "Same no-solder snap system, compatible with other Snap Circuits kits"
+  ],
+  "skills": [
+   "Circuit design",
+   "Electronic components",
+   "Following schematics",
+   "Experimenting and testing"
+  ],
+  "considerations": [
+   "AA batteries are not included",
+   "Lots of small parts to keep organized"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00008W73Z",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "AA, not included",
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "have outgrown a starter circuit set",
+   "inTheBox": "Snap Circuits parts for 500+ projects"
+  }
+ },
+ {
+  "id": "lego-technic-aston-martin-valkyrie",
+  "title": "LEGO Technic Aston Martin Valkyrie (42208)",
+  "brand": "LEGO",
+  "asin": "B0DRW4GYPC",
+  "ageMin": 9,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Engineering"
+  ],
+  "priceBand": "$$$",
+  "tagline": "A hypercar build with moving pistons and a real differential",
+  "summary": "This 707-piece Technic set builds a model of the Aston Martin Valkyrie with working steering, gullwing doors and a V12 engine whose pistons move as the car rolls. Kids see first-hand how a differential lets wheels turn at different speeds through corners.",
+  "highlights": [
+   "Working differential and moving pistons make car mechanics visible",
+   "Steering controlled by a knob on top of the model",
+   "A satisfying multi-session build that ends as a display piece"
+  ],
+  "skills": [
+   "Gears and differentials",
+   "Following technical instructions",
+   "Spatial reasoning",
+   "Patience and focus"
+  ],
+  "considerations": [
+   "Small parts; not for homes with toddlers",
+   "Not motorized"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0DRW4GYPC",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/aston-martin-valkyrie-42208",
+  "listPrice": 64.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want to see how real car mechanics work",
+   "inTheBox": "707-piece Technic Aston Martin Valkyrie model"
+  }
+ },
+ {
+  "id": "lego-technic-volvo-l120-electric-wheel-loader",
+  "title": "LEGO Technic Volvo L120 Electric Wheel Loader (42209)",
+  "brand": "LEGO",
+  "asin": "B0DRW8XBWM",
+  "ageMin": 9,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Engineering"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Articulated steering and a working shovel in 973 pieces",
+  "summary": "Kids build a detailed model of Volvo's electric wheel loader, then use knobs to raise, lower and tilt the shovel and steer the articulated frame. Opening the engine cover reveals spinning gears, making it a hands-on look at how heavy equipment moves.",
+  "highlights": [
+   "Articulated steering shows how big machines turn in tight spaces",
+   "Knob-driven shovel demonstrates linkages and gearing",
+   "Bigger, longer build for kids ready for a challenge"
+  ],
+  "skills": [
+   "Mechanical linkages",
+   "Gear trains",
+   "Following multi-step instructions",
+   "Engineering vocabulary"
+  ],
+  "considerations": [
+   "Not motorized; functions are hand-operated",
+   "Large build best spread over several sessions"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0DRW8XBWM",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/volvo-l120-electric-wheel-loader-42209",
+  "imageSourceUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/42209_Prod.png",
+  "listPrice": 119.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/lego-technic-volvo-l120-electric-wheel-loader.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "love construction machines and bigger builds",
+   "inTheBox": "Technic electric wheel loader with knob-driven shovel"
+  }
+ },
+ {
+  "id": "thames-kosmos-chem-c1000",
+  "title": "Thames & Kosmos CHEM C1000 Beginner Chemistry Set (V2.1)",
+  "brand": "Thames & Kosmos",
+  "asin": "B0G9BH4QVT",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Science"
+  ],
+  "priceBand": "$$$",
+  "tagline": "A real first chemistry lab with 125 guided experiments",
+  "summary": "CHEM C1000 gives kids genuine lab gear such as test tubes, beakers, pipettes and safety goggles plus a small set of real chemicals. The 80-page manual walks them through acids and bases, indicators, electrochemistry and more, explaining the chemistry behind each reaction.",
+  "highlights": [
+   "125 experiments with a clear, illustrated step-by-step manual",
+   "Real glassware and chemicals rather than a toy-only kit",
+   "Teaches lab safety habits alongside the science"
+  ],
+  "skills": [
+   "Lab safety",
+   "Acids, bases and indicators",
+   "Electrochemistry basics",
+   "Observing and recording results"
+  ],
+  "considerations": [
+   "Adult supervision required; contains real chemicals",
+   "Some experiments need common household supplies"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0G9BH4QVT",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/chem-c1000-v-2-1-not-for-sale-in-canada",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/640119_ChemC1000-3DboxFront.jpg?v=1766074773",
+  "listPrice": 59.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/chem-c1000-v-2-1-not-for-sale-in-canada.json",
+  "image": "/products/thames-kosmos-chem-c1000.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "lots",
+   "playStyle": "either",
+   "bestFor": "want a real chemistry lab, not a toy",
+   "inTheBox": "Test tubes, beakers, pipettes, goggles, chemicals, 80-page manual"
+  }
+ },
+ {
+  "id": "thames-kosmos-electricity-magnetism",
+  "title": "Thames & Kosmos Electricity & Magnetism Science Kit",
+  "brand": "Thames & Kosmos",
+  "asin": "B007WDGZYS",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Science",
+   "Electronics"
+  ],
+  "priceBand": "$$",
+  "tagline": "62 experiments that make magnetic fields and current visible",
+  "summary": "This kit guides kids through 62 experiments on magnets, magnetic fields and the link between electricity and magnetism. Hands-on setups help them see how invisible forces push, pull and can be switched on with current.",
+  "highlights": [
+   "Covers both magnetism and electricity, and how they connect",
+   "Experiment-driven manual explains the why behind each result",
+   "Good bridge between circuit kits and physics class"
+  ],
+  "skills": [
+   "Magnetic fields",
+   "Electromagnetism",
+   "Scientific method",
+   "Simple circuits"
+  ],
+  "considerations": [
+   "Check the listing for battery requirements",
+   "Contains magnets and small parts; supervise around younger siblings"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Rainy Day",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B007WDGZYS",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/electricity-and-magnetism",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/620417_Electricity_and_Magnetism_3DBox.jpg?v=1787338855",
+  "listPrice": 59.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/electricity-and-magnetism.json",
+  "image": "/products/thames-kosmos-electricity-magnetism.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "are curious about magnets and invisible forces",
+   "inTheBox": "Experiment parts and manual for 62 experiments"
+  }
+ },
+ {
+  "id": "national-geographic-dual-led-microscope",
+  "title": "National Geographic Dual LED Student Microscope Kit",
+  "brand": "National Geographic",
+  "asin": "B01ICAU41E",
+  "ageMin": 8,
+  "ageMax": 12,
+  "categories": [
+   "Science",
+   "Nature"
+  ],
+  "priceBand": "$$",
+  "tagline": "Look at slides and solid objects with top and bottom lights",
+  "summary": "This student microscope has two LED lights: one shines up through prepared slides and one shines down on solid objects like leaves, coins or insects. Kids switch between 20x and 50x views, make their own slides and explore the details of everyday things.",
+  "highlights": [
+   "Dual lighting works for both slides and 3D objects",
+   "Comes with prepared slides, blank slides and slide-prep tools",
+   "Low magnifications are easy for kids to focus and use independently"
+  ],
+  "skills": [
+   "Observation",
+   "Slide preparation",
+   "Biology basics",
+   "Scientific drawing and notes"
+  ],
+  "considerations": [
+   "Low-power stereo-style views, not high-power cell study",
+   "Check the listing for battery requirements"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01ICAU41E",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://thinkbluemarble.com/product/national-geographic-ultimate-dual-microscope/",
+  "imageSourceUrl": "https://thinkbluemarble.com/wp-content/uploads/2023/01/m1.jpg",
+  "listPrice": 79.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/national-geographic-dual-led-microscope.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "want to explore everyday things up close",
+   "inTheBox": "20x/50x microscope, prepared and blank slides, slide-prep tools"
+  }
+ },
+ {
+  "id": "geosafari-omega-refractor-telescope",
+  "title": "Educational Insights GeoSafari Omega 60mm Refractor Telescope",
+  "brand": "Educational Insights",
+  "asin": "B0007COBFG",
+  "ageMin": 8,
+  "ageMax": 12,
+  "categories": [
+   "Space",
+   "Science"
+  ],
+  "priceBand": "$$$",
+  "tagline": "A real 60mm refractor sized for young stargazers",
+  "summary": "This beginner refractor telescope uses a 60 mm lens to bring the Moon's craters and bright planets into view. Kids learn to aim, focus and follow objects as they drift across the sky.",
+  "highlights": [
+   "Genuine optics rather than a toy telescope",
+   "Sized and priced for kids starting out in astronomy",
+   "Hands-on intro to aiming and focusing a real telescope"
+  ],
+  "skills": [
+   "Astronomy basics",
+   "Moon and planet observation",
+   "Using optical instruments",
+   "Patience and observation"
+  ],
+  "considerations": [
+   "Adult help recommended for setup and first nights",
+   "Never point at the Sun"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0007COBFG",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to see the Moon's craters for themselves",
+   "inTheBox": "60 mm refractor telescope"
+  }
+ },
+ {
+  "id": "klutz-lego-gear-bots",
+  "title": "Klutz LEGO Gear Bots",
+  "brand": "Klutz",
+  "asin": "1338603450",
+  "ageMin": 8,
+  "ageMax": 12,
+  "categories": [
+   "Engineering",
+   "Building",
+   "Art & Design"
+  ],
+  "priceBand": "$",
+  "tagline": "Crank-powered LEGO creatures that teach cams and cranks",
+  "summary": "Kids combine LEGO Technic pieces with papercraft to build eight hand-cranked kinetic creatures, like a record-spinning octopus and a flapping pterodactyl. Turning the crank drives axles, cams and cranks, showing how rotation becomes up-and-down or wobbling motion.",
+  "highlights": [
+   "Eight different automata from one kit",
+   "Explains mechanical ideas like cams and cranks in kid-friendly language",
+   "Mixes engineering with creative papercraft decoration"
+  ],
+  "skills": [
+   "Cams and cranks",
+   "Converting motion",
+   "Following instructions",
+   "Creative design"
+  ],
+  "considerations": [
+   "Papercraft pieces can wear out with heavy use",
+   "Small LEGO parts"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Stocking Stuffer",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1338603450",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://shop.scholastic.com/parent-ecommerce/books/klutz-lego-gear-bots-9781338603453.html",
+  "imageSourceUrl": "https://embed.cdn.pais.scholastic.com/v1/channels/sso/products/identifiers/isbn/9781338603453/primary/renditions/700",
+  "image": "/products/klutz-lego-gear-bots.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "either",
+   "bestFor": "like mixing mechanics with papercraft",
+   "inTheBox": "LEGO Technic pieces and papercraft for 8 hand-cranked creatures"
+  }
+ },
+ {
+  "id": "4m-kidzrobotix-motorized-robot-hand",
+  "title": "4M KidzRobotix Motorized Robot Hand",
+  "brand": "4M",
+  "asin": "B07FP5RJQS",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Engineering"
+  ],
+  "priceBand": "$",
+  "tagline": "A motor-driven robot hand that taps and drums its fingers",
+  "summary": "Kids assemble a robotic hand whose motor turns a wheel that lifts and drops each finger in sequence, so it taps and drums on its own. Adjusting the setup lets them change the rhythm and see how a rotating part can drive a series of movements.",
+  "highlights": [
+   "Visible mechanism makes it easy to see cause and effect",
+   "Customizable finger patterns add an experimental twist",
+   "Budget-friendly robotics project"
+  ],
+  "skills": [
+   "Mechanisms and timing",
+   "Motor control basics",
+   "Assembly",
+   "Pattern design"
+  ],
+  "considerations": [
+   "AAA batteries not included",
+   "Small parts; adult help may be needed for fiddly steps"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B07FP5RJQS",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.4m-ind.com/product/motorised-robot-hand/",
+  "imageSourceUrl": "https://www.4m-ind.com/wp-content/uploads/2018/01/3407_P_RGB_hires.jpg",
+  "image": "/products/4m-kidzrobotix-motorized-robot-hand.webp",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "AAA, not included",
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "like seeing how motors make things move",
+   "inTheBox": "Motorized robotic hand kit"
+  }
+ },
+ {
+  "id": "national-geographic-hobby-rock-tumbler",
+  "title": "National Geographic Hobby Rock Tumbler Kit",
+  "brand": "National Geographic",
+  "asin": "B01LQCIL88",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Science",
+   "Nature"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Turn rough stones into polished gems over a few weeks",
+  "summary": "Kids load rough gemstones and grit into a motorized barrel and run it through four polishing stages, checking progress as dull rocks turn glossy. It is a long-term geology project that teaches patience along with erosion and mineral hardness.",
+  "highlights": [
+   "Complete kit with rough stones, four grits and jewelry fastenings",
+   "Built-in timer and leak-resistant barrel",
+   "Ends with gems kids can keep, gift or wear"
+  ],
+  "skills": [
+   "Geology and minerals",
+   "Erosion",
+   "Following a multi-step process",
+   "Patience"
+  ],
+  "considerations": [
+   "Plug-in machine runs for days and makes noise",
+   "Full process takes several weeks"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01LQCIL88",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://thinkbluemarble.com/product/national-geographic-hobby-rock-tumbler-kit/",
+  "imageSourceUrl": "https://thinkbluemarble.com/wp-content/uploads/2022/10/Hobby1.jpg",
+  "image": "/products/national-geographic-hobby-rock-tumbler.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Plug-in; runs for days",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "are patient and love shiny rocks",
+   "inTheBox": "Motorized tumbler, rough stones, 4 grits, jewelry fastenings"
+  }
+ },
+ {
+  "id": "ugears-stem-lab-gearbox",
+  "title": "UGEARS STEM Lab Gearbox Model Kit",
+  "brand": "UGEARS",
+  "asin": "B088X49CTV",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Building"
+  ],
+  "priceBand": "$$",
+  "tagline": "Build a working wooden model of a car's manual gearbox",
+  "summary": "Kids press out precut wooden parts and assemble a working model of a four-speed manual transmission, no glue required. Shifting through the gears shows how different gear combinations trade speed for turning force, and an optional augmented-reality app shows real-world uses.",
+  "highlights": [
+   "Working mechanism kids can shift and test",
+   "No glue or cutting; everything is in the box",
+   "Wooden model looks great on a shelf when finished"
+  ],
+  "skills": [
+   "Gear ratios",
+   "Torque and speed",
+   "Precision assembly",
+   "Mechanical reasoning"
+  ],
+  "considerations": [
+   "Wooden pieces can snap if forced; patience needed",
+   "AR app is optional and needs a phone or tablet"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B088X49CTV",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want to see how a gearbox trades speed for force",
+   "inTheBox": "Precut wooden parts for a 4-speed gearbox model"
+  }
+ },
+ {
+  "id": "arduino-official-starter-kit",
+  "title": "Arduino Starter Kit (K000007)",
+  "brand": "Arduino",
+  "asin": "B009UKZV0A",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Coding"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "The official way to learn Arduino, one breadboard project at a time",
+  "summary": "Arduino's own starter kit pairs a genuine UNO board with a box of parts and a printed projects book. Teens wire circuits on a breadboard and write code that reads sensors and drives LEDs, a servo, a DC motor and an LCD screen.",
+  "highlights": [
+   "Genuine Arduino UNO, not a clone, plus the official projects book",
+   "Includes motion parts like a servo and a DC motor, not just LEDs",
+   "Everything goes on a breadboard, so parts come back out and get reused"
+  ],
+  "skills": [
+   "Circuit basics",
+   "Reading sensors",
+   "C/C++ programming",
+   "Motor control",
+   "Debugging"
+  ],
+  "considerations": [
+   "Needs a Windows, Mac or Linux computer for the Arduino IDE",
+   "Costs more than compatible-board kits with similar parts"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac/Linux computer",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B009UKZV0A",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://store-usa.arduino.cc/products/arduino-starter-kit-multi-language",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0506/1689/3647/files/starterkit_02.unbox.jpg?v=1773148489",
+  "listPrice": 110,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://store-usa.arduino.cc/products/arduino-starter-kit-multi-language.json",
+  "variantId": 43942426116303,
+  "image": "/products/arduino-official-starter-kit.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "solo",
+   "bestFor": "want to wire circuits and write real code",
+   "inTheBox": "Arduino UNO, breadboard parts, servo, DC motor, LCD, projects book"
+  }
+ },
+ {
+  "id": "elegoo-uno-r3-super-starter-kit",
+  "title": "ELEGOO UNO R3 Super Starter Kit",
+  "brand": "ELEGOO",
+  "asin": "B01D8KOZF4",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Coding"
+  ],
+  "priceBand": "$$",
+  "tagline": "A budget Arduino-style kit packed with sensors and motors",
+  "summary": "This kit centers on an Arduino IDE-compatible UNO R3 board and adds a large assortment of modules, including an LCD, joystick, ultrasonic distance sensor, temperature and humidity sensor, servo and stepper motor. Downloadable PDF lessons take beginners through more than 20 projects in a storage case.",
+  "highlights": [
+   "Lots of modules for the money, including a stepper motor and an ultrasonic sensor",
+   "Works with the free Arduino IDE and the many tutorials written for it",
+   "Comes with a breadboard power supply module and a 9V battery"
+  ],
+  "skills": [
+   "Breadboarding",
+   "Arduino programming",
+   "Sensor input",
+   "Motor control"
+  ],
+  "considerations": [
+   "Lessons are PDFs you download, not a printed book",
+   "Uses an Arduino-compatible board, not an official Arduino; ELEGOO recommends adult supervision for younger users"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac/Linux computer",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B01D8KOZF4",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0684/4792/8423/files/elegoo-uno-r3-super-starter-kit-compatible-with-arduino-ide-arduino-stem-kits-elegoo-shop-427270.jpg?v=1787632171",
+  "listPrice": 42.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit.json",
+  "image": "/products/elegoo-uno-r3-super-starter-kit.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "9V battery included",
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "want lots of sensors and modules to experiment with",
+   "inTheBox": "UNO R3-compatible board, modules, sensors, motors, storage case"
+  }
+ },
+ {
+  "id": "arduino-plug-and-make-kit",
+  "title": "Arduino Plug and Make Kit",
+  "brand": "Arduino",
+  "asin": "B0D5R52DRQ",
+  "ageMin": 14,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Coding"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Snap-together Arduino projects with no breadboard or soldering",
+  "summary": "Built around the Wi-Fi-equipped Arduino UNO R4 WiFi, this kit uses seven plug-in Modulino modules (knob, buttons, buzzer, LED pixels, distance, movement and temperature) joined with keyed Qwiic cables. Teens build guided projects like a game controller, a touchless lamp and a weather display, then connect them to online dashboards in Arduino Cloud.",
+  "highlights": [
+   "Keyed connectors remove most wiring mistakes, so the focus stays on code",
+   "The UNO R4 WiFi board makes connected, internet-aware projects possible",
+   "Seven documented starter projects to learn from before building your own"
+  ],
+  "skills": [
+   "Arduino programming",
+   "Sensor data",
+   "IoT dashboards",
+   "Project design"
+  ],
+  "considerations": [
+   "Arduino lists it for ages 14+ because of its cloud account requirements",
+   "You learn less about circuit wiring than with a breadboard kit; more cloud projects may need a paid Arduino Cloud plan"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac/Linux computer",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0D5R52DRQ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://store-usa.arduino.cc/products/plug-and-make-kit",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0506/1689/3647/files/AKX00069_00.default.jpg?v=1740391708",
+  "listPrice": 87.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://store-usa.arduino.cc/products/plug-and-make-kit.json",
+  "image": "/products/arduino-plug-and-make-kit.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "solo",
+   "bestFor": "want connected projects without fiddly wiring",
+   "inTheBox": "UNO R4 WiFi board, 7 Modulino modules, Qwiic cables"
+  }
+ },
+ {
+  "id": "canakit-raspberry-pi-5-starter-kit-pro",
+  "title": "CanaKit Raspberry Pi 5 Starter Kit PRO (8GB, 128GB)",
+  "brand": "CanaKit",
+  "asin": "B0CRSNCJ6Y",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Coding",
+   "Electronics"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A full Raspberry Pi 5 computer, ready to boot out of the box",
+  "summary": "This bundle has an 8GB Raspberry Pi 5 plus everything needed to start it: a fan-cooled case with heat sink, an official-spec USB-C power supply, two micro-HDMI cables and a 128GB microSD card preloaded with Raspberry Pi OS. Teens can use it as a Linux desktop, learn Python, run a home server, or make it the brain of robotics and electronics projects.",
+  "highlights": [
+   "Preloaded microSD card removes the trickiest setup step",
+   "Active cooling keeps the Pi 5 fast under heavy loads",
+   "GPIO pins connect it to sensors, motors and robot kits"
+  ],
+  "skills": [
+   "Linux basics",
+   "Python programming",
+   "Computer hardware",
+   "Networking"
+  ],
+  "considerations": [
+   "Monitor, keyboard and mouse are not included",
+   "No age guidance from the maker; younger teens may need help with setup"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Monitor, keyboard and mouse",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0CRSNCJ6Y",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.canakit.com/canakit-raspberry-pi-5-starter-kit-turbine-black.html",
+  "imageSourceUrl": "https://www.canakit.com/Media/700/2915.jpg",
+  "image": "/products/canakit-raspberry-pi-5-starter-kit-pro.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "USB-C power supply included",
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "want a real computer to code and tinker with",
+   "inTheBox": "Raspberry Pi 5, case, power supply, HDMI cables, 128GB microSD"
+  }
+ },
+ {
+  "id": "makeblock-mbot-ultimate",
+  "title": "Makeblock mBot Ultimate 10-in-1 Robot Kit",
+  "brand": "Makeblock",
+  "asin": "B00W6Y0Z4E",
+  "ageMin": 12,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Engineering",
+   "Coding"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Metal robot kit that rebuilds into ten machines, including an arm",
+  "summary": "mBot Ultimate is a large set of aluminum beams, plates, motors and sensors run by the Arduino-compatible MegaPi controller. Teens build any of ten official designs, such as a robotic arm tank, then program them with block coding or move up to Arduino C, or drive them from a phone app.",
+  "highlights": [
+   "More than 160 metal parts, so it feels close to real mechanical engineering",
+   "Encoder motors, an ultrasonic sensor, a line follower and a gyro sensor are included",
+   "Grows with the builder: block coding first, then Arduino C"
+  ],
+  "skills": [
+   "Mechanical design",
+   "Robot programming",
+   "Sensor feedback",
+   "Motor control"
+  ],
+  "considerations": [
+   "Needs 6 AA batteries, not included",
+   "A big investment, and the builds take patience and some time"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac computer or iOS/Android device",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B00W6Y0Z4E",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://store.makeblock.com/products/buy-mbot-ultimate",
+  "listPrice": 399.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://store.makeblock.com/products/buy-mbot-ultimate.json",
+  "variantId": 43429104550104,
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "6 AA, not included",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want metal robot builds close to real engineering",
+   "inTheBox": "160+ metal parts, MegaPi controller, motors and sensors"
+  }
+ },
+ {
+  "id": "elegoo-smart-robot-car-kit-v4",
+  "title": "ELEGOO Smart Robot Car Kit V4 with Camera",
+  "brand": "ELEGOO",
+  "asin": "B07KPZ8RSZ",
+  "ageMin": 12,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding",
+   "Electronics"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Build and code a camera robot car that follows lines and dodges walls",
+  "summary": "Teens assemble a four-wheel robot car run by an Arduino-compatible UNO R3 board, with line-tracking and ultrasonic sensors, a servo-mounted camera on a Wi-Fi module, and an IR remote. Once it is built, they can drive it from an app, try the preset modes for obstacle avoidance, line following and auto-follow, and then change the Arduino code behind each mode.",
+  "highlights": [
+   "Camera module streams live video to the app while you drive",
+   "Rechargeable lithium battery pack included, so no stack of AAs",
+   "Preset modes show what the code can do before you modify it"
+  ],
+  "skills": [
+   "Robot assembly",
+   "Arduino programming",
+   "Sensor logic",
+   "Wireless control"
+  ],
+  "considerations": [
+   "Assembly takes a few hours and includes small screws",
+   "Programming needs a computer; the drive app needs a phone or tablet"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac computer; iOS/Android device for app control",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B07KPZ8RSZ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0684/4792/8423/files/elegoo-uno-r3-project-smart-robot-car-kit-v-40-with-camera-arduino-stem-kits-elegoo-shop-715337.jpg?v=1787636880",
+  "listPrice": 75.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0.json",
+  "image": "/products/elegoo-smart-robot-car-kit-v4.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Rechargeable lithium pack included",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want to drive a camera robot, then change its code",
+   "inTheBox": "Robot car kit with UNO board, sensors, camera, IR remote"
+  }
+ },
+ {
+  "id": "sunfounder-picar-x",
+  "title": "SunFounder PiCar-X AI Robot Car Kit",
+  "brand": "SunFounder",
+  "asin": "B0CGLPF29H",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Turn a Raspberry Pi into a camera robot that sees and listens",
+  "summary": "PiCar-X is an aluminum robot car chassis with a camera, ultrasonic and grayscale sensors, and a Robot HAT board that mounts on a Raspberry Pi. After building it, teens program it in Python or Scratch for line following and obstacle avoidance, then try computer-vision and voice projects, including ones connected to AI chat services.",
+  "highlights": [
+   "Pairs naturally with a Raspberry Pi 5 kit or the Learn Robotics with Raspberry Pi book",
+   "Covers both Scratch and Python, so it works for beginners and advanced coders",
+   "Camera projects introduce real computer vision with OpenCV"
+  ],
+  "skills": [
+   "Python programming",
+   "Computer vision",
+   "Robot assembly",
+   "Sensor logic"
+  ],
+  "considerations": [
+   "Raspberry Pi board is not included and must be bought separately",
+   "AI voice and chat features need internet access and outside service accounts"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Raspberry Pi (not included) plus a computer or tablet",
+  "occasions": [
+   "Birthday",
+   "Holiday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0CGLPF29H",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.sunfounder.com/products/picar-x",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0474/7729/3217/files/sunfounder-picar-x-sunfounder-picar-x-ai-video-robot-car-kit-for-raspberry-pi-5-4-3b-zero-2w-llms-chatgpt-4o-gemini-grok-voice-video-recognition-python-scratch-camera-batterry-rpi-not-included-38845522608363.jpg?v=1768412806",
+  "listPrice": 89.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.sunfounder.com/products/picar-x.json",
+  "image": "/products/sunfounder-picar-x.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want to try computer vision on a Raspberry Pi robot",
+   "inTheBox": "Aluminum car chassis, camera, sensors, Robot HAT; no Pi"
+  }
+ },
+ {
+  "id": "sphero-rvr-plus",
+  "title": "Sphero RVR+ Programmable Robot",
+  "brand": "Sphero",
+  "asin": "B0BLF8CLQF",
+  "ageMin": 8,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A rugged, ready-to-drive robot rover that teens can hack",
+  "summary": "RVR+ comes fully assembled with color, light, infrared and motion sensors and a swappable rechargeable battery. Teens start in the Sphero Edu app with drawn paths and blocks, then move on to JavaScript, or to Python through Sphero's SDK, and can bolt on a Raspberry Pi or micro:bit through its expansion port.",
+  "highlights": [
+   "Drives out of the box, so coding starts on day one",
+   "Expansion port and developer plate make it a platform for custom hardware",
+   "Sphero Edu runs on iOS, Android, Windows, Mac and Chromebooks"
+  ],
+  "skills": [
+   "Block and text coding",
+   "Sensor data",
+   "Hardware integration",
+   "Problem solving"
+  ],
+  "considerations": [
+   "Needs a phone, tablet or computer to program",
+   "Expensive compared with build-it-yourself robot kits"
+  ],
+  "screenFree": false,
+  "requiresDevice": "iOS/Android device or Windows/Mac/Chromebook",
+  "occasions": [
+   "Holiday",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0BLF8CLQF",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://sphero.com/products/rvr",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0306/6419/6141/files/RVRPlus_MAIN_2_34f2f018-1157-4587-b0d2-5ff9af9a7098.jpg?v=1747856080",
+  "listPrice": 339,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://sphero.com/products/rvr.json",
+  "variantId": 42004659142701,
+  "image": "/products/sphero-rvr-plus.webp",
+  "glance": {
+   "batteries": "included",
+   "batteryNote": "Swappable rechargeable battery",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want a robot platform they can add hardware to",
+   "inTheBox": "Fully assembled robot with sensors and rechargeable battery"
+  }
+ },
+ {
+  "id": "thames-kosmos-bionic-robotic-arm",
+  "title": "Thames & Kosmos Bionic Robotic Arm",
+  "brand": "Thames & Kosmos",
+  "asin": "B0CRHY5GPF",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Engineering",
+   "Robotics",
+   "Building"
+  ],
+  "priceBand": "$$",
+  "tagline": "A cable-driven robot arm that moves like a tentacle, no batteries",
+  "summary": "Builders assemble a segmented arm from almost 300 pieces, then steer it with two joysticks that pull nylon cables, much like tendons work in a body. Buttons open, close and rotate the claw, and an alternate head turns the arm into a bionic eel.",
+  "highlights": [
+   "Shows biomimicry and cable mechanics with no motors or code involved",
+   "Two-joystick control is satisfying to master for pick-and-place challenges",
+   "Swappable gripper heads add a second build"
+  ],
+  "skills": [
+   "Mechanical engineering",
+   "Biomimicry",
+   "Following technical instructions",
+   "Fine motor control"
+  ],
+  "considerations": [
+   "Purely mechanical, with no electronics or programming",
+   "Cable tension takes some patience to adjust during the build"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0CRHY5GPF",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.thamesandkosmos.com/products/bionic-robotic-arm",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/BionicArm_BoxFront_46b4b70a-ae6d-4203-9a76-c24811027468.jpg?v=1791568506",
+  "listPrice": 54.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.thamesandkosmos.com/products/bionic-robotic-arm.json",
+  "image": "/products/thames-kosmos-bionic-robotic-arm.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "love mechanical builds they control by hand",
+   "inTheBox": "Nearly 300 pieces, two joysticks, swappable gripper heads"
+  }
+ },
+ {
+  "id": "elenco-practical-soldering-project-kit",
+  "title": "Elenco Practical Soldering Project Kit",
+  "brand": "Elenco",
+  "asin": "B0002LUAL6",
+  "ageMin": 12,
+  "ageMax": null,
+  "categories": [
+   "Electronics"
+  ],
+  "priceBand": "$",
+  "tagline": "Learn to solder by building a working two-tone siren",
+  "summary": "This inexpensive kit teaches soldering and desoldering from scratch. Beginners practice joints on the circuit board and then solder components into a working circuit that sounds like a two-tone European siren.",
+  "highlights": [
+   "Ends in a circuit that actually works, which beats soldering random practice pads",
+   "Practices desoldering too, the skill that fixes mistakes",
+   "A low-cost first step before bigger soldering builds"
+  ],
+  "skills": [
+   "Soldering",
+   "Desoldering",
+   "Reading a circuit board",
+   "Component identification"
+  ],
+  "considerations": [
+   "Soldering iron and solder tools are not included; needs a 9V battery",
+   "Hot iron work calls for adult supervision and eye protection"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B0002LUAL6",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "listPrice": 15.49,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "required",
+   "batteryNote": "9V battery needed",
+   "adultHelp": "lots",
+   "playStyle": "solo",
+   "bestFor": "want to learn soldering with a project that works",
+   "inTheBox": "Board and parts for a two-tone siren; no iron or solder"
+  }
+ },
+ {
+  "id": "hakko-fx888dx-soldering-station",
+  "title": "Hakko FX-888DX Digital Soldering Station",
+  "brand": "Hakko",
+  "asin": "B0D4DJW54S",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Electronics"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A real workbench soldering station a teen won't outgrow",
+  "summary": "The FX-888DX is a temperature-controlled soldering station with a 65W iron, a chisel tip, and a dial with a digital readout for setting the heat. It is a serious tool for building kits, repairing electronics and assembling custom circuit boards.",
+  "highlights": [
+   "Steady, adjustable temperature makes clean joints much easier than with cheap fixed-heat irons",
+   "Compact base fits a small desk or bench",
+   "Uses widely available Hakko T18 tips for different kinds of work"
+  ],
+  "skills": [
+   "Soldering",
+   "Tool safety",
+   "Electronics repair",
+   "Kit assembly"
+  ],
+  "considerations": [
+   "A tool, not a kit: solder, flux and fume extraction are bought separately",
+   "No age guidance from Hakko; adult supervision is strongly advised for teens"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0D4DJW54S",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://hakkousa.com/fx-888dx.html",
+  "listPrice": 121.47,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "lots",
+   "playStyle": "solo",
+   "bestFor": "are serious about building and repairing electronics",
+   "inTheBox": "65W soldering station with chisel tip; solder sold separately"
+  }
+ },
+ {
+  "id": "3doodler-create-plus-juku",
+  "title": "3Doodler Create+ 3D Printing Pen (Juku Edition)",
+  "brand": "3Doodler",
+  "asin": "B07SQCCFYB",
+  "ageMin": 14,
+  "ageMax": null,
+  "categories": [
+   "Art & Design",
+   "Engineering"
+  ],
+  "priceBand": "$$$",
+  "tagline": "Draw in the air and sketch 3D models by hand",
+  "summary": "The Create+ melts and extrudes 3mm plastic strands so teens can trace stencils into flat pieces, join them into 3D shapes, or doodle freehand structures. Dual speed and temperature settings let them switch between fast fills and fine detail with ABS, PLA or flexible plastic.",
+  "highlights": [
+   "A hands-on way to prototype shapes before learning CAD or 3D printing",
+   "Two speeds and two heat settings for different plastics and detail levels",
+   "Uses 3Doodler's 3mm strands in many colors"
+  ],
+  "skills": [
+   "3D spatial thinking",
+   "Design prototyping",
+   "Fine motor control",
+   "Model making"
+  ],
+  "considerations": [
+   "The metal nozzle gets very hot; 3Doodler rates the Create+ for ages 14 and up",
+   "Plastic refills are an ongoing cost"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday",
+   "Rainy Day"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B07SQCCFYB",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "want to sketch and prototype shapes in 3D",
+   "inTheBox": "3D pen for 3mm plastic strands"
+  }
+ },
+ {
+  "id": "celestron-astromaster-70az",
+  "title": "Celestron AstroMaster 70AZ Refractor Telescope",
+  "brand": "Celestron",
+  "asin": "B000MLHMAS",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Space",
+   "Science"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A straightforward first telescope for the Moon and planets",
+  "summary": "The AstroMaster 70AZ is a 70mm refractor on a simple pan-handle alt-azimuth mount and full-height tripod, with 20mm and 10mm eyepieces and a red-dot finder. Teens can explore lunar craters, Jupiter's moons and Saturn's rings, and the erect-image diagonal makes daytime nature viewing possible too.",
+  "highlights": [
+   "No electronics or app needed: aim, focus and observe",
+   "Refractor design needs almost no maintenance or alignment",
+   "Works for daytime land viewing as well as the night sky"
+  ],
+  "skills": [
+   "Astronomy basics",
+   "Night-sky navigation",
+   "Optics",
+   "Patient observation"
+  ],
+  "considerations": [
+   "Never point it at the Sun without a proper solar filter",
+   "No age guidance from Celestron, which advises adult supervision around children"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B000MLHMAS",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.celestron.com/products/astromaster-70az-telescope",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1935/4371/products/21061_AstroMaster_70AZ_1.jpg?v=1534171927",
+  "listPrice": 199.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.celestron.com/products/astromaster-70az-telescope.json",
+  "image": "/products/celestron-astromaster-70az.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "some",
+   "playStyle": "either",
+   "bestFor": "want to see Saturn's rings and Jupiter's moons",
+   "inTheBox": "70mm refractor, tripod, 20mm and 10mm eyepieces, red-dot finder"
+  }
+ },
+ {
+  "id": "celestron-starsense-explorer-lt-80az",
+  "title": "Celestron StarSense Explorer LT 80AZ Telescope",
+  "brand": "Celestron",
+  "asin": "B083JW2YJ5",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Space",
+   "Science"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Your phone shows exactly where to point, then you take over",
+  "summary": "This 80mm refractor has a dock for a smartphone, which runs Celestron's StarSense app to recognize the star pattern overhead and list what's visible tonight. On-screen arrows guide teens as they move the manual mount until the target is centered, then they observe through 25mm and 10mm eyepieces or the included 2x Barlow.",
+  "highlights": [
+   "Takes the frustration out of finding objects, a common reason beginners give up",
+   "Teens still aim the telescope by hand, so they learn the sky as they go",
+   "Larger 80mm lens gathers more light than typical entry-level scopes"
+  ],
+  "skills": [
+   "Astronomy",
+   "Sky navigation",
+   "Optics",
+   "Using star charts"
+  ],
+  "considerations": [
+   "Needs a compatible smartphone (Celestron lists recent iOS and Android versions)",
+   "Never point it at the Sun without a proper solar filter"
+  ],
+  "screenFree": false,
+  "requiresDevice": "iOS/Android smartphone",
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/B083JW2YJ5",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.celestron.com/products/starsense-explorer-lt-80az",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1935/4371/products/22451_StarSense_Explorer_LT_80_01.jpg?v=1727800457",
+  "listPrice": 249.95,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.celestron.com/products/starsense-explorer-lt-80az.json",
+  "image": "/products/celestron-starsense-explorer-lt-80az.webp",
+  "glance": {
+   "batteries": "unknown",
+   "batteryNote": "Uses your smartphone",
+   "adultHelp": "unknown",
+   "playStyle": "either",
+   "bestFor": "want app help finding things in the night sky",
+   "inTheBox": "80mm refractor, phone dock, 25mm and 10mm eyepieces, 2x Barlow"
+  }
+ },
+ {
+  "id": "lego-technic-mclaren-p1",
+  "title": "LEGO Technic McLaren P1 (42172)",
+  "brand": "LEGO",
+  "asin": "B0CV2CLZXJ",
+  "ageMin": 18,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Engineering"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "A 1:8 hypercar with a working V8 and 7-speed gearbox",
+  "summary": "This 3,893-piece Technic model builds a 1:8 scale McLaren P1 with a moving V8 piston engine, a 7-speed sequential gearbox with a shifter drum, working suspension and butterfly doors. It is a long, demanding build that shows how real drivetrains and transmissions fit together.",
+  "highlights": [
+   "The gearbox and engine visibly move, which makes mechanical ideas concrete",
+   "A multi-week project for a dedicated older teen or young adult",
+   "Makes an impressive display piece once finished"
+  ],
+  "skills": [
+   "Mechanical systems",
+   "Gear ratios",
+   "Following complex instructions",
+   "Patience"
+  ],
+  "considerations": [
+   "LEGO rates it 18+, and its size and price suit serious builders",
+   "Takes significant shelf space once built"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0CV2CLZXJ",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/mclaren-p1-42172",
+  "listPrice": 449.99,
+  "priceCheckedAt": "2026-10-28",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "are dedicated builders ready for a multi-week project",
+   "inTheBox": "3,893-piece 1:8 scale McLaren P1 model"
+  }
+ },
+ {
+  "id": "lego-icons-nasa-artemis-sls",
+  "title": "LEGO Icons NASA Artemis Space Launch System (10341)",
+  "brand": "LEGO",
+  "asin": "B0CRWGX5NH",
+  "ageMin": 18,
+  "ageMax": null,
+  "categories": [
+   "Building",
+   "Space"
+  ],
+  "priceBand": "$$$$",
+  "tagline": "Build NASA's Moon rocket in 3,601 pieces",
+  "summary": "This display model recreates the Artemis Space Launch System, the rocket NASA built to return astronauts to the Moon, in 3,601 pieces. It's a long, absorbing build for space fans that doubles as a talking point about modern spaceflight.",
+  "highlights": [
+   "Ties directly to the current Artemis lunar program",
+   "A detailed, tall build suited to experienced builders",
+   "Great for a space-obsessed older teen or college student"
+  ],
+  "skills": [
+   "Spatial reasoning",
+   "Following complex instructions",
+   "Spaceflight history",
+   "Patience"
+  ],
+  "considerations": [
+   "LEGO rates it 18+, with a price to match",
+   "A display model with few moving functions"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Holiday",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/B0CRWGX5NH",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.lego.com/en-us/product/nasa-artemis-space-launch-system-10341",
+  "imageSourceUrl": "https://www.lego.com/cdn/product-assets/product.img.pri/10341_Prod.png",
+  "listPrice": 259.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/lego-icons-nasa-artemis-sls.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "are space fans who love long, detailed builds",
+   "inTheBox": "3,601-piece Artemis SLS rocket display model"
+  }
+ },
+ {
+  "id": "python-for-kids-2nd-edition",
+  "title": "Python for Kids, 2nd Edition",
+  "brand": "No Starch Press",
+  "asin": "1718503024",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Coding"
+  ],
+  "priceBand": "$$",
+  "tagline": "Learn real Python 3 by building two complete games",
+  "summary": "Jason R. Briggs' book teaches Python 3 from scratch, covering variables, lists, dictionaries, loops, functions and modules, plus graphics with turtle and tkinter. Readers finish by coding two games of their own: a Pong-style game called Bounce! and a platformer called Mr. Stick Man Races for the Exit.",
+  "highlights": [
+   "Uses real Python 3, the language teens will keep using in school and beyond",
+   "Ends with two complete games instead of isolated exercises",
+   "Runs on Windows, macOS, Linux or a Raspberry Pi"
+  ],
+  "skills": [
+   "Python programming",
+   "Game logic",
+   "Functions and data structures",
+   "Graphics programming"
+  ],
+  "considerations": [
+   "Needs a computer to follow along",
+   "The friendly tone may feel young to older teens"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac/Linux computer or Raspberry Pi",
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Holiday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1718503024",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://nostarch.com/python-kids-2nd-edition",
+  "imageSourceUrl": "https://nostarch.com/sites/default/files/PythonforKids_2e.jpg",
+  "listPrice": 34.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/python-for-kids-2nd-edition.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": null,
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "want to learn real Python by making games",
+   "inTheBox": "Book teaching Python 3 through two games"
+  }
+ },
+ {
+  "id": "electronics-for-kids-2nd-edition",
+  "title": "Electronics for Kids, 2nd Edition",
+  "brand": "No Starch Press",
+  "asin": "1718503504",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "21 hands-on projects, from basic circuits to digital logic",
+  "summary": "This fully rewritten second edition explains how electricity, resistors, capacitors, transistors and logic chips actually work, then puts each idea into a build. Across 21 projects, readers make things like an intruder alarm, an electromagnet and motor, a sunrise wake-up alarm and a secret code checker, and learn to solder along the way.",
+  "highlights": [
+   "Explains why circuits behave the way they do, not just how to copy them",
+   "Moves from simple circuits all the way to digital logic",
+   "Includes a dedicated soldering chapter"
+  ],
+  "skills": [
+   "Circuit theory",
+   "Reading schematics",
+   "Soldering",
+   "Digital logic"
+  ],
+  "considerations": [
+   "Components are bought separately (the publisher offers a parts list)",
+   "Soldering projects need an iron and adult supervision"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Holiday"
+  ],
+  "editorPick": true,
+  "source": "https://www.amazon.com/dp/1718503504",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://nostarch.com/electronics-for-kids-2e",
+  "imageSourceUrl": "https://nostarch.com/sites/default/files/Electronics%20for%20Kids2e_frontcover.jpg",
+  "listPrice": 24.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/electronics-for-kids-2nd-edition.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Book; project parts sold separately",
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "want to know why circuits work, not just copy them",
+   "inTheBox": "Book with 21 projects; components sold separately"
+  }
+ },
+ {
+  "id": "beginners-guide-to-circuits",
+  "title": "A Beginner's Guide to Circuits",
+  "brand": "No Starch Press",
+  "asin": "1593279043",
+  "ageMin": 10,
+  "ageMax": null,
+  "categories": [
+   "Electronics"
+  ],
+  "priceBand": "$",
+  "tagline": "Nine quick breadboard builds with no soldering required",
+  "summary": "A short, illustrated introduction to reading circuit diagrams and building on a breadboard. Readers make nine projects, including a steady-hand game, a touch-activated light, a night-light, a cookie jar alarm and a mini digital piano.",
+  "highlights": [
+   "Breadboard-only projects, so there's no hot iron",
+   "Teaches how to read circuit diagrams, a skill that carries over to every later kit",
+   "A quick win for a teen who wants to try electronics first"
+  ],
+  "skills": [
+   "Reading schematics",
+   "Breadboarding",
+   "Basic components",
+   "Troubleshooting"
+  ],
+  "considerations": [
+   "Parts are bought separately",
+   "Pitched at beginners, so experienced teens may outgrow it quickly"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday",
+   "Classroom"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1593279043",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://nostarch.com/circuits",
+  "imageSourceUrl": "https://nostarch.com/sites/default/files/A%20Beginner_s%20Guide%20to%20Circuits.jpg",
+  "listPrice": 19.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/beginners-guide-to-circuits.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Book; project parts sold separately",
+   "adultHelp": "minimal",
+   "playStyle": "solo",
+   "bestFor": "want to try electronics before buying a kit",
+   "inTheBox": "Illustrated book with nine breadboard projects; parts separate"
+  }
+ },
+ {
+  "id": "learn-robotics-with-raspberry-pi",
+  "title": "Learn Robotics with Raspberry Pi",
+  "brand": "No Starch Press",
+  "asin": "1593279205",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Robotics",
+   "Coding",
+   "Electronics"
+  ],
+  "priceBand": "$$",
+  "tagline": "Build a two-wheeled robot and teach it to see and avoid things",
+  "summary": "Matt Timmons-Brown walks readers through wiring and coding a two-wheeled Raspberry Pi robot in Python 3. The robot gains new abilities chapter by chapter, from remote control to obstacle avoidance, line following and camera-based object recognition.",
+  "highlights": [
+   "One robot that keeps getting smarter makes progress easy to see",
+   "Covers practical electronics like power and wiring, along with code",
+   "Introduces computer vision with the Pi camera"
+  ],
+  "skills": [
+   "Python programming",
+   "Robot wiring",
+   "Sensors",
+   "Computer vision"
+  ],
+  "considerations": [
+   "Robot parts and a Raspberry Pi are bought separately",
+   "Written around older Pi models (3A+/3B+/Zero W recommended), so some steps may need adapting for a Pi 5"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Raspberry Pi and robot parts (not included)",
+  "occasions": [
+   "Birthday",
+   "Holiday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1593279205",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://nostarch.com/raspirobots",
+  "imageSourceUrl": "https://nostarch.com/sites/default/files/Learn%20Robotics%20with%20Raspberry%20Pi.jpg",
+  "listPrice": 24.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/learn-robotics-with-raspberry-pi.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Book; project parts sold separately",
+   "adultHelp": "unknown",
+   "playStyle": "solo",
+   "bestFor": "want to build and code a Raspberry Pi robot step by step",
+   "inTheBox": "Book; Raspberry Pi and robot parts sold separately"
+  }
+ },
+ {
+  "id": "make-electronics-learning-by-discovery",
+  "title": "Make: Electronics: Learning by Discovery",
+  "brand": "Make Community",
+  "asin": "1680456873",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Science"
+  ],
+  "priceBand": "$$",
+  "tagline": "The hands-on electronics primer many makers learned from",
+  "summary": "Charles Platt teaches electronics through experiments: readers build, test and sometimes deliberately break components to see what happens, then learn the theory behind the result. It progresses from basic circuits to switching, chips and soldered projects.",
+  "highlights": [
+   "Experiment first, explanation second, which helps the ideas stick",
+   "Clear photos and diagrams for every step",
+   "Deep enough to stay useful well into high school and beyond"
+  ],
+  "skills": [
+   "Circuit theory",
+   "Experimentation",
+   "Soldering",
+   "Using a multimeter"
+  ],
+  "considerations": [
+   "Components and tools are bought separately",
+   "Written for adults, so younger teens may want some guidance"
+  ],
+  "screenFree": true,
+  "requiresDevice": null,
+  "occasions": [
+   "Birthday",
+   "Holiday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1680456873",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://www.makershed.com/products/make-electronics-3rd-edition-print",
+  "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0243/7593/files/Make_Electronics_3rd_1800x2338_0b80e1d4-3538-4ffe-8011-9824a96dbc0a.jpg?v=1779313855",
+  "listPrice": 29.99,
+  "priceCheckedAt": "2026-10-29",
+  "feedUrl": "https://www.makershed.com/products/make-electronics-3rd-edition-print.json",
+  "variantId": 40749491192001,
+  "image": "/products/make-electronics-learning-by-discovery.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Book; project parts sold separately",
+   "adultHelp": "some",
+   "playStyle": "solo",
+   "bestFor": "learn best by experimenting first",
+   "inTheBox": "Book; components and tools sold separately"
+  }
+ },
+ {
+  "id": "arduino-workshop-2nd-edition",
+  "title": "Arduino Workshop, 2nd Edition",
+  "brand": "No Starch Press",
+  "asin": "1718500580",
+  "ageMin": 13,
+  "ageMax": null,
+  "categories": [
+   "Electronics",
+   "Coding"
+  ],
+  "priceBand": "$$",
+  "tagline": "65 Arduino projects to try after the starter kit runs out",
+  "summary": "John Boxall's project book teaches Arduino through 65 builds that combine wiring and code, covering displays, sensors, motors, wireless communication and more. It's a natural next step for a teen who has finished a starter kit and wants new ideas.",
+  "highlights": [
+   "A large number of projects that get steadily harder",
+   "Explains the code line by line, so readers can adapt it",
+   "Pairs well with an official Arduino or ELEGOO kit"
+  ],
+  "skills": [
+   "Arduino programming",
+   "Circuit building",
+   "Sensors and displays",
+   "Project planning"
+  ],
+  "considerations": [
+   "Needs an Arduino board and parts, bought separately",
+   "Needs a computer to program the board"
+  ],
+  "screenFree": false,
+  "requiresDevice": "Windows/Mac/Linux computer",
+  "occasions": [
+   "Stocking Stuffer",
+   "Birthday"
+  ],
+  "editorPick": false,
+  "source": "https://www.amazon.com/dp/1718500580",
+  "addedAt": "2026-10-28",
+  "checkedAt": "2026-10-28",
+  "status": "active",
+  "mfrUrl": "https://nostarch.com/arduino-workshop-2nd-edition",
+  "imageSourceUrl": "https://nostarch.com/sites/default/files/field/image_cache/arduino-workshop-2nd-edition.jpg",
+  "listPrice": 39.99,
+  "priceCheckedAt": "2026-10-28",
+  "image": "/products/arduino-workshop-2nd-edition.webp",
+  "glance": {
+   "batteries": "none",
+   "batteryNote": "Book; project parts sold separately",
+   "adultHelp": "unknown",
+   "playStyle": "solo",
+   "bestFor": "have finished a starter kit and want new projects",
+   "inTheBox": "Book with 65 projects; Arduino and parts sold separately"
+  }
+ }
+]
