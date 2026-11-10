@@ -1,0 +1,39 @@
+---
+import Icon from './Icon.astro';
+import PriceTag from './PriceTag.astro';
+import { ageLabel, buyUrl, filterAttrs, primaryInterest, retailerName, priceFor, photoFor, type Product } from '../lib/products';
+import { artUrl, illustrationUrl } from '../lib/art';
+
+interface Props { p: Product; eager?: boolean; surface?: string }
+const { p, eager = false, surface = 'grid' } = Astro.props;
+const interest = primaryInterest(p);
+const price = priceFor(p);
+const photo = photoFor(p);
+---
+<article class="card" {...filterAttrs(p)} data-title={p.title} data-age-min={p.ageMin} data-price={price.amount ?? [12, 37, 75, 150][p.priceBand.length - 1]}>
+  <div class:list={['card-media', photo && 'is-photo']}>
+    <img src={photo?.kind === 'brand' ? photo.src.replace('.webp', '-sm.webp') : artUrl(p)} alt={photo ? p.title : ''} width="800" height="600" loading={eager ? 'eager' : 'lazy'} decoding="async"
+      data-fallback={photo ? illustrationUrl(p) : undefined} />
+    <button class="compare-btn" type="button" data-compare={p.id} aria-pressed="false" aria-label={`Compare ${p.title}`}>
+      <span class="compare-box" aria-hidden="true"><Icon name="check" /></span> Compare
+    </button>
+    <div class="card-chips">
+      {p.editorPick && <span class="chip chip-pick"><Icon name="star" /> Editor’s pick</span>}
+    </div>
+  </div>
+  <button class="save-btn" type="button" data-save={p.id} aria-pressed="false" aria-label={`Save ${p.title} to your gift list`}>
+    <Icon name="heart" />
+  </button>
+  <div class="card-body">
+    <div class="card-meta"><span>{ageLabel(p)}</span><span class="dot"></span><span>{interest.name.replace(' & Building', '')}</span></div>
+    <h3 class="card-title"><a href={`/products/${p.id}/`}>{p.title}</a></h3>
+    <p class="card-tagline">{p.tagline}</p>
+    <div class="card-foot">
+      <PriceTag p={p} />
+      <a class="btn btn-buy btn-sm card-buy" href={buyUrl(p)} target="_blank" rel="sponsored nofollow noopener"
+        data-outbound={p.id} data-surface={surface} data-name={p.title}>
+        {retailerName(p) === 'Amazon' ? 'View on Amazon' : `View at ${retailerName(p)}`}
+      </a>
+    </div>
+  </div>
+</article>

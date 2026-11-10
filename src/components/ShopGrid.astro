@@ -1,0 +1,113 @@
+---
+import Icon from './Icon.astro';
+import ProductCard from './ProductCard.astro';
+import { AGE_BANDS, BUDGETS, INTERESTS } from '../lib/taxonomy';
+import type { Product } from '../lib/products';
+
+interface Props {
+  items: Product[];
+  hide?: ('ages' | 'interests' | 'budget')[];
+  surface?: string;
+}
+const { items, hide = [], surface = 'shop' } = Astro.props;
+
+const groups = [
+  !hide.includes('ages') && { key: 'age', title: 'Age', options: AGE_BANDS.map((b) => ({ value: b.slug, label: b.label })) },
+  !hide.includes('interests') && { key: 'interest', title: 'Interest', options: INTERESTS.map((i) => ({ value: i.slug, label: i.name.replace(' & Building', '') })) },
+  !hide.includes('budget') && { key: 'budget', title: 'Budget', options: BUDGETS.map((b) => ({ value: b.slug, label: b.label })) },
+].filter(Boolean) as { key: string; title: string; options: { value: string; label: string }[] }[];
+
+const occasionOptions = [
+  { value: 'holiday', label: 'Holiday' },
+  { value: 'birthday', label: 'Birthday' },
+  { value: 'stocking-stuffer', label: 'Stocking stuffer' },
+  { value: 'classroom', label: 'Classroom' },
+];
+---
+<div class="shop-layout" data-shop>
+  <aside class="filters" aria-label="Filters">
+    <form data-filter-form>
+      <slot name="filters-top" />
+      {groups.map((g) => (
+        <fieldset class="filter-group" style="border-inline:0;border-top:0;margin:0;padding-inline:0">
+          <legend class="sr-only">{g.title}</legend>
+          <h3 aria-hidden="true">{g.title}</h3>
+          <div class="filter-options">
+            {g.options.map((o) => (
+              <label class="filter-pill"><input type="checkbox" name={g.key} value={o.value} /><span>{o.label}</span></label>
+            ))}
+          </div>
+        </fieldset>
+      ))}
+      <fieldset class="filter-group" style="border-inline:0;border-top:0;margin:0;padding-inline:0">
+        <legend class="sr-only">Occasion</legend>
+        <h3 aria-hidden="true">Occasion</h3>
+        <div class="filter-options">
+          {occasionOptions.map((o) => (
+            <label class="filter-pill"><input type="checkbox" name="occasion" value={o.value} /><span>{o.label}</span></label>
+          ))}
+        </div>
+      </fieldset>
+      <div class="filter-group">
+        <label class="toggle-row">Screen-free only <span class="switch"><input type="checkbox" name="screenfree" value="true" /><span></span></span></label>
+      </div>
+      <div class="filter-group">
+        <label class="toggle-row">Editor’s picks only <span class="switch"><input type="checkbox" name="pick" value="true" /><span></span></span></label>
+      </div>
+    </form>
+  </aside>
+
+  <div>
+    <div class="shop-toolbar">
+      <label class="shop-search">
+        <Icon name="search" />
+        <span class="sr-only">Search these products</span>
+        <input type="search" name="q" placeholder="Search by name, brand or skill" data-shop-q autocomplete="off" />
+      </label>
+      <label class="sr-only" for="sort">Sort</label>
+      <select class="select" id="sort" data-shop-sort>
+        <option value="featured">Featured</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="age-asc">Age: youngest first</option>
+        <option value="age-desc">Age: oldest first</option>
+        <option value="az">Name: A–Z</option>
+      </select>
+      <button class="btn btn-ghost filters-btn" type="button" data-open-sheet><Icon name="filter" /> Filters <span data-filter-count></span></button>
+    </div>
+
+    <div class="result-line">
+      <span aria-live="polite"><strong data-shop-count>{items.length}</strong> <span data-shop-noun>{items.length === 1 ? 'pick' : 'picks'}</span></span>
+      <div class="active-filters" data-active-filters></div>
+    </div>
+
+    <h2 class="sr-only">Products</h2>
+    <div class="product-grid" data-shop-grid>
+      {items.map((p, i) => <ProductCard p={p} eager={i < 3} surface={surface} />)}
+    </div>
+    <div class="empty-state" data-shop-empty hidden>
+      <Icon name="search" />
+      <h3>No exact matches</h3>
+      <p class="muted">Try removing a filter or searching for something broader.</p>
+      <button class="btn btn-ghost" type="button" data-shop-clear>Clear all filters</button>
+    </div>
+  </div>
+</div>
+
+<div class="sheet" data-sheet aria-hidden="true">
+  <div class="drawer-scrim" data-close-sheet></div>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-label="Filters">
+    <div class="sheet-grab"></div>
+    <div class="drawer-head" style="border:0"><strong style="font:700 1.2rem var(--font-display)">Filters</strong><button class="icon-btn" data-close-sheet aria-label="Close filters"><Icon name="close" /></button></div>
+    <div class="sheet-body" data-sheet-body></div>
+    <div class="sheet-foot">
+      <button class="btn btn-ghost" type="button" data-shop-clear>Clear</button>
+      <button class="btn btn-brand" style="flex:1" type="button" data-close-sheet>Show <span data-shop-count>{items.length}</span> picks</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { initShop } from '../scripts/shop';
+  initShop();
+</script>

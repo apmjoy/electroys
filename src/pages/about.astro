@@ -1,0 +1,18 @@
+---
+import Prose from '../layouts/Prose.astro';
+import { products } from '../lib/products';
+---
+<Prose title="About Electroys" eyebrow="Our story" description="Electroys helps parents, relatives and teachers find STEM kits and brain-building gifts that kids actually use.">
+  <p class="lead">Electroys exists for one reason: to make it easy to give a gift that gets used and teaches something real.</p>
+  <p>The toy aisle, online or off, is overwhelming. There are thousands of “STEM” products, many of them knock-offs, many more that get played with once. Electroys is a deliberately short list, currently {products.length} picks, of kits, robots, science sets, building toys and games we would give to the kids in our own lives.</p>
+  <h2>What you’ll find here</h2>
+  <ul>
+    <li><strong>Picks for every age</strong>, from screen-free coding toys for three-year-olds to Arduino and Raspberry Pi kits for teens and young adults.</li>
+    <li><strong>Plain-English explanations</strong> of what each product teaches, who it suits, and what to know before buying, like batteries, devices and how much adult help to expect.</li>
+    <li><strong>Gift guides and a Kit Finder</strong> that do the narrowing down for you.</li>
+  </ul>
+  <h2>How we make money</h2>
+  <p>When you buy through links on Electroys, we may earn a small commission from the retailer, mostly through the Amazon Associates program. It costs you nothing extra and it keeps the site running. It never decides what we recommend. Read our <a href="/how-we-choose/">selection criteria</a> and <a href="/affiliate-disclosure/">affiliate disclosure</a> for the details.</p>
+  <h2>Get in touch</h2>
+  <p>Suggestions, corrections and product ideas are always welcome. <a href="/contact/">Contact us</a>.</p>
+</Prose>

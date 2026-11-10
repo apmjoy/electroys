@@ -1,0 +1,20 @@
+---
+// A compact "section cover": the live circuit board behind a page's headline.
+// Pages using it pass bodyClass="dark-top" to Base so the header turns light-on-dark.
+interface Props { eyebrow: string; crumbs?: { href?: string; label: string }[]; lead?: string; tone?: string; compact?: boolean }
+const { eyebrow, crumbs = [], lead, tone, compact = false } = Astro.props;
+---
+<section class:list={['section-cover', compact && 'compact']} data-tone={tone}>
+  <canvas class="cover-canvas" data-circuit aria-hidden="true"></canvas>
+  <div class="container section-cover-inner">
+    {crumbs.length > 0 && (
+      <ol class="crumbs">
+        {crumbs.map((c) => <li>{c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}</li>)}
+      </ol>
+    )}
+    <span class="eyebrow">{eyebrow}</span>
+    <h1 data-split><slot name="title" /></h1>
+    {lead && <p class="lead">{lead}</p>}
+    <slot />
+  </div>
+</section>

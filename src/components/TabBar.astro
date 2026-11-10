@@ -1,0 +1,15 @@
+---
+// Phone-only bottom navigation: the four things social visitors do most,
+// within thumb reach. Hidden on desktop and on product pages (where the
+// sticky "Check price" bar takes the bottom edge instead).
+import Icon from './Icon.astro';
+const path = Astro.url.pathname;
+const on = (prefix: string, exact = false) => (exact ? path === prefix : path.startsWith(prefix)) ? 'page' : undefined;
+---
+<nav class="tabbar" aria-label="Quick navigation">
+  <a href="/" aria-current={on('/', true)}><Icon name="home" /><span>Home</span></a>
+  <a href="/shop/" aria-current={on('/shop')}><Icon name="tag" /><span>Shop</span></a>
+  <a href="/finder/" class="tab-hero" aria-current={on('/finder')}><span class="tab-hero-dot"><Icon name="sparkle" /></span><span>Find a gift</span></a>
+  <a href="/wishlist/" aria-current={on('/wishlist')}><span class="tab-ico"><Icon name="heart" /><span class="badge-count" data-wish-count aria-hidden="true"></span></span><span>Saved</span></a>
+  <button type="button" data-open-search><Icon name="search" /><span>Search</span></button>
+</nav>

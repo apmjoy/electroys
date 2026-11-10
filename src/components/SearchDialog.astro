@@ -1,0 +1,11 @@
+---
+import Icon from './Icon.astro';
+---
+<dialog class="search-dialog" id="search-dialog" aria-label="Search products">
+  <div class="search-field">
+    <Icon name="search" />
+    <input type="search" id="search-input" placeholder="Search kits, brands, skills…" autocomplete="off" aria-controls="search-results" />
+    <kbd>Esc</kbd>
+  </div>
+  <ul class="search-results" id="search-results" role="listbox"></ul>
+</dialog>

@@ -1,0 +1,12 @@
+---
+import Icon from './Icon.astro';
+---
+<div class="compare-tray" data-compare-tray hidden>
+  <div class="container compare-tray-row">
+    <div class="compare-slots" data-compare-slots></div>
+    <div class="compare-actions">
+      <button type="button" class="link-btn" data-compare-clear>Clear</button>
+      <a class="btn btn-brand" href="/compare/" data-compare-go>Compare <span data-compare-n></span> <Icon name="arrow" class="icon icon-arrow" /></a>
+    </div>
+  </div>
+</div>

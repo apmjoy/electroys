@@ -1,0 +1,37 @@
+name: Weekly product health check
+
+on:
+  schedule:
+    - cron: '0 13 * * 1' # Mondays 13:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check every product link
+        run: node scripts/check-links.mjs --report report.md
+      - name: Open or update an issue when products need attention
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q 'NEEDS_ATTENTION' report.md; then
+            existing=$(gh issue list --label product-health --state open --json number --jq '.[0].number')
+            gh label create product-health --color F26A1B --description "Automated product link check" 2>/dev/null || true
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file report.md
+            else
+              gh issue create --title "Products need attention" --label product-health --body-file report.md
+            fi
+          else
+            echo "All products look healthy."
+          fi

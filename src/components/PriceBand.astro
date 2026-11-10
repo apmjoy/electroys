@@ -1,0 +1,10 @@
+---
+import { BUDGETS } from '../lib/taxonomy';
+interface Props { band: string; long?: boolean }
+const { band, long = false } = Astro.props;
+const b = BUDGETS.find((x) => x.band === band)!;
+---
+<span class="price-band" title={`Typical price: ${b.label}`}>
+  <span aria-hidden="true">{band}<span class="off">{'$$$$'.slice(band.length)}</span></span>
+  <span class={long ? '' : 'sr-only'}>{long ? ` · ${b.label}` : `Typical price ${b.label}`}</span>
+</span>

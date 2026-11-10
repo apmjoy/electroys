@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /wishlist/
+
+Sitemap: https://electroys.com/sitemap-index.xml

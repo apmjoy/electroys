@@ -1,0 +1,6 @@
+---
+import { iconSvg, ICONS } from '../lib/icons';
+interface Props { name: keyof typeof ICONS; class?: string }
+const { name, class: cls = 'icon' } = Astro.props;
+---
+<Fragment set:html={iconSvg(name, cls)} />

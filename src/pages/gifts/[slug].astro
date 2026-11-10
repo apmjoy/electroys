@@ -1,0 +1,75 @@
+---
+import PageCover from '../../components/PageCover.astro';
+import ShareBar from '../../components/ShareBar.astro';
+import PriceTag from '../../components/PriceTag.astro';
+import { photoFor, buyUrl } from '../../lib/products';
+import { artUrl } from '../../lib/art';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ShopGrid from '../../components/ShopGrid.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { GIFT_GUIDES, guideProducts, type GiftGuide } from '../../lib/gifts';
+import { products } from '../../lib/products';
+
+export function getStaticPaths() {
+  return GIFT_GUIDES.map((g) => ({ params: { slug: g.slug }, props: { slug: g.slug } }));
+}
+const g = GIFT_GUIDES.find((x) => x.slug === Astro.props.slug) as GiftGuide;
+const items = guideProducts(g, products);
+const others = GIFT_GUIDES.filter((x) => x.slug !== g.slug);
+const year = new Date().getFullYear();
+const title = g.slug === 'holiday-gift-guide' ? `${g.title} ${year}` : g.title;
+const ld = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description: g.description,
+  mainEntity: { '@type': 'ItemList', numberOfItems: items.length, itemListElement: items.slice(0, 30).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `https://electroys.com/products/${p.id}/`, name: p.title })) },
+};
+const words = title.split(' ');
+const titleHead = words.slice(0, -2).join(' ');
+const titleTail = words.slice(-2).join(' ');
+// Lead with photographed editor's picks: the shortlist is the first thing people see.
+const picksInGuide = items.filter((p) => p.editorPick);
+const shortlist = [...picksInGuide.filter((p) => photoFor(p)), ...picksInGuide.filter((p) => !photoFor(p))].slice(0, 3);
+const hide = g.slug.includes('under') || g.slug === 'stocking-stuffers' ? (['budget'] as const) : [];
+---
+<Base title={title} description={g.description} jsonLd={ld} image={`/og/gifts/${g.slug}.jpg`} bodyClass="dark-top">
+  <PageCover eyebrow="Gift guide" tone={g.tone} crumbs={[{ href: '/', label: 'Home' }, { href: '/gifts/', label: 'Gift guides' }, { label: g.short }]} lead={g.intro}>
+    <Fragment slot="title">{`${titleHead} `}<em>{titleTail}</em></Fragment>
+    <ShareBar text={`${title}: hand-picked STEM gift ideas`} surface={`gift_${g.slug}`} />
+  </PageCover>
+
+  {shortlist.length === 3 && (
+    <section class="section-tight shortlist">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">The shortlist</span><h2 class="serif-xl" data-split>If you only read <em>one thing.</em></h2></div>
+          <p>Our three favorites from this guide. The full list follows below.</p>
+        </div>
+        <ol class="shortlist-grid">
+          {shortlist.map((p, i) => (
+            <li>
+              <a class:list={['sl-media', photoFor(p) && 'is-photo']} href={`/products/${p.id}/`} tabindex="-1" aria-hidden="true">
+                <img src={photoFor(p)?.kind === 'brand' ? photoFor(p)!.src.replace('.webp', '-sm.webp') : artUrl(p)} alt="" width="560" height="420" loading="lazy" />
+              </a>
+              <span class="sl-no">No. 0{i + 1}</span>
+              <h3><a href={`/products/${p.id}/`}>{p.title}</a></h3>
+              <p class="sl-quote">“{p.glance?.bestFor ? `Best for kids who ${p.glance.bestFor.replace(/\.$/, '')}.` : p.tagline + '.'}”</p>
+              <div class="card-foot"><PriceTag p={p} /><a class="btn btn-buy btn-sm" href={buyUrl(p)} target="_blank" rel="sponsored nofollow noopener" data-outbound={p.id} data-surface={`shortlist_${g.slug}`} data-name={p.title}>View on Amazon</a></div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+  <section class="section-tight">
+    <div class="container"><ShopGrid items={items} hide={[...hide]} surface={`gift_${g.slug}`} /></div>
+  </section>
+  <section class="section-tight">
+    <div class="container">
+      <h2 style="font-size:1.6rem">More gift guides</h2>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        {others.map((o) => <a class="btn btn-ghost btn-sm" href={`/gifts/${o.slug}/`}>{o.short}</a>)}
+      </div>
+    </div>
+  </section>
+  <Newsletter surface={`gift_${g.slug}`} />
+</Base>

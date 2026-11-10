@@ -1,0 +1,25 @@
+---
+import PageCover from '../../components/PageCover.astro';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { getCollection } from 'astro:content';
+const guides = (await getCollection('guides')).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+---
+<Base title="STEM Buying Guides" description="Practical, plain-English guides to choosing STEM kits, coding robots and electronics kits for kids, teens and young adults." bodyClass="dark-top">
+  <PageCover eyebrow="Buying guides" crumbs={[{ href: '/', label: 'Home' }, { label: 'Buying guides' }]}
+    lead="Straight answers to the questions parents and gift-givers actually ask, with picks to match.">
+    <Fragment slot="title">Choose with <em>confidence.</em></Fragment>
+  </PageCover>
+  <section class="section-tight">
+    <div class="container guide-grid">
+      {guides.map((g, i) => (
+        <a class="guide-card reveal" href={`/guides/${g.id}/`} data-tone={g.data.tone} style={`--d:${(i % 3) * 0.07}s`}>
+          <span class="tile-icon"><Icon name="book" /></span>
+          <h3>{g.data.title}</h3>
+          <p>{g.data.description}</p>
+          <span class="more">Read the guide <Icon name="arrow" /></span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

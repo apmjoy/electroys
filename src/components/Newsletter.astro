@@ -1,0 +1,29 @@
+---
+interface Props { surface?: string }
+const { surface = 'footer' } = Astro.props;
+const ACTION = 'https://script.google.com/macros/s/AKfycbwXA0mKISUU9LbbRgrlOHymWCW--Znwd_cep4t1jIl3NNY9PqxrAnb4qTMRNqo4dq5LWA/exec';
+---
+<section class="section-tight">
+  <div class="container">
+    <div class="newsletter reveal">
+      <div>
+        <span class="eyebrow">The Electroys letter</span>
+        <h2>Get the <em>next issue.</em></h2>
+        <p class="muted" style="margin:0">New picks, seasonal gift guides and weekend project ideas, in one friendly email when there’s something worth sharing. No spam, unsubscribe anytime.</p>
+      </div>
+      <form class="nl-form" method="POST" action={ACTION} data-newsletter={surface}>
+        <div class="nl-row">
+          <label class="sr-only" for={`nl-name-${surface}`}>First name</label>
+          <input class="input" id={`nl-name-${surface}`} name="name" type="text" autocomplete="given-name" placeholder="First name" required maxlength="80" />
+          <label class="sr-only" for={`nl-email-${surface}`}>Email</label>
+          <input class="input" id={`nl-email-${surface}`} name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required maxlength="254" />
+        </div>
+        <input type="hidden" name="source" value={`Electroys.com/${surface}`} />
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off" /></div>
+        <label class="check"><input type="checkbox" required /> <span>I’m 18 or older and want to receive Electroys emails. See our <a href="/privacy/">privacy policy</a>.</span></label>
+        <div><button class="btn btn-brand btn-lg" type="submit">Subscribe</button></div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>

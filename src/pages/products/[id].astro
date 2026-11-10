@@ -1,0 +1,172 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import PriceTag from '../../components/PriceTag.astro';
+import ShareBar from '../../components/ShareBar.astro';
+import {
+  products, ageLabel, buyUrl, effectiveAgeMax, priceFor, photoFor, batteriesLabel, GLANCE_LABELS, retailerName, interestsFor, bandsFor, related, budgetFor, type Product,
+} from '../../lib/products';
+import { artUrl, illustrationUrl } from '../../lib/art';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { id: p.id }, props: { p } }));
+}
+const { p } = Astro.props as { p: Product };
+const interests = interestsFor(p);
+// Link to the age band that covers most of this product's range.
+const bands = [...bandsFor(p)].sort((a, b) => {
+  const ov = (x: typeof a) => Math.min(x.max, effectiveAgeMax(p)) - Math.max(x.min, p.ageMin);
+  return ov(b) - ov(a);
+});
+const more = related(p, 4);
+const url = buyUrl(p);
+const price = priceFor(p);
+const photo = photoFor(p);
+const retailer = retailerName(p);
+const buyLabel = retailer === 'Amazon' ? 'Check price on Amazon' : `Check price at ${retailer}`;
+const checked = p.checkedAt ? new Date(p.checkedAt + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : null;
+
+const description = `${p.tagline}. ${ageLabel(p)}. What ${p.title} teaches, who it suits and what to know before you buy.`.slice(0, 300);
+const ld = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://electroys.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Shop', item: 'https://electroys.com/shop/' },
+      { '@type': 'ListItem', position: 3, name: interests[0]?.name ?? 'Products', item: `https://electroys.com/shop/${interests[0]?.slug ?? ''}/` },
+      { '@type': 'ListItem', position: 4, name: p.title },
+    ],
+  },
+];
+---
+<Base title={`${p.title}: What It Teaches & Who It’s For`} description={description} jsonLd={ld} bodyClass="no-tabbar" image={`/og/products/${p.id}.jpg`}>
+  <section class="section-tight" style="padding-top:clamp(24px,4vw,40px)">
+    <div class="container">
+      <ol class="crumbs pdp-crumbs">
+        <li><a href="/">Home</a></li>
+        <li><a href="/shop/">Shop</a></li>
+        {interests[0] && <li><a href={`/shop/${interests[0].slug}/`}>{interests[0].name}</a></li>}
+        <li aria-current="page">{p.title}</li>
+      </ol>
+
+      <div class="pdp">
+        <div class:list={['pdp-media', photo && 'is-photo']}>
+          <img src={artUrl(p)} alt={photo ? p.title : `Illustration for ${p.title}`} width="800" height="600" fetchpriority="high"
+            data-fallback={photo ? illustrationUrl(p) : undefined} />
+          <button class="save-btn" type="button" data-save={p.id} aria-pressed="false" aria-label={`Save ${p.title} to your gift list`} style="top:16px;right:16px;width:48px;height:48px">
+            <Icon name="heart" />
+          </button>
+        </div>
+
+        <div class="pdp-info">
+          <div class="card-meta" style="margin-bottom:10px">
+            <span class="pdp-brand">{p.brand}</span>
+            {p.editorPick && <span class="chip chip-pick"><Icon name="star" /> Editor’s pick</span>}
+          </div>
+          <h1>{p.title}</h1>
+          <p class="lead" style="margin:0">{p.tagline}.</p>
+          {p.glance?.bestFor && <p class="best-for"><Icon name="sparkle" /> <span><strong>Best for kids who</strong> {p.glance.bestFor.replace(/\.$/, '')}.</span></p>}
+
+          <div class="pdp-chips">
+            <span class="chip">{ageLabel(p)}</span>
+            {interests.map((i) => <a class="chip" style="text-decoration:none" href={`/shop/${i.slug}/`}>{i.name}</a>)}
+            {p.screenFree ? <span class="chip chip-screen"><Icon name="check" /> Screen-free</span> : p.requiresDevice && <span class="chip">Needs: {p.requiresDevice}</span>}
+          </div>
+
+          <div class="buy-box">
+            <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:16px;gap:12px;flex-wrap:wrap">
+              <PriceTag p={p} size="large" />
+              {price.kind === 'band' && <span style="font-size:.9rem;color:var(--muted)">Typical price range</span>}
+            </div>
+            <div class="buy-box-row">
+              <a class="btn btn-buy btn-lg" href={url} target="_blank" rel="sponsored nofollow noopener" data-outbound={p.id} data-surface="product_page" data-name={p.title} data-buy-main>
+                {buyLabel} <Icon name="external" />
+              </a>
+              <button class="btn btn-ghost btn-lg btn-icon-only" type="button" data-save={p.id} aria-pressed="false" aria-label="Save to gift list" title="Save to gift list"><Icon name="heart" /></button>
+              <button class="btn btn-ghost btn-lg btn-icon-only compare-toggle" aria-label="Add to compare" title="Add to compare" type="button" data-compare={p.id} aria-pressed="false"><Icon name="compare" /></button>
+            </div>
+            <p class="buy-note">
+              {price.kind === 'amazon' && <>Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon at the time of purchase will apply. </>}
+              {price.kind === 'list' && <>This is {p.brand}’s own list price{price.asOf && ` (checked ${new Date(price.asOf + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })})`}. Amazon’s price is often lower; tap above for today’s price. </>}
+              Paid link: Electroys may earn a commission at no extra cost to you.{checked && ` Listing verified ${checked}.`}
+              {p.mfrUrl && <> <a href={p.mfrUrl} target="_blank" rel="noopener">See {p.brand}’s product page</a>.</>}
+            </p>
+            <ShareBar text={`${p.title}: ${p.tagline}. Found it on Electroys`} surface="product" />
+          </div>
+
+          <h2 class="sr-only">At a glance</h2>
+          <dl class="spec-grid glance">
+            <div class="spec"><dt>Age guidance</dt><dd>{ageLabel(p)}</dd></div>
+            <div class="spec"><dt>Price</dt><dd>{price.kind === 'band' ? budgetFor(p).label : price.kind === 'amazon' ? `${price.display} on Amazon` : `${price.display} list price`}</dd></div>
+            <div class="spec"><dt>Screen needed</dt><dd>{p.screenFree ? 'No, fully screen-free' : p.requiresDevice ?? 'Yes'}</dd></div>
+            <div class="spec"><dt>Batteries</dt><dd>{batteriesLabel(p.glance)}</dd></div>
+            <div class="spec"><dt>Adult help</dt><dd>{p.glance ? GLANCE_LABELS.adultHelp[p.glance.adultHelp] : 'Varies'}</dd></div>
+            <div class="spec"><dt>Play style</dt><dd>{p.glance ? GLANCE_LABELS.playStyle[p.glance.playStyle] : 'Solo or together'}</dd></div>
+            {p.glance?.inTheBox && <div class="spec" style="grid-column:1/-1"><dt>What it is</dt><dd>{p.glance.inTheBox}</dd></div>}
+            <div class="spec" style="grid-column:1/-1"><dt>Great for</dt><dd>{p.occasions.join(', ') || 'Any time'}</dd></div>
+          </dl>
+
+          <p class="pdp-summary">{p.summary}</p>
+
+          <h2 class="pdp-h">Why we <em>picked it</em></h2>
+          <ol class="why-list">
+            {p.highlights.map((h, i) => <li><span class="why-n">0{i + 1}</span><span>{h}</span></li>)}
+          </ol>
+
+          <h2 class="pdp-h">What they’ll <em>learn</em></h2>
+          <div class="skill-tags">{p.skills.map((s) => <span>{s}</span>)}</div>
+
+          {p.considerations.length > 0 && (
+            <aside class="good-to-know">
+              <h2 class="pdp-h">Good to know <em>before buying</em></h2>
+              <ul class="check-list warn">
+                {p.considerations.map((c) => <li><Icon name="clock" /><span>{c}</span></li>)}
+              </ul>
+            </aside>
+          )}
+
+
+          <p class="form-note">Always follow the manufacturer’s age and safety guidance. Small parts may be a choking hazard for children under 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {bands.length > 0 && (
+    <section class="section-tight">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">You might also like</span><h2 class="serif-xl" data-split>More picks <em>like this.</em></h2></div>
+          <a class="btn btn-ghost" href={`/shop/${bands[0].slug}/`}>More for {bands[0].label.toLowerCase()} <Icon name="arrow" class="icon icon-arrow" /></a>
+        </div>
+        <div class="product-grid cols-4">{more.map((r) => <ProductCard p={r} surface="related" />)}</div>
+      </div>
+    </section>
+  )}
+
+  <div class="mobile-buy-bar" data-buy-bar>
+    <div class="mbb-price"><PriceTag p={p} /></div>
+    <button class="icon-btn save-btn mbb-save" data-save={p.id} aria-pressed="false" aria-label="Save to gift list"><Icon name="heart" /></button>
+    <a class="btn btn-buy" href={url} target="_blank" rel="sponsored nofollow noopener" data-outbound={p.id} data-surface="mobile_bar" data-name={p.title}>{retailer === 'Amazon' ? 'View on Amazon' : buyLabel}</a>
+  </div>
+</Base>
+
+<script>
+  // Phones: keep a way to buy on screen at all times. The sticky bar shows
+  // whenever the main button is off-screen, above or below.
+  const main = document.querySelector<HTMLElement>('[data-buy-main]');
+  const bar = document.querySelector<HTMLElement>('[data-buy-bar]');
+  if (main && bar) {
+    let queued = false;
+    const check = () => {
+      queued = false;
+      const r = main.getBoundingClientRect();
+      bar.classList.toggle('show', r.bottom < 0 || r.top > window.innerHeight - 80);
+    };
+    const schedule = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule, { passive: true });
+    check();
+  }
+</script>
