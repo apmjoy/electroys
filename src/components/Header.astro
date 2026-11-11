@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import { AGE_BANDS, INTERESTS } from '../lib/taxonomy';
+import GetApp from './GetApp.astro';
 
 const path = Astro.url.pathname;
 const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefined);
@@ -73,6 +74,7 @@ const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefine
     </div>
     <div class="drawer-body">
       <a href="/finder/" class="btn btn-brand btn-lg btn-block"><Icon name="sparkle" /> Find the perfect gift</a>
+      <GetApp variant="row" />
       <section>
         <h3>Shop by age</h3>
         <div class="drawer-grid">

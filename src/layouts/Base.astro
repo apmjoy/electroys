@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import SearchDialog from '../components/SearchDialog.astro';
 import CompareTray from '../components/CompareTray.astro';
 import TabBar from '../components/TabBar.astro';
+import IosInstallSheet from '../components/IosInstallSheet.astro';
 import displayFont from '@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2?url';
 import bodyFont from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 import serifItalic from '@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2?url';
@@ -64,6 +65,9 @@ const GA_ID = 'G-1H82DFLP86';
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Electroys" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Affiliate network site verification (kept from the original site) -->
@@ -97,6 +101,7 @@ const GA_ID = 'G-1H82DFLP86';
   <SearchDialog />
   <CompareTray />
   <TabBar />
+  <IosInstallSheet />
   <div class="toast" role="status" aria-live="polite" id="toast"></div>
   <script>
     import '../scripts/site.ts';

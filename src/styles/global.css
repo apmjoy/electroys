@@ -1600,3 +1600,23 @@ body { padding-bottom: calc(var(--tab-h) + var(--tray-h)); }
 /* Long product grids: let the browser skip layout and paint for cards that are
    off-screen (the reserved size keeps the scrollbar steady). */
 .product-grid > .card { content-visibility: auto; contain-intrinsic-size: auto 440px; }
+
+/* ─── Get the app ────────────────────────────────────────────────────────── */
+.getapp { display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 12px; border-radius: var(--r-lg); background: rgb(255 255 255 / .07); border: 1px solid rgb(255 255 255 / .16); color: #dfe7f5; margin-top: 16px; max-width: 560px; position: relative; }
+.getapp-row { background: var(--surface); border-color: var(--line); color: var(--ink); margin-top: 0; }
+.ga-icon { width: 48px; height: 48px; border-radius: 12px; flex: none; box-shadow: 0 6px 16px -8px rgb(0 0 0 / .5); }
+.ga-text { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.ga-text strong { font: 700 .98rem/1.2 var(--font-display); color: inherit; }
+.ga-text span { font-size: .82rem; line-height: 1.35; opacity: .85; }
+.getapp .ga-action { flex: none; }
+.ga-close { position: absolute; top: -8px; right: -8px; width: 26px; height: 26px; border-radius: 50%; border: 0; display: grid; place-items: center; cursor: pointer; background: var(--ink); color: #fff; box-shadow: var(--shadow-sm); }
+.ga-close .icon { width: 13px; height: 13px; }
+.getapp-row .ga-close { background: var(--paper-2); color: var(--ink-2); }
+.ios-icon { border-radius: 14px; flex: none; }
+.ios-steps { list-style: none; margin: 4px 0; padding: 0; display: grid; gap: 10px; }
+.ios-steps li { display: flex; gap: 12px; align-items: flex-start; font-size: .98rem; line-height: 1.4; }
+.ios-n { width: 28px; height: 28px; border-radius: 50%; flex: none; display: grid; place-items: center; background: var(--brand); color: #fff; font: 700 .9rem/1 var(--font-body); }
+.ios-share { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; background: var(--brand-tint); color: var(--brand); vertical-align: middle; }
+.ios-share .icon { width: 14px; height: 14px; transform: rotate(-45deg); }
+/* Installed app: no need to keep offering it. */
+.is-app [data-getapp] { display: none !important; }

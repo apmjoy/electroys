@@ -14,7 +14,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Legacy redirect stubs and utility pages stay out of the sitemap.
-      filter: (page) => !/\/(legacy|wishlist|compare|gift|404)\b/.test(page) && !page.endsWith('.html'),
+      filter: (page) => !/\/(legacy|wishlist|compare|gift|offline|404)\b/.test(page) && !page.endsWith('.html'),
     }),
   ],
 });

@@ -1,10 +1,24 @@
 {
-  "name": "Electroys",
+  "id": "/",
+  "name": "Electroys: STEM Gifts & Kits",
   "short_name": "Electroys",
-  "description": "Hand-picked STEM kits and brain-building gifts.",
-  "start_url": "/",
+  "description": "Hand-picked STEM kits and brain-building gifts for kids, teens and young adults, plus a maker quiz, games and a STEM advent calendar.",
+  "start_url": "/?source=app",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#fbf9f5",
-  "theme_color": "#1d5be0",
-  "icons": [{ "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" }]
+  "orientation": "portrait",
+  "background_color": "#050b17",
+  "theme_color": "#050b17",
+  "categories": ["shopping", "education", "kids"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Advent calendar", "short_name": "Advent", "url": "/advent/?source=app", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Find a gift", "short_name": "Kit Finder", "url": "/finder/?source=app", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Maker quiz", "short_name": "Quiz", "url": "/quiz/?source=app", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Saved gift list", "short_name": "Saved", "url": "/wishlist/?source=app", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
 }

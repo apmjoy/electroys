@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+<Base title="You’re offline" description="No connection right now." noindex>
+  <section class="section" style="text-align:center">
+    <div class="narrow">
+      <div style="font-size:4rem;line-height:1" aria-hidden="true">🔌</div>
+      <h1 style="font-size:clamp(2rem,6vw,3rem);margin-top:14px">The circuit’s <em>unplugged.</em></h1>
+      <p class="lead" style="margin-inline:auto">You’re offline right now. Pages you’ve visited before may still open. Everything else will be back the moment you reconnect.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <button type="button" class="btn btn-brand btn-lg" onclick="location.reload()"><Icon name="bolt" /> Try again</button>
+        <a class="btn btn-ghost btn-lg" href="/wishlist/">Your saved list</a>
+      </div>
+    </div>
+  </section>
+</Base>
