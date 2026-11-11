@@ -495,10 +495,17 @@ kbd { font: 600 .72rem/1 var(--font-body); padding: 4px 6px; border-radius: 6px;
 .skill-tags span { padding: 7px 13px; border-radius: 999px; background: var(--brand-tint); color: var(--brand-ink); font-size: .86rem; font-weight: 600; }
 .mobile-buy-bar {
   position: fixed; z-index: 40; inset: auto 0 0 0; display: flex; gap: 10px; align-items: center;
-  padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgb(255 255 255 / .94);
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: #fff;
   border-top: 1px solid var(--line); transform: translateY(110%); transition: transform .35s var(--ease);
 }
 .mobile-buy-bar.show { transform: none; }
+/* Bottom bars: on iOS 26 and in Facebook/Instagram's in-app browsers, "bottom: 0"
+   can sit above the real screen edge, leaving a strip where the page shows
+   through. Extending each bar's background downward fills that strip; where the
+   bar really is at the edge, the extension is simply off-screen. */
+.tabbar::after, .mobile-buy-bar::after, .compare-tray::after {
+  content: ''; position: absolute; inset: 100% 0 auto; height: 160px; background: inherit; pointer-events: none;
+}
 .mobile-buy-bar .btn { flex: 1; }
 @media (min-width: 960px) { .mobile-buy-bar { display: none; } }
 
@@ -1005,7 +1012,7 @@ body { padding-bottom: calc(var(--tab-h) + var(--tray-h)); }
   body:not(.no-tabbar) .tabbar {
     display: grid; grid-template-columns: repeat(5, 1fr); align-items: end;
     position: fixed; z-index: 60; inset: auto 0 0 0; height: var(--tab-h); padding: 0 6px env(safe-area-inset-bottom);
-    background: rgb(255 255 255 / .99);
+    background: #fff;
     border-top: 1px solid var(--line); box-shadow: 0 -8px 30px -20px rgb(11 27 51 / .4);
   }
   .tabbar a, .tabbar button {
