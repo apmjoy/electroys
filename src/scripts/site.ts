@@ -3,6 +3,7 @@ import { wishlist } from './wishlist';
 import { compare, COMPARE_MAX } from './compare';
 import { initMagazine } from './magazine';
 import { initCinema } from './cinema';
+import './scroll-state';
 
 /* Haptics: a short buzz on supporting phones (Android). Silent elsewhere. */
 export function buzz(pattern: number | number[] = 12) {
