@@ -1,4 +1,5 @@
 ---
+import Wordmark from './Wordmark.astro';
 import { AGE_BANDS, INTERESTS } from '../lib/taxonomy';
 import { GIFT_GUIDES } from '../lib/gifts';
 const year = new Date().getFullYear();
@@ -7,7 +8,7 @@ const year = new Date().getFullYear();
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="logo"><img src="/logo-96.webp" alt="" width="40" height="40" /><span class="logo-word">Electr<b>o</b>ys</span></a>
+        <a href="/" class="logo"><img src="/logo-96.webp" alt="" width="40" height="40" /><Wordmark /></a>
         <p>Hand-picked STEM kits and brain-building gifts for curious kids, teens and young adults. Explore. Build. Learn. Play.</p>
       </div>
       <div>

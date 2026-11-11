@@ -1,4 +1,5 @@
 ---
+import Wordmark from './Wordmark.astro';
 import Icon from './Icon.astro';
 import { AGE_BANDS, INTERESTS } from '../lib/taxonomy';
 import GetApp from './GetApp.astro';
@@ -10,7 +11,7 @@ const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefine
   <div class="container header-row">
     <a href="/" class="logo" aria-label="Electroys home">
       <img src="/logo-96.webp" alt="" width="40" height="40" />
-      <span class="logo-word">Electr<b>o</b>ys</span>
+      <Wordmark />
     </a>
 
     <nav class="nav" aria-label="Main">
@@ -69,7 +70,7 @@ const current = (prefix: string) => (path.startsWith(prefix) ? 'page' : undefine
   <div class="drawer-scrim" data-close-drawer></div>
   <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
     <div class="drawer-head">
-      <a href="/" class="logo"><img src="/logo-96.webp" alt="" width="32" height="32" /><span class="logo-word">Electr<b>o</b>ys</span></a>
+      <a href="/" class="logo"><img src="/logo-96.webp" alt="" width="32" height="32" /><Wordmark /></a>
       <button class="icon-btn" data-close-drawer aria-label="Close menu"><Icon name="close" /></button>
     </div>
     <div class="drawer-body">

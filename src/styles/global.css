@@ -192,6 +192,11 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .logo img { width: 40px; height: 40px; }
 .logo-word { font: 800 1.45rem/1 var(--font-display); letter-spacing: -0.03em; color: var(--brand-ink); }
 .logo-word b { color: var(--flame); font-weight: inherit; }
+/* The "o" as a power switch: ring sits on the baseline at x-height, stem rises above. */
+.logo-o svg { display: inline-block; width: .6em; height: .78em; margin: 0 .015em 0 .03em; overflow: visible;
+  fill: none; stroke: currentColor; stroke-width: 3.6; stroke-linecap: round; transition: filter .3s, transform .4s var(--spring); }
+.logo:hover .logo-o svg { filter: drop-shadow(0 0 6px rgb(242 106 27 / .75)); transform: rotate(-12deg); }
+@media (prefers-reduced-motion: reduce) { .logo:hover .logo-o svg { transform: none; } }
 .nav { display: none; }
 .nav > ul { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
 .nav-link {
