@@ -16,7 +16,7 @@ async function icon(size, file) {
     <circle cx="${size / 2}" cy="${size / 2}" r="${size * 0.42}" fill="url(#glow)"/>
     <circle cx="${size / 2}" cy="${size / 2}" r="${size * 0.36}" fill="none" stroke="#ffb915" stroke-opacity=".35" stroke-width="${Math.max(1, size * 0.008)}" stroke-dasharray="${size * 0.012} ${size * 0.03}" stroke-linecap="round"/>
   </svg>`);
-  const inner = Math.round(size * 0.6);
+  const inner = Math.round(size * 0.7);
   const mark = await sharp(logo).resize(inner, inner, { kernel: 'lanczos3' }).png().toBuffer();
   await sharp(bg).composite([{ input: mark, gravity: 'center' }]).png({ compressionLevel: 9 }).toFile(out(file));
   console.log(`wrote public/${file}`);
