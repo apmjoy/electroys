@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import PageCover from '../components/PageCover.astro';
 import PriceTag from '../components/PriceTag.astro';
+import GetApp from '../components/GetApp.astro';
 import { ADVENT } from '../data/advent';
 import { productById, buyUrl, photoFor, type Product } from '../lib/products';
 import { artUrl } from '../lib/art';
@@ -25,6 +26,7 @@ const thumb = (p: Product) => (photoFor(p)?.kind === 'brand' ? photoFor(p)!.src.
     lead="Every day from December 1 to 24, a new door opens with a free 10-minute STEM activity you can do at home with things from the kitchen drawer.">
     <Fragment slot="title">24 days of <em>little sparks.</em></Fragment>
     <p class="advent-status" data-advent-status></p>
+    <GetApp title="Open the calendar in one tap" pitch="Add Electroys to your home screen, free with no app store, and come back each day." />
   </PageCover>
 
   <section class="section-tight">

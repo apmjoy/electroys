@@ -1,0 +1,19 @@
+---
+import Icon from './Icon.astro';
+---
+<dialog class="gift-sheet ios-sheet" data-ios-sheet aria-label="Add Electroys to your Home Screen">
+  <form method="dialog" class="gs-form">
+    <div class="sheet-grab" aria-hidden="true"></div>
+    <div class="gs-head">
+      <img src="/icon-192.png" alt="" width="52" height="52" class="ios-icon" />
+      <div><h2>Add Electroys to your Home Screen</h2><p>Three taps, then it opens like an app.</p></div>
+    </div>
+    <ol class="ios-steps">
+      <li><span class="ios-n">1</span><span>Tap the <strong>Share</strong> button <span class="ios-share" aria-hidden="true"><Icon name="external" /></span> in Safari’s toolbar.</span></li>
+      <li><span class="ios-n">2</span><span>Scroll down and tap <strong>Add to Home Screen</strong>.</span></li>
+      <li><span class="ios-n">3</span><span>Tap <strong>Add</strong>. Electroys appears next to your other apps.</span></li>
+    </ol>
+    <button class="btn btn-brand btn-block" value="close">Got it</button>
+    <button class="gs-close icon-btn" value="close" aria-label="Close"><Icon name="close" /></button>
+  </form>
+</dialog>

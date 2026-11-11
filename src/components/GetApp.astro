@@ -1,0 +1,16 @@
+---
+// "Get the app" prompt. Hidden by default; src/scripts/install.ts reveals it
+// only where installing is actually possible (and never once installed).
+import Icon from './Icon.astro';
+interface Props { title?: string; pitch?: string; variant?: 'card' | 'row' }
+const { title = 'Get the Electroys app', pitch = 'Free, no app store. Opens in one tap from your home screen.', variant = 'card' } = Astro.props;
+---
+<div class:list={['getapp', `getapp-${variant}`]} data-getapp hidden>
+  <img class="ga-icon" src="/icon-192.png" alt="" width="48" height="48" loading="lazy" />
+  <div class="ga-text">
+    <strong>{title}</strong>
+    <span data-ga-sub data-pitch={pitch}>{pitch}</span>
+  </div>
+  <button type="button" class="btn btn-sun btn-sm ga-action" data-ga-action>Install</button>
+  <button type="button" class="ga-close" data-ga-dismiss aria-label="Not now"><Icon name="close" /></button>
+</div>

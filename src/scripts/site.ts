@@ -378,3 +378,15 @@ addEventListener('keydown', (e) => {
   konami = e.key === KONAMI[konami] ? konami + 1 : e.key === KONAMI[0] ? 1 : 0;
   if (konami === KONAMI.length) { konami = 0; sparkStorm(innerWidth / 2, innerHeight / 2); track('easter_egg', { kind: 'konami' }); }
 });
+
+/* Installable app: register the service worker (production builds only, so local
+   development never caches anything). Registered after load, when idle. */
+if ('serviceWorker' in navigator && import.meta.env.PROD) {
+  addEventListener('load', () => {
+    const go = () => navigator.serviceWorker.register('/sw.js').catch(() => { /* site works without it */ });
+    'requestIdleCallback' in window ? (window as any).requestIdleCallback(go, { timeout: 4000 }) : setTimeout(go, 2000);
+  });
+}
+
+/* "Get the app" offers (install prompt / iPhone guide / in-app hint) */
+import('./install');
