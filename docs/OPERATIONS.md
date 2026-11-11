@@ -85,7 +85,7 @@ Add a Markdown file in `src/content/guides/`, using the existing guides as templ
 
 ## 5. Is it working? Reading the numbers
 
-**Google Analytics** (property `G-1H82DFLP86`), under Reports → Engagement → Events:
+**Google Analytics** (Google tag `GTM-5CJ7GCKB` → GA4 property `G-67H7VTBMWZ`), under Reports → Engagement → Events:
 
 | Event | Meaning |
 |---|---|

@@ -34,7 +34,7 @@ const ld = [
   },
   ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
 ];
-const GA_ID = 'G-1H82DFLP86';
+const GTAG_ID = 'GTM-5CJ7GCKB'; // Google tag container → GA4 property G-67H7VTBMWZ
 ---
 <!doctype html>
 <html lang="en">
@@ -76,18 +76,17 @@ const GA_ID = 'G-1H82DFLP86';
 
   {ld.map((obj) => <script type="application/ld+json" set:html={JSON.stringify(obj)} />)}
 
-  <!-- Google Analytics: production host only -->
-  <script is:inline define:vars={{ GA_ID }}>
+  <!-- Google Analytics (Google tag): production host only -->
+  <script is:inline define:vars={{ GTAG_ID }}>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     window.gtag = gtag;
     if (['electroys.com', 'www.electroys.com'].includes(location.hostname)) {
       const s = document.createElement('script');
       s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTAG_ID;
       document.head.appendChild(s);
       gtag('js', new Date());
-      gtag('config', GA_ID);
     }
   </script>
 </head>
