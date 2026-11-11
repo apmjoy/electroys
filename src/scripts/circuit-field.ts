@@ -7,6 +7,7 @@
 // Cheap by design: one quad, one draw call, DPR capped, paused off-screen and
 // in background tabs, a single static frame for prefers-reduced-motion, and a
 // CSS gradient fallback when WebGL is unavailable.
+import { isScrolling } from './scroll-state';
 
 const VERT = `
 attribute vec2 a;
@@ -162,8 +163,10 @@ export function mountCircuitField(canvas: HTMLCanvasElement) {
 
   // Quality tiers. Phones start lighter; the frame-time monitor below steps
   // down further on devices that struggle, ending at a single still frame.
-  let dpr = Math.min(window.devicePixelRatio || 1, coarse ? 1.0 : 1.5);
-  const minFrameMs = coarse ? 33 : 0; // ~30fps cap on phones saves battery
+  // The board is soft, ambient texture: 1x resolution and 30fps look the same
+  // and cost a fraction of the GPU time on Retina screens.
+  let dpr = 1;
+  const minFrameMs = 33;
   let still = reduced;
 
   // No GPU (software rasterizer)? The shader would run on the CPU: show one frame.
@@ -236,6 +239,7 @@ export function mountCircuitField(canvas: HTMLCanvasElement) {
 
   function loop(now: number) {
     raf = requestAnimationFrame(loop);
+    if (isScrolling()) return; // scrolling gets the whole frame
     if (minFrameMs && now - last < minFrameMs) return;
     if (last) adapt(now - last);
     last = now;

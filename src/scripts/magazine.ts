@@ -2,6 +2,8 @@
 // pinned horizontal "feature" spread. Every effect is skipped when the visitor
 // prefers reduced motion, and pointer effects only run on fine (mouse) pointers.
 
+import { isScrolling } from './scroll-state';
+
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
 
@@ -44,34 +46,22 @@ export function splitHeadlines(root: ParentNode = document) {
 }
 
 /* Reveal on scroll ---------------------------------------------------------------- */
-// One deterministic checker for .reveal and .split elements: anything that has
-// entered the viewport, or that the visitor has already scrolled past (e.g. after
-// jumping to an anchor), is revealed. Cheap: rAF-throttled, and elements drop out
-// of the pending list once shown, so content can never get stuck invisible.
-let pending: HTMLElement[] = [];
-let queued = false;
-function check() {
-  queued = false;
-  const limit = window.innerHeight * 0.92;
-  pending = pending.filter((el) => {
-    if (el.getBoundingClientRect().top < limit) {
-      el.classList.add(el.classList.contains('split') ? 'split-in' : 'in');
-      return false;
-    }
-    return true;
-  });
-  if (!pending.length) window.removeEventListener('scroll', schedule);
-}
-function schedule() { if (!queued) { queued = true; requestAnimationFrame(check); } }
+// The browser's IntersectionObserver watches .reveal / .split elements off the
+// main thread, so scrolling never pays for measuring them. Anything already
+// above the viewport at load (e.g. after jumping to an anchor) is shown at once.
+let io: IntersectionObserver | null = null;
+const show = (el: Element) => el.classList.add(el.classList.contains('split') ? 'split-in' : 'in');
 export function revealWatch(root: ParentNode = document) {
-  const fresh = Array.from(root.querySelectorAll<HTMLElement>('.reveal:not(.in), .split:not(.split-in)')).filter((el) => !pending.includes(el));
-  if (!fresh.length) return;
-  pending.push(...fresh);
-  window.addEventListener('scroll', schedule, { passive: true });
-  window.addEventListener('resize', schedule, { passive: true });
-  schedule();
-  // Belt and braces: if rAF is throttled (background tab, embedded frame), check again shortly.
-  setTimeout(check, 600);
+  const els = Array.from(root.querySelectorAll<HTMLElement>('.reveal:not(.in), .split:not(.split-in)'));
+  if (!els.length) return;
+  if (!('IntersectionObserver' in window)) { els.forEach(show); return; }
+  io ??= new IntersectionObserver(
+    (entries) => entries.forEach((e) => {
+      if (e.isIntersecting || e.boundingClientRect.bottom < 0) { show(e.target); io!.unobserve(e.target); }
+    }),
+    { rootMargin: '0px 0px -8% 0px' },
+  );
+  els.forEach((el) => io!.observe(el));
 }
 
 /* Tactile cards: 3D tilt + moving glare ------------------------------------------------ */
@@ -79,6 +69,7 @@ function tilt() {
   if (reduced || !fine) return;
   let active: HTMLElement | null = null;
   document.addEventListener('pointermove', (e) => {
+    if (isScrolling()) return; // content sliding under a still cursor: no tilt mid-scroll
     const card = (e.target as Element).closest<HTMLElement>('[data-tilt], .card');
     if (active && active !== card) { active.style.removeProperty('--rx'); active.style.removeProperty('--ry'); active.classList.remove('tilting'); }
     active = card;

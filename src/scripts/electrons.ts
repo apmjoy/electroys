@@ -8,6 +8,8 @@
 // the vertex shader. Fewer particles on phones, automatic step-down on slow
 // devices, paused off-screen, and a static photo for reduced motion / no WebGL.
 
+import { isScrolling } from './scroll-state';
+
 type Shape = { pos: Float32Array; col: Float32Array };
 
 const VERT = `
@@ -281,6 +283,7 @@ function startElectrons(root: HTMLElement, items: StageItem[], onShow: (index: n
 
   function loop(now: number) {
     raf = requestAnimationFrame(loop);
+    if (isScrolling()) { last = 0; return; } // scrolling gets the whole frame
     if (last && !tuned) {
       frames.push(now - last);
       if (frames.length >= 60) {
